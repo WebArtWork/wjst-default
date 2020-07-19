@@ -1,0 +1,13 @@
+{
+	"name": "templateName",
+	"description": "",
+	"keywords": "",
+	"picture": "",
+	"author": "",
+	"moderators": [],
+	"inputs": [{
+		"var": "name",
+		"type": "text",
+		"default": "Honchar Denys"
+	}]
+}
