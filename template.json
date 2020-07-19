@@ -1,9 +1,9 @@
 {
-	"name": "templateName",
-	"description": "",
-	"keywords": "",
-	"picture": "",
-	"author": "",
+	"title": "Welcome to waw Template",
+	"description": "description",
+	"keywords": "keywords",
+	"picture": "picture",
+	"author": "author",
 	"moderators": [],
 	"inputs": [{
 		"var": "name",
