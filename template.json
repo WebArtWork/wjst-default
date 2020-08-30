@@ -5,6 +5,11 @@
 	"picture": "picture",
 	"author": "author",
 	"moderators": [],
+	"mongo": {
+		"host": "localhost",
+		"port": 27017,
+		"db": "structure"
+	},
 	"inputs": [{
 		"var": "name",
 		"type": "text",
