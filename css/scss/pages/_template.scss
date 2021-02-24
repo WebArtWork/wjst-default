@@ -3,6 +3,7 @@
 
 $blue: #007eff;
 $dark: #333;
+$white: #ffffff;
 
 .template {
 	flex: 1;
@@ -11,7 +12,7 @@ $dark: #333;
 	justify-content: center;
 	align-items: center;
 	background-color: $dark;
-	color: #ffffff;
+	color: $white;
 	padding: 10px;
 	&-title {
 		font-size: 36px;
