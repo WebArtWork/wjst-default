@@ -1,8 +1,8 @@
 
-// Colors 
+// Colors
 
 $blue: #007eff;
-$dark: #333;
+$dark: #1c1c1c;
 $white: #ffffff;
 
 .template {
@@ -59,8 +59,11 @@ $white: #ffffff;
 		}
 		&__link {
 			text-decoration: underline;
+			color: $blue;
 		}
+	}
+	.template-red-text {
+		color: red;
 	}
 
 }
-
