@@ -1,8 +1,0 @@
-{
-	"fields": [
-		{
-			"name": "background",
-			"default": "red"
-		}
-	]
-}
