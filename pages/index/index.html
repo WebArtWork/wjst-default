@@ -1,8 +1,12 @@
 <div class="template">
-	<img class="template-avatar" src="/wjst-default/img/avatar.png" alt="" />
+	<img class="template-avatar" src="img/avatar.png" alt="" />
 	<div class="template-title">Welcome to WAW Template</div>
 	<div class="template-readme">
 		<div class="template-readme__title">Readme:</div>
+		<div class="template-readme__item">
+			To development you can type in terminal:
+			<span class="template-readme__code">waw</span>
+		</div>
 		<div class="template-readme__item">
 			To create new page you can type in terminal:
 			<span class="template-readme__code">waw page NAME</span>
@@ -21,6 +25,15 @@
 		<div class="template-readme__item">
 			JSON in page.json of each page is accesible only of that specific
 			page
+		</div>
+		<div class="template-readme__item">
+			To build project you can type in terminal:
+			<span class="template-readme__code">waw build</span>
+			which will take JSON info and put it into html of dist folder.
+		</div>
+		<div class="template-readme__item">
+			General idea of variables, is that you can modify those on back-end or over
+			<span class="template-readme__code">config.json</span>
 		</div>
 		<div class="template-readme__item">
 			More details of how to use template you can find in
@@ -48,7 +61,7 @@
 			<span class="template-readme__code">img/avatar.png</span>
 			can be served in html
 			<span class="template-readme__code"
-				>src="/wjst-default/img/avatar.png"</span
+				>src="img/avatar.png"</span
 			>
 			were our path is
 			<span class="template-readme__code">{prefix}{path}</span>
@@ -71,7 +84,7 @@
 			this default repo is shown
 			<a
 				class="template-readme__link"
-				href="https://webartwork.github.io/wjst-default/"
+				href="https://webartwork.github.io/wjst-default"
 				>webartwork.github.io/wjst-default</a
 			>
 		</div>
