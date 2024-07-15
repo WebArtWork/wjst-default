@@ -17,14 +17,6 @@ body {
 }
 
 /* === PAGE LAYOUT === */
-.container {
-	margin-left: auto;
-	margin-right: auto;
-	padding: var(--padding);
-	max-width: 100%;
-	width: 100%;
-}
-
 .header {
 	display: flex;
 	align-items: center;
