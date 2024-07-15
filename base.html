@@ -19,55 +19,72 @@
 		<meta property="og:image" content="{{{image}}}" />
 
 		<link rel="icon" type="image/x-icon" href="{{{favicon}}}" />
-		<meta name="keywords" content="{{{keywords}}}" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/index.css" />
 		<style>
 			:root {
 				--primary_color: {{{variables.primary_color || "#e0dc10"}}};
 			}
 		</style>
+		<link rel="stylesheet" href="css/index.css" />
 	</head>
 
-	<body class="container">
-		<header>
-			<a href="/">
-				<img src="img/logo.svg" alt="WAW" width="45" />
+	<body>
+		<header class="header">
+			<!-- logo top left -->
+			<a href="/" class="header__logo-link">
+				<img src="img/logo.svg" alt="WAW" width="45" class="header__logo" />
 			</a>
-			<h1>Wjst</h1>
+			<!-- title top left after logo -->
+			<h1 class="header__title">Wjst</h1>
 
-			<ul>
-				<li>
-					<a href="/documentations">Documentations</a>
+			<!-- links, can be many, top right, before github logo, show only on web version -->
+			<ul class="header__nav header__nav--primary">
+				<li class="header__nav-item">
+					<a href="/documentations" class="header__nav-link">Documentations</a>
 				</li>
 			</ul>
 
-			<ul>
-				<li>
-					<a
-						href="https://github.com/WebArtWork/wjst"
-						target="_blank"
-						data-original-title="GitHub"
-					>
-						<i class="fab fa-github"></i>
+			<!-- menu icon, which show only on mobile and open links -->
+			<span class="header__menu-icon material-icons">menu</span>
+
+			<!-- list of possible icons, currently only github icon, show on web and mobile -->
+			<ul class="header__nav header__nav--icons">
+				<li class="header__nav-item">
+					<a href="https://github.com/WebArtWork/wjst" target="_blank" data-original-title="GitHub" class="header__nav-link header__nav-link--github">
+						<img src="img/github.svg" alt="github" class="header__nav-icon">
 					</a>
 				</li>
 			</ul>
-		</header>
-		<main>
-			<nav>
 
+			<!-- show only on mobile, when we click menu, cover all mobile screen, which contains list of links from topbar and sidebar in web -->
+			<ul class="header__nav header__nav--mobile">
+				<li class="header__nav-item">
+					<a href="/documentations" class="header__nav-link">Documentations</a>
+				</li>
+				<li class="header__nav-item">
+					<a href="/documentations2" class="header__nav-link">Documentations2</a>
+				</li>
+			</ul>
+		</header>
+		<main class="main-content">
+			<!-- sidebar, show only on web view -->
+			<nav class="main-content__nav">
+				<li class="main-content__nav-item">
+					<a href="/documentations2" class="main-content__nav-link">Documentations2</a>
+				</li>
 			</nav>
-			<section>
+			<!-- main section, which take full width on mobile and full width - sidebar on web version -->
+			<section class="main-content__section">
 				<!-- HTML -->
 			</section>
 		</main>
+		<!-- footer just take full width on mobile and web -->
 		<footer class="footer">
-			<p>
-				<span>Wjst is copyright ©2024</span>
-				<a href="https://webart.work"> Web Art Work</a>
-				<span>, licensed for use under the permissive MIT Open Source License.</span>
+			<p class="footer__text">
+				<span class="footer__text-part">Wjst is copyright ©2024</span>
+				<a href="https://webart.work" class="footer__link">Web Art Work</a>
+				<span class="footer__text-part">, licensed for use under the permissive MIT Open Source License.</span>
 			</p>
 		</footer>
 		<script src="js/index.js"></script>
