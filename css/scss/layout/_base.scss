@@ -1,7 +1,6 @@
 // ===== BASE STYLE =====
 html {
 	font-size: var(--fs);
-	overflow: hidden;
 	height: 100%;
 }
 body {
@@ -11,7 +10,6 @@ body {
 	color: var(--c-text-primary);
 	line-height: 1.4;
 	position: relative;
-	overflow: hidden;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
