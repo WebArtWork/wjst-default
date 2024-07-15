@@ -1,88 +1,75 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<base href="{{{base || prefix + '/'}}}" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{{{title}}}</title>
+		<meta itemprop="name" content="{{{title}}}" />
+		<meta name="twitter:title" content="{{{title}}}" />
+		<meta property="og:title" content="{{{title}}}" />
 
-<head>
-	<base href="{{{base || prefix + '/'}}}" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>{{{title}}}</title>
-	<meta itemprop="name" content="{{{title}}}" />
-	<meta name="twitter:title" content="{{{title}}}" />
-	<meta property="og:title" content="{{{title}}}" />
+		<meta name="description" content="{{{description}}}" />
+		<meta itemprop="description" content="{{{description}}}" />
+		<meta name="twitter:description" content="{{{description}}}" />
+		<meta property="og:description" content="{{{description}}}" />
 
-	<meta name="description" content="{{{description}}}" />
-	<meta itemprop="description" content="{{{description}}}" />
-	<meta name="twitter:description" content="{{{description}}}" />
-	<meta property="og:description" content="{{{description}}}" />
+		<meta itemprop="image" content="{{{image}}}" />
+		<meta name="twitter:image:src" content="{{{image}}}" />
+		<meta property="og:image" content="{{{image}}}" />
 
-	<meta itemprop="image" content="{{{image}}}" />
-	<meta name="twitter:image:src" content="{{{image}}}" />
-	<meta property="og:image" content="{{{image}}}" />
+		<link rel="icon" type="image/x-icon" href="{{{favicon}}}" />
+		<meta name="keywords" content="{{{keywords}}}" />
 
-	<link rel="icon" type="image/x-icon" href="{{{favicon}}}" />
-	<meta name="keywords" content="{{{keywords}}}" />
-
-	<link rel="stylesheet" href="css/index.css" />
-	<style>
-		:root {
-			--primary_color: {
-					{
-						{
-						variables.primary_color || "#e0dc10"
-					}
-				}
+		<link rel="stylesheet" href="css/index.css" />
+		<style>
+			:root {
+				--primary_color: {{{variables.primary_color || "#e0dc10"}}};
 			}
+		</style>
+	</head>
 
-			;
-		}
-	</style>
-</head>
+	<body class="container">
+		<header>
+			<a href="/">
+				<img src="img/logo.svg" alt="WAW" width="45" />
+			</a>
 
-<body>
-	<header class="sticky-top">
-		<!-- Header -->
-		<nav class="primary-menu navbar navbar-expand-lg bg-dark-1 navbar-text-light">
-			<div class="container-fluid">
+			<h1>Wjst</h1>
 
-				<!-- Logo -->
-				<a class="logo ml-md-3" href="/" title="WAW">
-					<img src="img/logo.svg" alt="WAW" width="45">
-				</a>
+			<ul>
+				<li>
+					<a href="/documentations">Documentations</a>
+				</li>
+			</ul>
 
-				<span class="text-2 ml-3">Wjst - A Node.js and Browser JavaScript Template Engine</span>
-				<!-- Logo End -->
+			<ul>
+				<li>
+					<a
+						href="https://github.com/WebArtWork/wjst"
+						target="_blank"
+						data-original-title="GitHub"
+					>
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</header>
+		<main>
+			<nav>
 
-				<!-- Navbar Toggler -->
-				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-					data-target="#header-nav"><span></span><span></span><span></span></button>
-
-				<div id="header-nav" class="collapse navbar-collapse justify-content-end">
-					<ul class="navbar-nav">
-						<li><a href="/documentations">Documentations</a></li>
-					</ul>
-				</div>
-				<ul class="social-icons social-icons-lg ml-lg-2 mr-2">
-					<li class="social-icons-github">
-						<a data-toggle="tooltip" href="https://github.com/WebArtWork/wjst" target="_blank" title=""
-							data-original-title="GitHub">
-							<i class="fab fa-github"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!-- Header End -->
-	</header>
-	<!-- HTML -->
-	 <!-- Footer -->
-	<footer class="footer">
-		<div class="container">
-			<p class="text-center">Wjst is copyright ©2024 <a href="https://webart.work"> Web Art Work</a>,
-				licensed for use under the permissive MIT Open Source License.</p>
-		</div>
-	</footer>
-	<!-- Footer End -->
-	<script src="js/index.js"></script>
-</body>
-
+			</nav>
+			<section>
+				<!-- HTML -->
+			</section>
+		</main>
+		<footer class="footer">
+			<p>
+				<span>Wjst is copyright ©2024</span>
+				<a href="https://webart.work"> Web Art Work</a>
+				<span>, licensed for use under the permissive MIT Open Source License.</span>
+			</p>
+		</footer>
+		<script src="js/index.js"></script>
+	</body>
 </html>
