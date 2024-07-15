@@ -1,3 +1,11 @@
+:root {
+	--primary_color: #e0dc10;
+}
+
+
+
+
+
 $primary_color: var(--primary_color);
 
 $default-body_color: #242b36;
@@ -57,3 +65,35 @@ $lh2: 1.2 * $line-height;
 $lh3: 1.3 * $line-height;
 $lh4: 1.4 * $line-height;
 $lh5: 1.5 * $line-height;
+
+
+
+
+
+
+
+
+/* font family */
+$ff-base: "Roboto",
+sans-serif;
+$ff-title: "Lato",
+sans-serif;
+$ff-second: 'Roboto',
+sans-serif;
+
+/* font-size */
+$fs: 16px;
+
+
+// ===== COLORS =====
+$blue: #334D6E;
+$sky: #3498DB;
+$skyL: #58ACF5;
+$grey: #BDBDBD;
+$greyL: #F2F2F2;
+$red: #A31010;
+$redD: #8C1B0F;
+$green: #089227;
+$white: #fff;
+$black: #000;
+$dark: #000;
