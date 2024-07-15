@@ -4,7 +4,7 @@ html {
 	height: 100%;
 }
 body {
-	background-color: var(--c-bg-secondary);
+	background: var(--c-primary);
 	padding: 0;
 	margin: 0;
 	font-family: var(--ff-base);
@@ -15,6 +15,9 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+a {
+	color: var(--c-text-primary);
+}
 
 /* === PAGE LAYOUT === */
 .header {
@@ -22,7 +25,6 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding: var(--padding);
-	background-color: var(--c-bg-secondary);
 	box-shadow: 0 2px 4px var(--c-shadow);
 
 	&__logo-link {
@@ -37,7 +39,6 @@ body {
 
 	&__title {
 		font-size: 1.5em;
-		color: var(--c-primary);
 	}
 
 	&__nav {
@@ -61,7 +62,6 @@ body {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: var(--c-bg-secondary);
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -78,12 +78,11 @@ body {
 	}
 
 	&__nav-link {
-		color: var(--c-text-secondary);
 		text-decoration: none;
 
-		&:hover {
-			color: var(--c-primary);
-		}
+		// &:hover {
+		// 	color: var(--c-primary);
+		// }
 
 		&--github {
 			display: flex;
@@ -120,7 +119,6 @@ body {
 		@media (min-width: 769px) {
 			display: block;
 			width: 200px;
-			background-color: var(--c-bg-secondary);
 			border-right: 1px solid var(--c-border);
 		}
 
@@ -131,12 +129,11 @@ body {
 		&__nav-link {
 			display: block;
 			padding: var(--padding);
-			color: var(--c-primary);
 			text-decoration: none;
 
-			&:hover {
-				background-color: var(--c-bg-secondary)
-			}
+			// &:hover {
+			// 	background-color: var(--c-bg-secondary)
+			// }
 		}
 	}
 
@@ -149,12 +146,10 @@ body {
 .footer {
 	width: 100%;
 	padding: var(--padding);
-	background-color: var(--c-bg-secondary);
 	text-align: center;
 
 	&__text {
 		margin: 0;
-		color: var(--c-primary);
 		font-size: 0.9em;
 
 		&-part {
@@ -162,7 +157,6 @@ body {
 		}
 
 		& .footer__link {
-			color: var(--c-primary);
 			text-decoration: none;
 
 			&:hover {

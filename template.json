@@ -8,7 +8,7 @@
 	"author": "Honchar Denys",
 	"scss": "scss/index.scss",
 	"variables": {
-		"primary_color": "#e0dc10"
+		"primary_color": "#212529"
 	},
 	"fields": [
 		{
