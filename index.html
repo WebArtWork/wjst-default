@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<base href="/wjst-default/" />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Welcome to waw Template</title>
-		<meta itemprop="name" content="Welcome to waw Template" />
-		<meta name="twitter:title" content="Welcome to waw Template" />
-		<meta property="og:title" content="Welcome to waw Template" />
 
-		<meta name="description" content="Description which will fit on all pages" />
-		<meta itemprop="description" content="Description which will fit on all pages" />
-		<meta name="twitter:description" content="Description which will fit on all pages" />
-		<meta property="og:description" content="Description which will fit on all pages" />
+<head>
+	<base href="/wjst-default/" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Welcome to waw Template</title>
+	<meta itemprop="name" content="Welcome to waw Template" />
+	<meta name="twitter:title" content="Welcome to waw Template" />
+	<meta property="og:title" content="Welcome to waw Template" />
 
-		<meta itemprop="image" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
-		<meta name="twitter:image:src" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
-		<meta property="og:image" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
+	<meta name="description" content="Description which will fit on all pages" />
+	<meta itemprop="description" content="Description which will fit on all pages" />
+	<meta name="twitter:description" content="Description which will fit on all pages" />
+	<meta property="og:description" content="Description which will fit on all pages" />
 
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-		<meta name="keywords" content="waw, web art work, server render, template" />
+	<meta itemprop="image" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
+	<meta name="twitter:image:src" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
+	<meta property="og:image" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
 
-		<link rel="stylesheet" href="css/index.css" />
-		<style>
-			:root {
-				--primary_color: #e0dc10;
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+	<meta name="keywords" content="waw, web art work, server render, template" />
+
+	<link rel="stylesheet" href="css/index.css" />
+	<style>
+		:root {
+			--primary_color: {
+					{
+						{
+						variables.primary_color || "#e0dc10"
+					}
+				}
 			}
-		</style>
-	</head>
-	<body>
-		<div class="template">
+
+			;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="sticky-top">
+		<!-- Header -->
+		<nav class="primary-menu navbar navbar-expand-lg bg-dark-1 navbar-text-light">
+			<div class="container-fluid">
+
+				<!-- Logo -->
+				<a class="logo ml-md-3" href="/" title="WAW">
+					<img src="img/logo.svg" alt="WAW" width="45">
+				</a>
+
+				<span class="text-2 ml-3">Wjst - A Node.js and Browser JavaScript Template Engine</span>
+				<!-- Logo End -->
+
+				<!-- Navbar Toggler -->
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+					data-target="#header-nav"><span></span><span></span><span></span></button>
+
+				<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+					<ul class="navbar-nav">
+						<li><a href="/documentations">Documentations</a></li>
+					</ul>
+				</div>
+				<ul class="social-icons social-icons-lg ml-lg-2 mr-2">
+					<li class="social-icons-github">
+						<a data-toggle="tooltip" href="https://github.com/WebArtWork/wjst" target="_blank" title=""
+							data-original-title="GitHub">
+							<i class="fab fa-github"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Header End -->
+	</header>
+	<div class="template">
 	<img class="template-avatar" src="img/avatar.png" alt="" />
 	<div class="template-title">Welcome to WAW Template</div>
 	<div class="template-readme">
@@ -122,6 +166,15 @@
 	</div>
 </div>
 
-		<script src="js/index.js"></script>
-	</body>
+	 <!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<p class="text-center">Wjst is copyright ©2024 <a href="https://webart.work"> Web Art Work</a>,
+				licensed for use under the permissive MIT Open Source License.</p>
+		</div>
+	</footer>
+	<!-- Footer End -->
+	<script src="js/index.js"></script>
+</body>
+
 </html>
