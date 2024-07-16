@@ -126,8 +126,12 @@ ul {
 				display: none;
 			}
 
-			&--active > .main-content__nav-link {
+			&--active>.main-content__nav-link {
 				color: var(--c-primary-hover);
+
+				&:hover {
+					font-weight: normal;
+				}
 			}
 		}
 
@@ -150,7 +154,7 @@ ul {
 	}
 
 	&__nav-in-item {
-		&:hover > .main-content__nav-link {
+		&:hover>.main-content__nav-link {
 			border-left: 1px solid var(--c-primary-hover);
 			color: var(--c-primary-hover);
 		}
