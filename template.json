@@ -6,14 +6,5 @@
 	"favicon": "img/favicon.ico",
 	"image": "https://webartwork.github.io/wjst-default/img/avatar.png",
 	"author": "Honchar Denys",
-	"scss": "scss/index.scss",
-	"variables": {
-		"primary_color": "#212529"
-	},
-	"fields": [
-		{
-			"name": "background",
-			"default": "red"
-		}
-	]
+	"scss": "scss/index.scss"
 }
