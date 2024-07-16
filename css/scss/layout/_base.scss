@@ -95,10 +95,6 @@ ul {
 	}
 }
 
-.main-content__nav-item--active {
-	border-left: 1px solid var(--c-secondary);
-}
-
 .main-content {
 	display: flex;
 
@@ -112,6 +108,10 @@ ul {
 
 		@media (max-width: 769px) {
 			display: none;
+		}
+
+		&-in {
+			border-left: 1px solid var(--c-secondary);
 		}
 
 		&-item {
@@ -128,7 +128,7 @@ ul {
 			text-decoration: none;
 
 			&:hover {
-				color: var(--c-primary-hover)
+				color: var(--c-primary-hover);
 			}
 		}
 	}
