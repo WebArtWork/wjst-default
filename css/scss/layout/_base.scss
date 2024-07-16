@@ -111,10 +111,11 @@ ul {
 		}
 
 		&-in {
-			border-left: 1px solid var(--c-secondary);
+			border-left: 1px solid var(--c-placeholder);
+			margin-left: 20px;
 
 			&--none {
-				display: none;		
+				display: none;
 			}
 		}
 
@@ -125,15 +126,22 @@ ul {
 				display: none;
 			}
 
-			// &--active {
-			// 	color: #F8EC20;
-			// }
+			--active: {
+				>a {
+					color: var(--c-primary-hover);
+				}
+			}
+
+			--active > a {
+				color: var(--c-primary-hover);
+			}
 		}
 
 		&-link {
 			display: block;
 			padding: var(--padding);
 			text-decoration: none;
+
 
 			&:hover {
 				color: var(--c-primary-hover);
