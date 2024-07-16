@@ -112,6 +112,10 @@ ul {
 
 		&-in {
 			border-left: 1px solid var(--c-secondary);
+
+			&--none {
+				display: none;		
+			}
 		}
 
 		&-item {
@@ -120,6 +124,10 @@ ul {
 			&--mobile {
 				display: none;
 			}
+
+			// &--active {
+			// 	color: #F8EC20;
+			// }
 		}
 
 		&-link {
