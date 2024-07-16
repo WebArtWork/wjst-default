@@ -54,17 +54,28 @@
 	<main class="main-content">
 		<nav id="sidebar" class="main-content__nav">
 			<ul>
+				<!-- should be shown on mobile only -->
 				<li class="main-content__nav-item main-content__nav-item--mobile">
 					<a href="/documentations" class="header__nav-link">Documentations</a>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Documentations 2</a>
+				<!-- should be shown on mobile and web with sub ul -->
+				<li class="main-content__nav-item main-content__nav-item--active">
+					<a href="/documentations2" class="main-content__nav-link">Should be shown highlighted</a>
 					<ul class="main-content__nav-in">
 						<li class="main-content__nav-in-item">
 							<a href="/documentations21" class="header__nav-link">Documentations 2 1</a>
 						</li>
 						<li class="main-content__nav-in-item">
 							<a href="/documentations22" class="main-content__nav-link">Documentations 2 2</a>
+						</li>
+					</ul>
+				</li>
+				<!-- should be shown on mobile and web without sub ul -->
+				<li class="main-content__nav-item">
+					<a href="/documentations2" class="main-content__nav-link">Should be shown</a>
+					<ul class="main-content__nav-in">
+						<li class="main-content__nav-in-item">
+							<a href="/documentations21" class="header__nav-link">Should not be shown</a>
 						</li>
 					</ul>
 				</li>
