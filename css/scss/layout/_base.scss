@@ -128,10 +128,11 @@ ul {
 
 			&--active>.main-content__nav-link {
 				color: var(--c-primary-hover);
+				font-weight: 550;
 
-				&:hover {
-					font-weight: normal;
-				}
+				// &:hover {
+				// 	font-weight: normal;
+				// }
 			}
 		}
 

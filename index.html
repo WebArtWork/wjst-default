@@ -73,10 +73,10 @@
 					</ul>
 				</li> -->
 				<li class="main-content__nav-item main-content__nav-item--active">
-					<a href="/documentations2" class="main-content__nav-link">Should be shown highlighted</a>
+					<a href="/documentations2" class="main-content__nav-link">Content</a>
 					<ul class="main-content__nav-in">
 						<li class="main-content__nav-in-item">
-							<a href="/documentations21" class="main-content__nav-link">Documentations 2 1</a>
+							<a href="/#typography" class="main-content__nav-link">Typography</a>
 						</li>
 						<li class="main-content__nav-in-item">
 							<a href="/documentations22" class="main-content__nav-link">Documentations 2 2</a>
@@ -99,10 +99,32 @@
 	<img class="index-avatar" src="img/avatar.png" alt="" />
 	<div class="index-title">Welcome to WAW Template</div>
 	<div class="index-readme">
-		<div class="index-readme__title">Readme:</div>
+		<div class="index-readme__title">
+			<h1>Content</h1>
+		</div>
+		<div class="index-readme__title"><a id="typography">
+				<h3>Typography</h3>
+			</a></div>
+		<p>Global settings</p>
 		<div class="index-readme__item">
-			To development you can type in terminal:
-			<span class="index-readme__code">waw</span>
+			waw css sets basic global display, typography, and link styles. When more control is needed, check out the
+			<span class="index-readme__code">
+				<a class="index-readme__link" href="https://getbootstrap.com/docs/5.3/utilities/text/">textual utility
+					classes.</a>
+			</span>
+			<ul class="block">
+				<li>Use a <span class="index-readme__code">native font stack</span> that selects the best <span
+						class="index-readme__code">font-family</span>
+					for each OS and device.</li>
+				<li>For a more inclusive and accessible type scale, we use the browser’s default root <span class="index-readme__code">font-size</span> (typically 16px) so visitors can customize their browser defaults as needed.
+				</li>
+				<li>Use the <span class="index-readme__code">$font-family-base</span>, <span class="index-readme__code">$font-size-base</span>, and <span class="index-readme__code">$line-height-base</span> attributes as our typographic base applied to the <span class="index-readme__code">&lt;body&gt;</span>.
+				</li>
+				<li>Set the global link color via <span class="index-readme__code">$link-color</span>.</li>
+				<li>Use <span class="index-readme__code">$body-bg</span> to set a <span class="index-readme__code">background-color</span> on the <span class="index-readme__code">&lt;body&gt;</span> (<span class="index-readme__code">#fff</span> by default).</li>
+			</ul>
+			These styles can be found within <span class="index-readme__code">_reboot.scss</span>, and the global
+			variables are defined in <span class="index-readme__code">_variables.scss</span>. Make sure to set <span class="index-readme__code">$font-size-base</span> in <span class="index-readme__code">rem</span>.
 		</div>
 		<div class="index-readme__item">
 			To create new page you can type in terminal:
@@ -112,9 +134,7 @@
 			You can change port in
 			<span class="index-readme__code">config.json</span>
 			of development webiste
-			<a class="index-readme__link" href="http://localhost:8000"
-				>localhost:8000</a
-			>
+			<a class="index-readme__link" href="http://localhost:8000">localhost:8000</a>
 		</div>
 		<div class="index-readme__item">
 			JSON in template.json is accesible over all pages
@@ -134,11 +154,7 @@
 		</div>
 		<div class="index-readme__item">
 			More details of how to use template you can find in
-			<a
-				class="index-readme__link"
-				href="https://webartwork.github.io/wjst/docs"
-				>Wjst Documentation</a
-			>
+			<a class="index-readme__link" href="https://webartwork.github.io/wjst/docs">Wjst Documentation</a>
 		</div>
 		<div class="index-readme__item">
 			Styles: You should import each file to
@@ -157,9 +173,7 @@
 			For example file
 			<span class="index-readme__code">img/avatar.png</span>
 			can be served in html
-			<span class="index-readme__code"
-				>src="img/avatar.png"</span
-			>
+			<span class="index-readme__code">src="img/avatar.png"</span>
 			were our path is
 			<span class="index-readme__code">{prefix}{path}</span>
 		</div>
@@ -179,15 +193,11 @@
 			<span class="index-readme__code">{repo}/settings/pages</span>
 			and after that you should able to see your wesite online, similar
 			this default repo is shown
-			<a
-				class="index-readme__link"
-				href="https://webartwork.github.io/wjst-default"
-				>webartwork.github.io/wjst-default</a
-			>
+			<a class="index-readme__link"
+				href="https://webartwork.github.io/wjst-default">webartwork.github.io/wjst-default</a>
 		</div>
 	</div>
 </div>
-
 		</section>
 	</main>
 	<footer class="footer">
