@@ -1,4 +1,3 @@
-
 // Colors
 
 $blue: #007eff;
@@ -7,9 +6,9 @@ $white: #ffffff;
 $blue-gray: #868401;
 $blue-gray-darken: #6d6b07;
 $yellow: #e0dc10;
-$yellow-darken:#d6d310;
+$yellow-darken: #d6d310;
 $green: #928907;
-$green-darken:#16a085;
+$green-darken: #16a085;
 
 
 .index {
@@ -21,23 +20,28 @@ $green-darken:#16a085;
 	background-color: var(--c-primary);
 	color: $white;
 	padding: 10px;
+
 	&-title {
 		font-size: 36px;
 		margin: 20px 0;
 		font-weight: bold;
 		text-align: center;
 	}
+
 	&-avatar {
 		width: 100px;
 		height: 100px;
 	}
+
 	&-readme {
 		width: 80%;
+
 		&__title {
 			font-size: 26px;
 			margin: 20px 0;
 			font-weight: bold;
 		}
+
 		&__item {
 			position: relative;
 			margin: 10px 0;
@@ -47,6 +51,7 @@ $green-darken:#16a085;
 			padding: 10px;
 			padding-left: 30px;
 			border-radius: 5px;
+
 			&::after {
 				content: "";
 				display: block;
@@ -61,15 +66,23 @@ $green-darken:#16a085;
 				transform: translateY(-50%);
 			}
 		}
+
 		&__code {
 			font-style: italic;
 			color: $blue;
 		}
+
 		&__link {
 			text-decoration: underline;
 			color: $blue;
+
+			&:hover {
+				color: var(--c-primary-hover);
+				text-decoration: underline;
+			}
 		}
 	}
+
 	.template-red-text {
 		color: red;
 	}
