@@ -237,4 +237,23 @@ $green-darken: #16a085;
 			}
 		}
 	}
+
+	.text-center {
+		.blockquote,
+		.blockquote-footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	.text-end {
+		.blockquote,
+		.blockquote-footer {
+			flex-direction: column;
+			align-items: flex-end;
+			text-align: right;
+		}
+	}
 }
