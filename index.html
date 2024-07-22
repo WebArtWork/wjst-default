@@ -302,10 +302,10 @@
 					class="index-readme__code">&lt;body&gt;</span> (<span class="index-readme__code">#fff</span> by
 				default).</li>
 		</ul>
-		These styles can be found within <span class="index-readme__code">_reboot.scss</span>, and the global
-		variables are defined in <span class="index-readme__code">_variables.scss</span>. Make sure to set <span
-			class="index-readme__code">$font-size-base</span> in <span class="index-readme__code">rem</span>.
-
+		<p>These styles can be found within <span class="index-readme__code">_reboot.scss</span>, and the global
+			variables are defined in <span class="index-readme__code">_variables.scss</span>. Make sure to set <span
+				class="index-readme__code">$font-size-base</span> in <span class="index-readme__code">rem</span>.
+		</p>
 		<div class="index-readme__title">
 			<h3>Headings</h3>
 		</div>
@@ -613,6 +613,70 @@
 				<li>&lt;p> &lt;abbr title="HyperText Markup Language" class="initialism">HTML&lt;/abbr>&lt;/p></li>
 			</ul>
 		</div>
+		<div class="index-readme__title">
+			<h3>Blockquotes</h3>
+		</div>
+		<p>For quoting blocks of content from another source within your document. Wrap <span
+				class="index-readme__code">&lt;blockquote class="blockquote"></span> around any HTML as the quote.</p>
+		<div class="index__example">
+			<blockquote class="blockquote">
+				<p>A well-known quote, contained in a blockquote element.</p>
+			</blockquote>
+		</div>
+		<!-- need to paste some icons -->
+		<div class="index__html">
+			<p>
+				HTML:
+			</p>
+		</div>
+		<div class="index-readme__item">
+			<ul>
+				<li>&lt;blockquote class="blockquote"></li>
+				<li>&lt;p>A well-known quote, contained in a blockquote element.&lt;/p></li>
+				<li>&lt;/blockquote></li>
+			</ul>
+		</div>
+		<div class="index-readme__title">
+			<h3>Naming a source</h3>
+		</div>
+		<p>The HTML spec requires that blockquote attribution be placed outside the
+			<span class="index-readme__code">&lt;blockquote></span>. When providing attribution, wrap your <span
+				class="index-readme__code">&lt;blockquote></span> in a <span
+				class="index-readme__code">&lt;figure></span> and use a
+			<span class="index-readme__code">&lt;figcaption></span> or a block
+			level element (e.g., <span class="index-readme__code">&lt;p></span>) with the <span
+				class="index-readme__code">.blockquote-footer</span> class. Be sure to wrap the name of the
+			source work in <span class="index-readme__code">&lt;cite></span> as well.
+		</p>
+		<div class="index__example">
+			<figure>
+				<blockquote class="blockquote">
+				  <p>A well-known quote, contained in a blockquote element.</p>
+				</blockquote>
+				<figcaption class="blockquote-footer">
+				  - Someone famous in <cite title="Source Title">Source Title</cite>
+				</figcaption>
+			  </figure>
+		</div>
+		<!-- need to paste some icons -->
+		<div class="index__html">
+			<p>
+				HTML:
+			</p>
+		</div>
+		<div class="index-readme__item">
+			<ul>
+				<li>&lt;figure></li>
+				<li>&lt;blockquote class="blockquote"></li>
+				<li>&lt;p>A well-known quote, contained in a blockquote element.&lt;/p></li>
+				<li>&lt;/blockquote></li>
+				<li>&lt;figcaption class="blockquote-footer"></li>
+				<li>Someone famous in &lt;cite title="Source Title">Source Title&lt;/cite></li>
+				<li>&lt;/figcaption></li>
+				<li>&lt;/figure></li>
+			</ul>
+		</div>
+
 
 
 	</div>
