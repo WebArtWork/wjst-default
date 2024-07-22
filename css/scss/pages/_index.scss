@@ -92,6 +92,10 @@ $green-darken: #16a085;
 		border-radius: 5px;
 	}
 
+	.text-body-secondary {
+		color: var(--c-placeholder);
+	}
+
 	ul.block {
 		list-style-type: disc;
 		padding-left: 20px;
