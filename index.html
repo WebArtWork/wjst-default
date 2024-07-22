@@ -191,6 +191,78 @@
 		<section class="main-content__section">
 			<div class="index">
 	<img class="index-avatar" src="img/avatar.png" alt="" />
+
+<!-- <div class="index-readme__item">
+			To create new page you can type in terminal:
+			<span class="index-readme__code">waw page NAME</span>
+		</div>
+		<div class="index-readme__item">
+			You can change port in
+			<span class="index-readme__code">config.json</span>
+			of development webiste
+			<a class="index-readme__link" href="http://localhost:8000">localhost:8000</a>
+		</div>
+		<div class="index-readme__item">
+			JSON in template.json is accesible over all pages
+		</div>
+		<div class="index-readme__item">
+			JSON in page.json of each page is accesible only of that specific
+			page
+		</div>
+		<div class="index-readme__item">
+			To build project you can type in terminal:
+			<span class="index-readme__code">waw build</span>
+			which will take JSON info and put it into html of dist folder.
+		</div>
+		<div class="index-readme__item">
+			General idea of variables, is that you can modify those on back-end or over
+			<span class="index-readme__code">config.json</span>
+		</div>
+		<div class="index-readme__item">
+			More details of how to use template you can find in
+			<a class="index-readme__link" href="https://webartwork.github.io/wjst/docs">Wjst Documentation</a>
+		</div>
+		<div class="index-readme__item">
+			Styles: You should import each file to
+			<span class="index-readme__code">index.scss </span> located in
+			<span class="index-readme__code">css</span> folder and write SCSS
+			files in <span class="index-readme__code">css/scss</span>.
+		</div>
+	</div>
+	<div class="index-readme">
+		<div class="index-readme__title">Prefix:</div>
+		<div class="index-readme__item">
+			Prefix which we have in template.json serve as root id for the
+			template
+		</div>
+		<div class="index-readme__item">
+			For example file
+			<span class="index-readme__code">img/avatar.png</span>
+			can be served in html
+			<span class="index-readme__code">src="img/avatar.png"</span>
+			were our path is
+			<span class="index-readme__code">{prefix}{path}</span>
+		</div>
+		<div class="index-readme__item">
+			Prefix should be unique on project where we have more then one
+			template to serve files properly
+		</div>
+		<div class="index-readme__item">
+			To change prefix, you need simply to replace all in editor phrase
+			`/wjst-default` into new prefix `/newPrefixName`
+		</div>
+		<div class="index-readme__item">
+			To get served template by github pages, you simply have to replace
+			prefix to name of the repo and do
+			<span class="index-readme__code">waw build</span>
+			and then commit to branch which you set in settings > pages
+			<span class="index-readme__code">{repo}/settings/pages</span>
+			and after that you should able to see your wesite online, similar
+			this default repo is shown
+			<a class="index-readme__link"
+				href="https://webartwork.github.io/wjst-default">webartwork.github.io/wjst-default</a>
+		</div> -->
+
 	<div class="index-title">Welcome to WAW Template</div>
 	<div class="index-readme">
 		<div class="index-readme__title">
@@ -203,14 +275,14 @@
 		<div class="index-readme__title"><a id="typography">
 				<h3>Global settings</h3>
 			</a></div>
-			<p>waw css sets basic global display, typography, and link styles. When more control is needed, check
-				out
-				the
-				<span class="index-readme__code">
-					<a class="index-readme__link">textual utility
-						classes.</a>
-				</span>
-			</p>
+		<p>waw css sets basic global display, typography, and link styles. When more control is needed, check
+			out
+			the
+			<span class="index-readme__code">
+				<a class="index-readme__link">textual utility
+					classes.</a>
+			</span>
+		</p>
 		<ul class="block">
 			<li>Use a <span class="index-readme__code">native font stack</span> that selects the best <span
 					class="index-readme__code">font-family</span>
@@ -365,77 +437,134 @@
 			heading to stand out, consider using a <strong>display heading</strong> — a larger, slightly more
 			opinionated heading style.
 		</p>
-
-		<!-- <div class="index-readme__item">
-			To create new page you can type in terminal:
-			<span class="index-readme__code">waw page NAME</span>
+		<div class="index__example">
+			<h1 class="display-1">Display 1</h1>
+			<h1 class="display-2">Display 2</h1>
+			<h1 class="display-3">Display 3</h1>
+			<h1 class="display-4">Display 4</h1>
+			<h1 class="display-5">Display 5</h1>
+			<h1 class="display-6">Display 6</h1>
 		</div>
 		<div class="index-readme__item">
-			You can change port in
-			<span class="index-readme__code">config.json</span>
-			of development webiste
-			<a class="index-readme__link" href="http://localhost:8000">localhost:8000</a>
+			<ul>
+				<li>&lt;h1 class="display-1"&gt;Display 1&lt;h1&gt;</li>
+				<li>&lt;h1 class="display-2"&gt;Display 2&lt;h1&gt;</li>
+				<li>&lt;h1 class="display-3"&gt;Display 3&lt;h1&gt;</li>
+				<li>&lt;h1 class="display-4"&gt;Display 4&lt;h1&gt;</li>
+				<li>&lt;h1 class="display-5"&gt;Display 5&lt;h1&gt;</li>
+				<li>&lt;h1 class="display-6"&gt;Display 6&lt;h1&gt;</li>
+			</ul>
+		</div>
+		<p>
+			Display headings are configured via the <span class="index-readme__code">$display-font-sizes</span> Sass map
+			and two variables, <span class="index-readme__code">$display-font-weight</span>
+			and <span class="index-readme__code">$display-line-height</span>.
+		</p>
+		<p>
+			Display headings are customizable via two variables, <span
+				class="index-readme__code">$display-font-family</span> and <span
+				class="index-readme__code">$display-font-style</span>.
+		</p>
+		<!-- need to change and to paste some icons -->
+		<p>scss/_variables.scss:</p>
+		<div class="index-readme__item">
+			<ul>
+				<li>$display-font-sizes: (</li>
+				<li>1: 5rem,</li>
+				<li>2: 4.5rem,</li>
+				<li>3: 4rem,</li>
+				<li>4: 3.5rem,</li>
+				<li>5: 3rem,</li>
+				<li>6: 2.5rem</li>
+				<li>);</li>
+				<li><br></li>
+				<li>$display-font-family: null;</li>
+				<li>$display-font-style: null;</li>
+				<li>$display-font-weight: 300;</li>
+				<li>$display-line-height: $headings-line-height;</li>
+			</ul>
+		</div>
+		<div class="index-readme__title">
+			<h3>Lead</h3>
+		</div>
+		<p>Make a paragraph stand out by adding <span class="index-readme__code">.lead</span>.
+		</p>
+		<div class="index__example">
+			<p class="lead">
+				This is a lead paragraph. It stands out from regular paragraphs.
+			</p>
+		</div>
+		<!-- need to paste some icons -->
+		<div class="index__html">
+			<p>
+				HTML:
+			</p>
 		</div>
 		<div class="index-readme__item">
-			JSON in template.json is accesible over all pages
+			<ul>
+				<li>&lt;p class="lead"&gt;</li>
+				<li> This is a lead paragraph. It stands out from regular paragraphs.</li>
+				<li>&lt;/p&gt;</li>
+			</ul>
+		</div>
+		<div class="index-readme__title">
+			<h3>Inline text elements</h3>
+		</div>
+		<p>Styling for common inline HTML5 elements.</p>
+		<div class="index__example">
+			<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+			<p><del>This line of text is meant to be treated as deleted text.</del></p>
+			<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+			<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+			<p><u>This line of text will render as underlined.</u></p>
+			<p><small>This line of text is meant to be treated as fine print.</small></p>
+			<p><strong>This line rendered as bold text.</strong></p>
+			<p><em>This line rendered as italicized text.</em></p>
+		</div>
+		<!-- need to paste some icons -->
+		<div class="index__html">
+			<p>
+				HTML:
+			</p>
 		</div>
 		<div class="index-readme__item">
-			JSON in page.json of each page is accesible only of that specific
-			page
+			<ul>
+				<li>&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;</li>
+				<li>&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+				</li>
+				<li>&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer
+					accurate.&lt;/s&gt;&lt;/p&gt;</li>
+				<li>&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the
+					document.&lt;/ins&gt;&lt;/p&gt;</li>
+				<li>&lt;p&gt;&lt;u&gt;This line of text will render as underlined.&lt;/u&gt;&lt;/p&gt;</li>
+				<li>&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine
+					print.&lt;/small&gt;&lt;/p&gt;</li>
+				<li>&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;</li>
+				<li>&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;</li>
+			</ul>
 		</div>
-		<div class="index-readme__item">
-			To build project you can type in terminal:
-			<span class="index-readme__code">waw build</span>
-			which will take JSON info and put it into html of dist folder.
-		</div>
-		<div class="index-readme__item">
-			General idea of variables, is that you can modify those on back-end or over
-			<span class="index-readme__code">config.json</span>
-		</div>
-		<div class="index-readme__item">
-			More details of how to use template you can find in
-			<a class="index-readme__link" href="https://webartwork.github.io/wjst/docs">Wjst Documentation</a>
-		</div>
-		<div class="index-readme__item">
-			Styles: You should import each file to
-			<span class="index-readme__code">index.scss </span> located in
-			<span class="index-readme__code">css</span> folder and write SCSS
-			files in <span class="index-readme__code">css/scss</span>.
-		</div>
-	</div>
-	<div class="index-readme">
-		<div class="index-readme__title">Prefix:</div>
-		<div class="index-readme__item">
-			Prefix which we have in template.json serve as root id for the
-			template
-		</div>
-		<div class="index-readme__item">
-			For example file
-			<span class="index-readme__code">img/avatar.png</span>
-			can be served in html
-			<span class="index-readme__code">src="img/avatar.png"</span>
-			were our path is
-			<span class="index-readme__code">{prefix}{path}</span>
-		</div>
-		<div class="index-readme__item">
-			Prefix should be unique on project where we have more then one
-			template to serve files properly
-		</div>
-		<div class="index-readme__item">
-			To change prefix, you need simply to replace all in editor phrase
-			`/wjst-default` into new prefix `/newPrefixName`
-		</div>
-		<div class="index-readme__item">
-			To get served template by github pages, you simply have to replace
-			prefix to name of the repo and do
-			<span class="index-readme__code">waw build</span>
-			and then commit to branch which you set in settings > pages
-			<span class="index-readme__code">{repo}/settings/pages</span>
-			and after that you should able to see your wesite online, similar
-			this default repo is shown
-			<a class="index-readme__link"
-				href="https://webartwork.github.io/wjst-default">webartwork.github.io/wjst-default</a>
-		</div> -->
+		<p>
+			Beware that those tags should be used for semantic purpose:
+		</p>
+		<ul class="block">
+			<li><span class="index-readme__code">&lt;mark&gt;</span> represents text which is marked or highlighted for reference or notation purposes.</li>
+			<li><span class="index-readme__code">&lt;small&gt;</span> represents side-comments and small print, like copyright and legal text.
+			</li>
+			<li><span class="index-readme__code">&lt;s&gt;</span> represents element that are no longer relevant or no longer accurate.</li>
+			<li><span class="index-readme__code">&lt;u&gt;</span> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation.</li>
+		</ul>
+		<p>
+			If you want to style your text, you should use the following classes instead:
+		</p>
+		<ul class="block">
+			<li><span class="index-readme__code">.mark</span> will apply the same styles as <span class="index-readme__code">&lt;mark&gt;</span></li>
+			<li><span class="index-readme__code">.small</span> will apply the same styles as <span class="index-readme__code">&lt;small&gt;</span></li>
+			<li><span class="index-readme__code">.text-decoration-underline</span> will apply the same styles as <span class="index-readme__code">&lt;s&gt;</span></li>
+			<li><span class="index-readme__code">.text-decoration-line-through</span> will apply the same styles as <span class="index-readme__code">&lt;u&gt;</span></li>
+		</ul>
+		<p>
+			While not shown above, feel free to use <span class="index-readme__code">&lt;b&gt;</span> and <span class="index-readme__code">&lt;i&gt;</span> in HTML5. <span class="index-readme__code">&lt;b&gt;</span> is meant to highlight words or phrases without conveying additional importance, while <span class="index-readme__code">&lt;i&gt;</span> is mostly for voice, technical terms, etc.
+		</p>
 
 	</div>
 		</section>
