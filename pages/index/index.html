@@ -3,33 +3,137 @@
 	<div class="index-title">Welcome to WAW Template</div>
 	<div class="index-readme">
 		<div class="index-readme__title">
-			<h1>Content</h1>
+			<h1>Typography</h1>
+			<p>
+				Documentation and examples for waw framework typography, including global settings, headings, body text,
+				lists, and more.
+			</p>
 		</div>
 		<div class="index-readme__title"><a id="typography">
-				<h3>Typography</h3>
+				<h3>Global settings</h3>
+				<p>waw css sets basic global display, typography, and link styles. When more control is needed, check
+					out
+					the
+					<span class="index-readme__code">
+						<a class="index-readme__link">textual utility
+							classes.</a>
+					</span>
+				</p>
 			</a></div>
-		<p>Global settings</p>
-		<div class="index-readme__item">
-			waw css sets basic global display, typography, and link styles. When more control is needed, check out the
-			<span class="index-readme__code">
-				<a class="index-readme__link">textual utility
-					classes.</a>
-			</span>
-			<ul class="block">
-				<li>Use a <span class="index-readme__code">native font stack</span> that selects the best <span
-						class="index-readme__code">font-family</span>
-					for each OS and device.</li>
-				<li>For a more inclusive and accessible type scale, we use the browser’s default root <span class="index-readme__code">font-size</span> (typically 16px) so visitors can customize their browser defaults as needed.
-				</li>
-				<li>Use the <span class="index-readme__code">$font-family-base</span>, <span class="index-readme__code">$font-size-base</span>, and <span class="index-readme__code">$line-height-base</span> attributes as our typographic base applied to the <span class="index-readme__code">&lt;body&gt;</span>.
-				</li>
-				<li>Set the global link color via <span class="index-readme__code">$link-color</span>.</li>
-				<li>Use <span class="index-readme__code">$body-bg</span> to set a <span class="index-readme__code">background-color</span> on the <span class="index-readme__code">&lt;body&gt;</span> (<span class="index-readme__code">#fff</span> by default).</li>
-			</ul>
-			These styles can be found within <span class="index-readme__code">_reboot.scss</span>, and the global
-			variables are defined in <span class="index-readme__code">_variables.scss</span>. Make sure to set <span class="index-readme__code">$font-size-base</span> in <span class="index-readme__code">rem</span>.
+
+		<ul class="block">
+			<li>Use a <span class="index-readme__code">native font stack</span> that selects the best <span
+					class="index-readme__code">font-family</span>
+				for each OS and device.</li>
+			<li>For a more inclusive and accessible type scale, we use the browser’s default root <span
+					class="index-readme__code">font-size</span> (typically 16px) so visitors can customize their
+				browser defaults as needed.
+			</li>
+			<li>Use the <span class="index-readme__code">$font-family-base</span>, <span
+					class="index-readme__code">$font-size-base</span>, and <span
+					class="index-readme__code">$line-height-base</span> attributes as our typographic base applied
+				to the <span class="index-readme__code">&lt;body&gt;</span>.
+			</li>
+			<li>Set the global link color via <span class="index-readme__code">$link-color</span>.</li>
+			<li>Use <span class="index-readme__code">$body-bg</span> to set a <span
+					class="index-readme__code">background-color</span> on the <span
+					class="index-readme__code">&lt;body&gt;</span> (<span class="index-readme__code">#fff</span> by
+				default).</li>
+		</ul>
+		These styles can be found within <span class="index-readme__code">_reboot.scss</span>, and the global
+		variables are defined in <span class="index-readme__code">_variables.scss</span>. Make sure to set <span
+			class="index-readme__code">$font-size-base</span> in <span class="index-readme__code">rem</span>.
+
+		<div class="index-readme__title">
+			<h3>Headings</h3>
+			<p>All HTML headings,
+				<span class="index-readme__code">&lt;h1&gt;</span> through <span
+					class="index-readme__code">&lt;h6&gt;</span>, are available.
+			</p>
 		</div>
-		<div class="index-readme__item">
+		<div>
+			<table class="table__h">
+				<thead>
+					<tr>
+						<th>Heading</th>
+						<th>Example</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span class="index-readme__code">&lt;h1&gt;&lt;/h1&gt;</span></td>
+						<td><span class="h1">h1. waw heading</span></td>
+					</tr>
+					<tr>
+						<td><span class="index-readme__code">&lt;h2&gt;&lt;/h2&gt;</span></td>
+						<td><span class="h2">h2. waw heading</span></td>
+					</tr>
+					<tr>
+						<td><span class="index-readme__code">&lt;h3&gt;&lt;/h3&gt;</span></td>
+						<td><span class="h3">h3. waw heading</span></td>
+					</tr>
+					<tr>
+						<td><span class="index-readme__code">&lt;h4&gt;&lt;/h4&gt;</span></td>
+						<td><span class="h4">h4. waw heading</span></td>
+					</tr>
+					<tr>
+						<td><span class="index-readme__code">&lt;h5&gt;&lt;/h5&gt;</span></td>
+						<td><span class="h5">h5. waw heading</span></td>
+					</tr>
+					<tr>
+						<td><span class="index-readme__code">&lt;h6&gt;&lt;/h6&gt;</span></td>
+						<td><span class="h6">h6. waw heading</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;<span class="index-readme__code">h1</span>&gt;h1. waw heading&lt;/<span
+							class="index-readme__code">h1</span>&gt;</li>
+					<li>&lt;<span class="index-readme__code">h2</span>&gt;h2. waw heading&lt;/<span
+							class="index-readme__code">h2</span>&gt;</li>
+					<li>&lt;<span class="index-readme__code">h3</span>&gt;h3. waw heading&lt;/<span
+							class="index-readme__code">h3</span>&gt;</li>
+					<li>&lt;<span class="index-readme__code">h4</span>&gt;h4. waw heading&lt;/<span
+							class="index-readme__code">h4</span>&gt;</li>
+					<li>&lt;<span class="index-readme__code">h5</span>&gt;h5. waw heading&lt;/<span
+							class="index-readme__code">h5</span>&gt;</li>
+					<li>&lt;<span class="index-readme__code">h6</span>&gt;h6. waw heading&lt;/<span
+							class="index-readme__code">h6</span>&gt;</li>
+				</ul>
+			</div>
+			<div class="index-readme__title">
+				<p><span class="index-readme__code">.h1</span> through <span class="index-readme__code">.h6</span>
+					classes
+					are also available, for when you want to match the font styling of a heading but cannot use the
+					associated HTML element.</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li><td><span class="h1">h1. waw heading</span></td></li>
+					<li><td><span class="h2">h2. waw heading</span></td></li>
+					<li><td><span class="h3">h3. waw heading</span></td></li>
+					<li><td><span class="h4">h4. waw heading</span></td></li>
+					<li><td><span class="h5">h5. waw heading</span></td></li>
+					<li><td><span class="h6">h6. waw heading</span></td></li>
+				</ul>
+				<!-- need to paste 'HTML' and some icons -->
+				 <div>
+					<p>
+						HTML
+					</p>
+				 </div>
+				<ul>
+					<li>&lt;p class="h1"&gt;h1. waw heading&lt;/p&gt;</li>
+					<li>&lt;p class="h2"&gt;h2. waw heading&lt;/p&gt;</li>
+					<li>&lt;p class="h3"&gt;h3. waw heading&lt;/p&gt;</li>
+					<li>&lt;p class="h4"&gt;h4. waw heading&lt;/p&gt;</li>
+					<li>&lt;p class="h5"&gt;h5. waw heading&lt;/p&gt;</li>
+					<li>&lt;p class="h6"&gt;h6. waw heading&lt;/p&gt;</li>
+				</ul>
+			</div>
+		</div>
+		<!-- <div class="index-readme__item">
 			To create new page you can type in terminal:
 			<span class="index-readme__code">waw page NAME</span>
 		</div>
@@ -98,6 +202,6 @@
 			this default repo is shown
 			<a class="index-readme__link"
 				href="https://webartwork.github.io/wjst-default">webartwork.github.io/wjst-default</a>
-		</div>
+		</div> -->
 	</div>
 </div>
