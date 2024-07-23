@@ -228,6 +228,24 @@ $green-darken: #16a085;
 	}
 }
 
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+
+	&>li {
+		list-style: none;
+	}
+
+	& ul {
+		padding-left: 1rem;
+		list-style: disc;
+
+		&>li {
+			list-style: disc;
+		}
+	}
+}
+
 .template-red-text {
 	color: red;
 }
