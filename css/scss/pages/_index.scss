@@ -69,6 +69,10 @@ $green-darken: #16a085;
 	}
 }
 
+.template-red-text {
+	color: red;
+}
+
 .list-style {
 	list-style-type: disc;
 	padding-left: 20px;
@@ -244,8 +248,4 @@ $green-darken: #16a085;
 			list-style: disc;
 		}
 	}
-}
-
-.template-red-text {
-	color: red;
 }
