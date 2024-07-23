@@ -261,3 +261,43 @@ $green-darken: #16a085;
 		margin-right: 0.5rem;
 	}
 }
+
+// need to change
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.row>dt,
+.row>dd {
+	margin-bottom: 0.5rem;
+}
+
+.row>dt {
+	width: 100%;
+	text-align: right;
+	font-weight: bold;
+}
+
+.row>dd {
+	width: 100%;
+	margin-left: 0;
+}
+
+.row>.text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@media (min-width: 576px) {
+	.row>dt {
+		width: 25%;
+	}
+
+	.row>dd {
+		width: 75%;
+	}
+}
