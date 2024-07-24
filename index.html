@@ -863,8 +863,8 @@
 			</div>
 		</div>
 
-		<!-- need to change -->
-		<div id="description list alignment">
+		<!-- need to write scss -->
+		<div id="description-list-alignment">
 			<div class="index-readme__title">
 				<h3>Description list alignment</h3>
 			</div>
@@ -872,15 +872,6 @@
 				mixins). For longer terms, you can optionally add a <span
 					class="index-readme__code">.text-truncate</span> class to truncate the text with an ellipsis.</p>
 			<div class="example">
-
-			</div>
-			<!-- need to paste some icons -->
-			<div class="index__html">
-				<p>
-					HTML:
-				</p>
-			</div>
-			<div class="index-readme__item">
 				<dl class="row">
 					<dt class="col-sm-3">Description lists</dt>
 					<dd class="col-sm-9">A description list is perfect for defining terms.</dd>
@@ -907,8 +898,113 @@
 					</dd>
 				</dl>
 			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;dl class="row"></li>
+					<li>&lt;dt class="col-sm-3">Description lists&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9">A description list is perfect for defining terms.&lt;/dd></li><br>
+					<li>&lt;dt class="col-sm-3">Term&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9"></li>
+					<li>&lt;p>Definition for the term.&lt;/p></li>
+					<li>&lt;p>And some more placeholder definition text.&lt;/p></li>
+					<li>&lt;/dd></li><br>
+					<li>&lt;dt class="col-sm-3">Another term&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.&lt;/dd>
+					</li><br>
+					<li>&lt;dt class="col-sm-3 text-truncate">Truncated term is truncated&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the
+						end.&lt;/dd></li><br>
+					<li>&lt;dt class="col-sm-3">Nesting&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9"></li>
+					<li>&lt;dl class="row"></li>
+					<li>&lt;dt class="col-sm-4">Nested definition list&lt;/dt></li>
+					<li>&lt;dd class="col-sm-8">I heard you like definition lists. Let me put a definition list
+						inside
+						your definition list.&lt;/dd></li>
+					<li>&lt;/dl></li>
+					<li>&lt;/dd></li>
+					<li>&lt;/dl></li>
+				</ul>
+			</div>
 		</div>
 
+		<div id="responsive-font-sizes">
+			<div class="index-readme__title">
+				<h3>Responsive font sizes</h3>
+			</div>
+			<p>In Bootstrap 5, we’ve enabled responsive font sizes by default, allowing text to scale more naturally
+				across device and viewport sizes. Have a look at the <span class="index-readme__code">RFS page</span> to
+				find out how this works.</p>
+		</div>
+
+		<div id="sass-variables">
+			<div class="index-readme__title">
+				<h3>CSS</h3>
+				<h3>Sass variables</h3>
+			</div>
+			<p>Headings have some dedicated variables for sizing and spacing.</p>
+			<p>scss/_variables.scss:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$headings-margin-bottom: $spacer * .5;</li>
+					<li>$headings-font-family: null;</li>
+					<li>$headings-font-style: null;</li>
+					<li>$headings-font-weight: 500;</li>
+					<li>$headings-line-height: 1.2;</li>
+					<li>$headings-color: inherit;</li>
+				</ul>
+			</div>
+			<p>Miscellaneous typography elements covered here and in <span class="index-readme__code">Reboot</span> also have dedicated variables.
+				</p>
+				<p>scss/_variables.scss:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$lead-font-size: $font-size-base * 1.25;</li>
+					<li>$lead-font-weight: 300;</li><br>
+					<li>$small-font-size: .875em;</li><br>
+					<li>$sub-sup-font-size: .75em;</li><br>
+					<li>// fusv-disable</li>
+					<li>$text-muted: var(--#{$prefix}secondary-color); // Deprecated in 5.3.0</li>
+					<li>// fusv-enable</li><br>
+					<li>$initialism-font-size: $small-font-size;</li><br>
+					<li>$blockquote-margin-y: $spacer;</li>
+					<li>$blockquote-font-size: $font-size-base * 1.25;</li>
+					<li>$blockquote-footer-color: $gray-600;</li>
+					<li>$blockquote-footer-font-size: $small-font-size;</li><br>
+					<li>$hr-margin-y: $spacer;</li>
+					<li>$hr-color: inherit;</li><br>
+					<li>// fusv-disable</li>
+					<li>$hr-bg-color: null; // Deprecated in v5.2.0</li>
+					<li>$hr-height: null; // Deprecated in v5.2.0</li>
+					<li>// fusv-enable</li><br>
+					<li>$hr-border-color: null; // Allows for inherited colors</li>
+					<li>$hr-border-width: var(--#{$prefix}border-width);</li>
+					<li>$hr-opacity: .25;</li><br>
+					<li>$vr-border-width: var(--#{$prefix}border-width);</li><br>
+					<li>$legend-margin-bottom: .5rem;</li>
+					<li>$legend-font-size: 1.5rem;</li>
+					<li>$legend-font-weight: null;</li><br>
+					<li>$dt-font-weight: $font-weight-bold;</li><br>
+					<li>$list-inline-padding: .5rem;</li><br>
+					<li>$mark-padding: .1875em;</li>
+					<li>$mark-color: $body-color;</li>
+					<li>$mark-bg: $yellow-100;</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="sass-mixins">
+			<div class="index-readme__title">
+				<h3>Sass mixins</h3>
+			</div>
+			<p>There are no dedicated mixins for typography, but Bootstrap does use <span class="index-readme__code">Responsive Font Sizing (RFS)</span>.</p>
+		</div>
 	</div>
 		</section>
 	</main>
