@@ -86,6 +86,12 @@ $green-darken: #16a085;
 	padding-left: 30px;
 	border-radius: 5px;
 
+	&__img {
+		background-color: var(--c-bg-item);
+		border-radius: 5px;
+		padding: 10px;
+	}
+
 	blockquote {
 		margin: 0;
 
