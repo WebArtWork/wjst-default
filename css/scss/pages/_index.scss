@@ -269,3 +269,25 @@ $green-darken: #16a085;
 }
 
 // need to write scss for 'description-list-alignment'
+
+.example-img {
+	display: flex;
+	justify-content: space-between;
+
+	.bd-img {
+		border-radius: 5%;
+	}
+}
+
+.rounded {
+	border-radius: 5%;
+}
+
+.mx-auto {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.d-block {
+	display: block;
+  }

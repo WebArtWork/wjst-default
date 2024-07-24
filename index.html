@@ -1051,7 +1051,8 @@
 			</p>
 			<div class="example">
 				<div class="bd-example m-0 border-0">
-					<svg class="bd-placeholder-img img-thumbnail bg-color" width="200" height="200" role="img"><rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6"
+					<svg class="bd-placeholder-img img-thumbnail bg-color" width="200" height="200" role="img">
+						<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6"
 							dy=".3em">200x200</text>
 					</svg>
 				</div>
@@ -1064,6 +1065,116 @@
 			</div>
 			<div class="index-readme__item">
 				<p>&lt;img src="..." class="img-thumbnail" alt="..."></p>
+			</div>
+		</div>
+
+		<div id="aligning-images">
+			<div class="index-readme__title">
+				<h3>Aligning images</h3>
+			</div>
+			<p>Align images with the <span class="index-readme__code">helper float classes</span> or <span
+					class="index-readme__code">text alignment classes</span>. <span
+					class="index-readme__code">block</span>-level images can be centered using <span
+					class="index-readme__code">the .mx-auto margin utility class</span>.</p>
+			<div class="example">
+				<div class="example-img">
+					<svg class="bd-img float-start" width="200" height="200" role="img">
+						<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%"
+							fill="#dee2e6">200x200</text>
+					</svg>
+					<svg class="bd-img float-end" width="200" height="200" role="img">
+						<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%"
+							fill="#dee2e6">200x200</text>
+					</svg>
+				</div>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;img src="..." class="rounded float-start" alt="..."></li>
+					<li>&lt;img src="..." class="rounded float-end" alt="..."></li>
+				</ul>
+			</div>
+			<div class="example">
+				<svg class="rounded mx-auto d-block" width="200" height="200" role="img">
+					<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%"
+						fill="#dee2e6">200x200</text>
+				</svg>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;img src="..." class="rounded mx-auto d-block" alt="..."></li>
+				</ul>
+			</div>
+			<div class="example">
+				<svg class="rounded mx-auto d-block text-center" width="200" height="200" role="img">
+					<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%"
+						fill="#dee2e6">200x200</text>
+				</svg>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;div class="text-center"></li>
+					<li>&lt;img src="..." class="rounded" alt="..."></li>
+					<li>&lt;/div></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="picture">
+			<div class="index-readme__title">
+				<h3>Picture</h3>
+			</div>
+			<p>If you are using the <span class="index-readme__code">&lt;picture></span> element to specify multiple
+				<span class="index-readme__code">&lt;source></span> elements for a specific <span
+					class="index-readme__code">&lt;img></span>, make sure to add the <span
+					class="index-readme__code">.img-*</span> classes to the <span
+					class="index-readme__code">&lt;img></span> and not to the <span
+					class="index-readme__code">&lt;picture></span> tag.</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;picture></li>
+					<li>&lt;source srcset="..." type="image/svg+xml"></li>
+					<li>&lt;img src="..." class="img-fluid img-thumbnail" alt="..."></li>
+					<li>&lt;/picture></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="sass-variables">
+			<div class="index-readme__title">
+				<h3>CSS</h3>
+				<h3>Sass variables</h3>
+			</div>
+			<p>Variables are available for image thumbnails.</p>
+			<!-- add some icons -->
+			<p>scss/_variables.scss</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$thumbnail-padding: .25rem;</li>
+					<li>$thumbnail-bg: var(--#{$prefix}body-bg);</li>
+					<li>$thumbnail-border-width: var(--#{$prefix}border-width);</li>
+					<li>$thumbnail-border-color: var(--#{$prefix}border-color);</li>
+					<li>$thumbnail-border-radius: var(--#{$prefix}border-radius);</li>
+					<li>$thumbnail-box-shadow: var(--#{$prefix}box-shadow-sm);</li>
+				</ul>
 			</div>
 		</div>
 
