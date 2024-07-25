@@ -1186,7 +1186,83 @@
 			</div>
 		</div>
 
-	</div>
+		<div id="overview">
+			<div class="index-readme__title">
+				<h1>Overview</h1>
+			</div>
+			<p>Due to the widespread use of
+				<span class="index-readme__code">&lt;table></span> elements across third-party widgets like calendars and date pickers, waw tables are
+				opt-in. Add
+				the base class <span class="index-readme__code">.table</span> to any <span class="index-readme__code">&lt;table></span>, then extend with our optional modifier classes or custom
+				styles. All table styles are not inherited in waw, meaning any nested tables can be styled
+				independent from the parent.
+			</p>
+			<p>Using the most basic table markup, here’s how <span class="index-readme__code">.table</span>-based tables look in waw.</p>
+			<div class="example-tables">
+				<table class="table-tables">
+					<thead>
+					  <tr>
+						<th scope="col">#</th>
+						<th scope="col">First</th>
+						<th scope="col">Last</th>
+						<th scope="col">Handle</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					  </tr>
+					  <tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					  </tr>
+					  <tr>
+						<th scope="row">3</th>
+						<td colspan="2">Larry the Bird</td>
+						<td>@twitter</td>
+					  </tr>
+					</tbody>
+				  </table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="col">#&lt;/th></li>
+					<li>&lt;th scope="col">First&lt;/th></li>
+					<li>&lt;th scope="col">Last&lt;/th></li>
+					<li>&lt;th scope="col">Handle&lt;/th></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">1&lt;/th></li>
+					<li>&lt;td>Mark&lt;/td></li>
+					<li>&lt;td>Otto&lt;/td></li>
+					<li>&lt;td>@mdo&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">2</th></li>
+					<li>&lt;td>Jacob&lt;/td></li>
+					<li>&lt;td>Thornton&lt;/td></li>
+					<li>&lt;td>@fat&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">3</th></li>
+					<li>&lt;td colspan="2">Larry the Bird&lt;/td></li>
+					<li>&lt;td>@twitter&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+		</div>
 		</section>
 	</main>
 	<footer class="footer">

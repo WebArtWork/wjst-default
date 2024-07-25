@@ -291,3 +291,19 @@ $green-darken: #16a085;
 .d-block {
 	display: block;
   }
+
+  .example-tables {
+	.table-tables {
+	  width: 100%;
+	  border-collapse: collapse;
+  
+	  th, td {
+		border-bottom: 1px solid var(--c-text-primary);
+		padding: 8px;
+	  }
+  
+	  th {
+		text-align: left;
+	  }
+	}
+}
