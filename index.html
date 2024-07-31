@@ -269,7 +269,8 @@
 			<div class="index-readme__title">
 				<h1>Typography</h1>
 				<p>
-					Documentation and examples for waw framework typography, including global settings, headings, body
+					Documentation and examples for waw framework typography, including global settings, headings,
+					body
 					text,
 					lists, and more.
 				</p>
@@ -298,18 +299,20 @@
 				</li>
 				<li>Use the <span class="index-readme__code">$font-family-base</span>, <span
 						class="index-readme__code">$font-size-base</span>, and <span
-						class="index-readme__code">$line-height-base</span> attributes as our typographic base applied
+						class="index-readme__code">$line-height-base</span> attributes as our typographic base
+					applied
 					to the <span class="index-readme__code">&lt;body&gt;</span>.
 				</li>
 				<li>Set the global link color via <span class="index-readme__code">$link-color</span>.</li>
 				<li>Use <span class="index-readme__code">$body-bg</span> to set a <span
 						class="index-readme__code">background-color</span> on the <span
-						class="index-readme__code">&lt;body&gt;</span> (<span class="index-readme__code">#fff</span> by
+						class="index-readme__code">&lt;body&gt;</span> (<span class="index-readme__code">#fff</span>
+					by
 					default).</li>
 			</ul>
 			<p>These styles can be found within <span class="index-readme__code">_reboot.scss</span>, and the global
-				variables are defined in <span class="index-readme__code">_variables.scss</span>. Make sure to set <span
-					class="index-readme__code">$font-size-base</span> in <span class="index-readme__code">rem</span>.
+				variables are defined in <span class="index-readme__code">_variables.scss</span>. Make sure to set
+				<span class="index-readme__code">$font-size-base</span> in <span class="index-readme__code">rem</span>.
 			</p>
 		</div>
 
@@ -445,7 +448,8 @@
 			<div class="index-readme__title">
 				<h3>Display headings</h3>
 			</div>
-			<p>Traditional heading elements are designed to work best in the meat of your page content. When you need a
+			<p>Traditional heading elements are designed to work best in the meat of your page content. When you
+				need a
 				heading to stand out, consider using a <strong>display heading</strong> — a larger, slightly more
 				opinionated heading style.
 			</p>
@@ -468,7 +472,8 @@
 				</ul>
 			</div>
 			<p>
-				Display headings are configured via the <span class="index-readme__code">$display-font-sizes</span> Sass
+				Display headings are configured via the <span class="index-readme__code">$display-font-sizes</span>
+				Sass
 				map
 				and two variables, <span class="index-readme__code">$display-font-weight</span>
 				and <span class="index-readme__code">$display-line-height</span>.
@@ -567,16 +572,20 @@
 				Beware that those tags should be used for semantic purpose:
 			</p>
 			<ul class="list-style">
-				<li><span class="index-readme__code">&lt;mark&gt;</span> represents text which is marked or highlighted
+				<li><span class="index-readme__code">&lt;mark&gt;</span> represents text which is marked or
+					highlighted
 					for
 					reference or notation purposes.</li>
-				<li><span class="index-readme__code">&lt;small&gt;</span> represents side-comments and small print, like
+				<li><span class="index-readme__code">&lt;small&gt;</span> represents side-comments and small print,
+					like
 					copyright and legal text.
 				</li>
-				<li><span class="index-readme__code">&lt;s&gt;</span> represents element that are no longer relevant or
+				<li><span class="index-readme__code">&lt;s&gt;</span> represents element that are no longer relevant
+					or
 					no
 					longer accurate.</li>
-				<li><span class="index-readme__code">&lt;u&gt;</span> represents a span of inline text which should be
+				<li><span class="index-readme__code">&lt;u&gt;</span> represents a span of inline text which should
+					be
 					rendered in a way that indicates that it has a non-textual annotation.</li>
 			</ul>
 			<p>
@@ -590,7 +599,8 @@
 				<li><span class="index-readme__code">.text-decoration-underline</span> will apply the same styles as
 					<span class="index-readme__code">&lt;s&gt;</span>
 				</li>
-				<li><span class="index-readme__code">.text-decoration-line-through</span> will apply the same styles as
+				<li><span class="index-readme__code">.text-decoration-line-through</span> will apply the same styles
+					as
 					<span class="index-readme__code">&lt;u&gt;</span>
 				</li>
 			</ul>
@@ -621,7 +631,8 @@
 			</div>
 			<p>
 				Stylized implementation of HTML’s <span class="index-readme__code">&lt;abbr></span> element for
-				abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline
+				abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default
+				underline
 				and
 				gain a help cursor to provide additional context on hover and to users of assistive technologies.
 			</p>
@@ -642,7 +653,8 @@
 			<div class="index-readme__item">
 				<ul>
 					<li>&lt;p> &lt;abbr title="attribute"&gt;attr&lt;/abbr>&lt;/p></li>
-					<li>&lt;p> &lt;abbr title="HyperText Markup Language" class="initialism">HTML&lt;/abbr>&lt;/p></li>
+					<li>&lt;p> &lt;abbr title="HyperText Markup Language" class="initialism">HTML&lt;/abbr>&lt;/p>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -652,7 +664,8 @@
 				<h3>Blockquotes</h3>
 			</div>
 			<p>For quoting blocks of content from another source within your document. Wrap <span
-					class="index-readme__code">&lt;blockquote class="blockquote"></span> around any HTML as the quote.
+					class="index-readme__code">&lt;blockquote class="blockquote"></span> around any HTML as the
+				quote.
 			</p>
 			<div class="example">
 				<blockquote class="blockquote">
@@ -788,7 +801,8 @@
 				<h3>Unstyled</h3>
 			</div>
 			<p>Remove the default <span class="index-readme__code">list-style</span> and left margin on list items
-				(immediate children only). <strong>This only applies to immediate children list items</strong>, meaning
+				(immediate children only). <strong>This only applies to immediate children list items</strong>,
+				meaning
 				you
 				will need to add the class for any nested lists as well.</p>
 			<div class="example">
@@ -870,7 +884,8 @@
 			</div>
 			<p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic
 				mixins). For longer terms, you can optionally add a <span
-					class="index-readme__code">.text-truncate</span> class to truncate the text with an ellipsis.</p>
+					class="index-readme__code">.text-truncate</span> class to truncate the text with an ellipsis.
+			</p>
 			<div class="example">
 				<dl class="row">
 					<dt class="col-sm-3">Description lists</dt>
@@ -892,7 +907,8 @@
 					<dd class="col-sm-9">
 						<dl class="row">
 							<dt class="col-sm-4">Nested definition list</dt>
-							<dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside
+							<dd class="col-sm-8">I heard you like definition lists. Let me put a definition list
+								inside
 								your definition list.</dd>
 						</dl>
 					</dd>
@@ -915,7 +931,8 @@
 					<li>&lt;p>And some more placeholder definition text.&lt;/p></li>
 					<li>&lt;/dd></li><br>
 					<li>&lt;dt class="col-sm-3">Another term&lt;/dt></li>
-					<li>&lt;dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.&lt;/dd>
+					<li>&lt;dd class="col-sm-9">This definition is short, so no extra paragraphs or
+						anything.&lt;/dd>
 					</li><br>
 					<li>&lt;dt class="col-sm-3 text-truncate">Truncated term is truncated&lt;/dt></li>
 					<li>&lt;dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the
@@ -939,7 +956,8 @@
 				<h3>Responsive font sizes</h3>
 			</div>
 			<p>In Bootstrap 5, we’ve enabled responsive font sizes by default, allowing text to scale more naturally
-				across device and viewport sizes. Have a look at the <span class="index-readme__code">RFS page</span> to
+				across device and viewport sizes. Have a look at the <span class="index-readme__code">RFS
+					page</span> to
 				find out how this works.</p>
 		</div>
 
@@ -960,7 +978,8 @@
 					<li>$headings-color: inherit;</li>
 				</ul>
 			</div>
-			<p>Miscellaneous typography elements covered here and in <span class="index-readme__code">Reboot</span> also
+			<p>Miscellaneous typography elements covered here and in <span class="index-readme__code">Reboot</span>
+				also
 				have dedicated variables.
 			</p>
 			<p>scss/_variables.scss:</p>
@@ -1021,7 +1040,8 @@
 			<div class="index-readme__title">
 				<h3>Responsive images</h3>
 			</div>
-			<p>Images in waw framework are made responsive with <span class="index-readme__code">.img-fluid</span>. This
+			<p>Images in waw framework are made responsive with <span class="index-readme__code">.img-fluid</span>.
+				This
 				applies <span class="index-readme__code">max-width: 100%;</span> and <span
 					class="index-readme__code">height: auto;</span> to the image so that it scales with the parent
 				width.</p>
@@ -1047,7 +1067,8 @@
 				<h3>Image thumbnails</h3>
 			</div>
 			<p>In addition to our <span class="index-readme__code">border-radius utilities</span>, you can use <span
-					class="index-readme__code">.img-thumbnail</span> to give an image a rounded 1px border appearance.
+					class="index-readme__code">.img-thumbnail</span> to give an image a rounded 1px border
+				appearance.
 			</p>
 			<div class="example">
 				<div class="bd-example m-0 border-0">
@@ -1191,43 +1212,49 @@
 				<h1>Overview</h1>
 			</div>
 			<p>Due to the widespread use of
-				<span class="index-readme__code">&lt;table></span> elements across third-party widgets like calendars and date pickers, waw tables are
+				<span class="index-readme__code">&lt;table></span> elements across third-party widgets like
+				calendars
+				and date pickers, waw tables are
 				opt-in. Add
-				the base class <span class="index-readme__code">.table</span> to any <span class="index-readme__code">&lt;table></span>, then extend with our optional modifier classes or custom
+				the base class <span class="index-readme__code">.table</span> to any <span
+					class="index-readme__code">&lt;table></span>, then extend with our optional modifier classes or
+				custom
 				styles. All table styles are not inherited in waw, meaning any nested tables can be styled
 				independent from the parent.
 			</p>
-			<p>Using the most basic table markup, here’s how <span class="index-readme__code">.table</span>-based tables look in waw.</p>
+			<p>Using the most basic table markup, here’s how <span class="index-readme__code">.table</span>-based
+				tables
+				look in waw.</p>
 			<div class="example-tables">
 				<table class="table-tables">
 					<thead>
-					  <tr>
-						<th scope="col">#</th>
-						<th scope="col">First</th>
-						<th scope="col">Last</th>
-						<th scope="col">Handle</th>
-					  </tr>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
 					</thead>
 					<tbody>
-					  <tr>
-						<th scope="row">1</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
-					  </tr>
-					  <tr>
-						<th scope="row">2</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
-					  </tr>
-					  <tr>
-						<th scope="row">3</th>
-						<td colspan="2">Larry the Bird</td>
-						<td>@twitter</td>
-					  </tr>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
 					</tbody>
-				  </table>
+				</table>
 			</div>
 			<div class="index-readme__item">
 				<ul>
@@ -1248,13 +1275,15 @@
 					<li>&lt;td>@mdo&lt;/td></li>
 					<li>&lt;/tr></li>
 					<li>&lt;tr></li>
-					<li>&lt;th scope="row">2</th></li>
+					<li>&lt;th scope="row">2</th>
+					</li>
 					<li>&lt;td>Jacob&lt;/td></li>
 					<li>&lt;td>Thornton&lt;/td></li>
 					<li>&lt;td>@fat&lt;/td></li>
 					<li>&lt;/tr></li>
 					<li>&lt;tr></li>
-					<li>&lt;th scope="row">3</th></li>
+					<li>&lt;th scope="row">3</th>
+					</li>
 					<li>&lt;td colspan="2">Larry the Bird&lt;/td></li>
 					<li>&lt;td>@twitter&lt;/td></li>
 					<li>&lt;/tr></li>
@@ -1263,6 +1292,112 @@
 				</ul>
 			</div>
 		</div>
+
+		<div id="variants">
+			<div class="index-readme__title">
+				<h1>Variants</h1>
+			</div>
+			<p>Use contextual classes to color tables, table rows or individual cells.</p>
+			<div class="example-tables">
+				<div class="bd-example">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Class</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Default</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+
+							<tr class="table-primary">
+								<th scope="row">Primary</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr class="table-secondary">
+								<th scope="row">Secondary</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr class="table-success">
+								<th scope="row">Success</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr class="table-danger">
+								<th scope="row">Danger</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr class="table-warning">
+								<th scope="row">Warning</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr class="table-info">
+								<th scope="row">Info</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr class="table-light">
+								<th scope="row">Light</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr class="table-dark">
+								<th scope="row">Dark</th>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- On tables -->
+				<table class="table-primary">...</table>
+				<table class="table-secondary">...</table>
+				<table class="table-success">...</table>
+				<table class="table-danger">...</table>
+				<table class="table-warning">...</table>
+				<table class="table-info">...</table>
+				<table class="table-light">...</table>
+				<table class="table-dark">...</table>
+
+				<!-- On rows -->
+				<tr class="table-primary">...</tr>
+				<tr class="table-secondary">...</tr>
+				<tr class="table-success">...</tr>
+				<tr class="table-danger">...</tr>
+				<tr class="table-warning">...</tr>
+				<tr class="table-info">...</tr>
+				<tr class="table-light">...</tr>
+				<tr class="table-dark">...</tr>
+
+				<!-- On cells (`td` or `th`) -->
+				<tr>
+					<td class="table-primary">...</td>
+					<td class="table-secondary">...</td>
+					<td class="table-success">...</td>
+					<td class="table-danger">...</td>
+					<td class="table-warning">...</td>
+					<td class="table-info">...</td>
+					<td class="table-light">...</td>
+					<td class="table-dark">...</td>
+				</tr>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 		</section>
 	</main>
 	<footer class="footer">
