@@ -1689,5 +1689,25 @@
 				</ul>
 			</div>
 		</div>
+
+		<div id="how-do">
+			<div class="index-readme__title"><a id="typography">
+					<h3>How do the variants and accented tables work?</h3>
+				</a></div>
+			<p>For the accented tables &#40;<span class="index-readme__code">striped rows, striped columns, hoverable rows,</span> and <span class="index-readme__code">active tables</span>&#41;, we used some techniques to make these effects work for all our <span class="index-readme__code">table variants</span>:</p>
+			<ul class="list-style">
+				<li>We start by setting the background of a table cell with the <span class="index-readme__code">--bs-table-bg</span> custom property. All table variants then set that custom property to colorize the table cells. This way, we don’t get into trouble if semi-transparent colors are used as table backgrounds.</li>
+				<li>Then we add an inset box shadow on the table cells with <span class="index-readme__code">box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));</span> to layer on top of any specified <span class="index-readme__code">background-color</span>. It uses custom cascade to override the <span class="index-readme__code">box-shadow</span>, regardless the CSS specificity. Because we use a huge spread and no blur, the color will be monotone. Since <span class="index-readme__code">--bs-table-accent-bg</span> is set to <span class="index-readme__code">transparent</span> by default, we don’t have a default box shadow.
+				</li>
+				<li>When either <span class="index-readme__code">.table-striped</span>, <span class="index-readme__code">.table-striped-columns</span>, <span class="index-readme__code">.table-hover</span> or <span class="index-readme__code">.table-active</span> classes are added, either <span class="index-readme__code">--bs-table-bg-type</span> or <span class="index-readme__code">--bs-table-bg-state</span> (by default set to <span class="index-readme__code">initial</span>) are set to a semitransparent color (<span class="index-readme__code">--bs-table-striped-bg</span>, <span class="index-readme__code">--bs-table-active-bg</span> or <span class="index-readme__code">--bs-table-hover-bg</span>) to colorize the background and override default <span class="index-readme__code">--bs-table-accent-bg</span>.
+				</li>
+				<li>For each table variant, we generate a <span class="index-readme__code">--bs-table-accent-bg</span> color with the highest contrast depending on that color. For example, the accent color for <span class="index-readme__code">.table-primary</span> is darker while <span class="index-readme__code">.table-dark</span> has a lighter accent color.</li>
+				<li>Text and border colors are generated the same way, and their colors are inherited by default.</li>
+			</ul>
+			<p>Behind the scenes it looks like this:</p>
+			<div class="index-readme__item">
+<!-- потрібно написати нашу докуменацію -->
+			</div>
+		</div>
 	</div>
 </div>
