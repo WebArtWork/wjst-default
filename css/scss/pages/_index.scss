@@ -361,5 +361,15 @@ $green-darken: #16a085;
 			background-color: var(--c-primary);
 			color: var(--c-text-primary);
 		}
+
+		&-striped tbody tr:nth-child(odd) {
+			background-color: #2c3034;
+		}
 	}
+
+	.table-striped-columns tr td:nth-child(even),
+	.table-striped-columns tr th:nth-child(even) {
+		background-color: #2c3034;
+	}
+
 }
