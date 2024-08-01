@@ -363,7 +363,7 @@ $green-darken: #16a085;
 		}
 
 		&-striped tbody tr:nth-child(odd) {
-			background-color: var(--c-shadow-table);
+			background-color: var(--c-shadow);
 		}
 	}
 
@@ -372,4 +372,9 @@ $green-darken: #16a085;
 		background-color: var(--c-shadow-table);
 	}
 
+	.table-hover {
+		tbody tr:hover {
+			background-color: var(--c-shadow-table);
+		}
+	}
 }
