@@ -348,7 +348,7 @@ $green-darken: #16a085;
 		}
 
 		&-info {
-			background-color: #f8d7da;
+			background-color: #cff4fc;
 			color: var(--c-text-secondary);
 		}
 
@@ -363,13 +363,13 @@ $green-darken: #16a085;
 		}
 
 		&-striped tbody tr:nth-child(odd) {
-			background-color: #2c3034;
+			background-color: var(--c-shadow-table);
 		}
 	}
 
 	.table-striped-columns tr td:nth-child(even),
 	.table-striped-columns tr th:nth-child(even) {
-		background-color: #2c3034;
+		background-color: var(--c-shadow-table);
 	}
 
 }
