@@ -365,6 +365,16 @@ $green-darken: #16a085;
 		&-striped tbody tr:nth-child(odd) {
 			background-color: var(--c-shadow);
 		}
+
+		&-bordered th,
+		&-bordered td {
+			border: 1px solid var(--c-text-primary);
+		}
+	}
+
+	.border-primary th,
+	.border-primary td {
+		border: 2px solid var(--c-code-hover);
 	}
 
 	.table-striped-columns tr td:nth-child(even),
