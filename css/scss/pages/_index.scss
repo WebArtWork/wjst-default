@@ -307,4 +307,59 @@ $green-darken: #16a085;
 			text-align: left;
 		}
 	}
+
+	.table {
+		width: 100%;
+		border-collapse: collapse;
+
+		th,
+		td {
+			border-bottom: 1px solid var(--c-text-primary);
+			padding: 8px;
+		}
+
+		th {
+			text-align: left;
+		}
+
+		&-primary {
+			background-color: #cfe2ff;
+			color: var(--c-text-secondary);
+		}
+
+		&-secondary {
+			background-color: #e2e3e5;
+			color: var(--c-text-secondary);
+		}
+
+		&-success {
+			background-color: #d1e7dd;
+			color: var(--c-text-secondary);
+		}
+
+		&-danger {
+			background-color: #f8d7da;
+			color: var(--c-text-secondary);
+		}
+
+		&-warning {
+			background-color: #fff3cd;
+			color: var(--c-text-secondary);
+		}
+
+		&-info {
+			background-color: #f8d7da;
+			color: var(--c-text-secondary);
+		}
+
+		&-light {
+			background-color: #f8f9fa;
+			color: var(--c-text-secondary);
+		}
+
+		&-dark {
+			background-color: var(--c-primary);
+			color: var(--c-text-primary);
+		}
+	}
 }
