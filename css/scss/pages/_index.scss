@@ -123,20 +123,6 @@ $green-darken: #16a085;
 	}
 }
 
-.table {
-	&__h {
-		width: 100%;
-		border-collapse: collapse;
-
-		th,
-		td {
-			border-bottom: 1px solid var(--c-text-primary);
-			padding: 0.75rem;
-			text-align: left;
-		}
-	}
-}
-
 .h1,
 .h2,
 .h3,
@@ -391,4 +377,8 @@ $green-darken: #16a085;
 	.table-active {
 		background-color: var(--c-shadow-table);
 	}
+}
+
+.table-borderless {
+	border: none;
 }
