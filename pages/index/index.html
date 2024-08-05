@@ -2167,10 +2167,281 @@
 				</ul>
 			</div>
 			<div class="index-readme__title">
-			<h1>How nesting works</h1>
+				<h1>How nesting works</h1>
+			</div>
+			<p>To prevent any styles from leaking to nested tables, we use the child combinator (<span
+					class="index-readme__code">></span>) selector in our CSS. Since we need to target all the <span
+					class="index-readme__code">td</span>s and <span class="index-readme__code">th</span>s in the <span
+					class="index-readme__code">thead</span>, <span class="index-readme__code">tbody</span>, and <span
+					class="index-readme__code">tfoot</span>, our selector would look pretty long without it. As such, we
+				use the rather odd looking <span class="index-readme__code">.table > :not(caption) > * > *</span>
+				selector to target all <span class="index-readme__code">td</span>s and <span
+					class="index-readme__code">th</span>s of the <span class="index-readme__code">.table</span>, but
+				none of any potential nested tables.</p>
+			<p>Note that if you add <span class="index-readme__code">&lt;tr></span>s as direct children of a table,
+				those <span class="index-readme__code">&lt;tr></span> will be wrapped in a <span
+					class="index-readme__code">&lt;tbody></span> by default, thus making our selectors work as intended.
+			</p>
 		</div>
-		<p>To prevent any styles from leaking to nested tables, we use the child combinator (<span class="index-readme__code">></span>) selector in our CSS. Since we need to target all the <span class="index-readme__code">td</span>s and <span class="index-readme__code">th</span>s in the <span class="index-readme__code">thead</span>, <span class="index-readme__code">tbody</span>, and <span class="index-readme__code">tfoot</span>, our selector would look pretty long without it. As such, we use the rather odd looking <span class="index-readme__code">.table > :not(caption) > * > *</span> selector to target all <span class="index-readme__code">td</span>s and <span class="index-readme__code">th</span>s of the <span class="index-readme__code">.table</span>, but none of any potential nested tables.</p>
-		<p>Note that if you add <span class="index-readme__code">&lt;tr></span>s as direct children of a table, those <span class="index-readme__code">&lt;tr></span> will be wrapped in a <span class="index-readme__code">&lt;tbody></span> by default, thus making our selectors work as intended.</p>
+
+		<div id="tables-head">
+			<div class="index-readme__title">
+				<h1>Anatomy</h1>
+				<h1>Table head</h1>
+			</div>
+			<p>Similar to tables and dark tables, use the modifier classes <span
+					class="index-readme__code">.table-light</span> or <span
+					class="index-readme__code">.table-dark</span> to make <span
+					class="index-readme__code">&lt;thead></span>s appear light or dark gray.</p>
+			<div class="example-tables">
+				<table class="table">
+					<thead class="table-light">
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead class="table-light"></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+			<div class="example-tables">
+				<table class="table table-dark">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead class="table-dark"></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div id="tables-foot">
+			<div class="index-readme__title">
+				<h1>Table foot</h1>
+			</div>
+			<div class="example-tables">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>Footer</td>
+							<td>Footer</td>
+							<td>Footer</td>
+							<td>Footer</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="captions">
+			<div class="index-readme__title">
+				<h1>Captions</h1>
+			</div>
+			<p>A <span class="index-readme__code">&lt;caption></span> functions like a heading for a table. It helps
+				users with screen readers to find a table and understand what it’s about and decide if they want to read
+				it.</p>
+			<div class="example-tables">
+				<table class="table caption-bottom">
+					<caption>List of users</caption>
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table caption-bottom"></li>
+					<li>&lt;caption>List of users&lt;/caption></li>
+					<li>&lt;thead></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+			<p>You can also put the <span class="index-readme__code">&lt;caption></span> on the top of the table with
+				<span class="index-readme__code">.caption-top</span>.</p>
+			<div class="example-tables">
+				<table class="table caption-top">
+					<caption>List of users</caption>
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>HTML:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table caption-top"></li>
+					<li>&lt;caption>List of users&lt;/caption></li>
+					<li>&lt;thead></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>

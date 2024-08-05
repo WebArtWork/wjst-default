@@ -283,6 +283,26 @@ $green-darken: #16a085;
 		width: 100%;
 		border-collapse: collapse;
 
+		&.caption-bottom {
+			caption-side: bottom;
+
+			caption {
+				text-align: left;
+				padding: 8px;
+				font-weight: bold;
+			}
+		}
+
+		&.caption-top {
+			caption-side: top;
+
+			caption {
+				text-align: left;
+				padding: 8px;
+				font-weight: bold;
+			}
+		}
+
 		th,
 		td {
 			border-bottom: 1px solid var(--c-text-primary);
