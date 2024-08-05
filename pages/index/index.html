@@ -2082,5 +2082,95 @@
 				</ul>
 			</div>
 		</div>
+
+		<!-- need to add mb -->
+		<div id="nesting">
+			<div class="index-readme__title">
+				<h1>Nesting</h1>
+			</div>
+			<p>Border styles, active styles, and table variants are not inherited by nested tables.</p>
+			<div class="example-tables">
+				<table class="table table-striped table-bordered">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<table class="table mb-0">
+									<thead>
+										<tr>
+											<th scope="col">Header</th>
+											<th scope="col">Header</th>
+											<th scope="col">Header</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">A</th>
+											<td>First</td>
+											<td>Last</td>
+										</tr>
+										<tr>
+											<th scope="row">B</th>
+											<td>First</td>
+											<td>Last</td>
+										</tr>
+										<tr>
+											<th scope="row">C</th>
+											<td>First</td>
+											<td>Last</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>HTML:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table table-striped table-bordered"></li>
+					<li>&lt;thead></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;tr></li>
+					<li>&lt;td colspan="4"></li>
+					<li>&lt;table class="table mb-0"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+			<div class="index-readme__title">
+			<h1>How nesting works</h1>
+		</div>
+		<p>To prevent any styles from leaking to nested tables, we use the child combinator (<span class="index-readme__code">></span>) selector in our CSS. Since we need to target all the <span class="index-readme__code">td</span>s and <span class="index-readme__code">th</span>s in the <span class="index-readme__code">thead</span>, <span class="index-readme__code">tbody</span>, and <span class="index-readme__code">tfoot</span>, our selector would look pretty long without it. As such, we use the rather odd looking <span class="index-readme__code">.table > :not(caption) > * > *</span> selector to target all <span class="index-readme__code">td</span>s and <span class="index-readme__code">th</span>s of the <span class="index-readme__code">.table</span>, but none of any potential nested tables.</p>
+		<p>Note that if you add <span class="index-readme__code">&lt;tr></span>s as direct children of a table, those <span class="index-readme__code">&lt;tr></span> will be wrapped in a <span class="index-readme__code">&lt;tbody></span> by default, thus making our selectors work as intended.</p>
+		</div>
 	</div>
 </div>
