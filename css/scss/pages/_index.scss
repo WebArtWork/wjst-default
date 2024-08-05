@@ -279,21 +279,6 @@ $green-darken: #16a085;
 }
 
 .example-tables {
-	.table-tables {
-		width: 100%;
-		border-collapse: collapse;
-
-		th,
-		td {
-			border-bottom: 1px solid var(--c-text-primary);
-			padding: 8px;
-		}
-
-		th {
-			text-align: left;
-		}
-	}
-
 	.table {
 		width: 100%;
 		border-collapse: collapse;
@@ -377,8 +362,21 @@ $green-darken: #16a085;
 	.table-active {
 		background-color: var(--c-shadow-table);
 	}
-}
 
-.table-borderless {
-	border: none;
+	.table-borderless {
+		border-collapse: collapse;
+	  
+		th,
+		td {
+		  border: none;
+		}
+	  
+		thead th {
+		  border-bottom: 2px solid transparent;
+		}
+	  
+		tbody tr {
+		  border-top: 2px solid transparent;
+		}
+	  }
 }
