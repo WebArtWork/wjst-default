@@ -366,6 +366,14 @@ $green-darken: #16a085;
 			border-top: 3px solid var(--c-text-primary);
 		}
 
+		&-sm {
+
+			th,
+			td {
+				padding: 0.3rem;
+			}
+		}
+
 		// need to change
 		// .mb-0 {
 		// 	margin-bottom: 0;
@@ -410,8 +418,6 @@ $green-darken: #16a085;
 		}
 	}
 
-	// write scss for class table-sm 
-
 	.w-25 {
 		width: 25% !important;
 	}
@@ -426,5 +432,50 @@ $green-darken: #16a085;
 
 	.align-middle {
 		vertical-align: middle !important;
+	}
+
+	.table-responsive,
+	.table-responsive-sm,
+	.table-responsive-md,
+	.table-responsive-lg,
+	.table-responsive-xl,
+	.table-responsive-xxl {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	@media (max-width: 576px) {
+		.table-responsive-sm {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.table-responsive-md {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 992px) {
+		.table-responsive-lg {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.table-responsive-xl {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 1400px) {
+		.table-responsive-xxl {
+			display: block;
+			width: 100%;
+		}
 	}
 }

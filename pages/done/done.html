@@ -1086,15 +1086,13 @@
 					<li>&lt;td>@mdo&lt;/td></li>
 					<li>&lt;/tr></li>
 					<li>&lt;tr></li>
-					<li>&lt;th scope="row">2</th>
-					</li>
+					<li>&lt;th scope="row">2&lt;/th></li>
 					<li>&lt;td>Jacob&lt;/td></li>
 					<li>&lt;td>Thornton&lt;/td></li>
 					<li>&lt;td>@fat&lt;/td></li>
 					<li>&lt;/tr></li>
 					<li>&lt;tr></li>
-					<li>&lt;th scope="row">3</th>
-					</li>
+					<li>&lt;th scope="row">3&lt;/th></li>
 					<li>&lt;td colspan="2">Larry the Bird&lt;/td></li>
 					<li>&lt;td>@twitter&lt;/td></li>
 					<li>&lt;/tr></li>
@@ -1908,12 +1906,13 @@
 			</div>
 		</div>
 
-        <!-- need to write scss -->
 		<div id="small-tables">
 			<div class="index-readme__title">
 				<h1>Small tables</h1>
 			</div>
-			<p>Add <span class="index-readme__code">.table-sm</span> to make any <span class="index-readme__code">.table</span> more compact by cutting all cell <span class="index-readme__code">padding</span> in half.</p>
+			<p>Add <span class="index-readme__code">.table-sm</span> to make any <span
+					class="index-readme__code">.table</span> more compact by cutting all cell <span
+					class="index-readme__code">padding</span> in half.</p>
 			<div class="example-tables">
 				<table class="table table-sm">
 					<thead>
@@ -1988,6 +1987,991 @@
 					<li>&lt;table class="table table-light table-sm"></li>
 					<li>...</li>
 					<li>&lt;/table></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="table-group-dividers">
+			<div class="index-readme__title">
+				<h1>Table group dividers</h1>
+			</div>
+			<p>Add a thicker border, darker between table groups - <span class="index-readme__code">&lt;thead></span>,
+				<span class="index-readme__code">&lt;tbody></span> and <span
+					class="index-readme__code">&lt;tfoot></span> - with <span
+					class="index-readme__code">.table-group-divider</span>. Customize the color by changing the <span
+					class="index-readme__code">border-top-color</span> (which we don’t currently provide a utility class
+				for at this time).
+			</p>
+			<div class="example-tables">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody class="table-group-divider">
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>HTML:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="col">#&lt;/th></li>
+					<li>&lt;th scope="col">First&lt;/th></li>
+					<li>&lt;th scope="col">Last&lt;/th></li>
+					<li>&lt;th scope="col">Handle&lt;/th></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody class="table-group-divider"></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">1&lt;/th></li>
+					<li>&lt;td>Mark&lt;/td></li>
+					<li>&lt;td>Otto&lt;/td></li>
+					<li>&lt;td>@mdo&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">2&lt;/th></li>
+					<li>&lt;td>Jacob&lt;/td></li>
+					<li>&lt;td>Thornton&lt;/td></li>
+					<li>&lt;td>@fat&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">3&lt;/th></li>
+					<li>&lt;td colspan="2">Larry the Bird&lt;/td></li>
+					<li>&lt;td>@twitter&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="vertical-alignment">
+			<div class="index-readme__title">
+				<h1>Vertical alignment</h1>
+			</div>
+			<p>Table cells of <span class="index-readme__code">&lt;thead></span> are always vertical aligned to the
+				bottom. Table cells in <span class="index-readme__code">&lt;tbody></span> inherit their alignment from
+				<span class="index-readme__code">&lt;table></span> and are aligned to the top by default. Use the <span
+					class="index-readme__code">vertical align</span>classes to re-align where needed.
+			</p>
+			<div class="example-tables">
+				<div class="table">
+					<table class="table align-middle">
+						<thead>
+							<tr>
+								<th scope="col" class="w-25">Heading 1</th>
+								<th scope="col" class="w-25">Heading 2</th>
+								<th scope="col" class="w-25">Heading 3</th>
+								<th scope="col" class="w-25">Heading 4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>This cell inherits <span class="index-readme__code">vertical-align: middle;</span>
+									from the table</td>
+								<td>This cell inherits <span class="index-readme__code">vertical-align: middle;</span>
+									from the table</td>
+								<td>This cell inherits <span class="index-readme__code">vertical-align: middle;</span>
+									from the table</td>
+								<td>This here is some placeholder text, intended to take up quite a bit of vertical
+									space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+							</tr>
+							<tr class="align-bottom">
+								<td>This cell inherits <span class="index-readme__code">vertical-align: bottom;</span>
+									from the table row</td>
+								<td>This cell inherits <span class="index-readme__code">vertical-align: bottom;</span>
+									from the table row</td>
+								<td>This cell inherits <span class="index-readme__code">vertical-align: bottom;</span>
+									from the table row</td>
+								<td>This here is some placeholder text, intended to take up quite a bit of vertical
+									space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+							</tr>
+							<tr>
+								<td>This cell inherits <span class="index-readme__code">vertical-align: middle;</span>
+									from the table</td>
+								<td>This cell inherits <span class="index-readme__code">vertical-align: middle;</span>
+									from the table</td>
+								<td class="align-top">This cell is aligned to the top.</td>
+								<td>This here is some placeholder text, intended to take up quite a bit of vertical
+									space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<p>HTML:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;div class="table-responsive"></li>
+					<li>&lt;table class="table align-middle"></li>
+					<li>&lt;thead></li>
+					<li>&lt;tr></li>
+					<li>...</li>
+					<li>&lt;/tr></li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>&lt;tr></li>
+					<li>...</li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="align-bottom"></li>
+					<li>...</li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr></li>
+					<li>&lt;td>...&lt;/td></li>
+					<li>&lt;td>...&lt;/td></li>
+					<li>&lt;td class="align-top">This cell is aligned to the top.&lt;/td></li>
+					<li>&lt;td>...&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+					<li>&lt;/div></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- need to add mb -->
+		<div id="nesting">
+			<div class="index-readme__title">
+				<h1>Nesting</h1>
+			</div>
+			<p>Border styles, active styles, and table variants are not inherited by nested tables.</p>
+			<div class="example-tables">
+				<table class="table table-striped table-bordered">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<table class="table mb-0">
+									<thead>
+										<tr>
+											<th scope="col">Header</th>
+											<th scope="col">Header</th>
+											<th scope="col">Header</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">A</th>
+											<td>First</td>
+											<td>Last</td>
+										</tr>
+										<tr>
+											<th scope="row">B</th>
+											<td>First</td>
+											<td>Last</td>
+										</tr>
+										<tr>
+											<th scope="row">C</th>
+											<td>First</td>
+											<td>Last</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>HTML:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table table-striped table-bordered"></li>
+					<li>&lt;thead></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;tr></li>
+					<li>&lt;td colspan="4"></li>
+					<li>&lt;table class="table mb-0"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+			<div class="index-readme__title">
+				<h1>How nesting works</h1>
+			</div>
+			<p>To prevent any styles from leaking to nested tables, we use the child combinator (<span
+					class="index-readme__code">></span>) selector in our CSS. Since we need to target all the <span
+					class="index-readme__code">td</span>s and <span class="index-readme__code">th</span>s in the <span
+					class="index-readme__code">thead</span>, <span class="index-readme__code">tbody</span>, and <span
+					class="index-readme__code">tfoot</span>, our selector would look pretty long without it. As such, we
+				use the rather odd looking <span class="index-readme__code">.table > :not(caption) > * > *</span>
+				selector to target all <span class="index-readme__code">td</span>s and <span
+					class="index-readme__code">th</span>s of the <span class="index-readme__code">.table</span>, but
+				none of any potential nested tables.</p>
+			<p>Note that if you add <span class="index-readme__code">&lt;tr></span>s as direct children of a table,
+				those <span class="index-readme__code">&lt;tr></span> will be wrapped in a <span
+					class="index-readme__code">&lt;tbody></span> by default, thus making our selectors work as intended.
+			</p>
+		</div>
+
+		<div id="tables-head">
+			<div class="index-readme__title">
+				<h1>Anatomy</h1>
+				<h1>Table head</h1>
+			</div>
+			<p>Similar to tables and dark tables, use the modifier classes <span
+					class="index-readme__code">.table-light</span> or <span
+					class="index-readme__code">.table-dark</span> to make <span
+					class="index-readme__code">&lt;thead></span>s appear light or dark gray.</p>
+			<div class="example-tables">
+				<table class="table">
+					<thead class="table-light">
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead class="table-light"></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+			<div class="example-tables">
+				<table class="table table-dark">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead class="table-dark"></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div id="tables-foot">
+			<div class="index-readme__title">
+				<h1>Table foot</h1>
+			</div>
+			<div class="example-tables">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>Footer</td>
+							<td>Footer</td>
+							<td>Footer</td>
+							<td>Footer</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="captions">
+			<div class="index-readme__title">
+				<h1>Captions</h1>
+			</div>
+			<p>A <span class="index-readme__code">&lt;caption></span> functions like a heading for a table. It helps
+				users with screen readers to find a table and understand what it’s about and decide if they want to read
+				it.</p>
+			<div class="example-tables">
+				<table class="table caption-bottom">
+					<caption>List of users</caption>
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table caption-bottom"></li>
+					<li>&lt;caption>List of users&lt;/caption></li>
+					<li>&lt;thead></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+			<p>You can also put the <span class="index-readme__code">&lt;caption></span> on the top of the table with
+				<span class="index-readme__code">.caption-top</span>.
+			</p>
+			<div class="example-tables">
+				<table class="table caption-top">
+					<caption>List of users</caption>
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>HTML:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table caption-top"></li>
+					<li>&lt;caption>List of users&lt;/caption></li>
+					<li>&lt;thead></li>
+					<li>...</li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>...</li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="responsive-tables">
+			<div class="index-readme__title">
+				<h1>Responsive tables</h1>
+			</div>
+			<p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across
+				all viewports by wrapping a <span class="index-readme__code">.table</span> with <span
+					class="index-readme__code">.table-responsive</span>. Or, pick a maximum breakpoint with which to
+				have a responsive table up to by using <span
+					class="index-readme__code">.table-responsive{-sm|-md|-lg|-xl|-xxl}</span>.</p>
+			<div class="index-readme__title">
+				<p>Vertical clipping/truncation</p>
+			</div>
+			<p>Responsive tables make use of <span class="index-readme__code">overflow-y: hidden</span>, which clips off
+				any content that goes beyond the bottom or top edges of the table. In particular, this can clip off
+				dropdown menus and other third-party widgets.</p>
+			<div class="index-readme__title">
+				<h1>Always responsive</h1>
+			</div>
+			<p>Across every breakpoint, use <span class="index-readme__code">.table-responsive</span> for horizontally
+				scrolling tables.</p>
+			<div class="example-tables">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;div class="table-responsive"></li>
+					<li>&lt;table class="table"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/div></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="breakpoint-specific">
+			<div class="index-readme__title">
+				<h1>Breakpoint specific</h1>
+			</div>
+			<p>Use <span class="index-readme__code">.table-responsive{-sm|-md|-lg|-xl|-xxl}</span> as needed to create
+				responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave
+				normally and not scroll horizontally.</p>
+			<p>These tables may appear broken until their responsive styles apply at specific viewport widths.</p>
+			<div class="example-tables">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="example-tables">
+				<div class="table-responsive-sm">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="example-tables">
+				<div class="table-responsive-md">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="example-tables">
+				<div class="table-responsive-lg">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="example-tables">
+				<div class="table-responsive-xl">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="example-tables">
+				<div class="table-responsive-xxl">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;div class="table-responsive"></li>
+					<li>&lt;table class="table"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/div></li><br>
+					<li>&lt;div class="table-responsive-sm"></li>
+					<li>&lt;table class="table"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/div></li><br>
+					<li>&lt;div class="table-responsive-md"></li>
+					<li>&lt;table class="table"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/div></li><br>
+					<li>&lt;div class="table-responsive-lg"></li>
+					<li>&lt;table class="table"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/div></li><br>
+					<li>&lt;div class="table-responsive-xl"></li>
+					<li>&lt;table class="table"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/div></li><br>
+					<li>&lt;div class="table-responsive-xxl"></li>
+					<li>&lt;table class="table"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+					<li>&lt;/div></li>
 				</ul>
 			</div>
 		</div>
