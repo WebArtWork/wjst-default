@@ -349,6 +349,788 @@
 			</div>
 		</div>
 
+		<div id="customizing-headings">
+			<div class="index-readme__title">
+				<h3>Customizing headings</h3>
+			</div>
+			<p>Use the included utility classes to recreate the small secondary heading text.
+			</p>
+			<div class="example">
+				<h3>Fancy display heading <small class="text-body-secondary">With faded secondary text</small>
+				</h3>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;h3&gt;</li>
+					<li>Fancy display heading</li>
+					<li>&lt;small class="text-body-secondary"&gt;With faded secondary text&lt;/small&gt;</li>
+					<li>&lt;/h3&gt;</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="display-headings">
+			<div class="index-readme__title">
+				<h3>Display headings</h3>
+			</div>
+			<p>Traditional heading elements are designed to work best in the meat of your page content. When you
+				need a
+				heading to stand out, consider using a <strong>display heading</strong> — a larger, slightly more
+				opinionated heading style.
+			</p>
+			<div class="example">
+				<h1 class="display-1">Display 1</h1>
+				<h1 class="display-2">Display 2</h1>
+				<h1 class="display-3">Display 3</h1>
+				<h1 class="display-4">Display 4</h1>
+				<h1 class="display-5">Display 5</h1>
+				<h1 class="display-6">Display 6</h1>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;h1 class="display-1"&gt;Display 1&lt;h1&gt;</li>
+					<li>&lt;h1 class="display-2"&gt;Display 2&lt;h1&gt;</li>
+					<li>&lt;h1 class="display-3"&gt;Display 3&lt;h1&gt;</li>
+					<li>&lt;h1 class="display-4"&gt;Display 4&lt;h1&gt;</li>
+					<li>&lt;h1 class="display-5"&gt;Display 5&lt;h1&gt;</li>
+					<li>&lt;h1 class="display-6"&gt;Display 6&lt;h1&gt;</li>
+				</ul>
+			</div>
+			<p>
+				Display headings are configured via the <span class="index-readme__code">$display-font-sizes</span>
+				Sass
+				map
+				and two variables, <span class="index-readme__code">$display-font-weight</span>
+				and <span class="index-readme__code">$display-line-height</span>.
+			</p>
+			<p>
+				Display headings are customizable via two variables, <span
+					class="index-readme__code">$display-font-family</span> and <span
+					class="index-readme__code">$display-font-style</span>.
+			</p>
+			<!-- need to change and to paste some icons -->
+			<p>scss/_variables.scss:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$display-font-sizes: (</li>
+					<li>1: 5rem,</li>
+					<li>2: 4.5rem,</li>
+					<li>3: 4rem,</li>
+					<li>4: 3.5rem,</li>
+					<li>5: 3rem,</li>
+					<li>6: 2.5rem</li>
+					<li>);</li>
+					<li><br></li>
+					<li>$display-font-family: null;</li>
+					<li>$display-font-style: null;</li>
+					<li>$display-font-weight: 300;</li>
+					<li>$display-line-height: $headings-line-height;</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="lead">
+			<div class="index-readme__title">
+				<h3>Lead</h3>
+			</div>
+			<p>Make a paragraph stand out by adding <span class="index-readme__code">.lead</span>.
+			</p>
+			<div class="example">
+				<p class="lead">
+					This is a lead paragraph. It stands out from regular paragraphs.
+				</p>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;p class="lead"&gt;</li>
+					<li> This is a lead paragraph. It stands out from regular paragraphs.</li>
+					<li>&lt;/p&gt;</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="inline-text-elements">
+			<div class="index-readme__title">
+				<h3>Inline text elements</h3>
+			</div>
+			<p>Styling for common inline HTML5 elements.</p>
+			<div class="example">
+				<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+				<p><del>This line of text is meant to be treated as deleted text.</del></p>
+				<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+				<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+				<p><u>This line of text will render as underlined.</u></p>
+				<p><small>This line of text is meant to be treated as fine print.</small></p>
+				<p><strong>This line rendered as bold text.</strong></p>
+				<p><em>This line rendered as italicized text.</em></p>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;</li>
+					<li>&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted
+						text.&lt;/del&gt;&lt;/p&gt;
+					</li>
+					<li>&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer
+						accurate.&lt;/s&gt;&lt;/p&gt;</li>
+					<li>&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the
+						document.&lt;/ins&gt;&lt;/p&gt;</li>
+					<li>&lt;p&gt;&lt;u&gt;This line of text will render as underlined.&lt;/u&gt;&lt;/p&gt;</li>
+					<li>&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine
+						print.&lt;/small&gt;&lt;/p&gt;</li>
+					<li>&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;</li>
+					<li>&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;</li>
+				</ul>
+			</div>
+			<p>
+				Beware that those tags should be used for semantic purpose:
+			</p>
+			<ul class="list-style">
+				<li><span class="index-readme__code">&lt;mark&gt;</span> represents text which is marked or
+					highlighted
+					for
+					reference or notation purposes.</li>
+				<li><span class="index-readme__code">&lt;small&gt;</span> represents side-comments and small print,
+					like
+					copyright and legal text.
+				</li>
+				<li><span class="index-readme__code">&lt;s&gt;</span> represents element that are no longer relevant
+					or
+					no
+					longer accurate.</li>
+				<li><span class="index-readme__code">&lt;u&gt;</span> represents a span of inline text which should
+					be
+					rendered in a way that indicates that it has a non-textual annotation.</li>
+			</ul>
+			<p>
+				If you want to style your text, you should use the following classes instead:
+			</p>
+			<ul class="list-style">
+				<li><span class="index-readme__code">.mark</span> will apply the same styles as <span
+						class="index-readme__code">&lt;mark&gt;</span></li>
+				<li><span class="index-readme__code">.small</span> will apply the same styles as <span
+						class="index-readme__code">&lt;small&gt;</span></li>
+				<li><span class="index-readme__code">.text-decoration-underline</span> will apply the same styles as
+					<span class="index-readme__code">&lt;s&gt;</span>
+				</li>
+				<li><span class="index-readme__code">.text-decoration-line-through</span> will apply the same styles
+					as
+					<span class="index-readme__code">&lt;u&gt;</span>
+				</li>
+			</ul>
+			<p>
+				While not shown above, feel free to use <span class="index-readme__code">&lt;b&gt;</span> and <span
+					class="index-readme__code">&lt;i&gt;</span> in HTML5. <span
+					class="index-readme__code">&lt;b&gt;</span>
+				is meant to highlight words or phrases without conveying additional importance, while <span
+					class="index-readme__code">&lt;i&gt;</span> is mostly for voice, technical terms, etc.
+			</p>
+		</div>
+
+		<div id="text-utilities">
+			<div class="index-readme__title">
+				<h3>Text utilities</h3>
+			</div>
+			<p>Change text alignment, transform, style, weight, line-height, decoration and color with our <span
+					class="index-readme__code">
+					<a class="index-readme__link">text utilities</a>
+				</span> and <span class="index-readme__code">
+					<a class="index-readme__link">color utilities</a>
+				</span>.</p>
+		</div>
+
+		<div id="abbreviations">
+			<div class="index-readme__title">
+				<h3>Abbreviations</h3>
+			</div>
+			<p>
+				Stylized implementation of HTML’s <span class="index-readme__code">&lt;abbr></span> element for
+				abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default
+				underline
+				and
+				gain a help cursor to provide additional context on hover and to users of assistive technologies.
+			</p>
+			<p>
+				Add <span class="index-readme__code">.initialism</span> to an abbreviation for a slightly smaller
+				font-size.
+			</p>
+			<div class="example">
+				<p><abbr title="attribute">attr</abbr></p>
+				<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;p> &lt;abbr title="attribute"&gt;attr&lt;/abbr>&lt;/p></li>
+					<li>&lt;p> &lt;abbr title="HyperText Markup Language" class="initialism">HTML&lt;/abbr>&lt;/p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="blockquotes">
+			<div class="index-readme__title">
+				<h3>Blockquotes</h3>
+			</div>
+			<p>For quoting blocks of content from another source within your document. Wrap <span
+					class="index-readme__code">&lt;blockquote class="blockquote"></span> around any HTML as the
+				quote.
+			</p>
+			<div class="example">
+				<blockquote class="blockquote">
+					<p>A well-known quote, contained in a blockquote element.</p>
+				</blockquote>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;blockquote class="blockquote"></li>
+					<li>&lt;p>A well-known quote, contained in a blockquote element.&lt;/p></li>
+					<li>&lt;/blockquote></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="naming-a-source">
+			<div class="index-readme__title">
+				<h3>Naming a source</h3>
+			</div>
+			<p>The HTML spec requires that blockquote attribution be placed outside the
+				<span class="index-readme__code">&lt;blockquote></span>. When providing attribution, wrap your <span
+					class="index-readme__code">&lt;blockquote></span> in a <span
+					class="index-readme__code">&lt;figure></span> and use a
+				<span class="index-readme__code">&lt;figcaption></span> or a block
+				level element (e.g., <span class="index-readme__code">&lt;p></span>) with the <span
+					class="index-readme__code">.blockquote-footer</span> class. Be sure to wrap the name of the
+				source work in <span class="index-readme__code">&lt;cite></span> as well.
+			</p>
+			<div class="example">
+				<figure>
+					<blockquote class="blockquote">
+						<p>A well-known quote, contained in a blockquote element.</p>
+					</blockquote>
+					<figcaption class="blockquote-footer">
+						- Someone famous in <cite title="Source Title">Source Title</cite>
+					</figcaption>
+				</figure>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;figure></li>
+					<li>&lt;blockquote class="blockquote"></li>
+					<li>&lt;p>A well-known quote, contained in a blockquote element.&lt;/p></li>
+					<li>&lt;/blockquote></li>
+					<li>&lt;figcaption class="blockquote-footer"></li>
+					<li>Someone famous in &lt;cite title="Source Title">Source Title&lt;/cite></li>
+					<li>&lt;/figcaption></li>
+					<li>&lt;/figure></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="alignment">
+			<div class="index-readme__title">
+				<h3>Alignment</h3>
+			</div>
+			<p>
+				Use text utilities as needed to change the alignment of your blockquote.
+			</p>
+			<div class="example">
+				<figure class="text-center">
+					<blockquote class="blockquote">
+						<p>A well-known quote, contained in a blockquote element.</p>
+					</blockquote>
+					<figcaption class="blockquote-footer">
+						- Someone famous in <cite title="Source Title">Source Title</cite>
+					</figcaption>
+				</figure>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;figure class="text-center"></li>
+					<li>&lt;blockquote class="blockquote"></li>
+					<li>&lt;p>A well-known quote, contained in a blockquote element.&lt;/p></li>
+					<li>&lt;/blockquote></li>
+					<li>&lt;figcaption class="blockquote-footer"></li>
+					<li>Someone famous in &lt;cite title="Source Title">Source Title&lt;/cite></li>
+					<li>&lt;/figcaption></li>
+					<li>&lt;/figure></li>
+				</ul>
+			</div>
+			<div class="example">
+				<figure class="text-end">
+					<blockquote class="blockquote">
+						<p>A well-known quote, contained in a blockquote element.</p>
+					</blockquote>
+					<figcaption class="blockquote-footer">
+						- Someone famous in <cite title="Source Title">Source Title</cite>
+					</figcaption>
+				</figure>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;figure class="text-end"></li>
+					<li>&lt;blockquote class="blockquote"></li>
+					<li>&lt;p>A well-known quote, contained in a blockquote element.&lt;/p></li>
+					<li>&lt;/blockquote></li>
+					<li>&lt;figcaption class="blockquote-footer"></li>
+					<li>Someone famous in &lt;cite title="Source Title">Source Title&lt;/cite></li>
+					<li>&lt;/figcaption></li>
+					<li>&lt;/figure></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="unstyled">
+			<div class="index-readme__title">
+				<h3>Lists</h3>
+				<h3>Unstyled</h3>
+			</div>
+			<p>Remove the default <span class="index-readme__code">list-style</span> and left margin on list items
+				(immediate children only). <strong>This only applies to immediate children list items</strong>,
+				meaning
+				you
+				will need to add the class for any nested lists as well.</p>
+			<div class="example">
+				<ul>
+					<li>This is a list.</li>
+					<li>It appears completely unstyled.</li>
+					<li>Structurally, it's still a list.</li>
+					<li>However, this style only applies to immediate child elements.</li>
+					<li>Nested lists:</li>
+					<ul class="list-style">
+						<li>are unaffected by this style</li>
+						<li>will still show a bullet</li>
+						<li>and have appropriate left margin</li>
+					</ul>
+					<li>This may still come in handy in some situations.</li>
+				</ul>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;ul class="list-unstyled"></li>
+					<li>&lt;li>This is a list.&lt;/li></li>
+					<li>&lt;li>It appears completely unstyled.&lt;/li></li>
+					<li>&lt;li>Structurally, it's still a list.&lt;/li></li>
+					<li>&lt;li>However, this style only applies to immediate child elements.&lt;/li></li>
+					<li>&lt;li>Nested lists:</li>
+					<li>&lt;ul></li>
+					<li>&lt;li>are unaffected by this style&lt;/li></li>
+					<li>&lt;li>will still show a bullet&lt;/li></li>
+					<li>&lt;li>and have appropriate left margin&lt;/li></li>
+					<li>&lt;/ul></li>
+					<li>&lt;/li></li>
+					<li>&lt;li>This may still come in handy in some situations.&lt;/li></li>
+					<li>&lt;/ul></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="inline">
+			<div class="index-readme__title">
+				<h3>Inline</h3>
+			</div>
+			<p>Remove a list’s bullets and apply some light <span class="index-readme__code">margin</span> with a
+				combination of two classes, <span class="index-readme__code">.list-inline</span> and <span
+					class="index-readme__code">.list-inline-item</span>.</p>
+			<div class="example">
+				<ul class="list-inline">
+					<li class="list-inline-item">This is a list item.</li>
+					<li class="list-inline-item">And another one.</li>
+					<li class="list-inline-item">But they're displayed inline.</li>
+				</ul>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;ul class="list-inline"></li>
+					<li>&lt;li class="list-inline-item">This is a list item.&lt;/li></li>
+					<li>&lt;li class="list-inline-item">And another one.&lt;/li></li>
+					<li>&lt;li class="list-inline-item">But they're displayed inline.&lt;/li></li>
+					<li>&lt;/ul></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- need to write scss -->
+		<div id="description-list-alignment">
+			<div class="index-readme__title">
+				<h3>Description list alignment</h3>
+			</div>
+			<p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic
+				mixins). For longer terms, you can optionally add a <span
+					class="index-readme__code">.text-truncate</span> class to truncate the text with an ellipsis.
+			</p>
+			<div class="example">
+				<dl class="row">
+					<dt class="col-sm-3">Description lists</dt>
+					<dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+					<dt class="col-sm-3">Term</dt>
+					<dd class="col-sm-9">
+						<p>Definition for the term.</p>
+						<p>And some more placeholder definition text.</p>
+					</dd>
+
+					<dt class="col-sm-3">Another term</dt>
+					<dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+					<dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+					<dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+					<dt class="col-sm-3">Nesting</dt>
+					<dd class="col-sm-9">
+						<dl class="row">
+							<dt class="col-sm-4">Nested definition list</dt>
+							<dd class="col-sm-8">I heard you like definition lists. Let me put a definition list
+								inside
+								your definition list.</dd>
+						</dl>
+					</dd>
+				</dl>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;dl class="row"></li>
+					<li>&lt;dt class="col-sm-3">Description lists&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9">A description list is perfect for defining terms.&lt;/dd></li><br>
+					<li>&lt;dt class="col-sm-3">Term&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9"></li>
+					<li>&lt;p>Definition for the term.&lt;/p></li>
+					<li>&lt;p>And some more placeholder definition text.&lt;/p></li>
+					<li>&lt;/dd></li><br>
+					<li>&lt;dt class="col-sm-3">Another term&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9">This definition is short, so no extra paragraphs or
+						anything.&lt;/dd>
+					</li><br>
+					<li>&lt;dt class="col-sm-3 text-truncate">Truncated term is truncated&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the
+						end.&lt;/dd></li><br>
+					<li>&lt;dt class="col-sm-3">Nesting&lt;/dt></li>
+					<li>&lt;dd class="col-sm-9"></li>
+					<li>&lt;dl class="row"></li>
+					<li>&lt;dt class="col-sm-4">Nested definition list&lt;/dt></li>
+					<li>&lt;dd class="col-sm-8">I heard you like definition lists. Let me put a definition list
+						inside
+						your definition list.&lt;/dd></li>
+					<li>&lt;/dl></li>
+					<li>&lt;/dd></li>
+					<li>&lt;/dl></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="responsive-font-sizes">
+			<div class="index-readme__title">
+				<h3>Responsive font sizes</h3>
+			</div>
+			<p>In Bootstrap 5, we’ve enabled responsive font sizes by default, allowing text to scale more naturally
+				across device and viewport sizes. Have a look at the <span class="index-readme__code">RFS
+					page</span> to
+				find out how this works.</p>
+		</div>
+
+		<div id="tupography-css">
+			<div class="index-readme__title">
+				<h3>CSS</h3>
+				<h3>Sass variables</h3>
+			</div>
+			<p>Headings have some dedicated variables for sizing and spacing.</p>
+			<p>scss/_variables.scss:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$headings-margin-bottom: $spacer * .5;</li>
+					<li>$headings-font-family: null;</li>
+					<li>$headings-font-style: null;</li>
+					<li>$headings-font-weight: 500;</li>
+					<li>$headings-line-height: 1.2;</li>
+					<li>$headings-color: inherit;</li>
+				</ul>
+			</div>
+			<p>Miscellaneous typography elements covered here and in <span class="index-readme__code">Reboot</span>
+				also
+				have dedicated variables.
+			</p>
+			<p>scss/_variables.scss:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$lead-font-size: $font-size-base * 1.25;</li>
+					<li>$lead-font-weight: 300;</li><br>
+					<li>$small-font-size: .875em;</li><br>
+					<li>$sub-sup-font-size: .75em;</li><br>
+					<li>// fusv-disable</li>
+					<li>$text-muted: var(--#{$prefix}secondary-color); // Deprecated in 5.3.0</li>
+					<li>// fusv-enable</li><br>
+					<li>$initialism-font-size: $small-font-size;</li><br>
+					<li>$blockquote-margin-y: $spacer;</li>
+					<li>$blockquote-font-size: $font-size-base * 1.25;</li>
+					<li>$blockquote-footer-color: $gray-600;</li>
+					<li>$blockquote-footer-font-size: $small-font-size;</li><br>
+					<li>$hr-margin-y: $spacer;</li>
+					<li>$hr-color: inherit;</li><br>
+					<li>// fusv-disable</li>
+					<li>$hr-bg-color: null; // Deprecated in v5.2.0</li>
+					<li>$hr-height: null; // Deprecated in v5.2.0</li>
+					<li>// fusv-enable</li><br>
+					<li>$hr-border-color: null; // Allows for inherited colors</li>
+					<li>$hr-border-width: var(--#{$prefix}border-width);</li>
+					<li>$hr-opacity: .25;</li><br>
+					<li>$vr-border-width: var(--#{$prefix}border-width);</li><br>
+					<li>$legend-margin-bottom: .5rem;</li>
+					<li>$legend-font-size: 1.5rem;</li>
+					<li>$legend-font-weight: null;</li><br>
+					<li>$dt-font-weight: $font-weight-bold;</li><br>
+					<li>$list-inline-padding: .5rem;</li><br>
+					<li>$mark-padding: .1875em;</li>
+					<li>$mark-color: $body-color;</li>
+					<li>$mark-bg: $yellow-100;</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="sass-mixins">
+			<div class="index-readme__title">
+				<h3>Sass mixins</h3>
+			</div>
+			<p>There are no dedicated mixins for typography, but Bootstrap does use <span
+					class="index-readme__code">Responsive Font Sizing (RFS)</span>.</p>
+		</div>
+
+		<div id="images">
+			<div class="index-readme__title">
+				<h1>Images</h1>
+				<p>Documentation and examples for opting images into responsive behavior (so they never become wider
+					than their parent) and add lightweight styles to them — all via classes.
+				</p>
+			</div>
+		</div>
+
+		<div id="responsive-images">
+			<div class="index-readme__title">
+				<h3>Responsive images</h3>
+			</div>
+			<p>Images in waw framework are made responsive with <span class="index-readme__code">.img-fluid</span>.
+				This
+				applies <span class="index-readme__code">max-width: 100%;</span> and <span
+					class="index-readme__code">height: auto;</span> to the image so that it scales with the parent
+				width.</p>
+			<div class="example__img">
+				<svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="260" role="img">
+					<rect width="100%" height="100%" fill="#868e96"></rect><text x="42%" y="50%"
+						fill="#dee2e6">Responsive image</text>
+				</svg>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<p>&lt;img src="..." class="img-fluid" alt="..."></p>
+			</div>
+		</div>
+
+		<div id="image-thumbnails">
+			<div class="index-readme__title">
+				<h3>Image thumbnails</h3>
+			</div>
+			<p>In addition to our <span class="index-readme__code">border-radius utilities</span>, you can use <span
+					class="index-readme__code">.img-thumbnail</span> to give an image a rounded 1px border
+				appearance.
+			</p>
+			<div class="example">
+				<div class="bd-example m-0 border-0">
+					<svg class="bd-placeholder-img img-thumbnail bg-color" width="200" height="200" role="img">
+						<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6"
+							dy=".3em">200x200</text>
+					</svg>
+				</div>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<p>&lt;img src="..." class="img-thumbnail" alt="..."></p>
+			</div>
+		</div>
+
+		<div id="aligning-images">
+			<div class="index-readme__title">
+				<h3>Aligning images</h3>
+			</div>
+			<p>Align images with the <span class="index-readme__code">helper float classes</span> or <span
+					class="index-readme__code">text alignment classes</span>. <span
+					class="index-readme__code">block</span>-level images can be centered using <span
+					class="index-readme__code">the .mx-auto margin utility class</span>.</p>
+			<div class="example">
+				<div class="example-img">
+					<svg class="bd-img float-start" width="200" height="200" role="img">
+						<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%"
+							fill="#dee2e6">200x200</text>
+					</svg>
+					<svg class="bd-img float-end" width="200" height="200" role="img">
+						<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%"
+							fill="#dee2e6">200x200</text>
+					</svg>
+				</div>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;img src="..." class="rounded float-start" alt="..."></li>
+					<li>&lt;img src="..." class="rounded float-end" alt="..."></li>
+				</ul>
+			</div>
+			<div class="example">
+				<svg class="rounded mx-auto d-block" width="200" height="200" role="img">
+					<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%"
+						fill="#dee2e6">200x200</text>
+				</svg>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;img src="..." class="rounded mx-auto d-block" alt="..."></li>
+				</ul>
+			</div>
+			<div class="example">
+				<svg class="rounded mx-auto d-block text-center" width="200" height="200" role="img">
+					<rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%"
+						fill="#dee2e6">200x200</text>
+				</svg>
+			</div>
+			<!-- need to paste some icons -->
+			<div class="index__html">
+				<p>
+					HTML:
+				</p>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;div class="text-center"></li>
+					<li>&lt;img src="..." class="rounded" alt="..."></li>
+					<li>&lt;/div></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="picture">
+			<div class="index-readme__title">
+				<h3>Picture</h3>
+			</div>
+			<p>If you are using the <span class="index-readme__code">&lt;picture></span> element to specify multiple
+				<span class="index-readme__code">&lt;source></span> elements for a specific <span
+					class="index-readme__code">&lt;img></span>, make sure to add the <span
+					class="index-readme__code">.img-*</span> classes to the <span
+					class="index-readme__code">&lt;img></span> and not to the <span
+					class="index-readme__code">&lt;picture></span> tag.
+			</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;picture></li>
+					<li>&lt;source srcset="..." type="image/svg+xml"></li>
+					<li>&lt;img src="..." class="img-fluid img-thumbnail" alt="..."></li>
+					<li>&lt;/picture></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="images-css">
+			<div class="index-readme__title">
+				<h3>CSS</h3>
+				<h3>Sass variables</h3>
+			</div>
+			<p>Variables are available for image thumbnails.</p>
+			<!-- add some icons -->
+			<p>scss/_variables.scss</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$thumbnail-padding: .25rem;</li>
+					<li>$thumbnail-bg: var(--#{$prefix}body-bg);</li>
+					<li>$thumbnail-border-width: var(--#{$prefix}border-width);</li>
+					<li>$thumbnail-border-color: var(--#{$prefix}border-color);</li>
+					<li>$thumbnail-border-radius: var(--#{$prefix}border-radius);</li>
+					<li>$thumbnail-box-shadow: var(--#{$prefix}box-shadow-sm);</li>
+				</ul>
+			</div>
+		</div>
+
 		<div id="tables">
 			<div class="index-readme__title">
 				<h1>Tables</h1>
@@ -1031,6 +1813,51 @@
 			</div>
 		</div>
 
+		<div id="how-do">
+			<div class="index-readme__title"><a id="typography">
+					<h3>How do the variants and accented tables work?</h3>
+				</a></div>
+			<p>For the accented tables &#40;<span class="index-readme__code">striped rows, striped columns, hoverable
+					rows,</span> and <span class="index-readme__code">active tables</span>&#41;, we used some techniques
+				to make these effects work for all our <span class="index-readme__code">table variants</span>:</p>
+			<ul class="list-style">
+				<li>We start by setting the background of a table cell with the <span
+						class="index-readme__code">--bs-table-bg</span> custom property. All table variants then set
+					that custom property to colorize the table cells. This way, we don’t get into trouble if
+					semi-transparent colors are used as table backgrounds.</li>
+				<li>Then we add an inset box shadow on the table cells with <span class="index-readme__code">box-shadow:
+						inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type,
+						var(--bs-table-accent-bg)));</span> to layer on top of any specified <span
+						class="index-readme__code">background-color</span>. It uses custom cascade to override the <span
+						class="index-readme__code">box-shadow</span>, regardless the CSS specificity. Because we use a
+					huge spread and no blur, the color will be monotone. Since <span
+						class="index-readme__code">--bs-table-accent-bg</span> is set to <span
+						class="index-readme__code">transparent</span> by default, we don’t have a default box shadow.
+				</li>
+				<li>When either <span class="index-readme__code">.table-striped</span>, <span
+						class="index-readme__code">.table-striped-columns</span>, <span
+						class="index-readme__code">.table-hover</span> or <span
+						class="index-readme__code">.table-active</span> classes are added, either <span
+						class="index-readme__code">--bs-table-bg-type</span> or <span
+						class="index-readme__code">--bs-table-bg-state</span> (by default set to <span
+						class="index-readme__code">initial</span>) are set to a semitransparent color (<span
+						class="index-readme__code">--bs-table-striped-bg</span>, <span
+						class="index-readme__code">--bs-table-active-bg</span> or <span
+						class="index-readme__code">--bs-table-hover-bg</span>) to colorize the background and override
+					default <span class="index-readme__code">--bs-table-accent-bg</span>.
+				</li>
+				<li>For each table variant, we generate a <span class="index-readme__code">--bs-table-accent-bg</span>
+					color with the highest contrast depending on that color. For example, the accent color for <span
+						class="index-readme__code">.table-primary</span> is darker while <span
+						class="index-readme__code">.table-dark</span> has a lighter accent color.</li>
+				<li>Text and border colors are generated the same way, and their colors are inherited by default.</li>
+			</ul>
+			<p>Behind the scenes it looks like this:</p>
+			<div class="index-readme__item">
+				<!-- потрібно написати нашу докуменацію -->
+			</div>
+		</div>
+
 		<div id="bordered-tables">
 			<div class="index-readme__title">
 				<h1>Table borders</h1>
@@ -1196,6 +2023,172 @@
 				<ul>
 					<li>&lt;table class="table table-light table-borderless"></li>
 					<li>...</li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- need to write scss -->
+		<div id="small-tables">
+			<div class="index-readme__title">
+				<h1>Small tables</h1>
+			</div>
+			<p>Add <span class="index-readme__code">.table-sm</span> to make any <span
+					class="index-readme__code">.table</span> more compact by cutting all cell <span
+					class="index-readme__code">padding</span> in half.</p>
+			<div class="example-tables">
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table table-sm"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+			<div class="example-tables">
+				<table class="table table-light table-sm">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table table-light table-sm"></li>
+					<li>...</li>
+					<li>&lt;/table></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="table-group-dividers">
+			<div class="index-readme__title">
+				<h1>Table group dividers</h1>
+			</div>
+			<p>Add a thicker border, darker between table groups - <span class="index-readme__code">&lt;thead></span>,
+				<span class="index-readme__code">&lt;tbody></span> and <span
+					class="index-readme__code">&lt;tfoot></span> - with <span
+					class="index-readme__code">.table-group-divider</span>. Customize the color by changing the <span
+					class="index-readme__code">border-top-color</span> (which we don’t currently provide a utility class
+				for at this time).
+			</p>
+			<div class="example-tables">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody class="table-group-divider">
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>HTML:</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="col">#&lt;/th></li>
+					<li>&lt;th scope="col">First&lt;/th></li>
+					<li>&lt;th scope="col">Last&lt;/th></li>
+					<li>&lt;th scope="col">Handle&lt;/th></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody class="table-group-divider"></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">1&lt;/th></li>
+					<li>&lt;td>Mark&lt;/td></li>
+					<li>&lt;td>Otto&lt;/td></li>
+					<li>&lt;td>@mdo&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">2</th>
+					</li>
+					<li>&lt;td>Jacob&lt;/td></li>
+					<li>&lt;td>Thornton&lt;/td></li>
+					<li>&lt;td>@fat&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">3</th>
+					</li>
+					<li>&lt;td colspan="2">Larry the Bird&lt;/td></li>
+					<li>&lt;td>@twitter&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/tbody></li>
 					<li>&lt;/table></li>
 				</ul>
 			</div>

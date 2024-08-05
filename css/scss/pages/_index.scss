@@ -341,6 +341,10 @@ $green-darken: #16a085;
 		&-bordered td {
 			border: 1px solid var(--c-text-primary);
 		}
+
+		.table-group-divider {
+			border-top: 3px solid var(--c-text-primary);
+		}
 	}
 
 	.border-primary th,
@@ -365,18 +369,20 @@ $green-darken: #16a085;
 
 	.table-borderless {
 		border-collapse: collapse;
-	  
+
 		th,
 		td {
-		  border: none;
+			border: none;
 		}
-	  
+
 		thead th {
-		  border-bottom: 2px solid transparent;
+			border-bottom: 2px solid transparent;
 		}
-	  
+
 		tbody tr {
-		  border-top: 2px solid transparent;
+			border-top: 2px solid transparent;
 		}
-	  }
+	}
+
+	// write scss for class table-sm 
 }
