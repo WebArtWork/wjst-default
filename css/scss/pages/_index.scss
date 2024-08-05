@@ -385,4 +385,20 @@ $green-darken: #16a085;
 	}
 
 	// write scss for class table-sm 
+
+	.w-25 {
+		width: 25% !important;
+	}
+
+	.align-top {
+		vertical-align: top !important;
+	}
+
+	.align-bottom {
+		vertical-align: bottom !important;
+	}
+
+	.align-middle {
+		vertical-align: middle !important;
+	}
 }
