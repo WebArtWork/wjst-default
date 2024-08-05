@@ -309,37 +309,37 @@ $green-darken: #16a085;
 		}
 
 		&-primary {
-			background-color: #cfe2ff;
+			background-color: var(--c-color-primary-table);
 			color: var(--c-text-secondary);
 		}
 
 		&-secondary {
-			background-color: #e2e3e5;
+			background-color: var(--c-color-secondary-table);
 			color: var(--c-text-secondary);
 		}
 
 		&-success {
-			background-color: #d1e7dd;
+			background-color: var(--c-color-success-table);
 			color: var(--c-text-secondary);
 		}
 
 		&-danger {
-			background-color: #f8d7da;
+			background-color: var(--c-color-danger-table);
 			color: var(--c-text-secondary);
 		}
 
 		&-warning {
-			background-color: #fff3cd;
+			background-color: var(--c-color-warning-table);
 			color: var(--c-text-secondary);
 		}
 
 		&-info {
-			background-color: #cff4fc;
+			background-color: var(--c-color-info-table);
 			color: var(--c-text-secondary);
 		}
 
 		&-light {
-			background-color: #f8f9fa;
+			background-color: var(--c-color-light-table);
 			color: var(--c-text-secondary);
 		}
 
