@@ -2904,5 +2904,77 @@
 				</ul>
 			</div>
 		</div>
+
+		<div id="tables-css">
+			<div class="index-readme__title">
+				<h3>CSS</h3>
+				<h3>Sass variables</h3>
+			</div>
+			<!-- add some icons -->
+			<p>scss/_variables.scss</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$table-cell-padding-y: .5rem;</li>
+					<li>$table-cell-padding-x: .5rem;</li>
+					<li>$table-cell-padding-y-sm: .25rem;</li>
+					<li>$table-cell-padding-x-sm: .25rem;</li><br>
+					<li>$table-cell-vertical-align: top;</li><br>
+					<li>$table-color: var(--#{$prefix}emphasis-color);</li>
+					<li>$table-bg: var(--#{$prefix}body-bg);</li>
+					<li>$table-accent-bg: transparent;</li><br>
+					<li>$table-th-font-weight: null;</li><br>
+					<li>$table-striped-color: $table-color;</li>
+					<li>$table-striped-bg-factor: .05;</li>
+					<li>$table-striped-bg: rgba(var(--#{$prefix}emphasis-color-rgb), $table-striped-bg-factor);</li><br>
+					<li>$table-active-color: $table-color;</li>
+					<li>$table-active-bg-factor: .1;</li>
+					<li>$table-active-bg: rgba(var(--#{$prefix}emphasis-color-rgb), $table-active-bg-factor);</li><br>
+					<li>$table-hover-color: $table-color;</li>
+					<li>$table-hover-bg-factor: .075;</li>
+					<li>$table-hover-bg: rgba(var(--#{$prefix}emphasis-color-rgb), $table-hover-bg-factor);</li><br>
+					<li>$table-border-factor: .2;</li>
+					<li>$table-border-width: var(--#{$prefix}border-width);</li>
+					<li>$table-border-color: var(--#{$prefix}border-color);</li><br>
+					<li>$table-striped-order: odd;</li>
+					<li>$table-striped-columns-order: even;</li><br>
+					<li>$table-group-separator-color: currentcolor;</li><br>
+					<li>$table-caption-color: var(--#{$prefix}secondary-color);</li><br>
+					<li>$table-bg-scale: -80%;</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="sass-loops">
+			<div class="index-readme__title">
+				<h3>Sass loops</h3>
+			</div>
+			<!-- add some icons -->
+			<p>scss/_variables.scss</p>
+			<div class="index-readme__item">
+				<ul>
+					<li>$table-variants: (</li>
+					<li>"primary":    shift-color($primary, $table-bg-scale),</li>
+					<li>"secondary":  shift-color($secondary, $table-bg-scale),</li>
+					<li>"success":    shift-color($success, $table-bg-scale),</li>
+					<li>$table-cell-vertical-align: top;</li>
+					<li>"info":       shift-color($info, $table-bg-scale),</li>
+					<li>"warning":    shift-color($warning, $table-bg-scale),</li>
+					<li>"danger":     shift-color($danger, $table-bg-scale),</li>
+					<li>"light":      $light,</li>
+					<li>"dark":       $dark,</li>
+					<li>);</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="customizing">
+			<div class="index-readme__title"><a id="typography">
+					<h3>Customizing</h3>
+				</a></div>
+			<ul class="list-style">
+				<li>The factor variables (<span class="index-readme__code">$table-striped-bg-factor</span>, <span class="index-readme__code">$table-active-bg-factor</span> & <span class="index-readme__code">$table-hover-bg-factor</span>) are used to determine the contrast in table variants.</li>
+				<li>Apart from the light & dark table variants, theme colors are lightened by the <span class="index-readme__code">$table-bg-scale</span> variable.</li>
+			</ul>
+		</div>
 	</div>
 </div>
