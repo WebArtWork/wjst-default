@@ -515,3 +515,16 @@ $green-darken: #16a085;
 		}
 	}
 }
+
+.img {
+	background-color: var(--c-bg-item);
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image {
+	border-radius: 50%;
+}
