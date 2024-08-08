@@ -303,6 +303,77 @@
           </nav>
     </div>
 </div>
+<div class="components-card">
+    <h1>Card</h2>
+    <div class="index-readme__item">
+        <div class="card-wrapper">
+            <div class="card__wrap">
+                <div class="card__item">
+                    <div class="card__img">
+                        <img src="img/logo.svg" alt="WAW" width="45">
+                    </div>
+                    <div class="card__title">
+                        Title of card
+                    </div>
+                    <div class="card__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur facere.
+                    </div>
+                    <div class="card__btn">
+                        <a href="" class="btn">Card Btn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card__wrap">
+                <div class="card__item">
+                    <div class="card__img">
+                        <img src="img/logo.svg" alt="WAW" width="45">
+                    </div>
+                    <div class="card__title">
+                        Title of card
+                    </div>
+                    <div class="card__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur facere.
+                    </div>
+                    <div class="card__btn">
+                        <a href="" class="btn">Card Btn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card__wrap">
+                <div class="card__item">
+                    <div class="card__img">
+                        <img src="img/logo.svg" alt="WAW" width="45">
+                    </div>
+                    <div class="card__title">
+                        Title of card
+                    </div>
+                    <div class="card__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur facere.
+                    </div>
+                    <div class="card__btn">
+                        <a href="" class="btn">Card Btn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card__wrap">
+                <div class="card__item">
+                    <div class="card__img">
+                        <img src="img/logo.svg" alt="WAW" width="45">
+                    </div>
+                    <div class="card__title">
+                        Title of card
+                    </div>
+                    <div class="card__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur facere.
+                    </div>
+                    <div class="card__btn">
+                        <a href="" class="btn">Card Btn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="components-dropdowns">
     <h1>Drop-downs</h2>
     <div class="index-readme__item">
@@ -552,46 +623,127 @@
     </div>
 </div>
 <div class="components-propovers">
-    <h1>NavBar</h2>
+    <h1>Popovers</h2>
     <div class="index-readme__item">
-        <button id="popoverButton" class="btn btn-secondary" data-toggle="popover">Click me</button>
-    
-        <div id="popover" class="popover popover-top" role="tooltip">
-            <div class="popover-arrow"></div>
-            <div class="popover-body">This is a popover.</div>
+        <div class="popover-wrapper">
+            <button id="popoverButton" class="btn btn-secondary">Click me</button>
+
+            <div id="popover" class="popover popover-top" role="tooltip">
+                <div class="popover-arrow"></div>
+                <div class="popover-body">
+                    <div class="popover-body__title">
+                        Title for that.
+                    </div>
+                    <ul class="popover-body__list">
+                        <li>lorem ipsum tralala</li>
+                        <li>lorem ipsum tralala</li>
+                        <li>lorem ipsum tralala</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const button = document.getElementById('popoverButton');
-            const popover = document.getElementById('popover');
+document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('popoverButton');
+    const popover = document.getElementById('popover');
 
-            button.addEventListener('click', function () {
-                if (popover.style.display === 'none' || !popover.style.display) {
-                    // Position the popover
-                    const rect = button.getBoundingClientRect();
-                    popover.style.top = `${rect.bottom + window.scrollY}px`;
-                    popover.style.left = `${rect.left + window.scrollX + (button.offsetWidth / 2) - (popover.offsetWidth / 2)}px`;
+    button.addEventListener('click', function () {
+        const rect = button.getBoundingClientRect();
+        const popoverStyle = getComputedStyle(popover);
 
-                    popover.style.display = 'block';
+        // Встановлення CSS-змінних для позиціонування
+        document.documentElement.style.setProperty('--popover-top', `${rect.bottom + window.scrollY}px`);
+        document.documentElement.style.setProperty('--popover-left', `${rect.left + window.scrollX + (button.offsetWidth / 2) - (parseFloat(popoverStyle.width) / 2)}px`);
 
-                    // Add event listener to close the popover on outside click
-                    function onClickOutside(event) {
-                        if (!popover.contains(event.target) && event.target !== button) {
-                            popover.style.display = 'none';
-                            document.removeEventListener('click', onClickOutside);
-                        }
-                    }
-                    document.addEventListener('click', onClickOutside);
-                } else {
-                    popover.style.display = 'none';
+        if (popover.style.visibility === 'hidden' || !popover.style.visibility) {
+            popover.style.display = 'block'; // Встановити display block перед анімацією
+            setTimeout(() => { // Використовуємо setTimeout для запуску переходу
+                popover.style.opacity = '1';
+                popover.style.visibility = 'visible';
+            }, 10);
+
+            // Додавання слухача подій для закриття поповера при кліку поза його межами
+            function onClickOutside(event) {
+                if (!popover.contains(event.target) && event.target !== button) {
+                    closePopover();
+                    document.removeEventListener('click', onClickOutside);
                 }
-            });
+            }
+            document.addEventListener('click', onClickOutside);
+        } else {
+            closePopover();
+        }
+    });
 
-            // Ensure the popover is hidden initially
+    function closePopover() {
+        popover.style.opacity = '0';
+        popover.style.visibility = 'hidden';
+        setTimeout(() => {
             popover.style.display = 'none';
-        });
+        }, 300); // Час відповідає тривалості transition
+    }
+
+    // Переконатися, що поповер прихований спочатку
+    popover.style.visibility = 'hidden';
+});
+
     </script>
+</div>
+<div class="components-progress">
+    <h1>Progress</h2>
+    <div class="index-readme__item">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">
+                <span class="progress-label" id="progressLabel">0%</span>
+            </div>
+        </div>
+        <button onclick="startProgress()" class="btn btn--progress btn--second">Start Progress</button>
+
+        <div class="progress-item">
+            <span></span>
+        </div>
+
+        <script>    
+            function startProgress() {
+            const progressBar = document.getElementById('progressBar');
+            const progressLabel = document.getElementById('progressLabel');
+            let progress = 0;
+        
+            const interval = setInterval(() => {
+                if (progress >= 100) {
+                    clearInterval(interval);
+                } else {
+                    progress += 1;
+                    progressBar.style.width = `${progress}%`;
+                    progressLabel.textContent = `${progress}%`;
+                }
+            }, 35); // Устанавливаем прогресс каждые 100ms
+        }
+        
+        </script>
+    </div>
+</div>
+<div class="components-spinner">
+    <h1>Spinner</h2>
+    <div class="index-readme__item">
+        <div class="spinner"></div>
+    </div>
+</div>
+<div class="components-radio">
+    <h1>Radio button</h2>
+    <div class="index-readme__item">
+        <div class="radio-container">
+            <input type="radio" id="radio1" name="customRadio" class="custom-radio">
+            <label for="radio1" class="custom-label">Option 1</label>
+            
+            <input type="radio" id="radio2" name="customRadio" class="custom-radio">
+            <label for="radio2" class="custom-label">Option 2</label>
+            
+            <input type="radio" id="radio3" name="customRadio" class="custom-radio">
+            <label for="radio3" class="custom-label">Option 3</label>
+        </div>
+    </div>
 </div>
 		</section>
 	</main>
