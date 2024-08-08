@@ -1,14 +1,45 @@
-.w-card {
-  position: relative;
-  background: var(--c-bg-secondary);
-  border-radius: var(--b-radius-card);
-  box-shadow: 0px 0px 6px var(--c-shadow);
-
-  &._pd {
-    padding: 20px;
+.card{
+  &-wrapper{
+    display: flex;
+    flex-flow: row wrap;
   }
-
-  &__header {
-    min-height: 60px;
+  &__wrap{
+    display: flex;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 10px;
+  }
+  &__item{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  &__img{
+    text-align: center;
+    img{
+      width: 100%;
+      height: 100%;
+      max-width: 180px;
+    }
+  }
+  &__title{
+    text-align: center;
+    padding: 20px 0 10px 0;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  &__description{
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  &__btn{
+    .btn{
+      padding: 10px;
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
