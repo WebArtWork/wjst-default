@@ -1,0 +1,42 @@
+$popover-bg: #f7f7f7;
+$popover-border: #ddd;
+$popover-arrow-size: 10px;
+
+.popover {
+  max-width: 200px;
+  padding: 1rem;
+  background-color: $popover-bg;
+  border: 1px solid $popover-border;
+  border-radius: .3rem;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+  position: absolute;
+  display: none; // Start hidden
+  z-index: 1000;
+}
+
+.popover .popover-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: $popover-arrow-size solid transparent;
+}
+
+.popover .popover-arrow::before {
+  content: '';
+  position: absolute;
+  border: $popover-arrow-size solid $popover-bg;
+}
+
+.popover-top .popover-arrow {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -$popover-arrow-size;
+}
+
+.popover-top .popover-arrow::before {
+  bottom: 0;
+  left: 50%;
+  margin-left: -$popover-arrow-size;
+  border-width: 0 $popover-arrow-size $popover-arrow-size $popover-arrow-size;
+  border-color: transparent transparent $popover-bg transparent;
+}
