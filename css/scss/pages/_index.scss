@@ -482,7 +482,6 @@ $green-darken: #16a085;
 	border-radius: 0.5rem;
 	transition: background-color 0.3s ease;
 	overflow: hidden;
-	/* Додаємо overflow: hidden, щоб hover не заходив за межі заокруглень */
 
 	a {
 		border-bottom: 1px solid var(--c-border);
@@ -493,7 +492,6 @@ $green-darken: #16a085;
 
 		&:last-child {
 			border-bottom: none;
-			/* Усунення нижнього border для останнього елементу */
 		}
 	}
 
