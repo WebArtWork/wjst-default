@@ -58,7 +58,7 @@
   }
   
   .dropdown-menu li a:hover {
-    background-color: #f1f1f1;
+    background-color: var(--c-primary-cursor);
   }
   
   .dropdown.open .dropdown-menu {
