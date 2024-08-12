@@ -43,6 +43,7 @@ $red-darken: #581010;
 		}
 
 		&__item {
+			border: 1px solid var(--c-border);
 			position: relative;
 			margin: 10px 0;
 			font-size: 18px;
@@ -76,21 +77,6 @@ $red-darken: #581010;
 .list-style {
 	list-style-type: disc;
 	padding-left: 20px;
-}
-
-.example {
-	background-color: var(--c-bg-item);
-	margin: 10px 0;
-	font-size: 18px;
-	padding: 10px;
-	padding-left: 30px;
-	border-radius: 5px;
-
-	&__img {
-		background-color: var(--c-bg-item);
-		border-radius: 5px;
-		padding: 10px;
-	}
 }
 
 blockquote {
@@ -253,7 +239,95 @@ figure {
 	}
 }
 
-// need to write scss for 'description-list-alignment'
+// need to change
+.row {
+	display: flex;
+	flex-wrap: wrap;
+  
+	> .col-sm-3, > .col-sm-4, > .col-sm-9, > .col-sm-8 {
+	  position: relative;
+	  width: 100%;
+  
+	  @media (min-width: 576px) {
+		flex: 0 0 auto;
+	  }
+  
+	  &.col-sm-4 {
+		@media (min-width: 576px) {
+		  width: 33.333333%;
+		}
+	  }
+  
+	  &.col-sm-9 {
+		@media (min-width: 576px) {
+		  width: 75%;
+		}
+	  }
+  
+	  &.col-sm-8 {
+		@media (min-width: 576px) {
+		  width: 66.666667%;
+		}
+	  }
+  
+	  &.text-truncate {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	  }
+	}
+  }
+  
+  dl {
+	margin: 0;
+  
+	dt {
+	  font-weight: bold;
+	  margin-bottom: 0.5rem;
+	}
+  
+	dd {
+	  margin-bottom: 1rem;
+  
+	  p {
+		margin-bottom: 0.5rem;
+	  }
+  
+	  &:last-child {
+		margin-bottom: 0;
+	  }
+  
+	  dl {
+		margin-top: 0.5rem;
+  
+		dt {
+		  font-weight: bold;
+		  margin-bottom: 0.25rem;
+		}
+  
+		dd {
+		  margin-bottom: 0.5rem;
+		}
+	  }
+	}
+  }
+
+.example {
+	background-color: var(--c-bg-item);
+	margin: 10px 0;
+	font-size: 18px;
+	padding: 20px;
+	padding-left: 30px;
+	border-radius: 5px;
+	border: 1px solid var(--c-border);
+
+	&__img {
+		border: 1px solid var(--c-border);
+		background-color: var(--c-bg-item);
+		border-radius: 5px;
+		padding: 10px;
+	}
+}
 
 .example-img {
 	display: flex;
@@ -288,7 +362,25 @@ figure {
 	display: block;
 }
 
+.float {
+	&-start {
+		float: left !important;
+	}
+
+	&-end {
+		float: right !important;
+	}
+
+	&-none {
+		float: none !important;
+	}
+}
+
 .example-tables {
+	border: 1px solid var(--c-border);
+	border-radius: 5px;
+	padding: 20px;
+
 	.table {
 		width: 100%;
 		border-collapse: collapse;
@@ -522,6 +614,10 @@ figure {
 
 .strong {
 	font-weight: bold;
+}
+
+.border {
+	border: 1px solid var(--c-border);
 }
 
 .img {
