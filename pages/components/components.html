@@ -554,3 +554,82 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
     </div>
 </div>
+<div class="components-switch">
+    <h1>Switch</h2>
+    <div class="index-readme__item">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+</div>
+<div class="components-form">
+    <h1>Form</h2>
+    <div class="index-readme__item">
+        <form action="" class="w-forms">
+            <div class="w-forms__title">
+                Title for your form
+            </div>
+            <div class="w-forms__input">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="w-forms__input">
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="w-forms__textarea">
+                <textarea name="" id="" placeholder="Enter message"></textarea>
+            </div>
+            <div class="w-forms__btn">
+                <button class="btn">Send info</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="components-form">
+    <div class="index-readme__item">
+        <div class="custom-select" id="customSelect">
+            <div class="select-selected">
+              Select an option
+              <span class="arrow"></span>
+            </div>
+            <div class="select-items">
+              <div data-value="option1">Option 1</div>
+              <div data-value="option2">Option 2</div>
+              <div data-value="option3">Option 3</div>
+            </div>
+          </div>                    
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            var customSelect = document.getElementById("customSelect");
+            var selected = customSelect.querySelector(".select-selected");
+            var items = customSelect.querySelector(".select-items");
+            var options = items.querySelectorAll("div");
+
+            selected.addEventListener("click", function () {
+                items.classList.toggle("select-open");
+                selected.classList.toggle("select-open");
+            });
+
+            options.forEach(option => {
+                option.addEventListener("click", function () {
+                var selectedValue = this.getAttribute("data-value");
+                selected.innerHTML = this.innerHTML + '<span class="arrow"></span>';
+                items.classList.remove("select-open");
+                selected.classList.remove("select-open");
+                options.forEach(opt => opt.classList.remove("same-as-selected"));
+                this.classList.add("same-as-selected");
+                // Додайте свою логіку обробки вибору
+                console.log("Selected value: " + selectedValue);
+                });
+            });
+
+            document.addEventListener("click", function (e) {
+                if (!customSelect.contains(e.target)) {
+                items.classList.remove("select-open");
+                selected.classList.remove("select-open");
+                }
+            });
+            });
+          </script>
+    </div>
+</div>
