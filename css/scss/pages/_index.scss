@@ -374,10 +374,7 @@ dl {
 		border: 2px solid var(--c-code-hover);
 	}
 
-	.table-striped-columns tr td:nth-child(even),
-	.table-striped-columns tr th:nth-child(even) {
-		background-color: var(--c-shadow-table);
-	}
+
 
 	.table-hover {
 		tbody tr:hover {
@@ -498,56 +495,7 @@ table {
 		text-align: left;
 	}
 
-	.table {
-		&-primary {
-			background-color: var(--c-color-primary-table);
-			color: var(--c-text-secondary);
-		}
 
-		&-secondary {
-			background-color: var(--c-color-secondary-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-success {
-			background-color: var(--c-color-success-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-danger {
-			background-color: var(--c-color-danger-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-warning {
-			background-color: var(--c-color-warning-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-info {
-			background-color: var(--c-color-info-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-light {
-			background-color: var(--c-color-light-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-dark {
-			background-color: var(--c-primary);
-			color: var(--c-text-primary);
-		}
-
-		&-striped tbody tr:nth-child(odd) {
-			background-color: var(--c-shadow);
-		}
-
-		&-bordered th,
-		&-bordered td {
-			border: 1px solid var(--c-text-primary);
-		}
-	}
 
 	.table-group-divider {
 		border-top: 3px solid var(--c-text-primary);
@@ -566,6 +514,71 @@ table {
 	// 	margin-bottom: 0;
 	// }
 
+}
+
+.table {
+	&-primary {
+		background-color: var(--c-color-primary-table);
+		color: var(--c-text-secondary);
+	}
+
+	&-secondary {
+		background-color: var(--c-color-secondary-table);
+		color: var(--c-text-secondary);
+	}
+
+	&-success {
+		background-color: var(--c-color-success-table);
+		color: var(--c-text-secondary);
+	}
+
+	&-danger {
+		background-color: var(--c-color-danger-table);
+		color: var(--c-text-secondary);
+	}
+
+	&-warning {
+		background-color: var(--c-color-warning-table);
+		color: var(--c-text-secondary);
+	}
+
+	&-info {
+		background-color: var(--c-color-info-table);
+		color: var(--c-text-secondary);
+	}
+
+	&-light {
+		background-color: var(--c-color-light-table);
+		color: var(--c-text-secondary);
+	}
+
+	&-dark {
+		background-color: var(--c-primary);
+		color: var(--c-text-primary);
+	}
+
+	&-bordered th,
+	&-bordered td {
+		border: 1px solid var(--c-text-primary);
+	}
+}
+
+.striped-light tbody tr:nth-child(odd) {
+    background-color: var(--c-table-striped);
+}
+
+.striped-dark tbody tr:nth-child(odd) {
+    background-color: var(--c-table-shadow);
+}
+
+.striped-columns-light tr td:nth-child(even),
+.striped-columns-light tr th:nth-child(even) {
+	background-color: var(--c-table-striped);
+}
+
+.striped-columns-dark tr td:nth-child(even),
+.striped-columns-dark tr th:nth-child(even) {
+	background-color: var(--c-table-shadow);
 }
 
 .list {
