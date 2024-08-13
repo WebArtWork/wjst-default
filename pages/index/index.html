@@ -1037,99 +1037,121 @@
 			</div>
 			<p>Use contextual classes to color tables, table rows or individual cells.</p>
 			<div class="example-tables">
-				<div class="bd-example">
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col">Class</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">Default</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr class="table-primary">
-								<th scope="row">Primary</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr class="table-secondary">
-								<th scope="row">Secondary</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr class="table-success">
-								<th scope="row">Success</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr class="table-danger">
-								<th scope="row">Danger</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr class="table-warning">
-								<th scope="row">Warning</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr class="table-info">
-								<th scope="row">Info</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr class="table-light">
-								<th scope="row">Light</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr class="table-dark">
-								<th scope="row">Dark</th>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">Class</th>
+							<th scope="col">Heading</th>
+							<th scope="col">Heading</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Default</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+						<tr class="table-primary">
+							<th scope="row">Primary</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+						<tr class="table-secondary">
+							<th scope="row">Secondary</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+						<tr class="table-success">
+							<th scope="row">Success</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+						<tr class="table-danger">
+							<th scope="row">Danger</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+						<tr class="table-warning">
+							<th scope="row">Warning</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+						<tr class="table-info">
+							<th scope="row">Info</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+						<tr class="table-light">
+							<th scope="row">Light</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+						<tr class="table-dark">
+							<th scope="row">Dark</th>
+							<td>Cell</td>
+							<td>Cell</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<div class="index-readme__item">
 				<ul>
-					<li>&lt;!-- On tables --></li>
-					<li>&lt;table class="table-primary">...&lt;/table></li>
-					<li>&lt;table class="table-secondary">...&lt;/table></li>
-					<li>&lt;table class="table-success">...&lt;/table></li>
-					<li>&lt;table class="table-danger">...&lt;/table></li>
-					<li>&lt;table class="table-warning">...&lt;/table></li>
-					<li>&lt;table class="table-info">...&lt;/table></li>
-					<li>&lt;table class="table-light">...&lt;/table></li>
-					<li>&lt;table class="table-dark">...&lt;/table></li><br>
-
-					<li>&lt;!-- On rows --></li>
-					<li>&lt;tr class="table-primary">...&lt;/tr></li>
-					<li>&lt;tr class="table-secondary">...&lt;/tr></li>
-					<li>&lt;tr class="table-success">...&lt;/tr></li>
-					<li>&lt;tr class="table-danger">...&lt;/tr></li>
-					<li>&lt;tr class="table-warning">...&lt;/tr></li>
-					<li>&lt;tr class="table-info">...&lt;/tr></li>
-					<li>&lt;tr class="table-light">...&lt;/tr></li>
-					<li>&lt;tr class="table-dark">...&lt;/tr></li><br>
-
-					<li>&lt;!-- On cells (`td` or `th`) --></li>
-					<li>&lt;tr>
-					<li>&lt;td class="table-primary">...&lt;/td></li>
-					<li>&lt;td class="table-secondary">...&lt;/td></li>
-					<li>&lt;td class="table-success">...&lt;/td></li>
-					<li>&lt;td class="table-danger">...&lt;/td></li>
-					<li>&lt;td class="table-warning">...&lt;/td></li>
-					<li>&lt;td class="table-info">...&lt;/td></li>
-					<li>&lt;td class="table-light">...&lt;/td></li>
-					<li>&lt;td class="table-dark">...&lt;/td></li>
-					<li>&lt;/tr>
+					<li>&lt;table class="table"></li>
+					<li>&lt;thead></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="col">Class&lt;/th></li>
+					<li>&lt;th scope="col">Heading&lt;/th></li>
+					<li>&lt;th scope="col">Heading&lt;/th></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/thead></li>
+					<li>&lt;tbody></li>
+					<li>&lt;tr></li>
+					<li>&lt;th scope="row">Default&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="table-primary"></li>
+					<li>&lt;th scope="row">Primary&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="table-secondary"></li>
+					<li>&lt;th scope="row">Secondary&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="table-success"></li>
+					<li>&lt;th scope="row">Success&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="table-danger"></li>
+					<li>&lt;th scope="row">Danger&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="table-warning"></li>
+					<li>&lt;th scope="row">Warning&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="table-info"></li>
+					<li>&lt;th scope="row">Info&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="table-light"></li>
+					<li>&lt;th scope="row">Light&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;tr class="table-dark"></li>
+					<li>&lt;th scope="row">Dark&lt;/th></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;td>Cell&lt;/td></li>
+					<li>&lt;/tr></li>
+					<li>&lt;/tbody></li>
+					<li>&lt;/table></li>
 				</ul>
 			</div>
 		</div>

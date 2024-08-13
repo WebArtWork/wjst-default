@@ -369,108 +369,6 @@ dl {
 	border-radius: 5px;
 	padding: 20px;
 
-	.table {
-		width: 100%;
-		border-collapse: collapse;
-
-		&.caption-bottom {
-			caption-side: bottom;
-
-			caption {
-				text-align: left;
-				padding: 8px;
-				font-weight: bold;
-			}
-		}
-
-		&.caption-top {
-			caption-side: top;
-
-			caption {
-				text-align: left;
-				padding: 8px;
-				font-weight: bold;
-			}
-		}
-
-		th,
-		td {
-			border-bottom: 1px solid var(--c-text-primary);
-			padding: 8px;
-		}
-
-		th {
-			text-align: left;
-		}
-
-		&-primary {
-			background-color: var(--c-color-primary-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-secondary {
-			background-color: var(--c-color-secondary-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-success {
-			background-color: var(--c-color-success-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-danger {
-			background-color: var(--c-color-danger-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-warning {
-			background-color: var(--c-color-warning-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-info {
-			background-color: var(--c-color-info-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-light {
-			background-color: var(--c-color-light-table);
-			color: var(--c-text-secondary);
-		}
-
-		&-dark {
-			background-color: var(--c-primary);
-			color: var(--c-text-primary);
-		}
-
-		&-striped tbody tr:nth-child(odd) {
-			background-color: var(--c-shadow);
-		}
-
-		&-bordered th,
-		&-bordered td {
-			border: 1px solid var(--c-text-primary);
-		}
-
-		.table-group-divider {
-			border-top: 3px solid var(--c-text-primary);
-		}
-
-		&-sm {
-
-			th,
-			td {
-				padding: 0.3rem;
-			}
-		}
-
-		// need to change
-		// .mb-0 {
-		// 	margin-bottom: 0;
-		// }
-
-	}
-
 	.border-primary th,
 	.border-primary td {
 		border: 2px solid var(--c-code-hover);
@@ -564,6 +462,110 @@ dl {
 	// 		}
 	// 	}
 	// }
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+
+	&.caption-bottom {
+		caption-side: bottom;
+
+		caption {
+			text-align: left;
+			padding: 8px;
+			font-weight: bold;
+		}
+	}
+
+	&.caption-top {
+		caption-side: top;
+
+		caption {
+			text-align: left;
+			padding: 8px;
+			font-weight: bold;
+		}
+	}
+
+	th,
+	td {
+		border-bottom: 1px solid var(--c-border);
+		padding: 8px;
+	}
+
+	th {
+		text-align: left;
+	}
+
+	.table {
+		&-primary {
+			background-color: var(--c-color-primary-table);
+			color: var(--c-text-secondary);
+		}
+
+		&-secondary {
+			background-color: var(--c-color-secondary-table);
+			color: var(--c-text-secondary);
+		}
+
+		&-success {
+			background-color: var(--c-color-success-table);
+			color: var(--c-text-secondary);
+		}
+
+		&-danger {
+			background-color: var(--c-color-danger-table);
+			color: var(--c-text-secondary);
+		}
+
+		&-warning {
+			background-color: var(--c-color-warning-table);
+			color: var(--c-text-secondary);
+		}
+
+		&-info {
+			background-color: var(--c-color-info-table);
+			color: var(--c-text-secondary);
+		}
+
+		&-light {
+			background-color: var(--c-color-light-table);
+			color: var(--c-text-secondary);
+		}
+
+		&-dark {
+			background-color: var(--c-primary);
+			color: var(--c-text-primary);
+		}
+
+		&-striped tbody tr:nth-child(odd) {
+			background-color: var(--c-shadow);
+		}
+
+		&-bordered th,
+		&-bordered td {
+			border: 1px solid var(--c-text-primary);
+		}
+	}
+
+	.table-group-divider {
+		border-top: 3px solid var(--c-text-primary);
+	}
+
+	&-sm {
+
+		th,
+		td {
+			padding: 0.3rem;
+		}
+	}
+
+	// need to change
+	// .mb-0 {
+	// 	margin-bottom: 0;
+	// }
+
 }
 
 .list {
