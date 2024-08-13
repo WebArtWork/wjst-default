@@ -3,6 +3,7 @@
     padding-left: 0;
     list-style: none;
     border-radius: .25rem;
+    margin-bottom: 20px;
     .page-link{
         position: relative;
         display: block;
@@ -40,6 +41,12 @@
         &:last-child{
             margin-right: 0;
         }
+    }
+    .prev-arrow{
+        margin-right: 20px;
+    }
+    .next-arrow{
+        margin-left: 10px;
     }
 }
 .page-link:not(:disabled):not(.disabled) {
