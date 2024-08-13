@@ -185,6 +185,14 @@ figure {
 	margin-bottom: 10px;
 }
 
+p {
+	.lead {
+		font-size: 1.25rem; 
+		font-weight: 300; 
+		line-height: 1.6;
+	}
+}
+
 .text-body-secondary {
 	color: var(--c-text-body-secondary);
 }
@@ -243,74 +251,77 @@ figure {
 .row {
 	display: flex;
 	flex-wrap: wrap;
-  
-	> .col-sm-3, > .col-sm-4, > .col-sm-9, > .col-sm-8 {
-	  position: relative;
-	  width: 100%;
-  
-	  @media (min-width: 576px) {
-		flex: 0 0 auto;
-	  }
-  
-	  &.col-sm-4 {
+
+	>.col-sm-3,
+	>.col-sm-4,
+	>.col-sm-9,
+	>.col-sm-8 {
+		position: relative;
+		width: 100%;
+
 		@media (min-width: 576px) {
-		  width: 33.333333%;
+			flex: 0 0 auto;
 		}
-	  }
-  
-	  &.col-sm-9 {
-		@media (min-width: 576px) {
-		  width: 75%;
+
+		&.col-sm-4 {
+			@media (min-width: 576px) {
+				width: 33.333333%;
+			}
 		}
-	  }
-  
-	  &.col-sm-8 {
-		@media (min-width: 576px) {
-		  width: 66.666667%;
+
+		&.col-sm-9 {
+			@media (min-width: 576px) {
+				width: 75%;
+			}
 		}
-	  }
-  
-	  &.text-truncate {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	  }
+
+		&.col-sm-8 {
+			@media (min-width: 576px) {
+				width: 66.666667%;
+			}
+		}
+
+		&.text-truncate {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
 	}
-  }
-  
-  dl {
+}
+
+dl {
 	margin: 0;
-  
+
 	dt {
-	  font-weight: bold;
-	  margin-bottom: 0.5rem;
-	}
-  
-	dd {
-	  margin-bottom: 1rem;
-  
-	  p {
+		font-weight: bold;
 		margin-bottom: 0.5rem;
-	  }
-  
-	  &:last-child {
-		margin-bottom: 0;
-	  }
-  
-	  dl {
-		margin-top: 0.5rem;
-  
-		dt {
-		  font-weight: bold;
-		  margin-bottom: 0.25rem;
-		}
-  
-		dd {
-		  margin-bottom: 0.5rem;
-		}
-	  }
 	}
-  }
+
+	dd {
+		margin-bottom: 1rem;
+
+		p {
+			margin-bottom: 0.5rem;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		dl {
+			margin-top: 0.5rem;
+
+			dt {
+				font-weight: bold;
+				margin-bottom: 0.25rem;
+			}
+
+			dd {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+}
 
 .example {
 	background-color: var(--c-bg-item);
