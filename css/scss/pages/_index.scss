@@ -369,22 +369,6 @@ dl {
 	border-radius: 5px;
 	padding: 20px;
 
-	.w-25 {
-		width: 25% !important;
-	}
-
-	.align-top {
-		vertical-align: top !important;
-	}
-
-	.align-bottom {
-		vertical-align: bottom !important;
-	}
-
-	.align-middle {
-		vertical-align: middle !important;
-	}
-
 	// need to be rewritten
 	// .table-responsive {
 	// 	overflow-x: auto;
@@ -459,10 +443,6 @@ table {
 
 	th {
 		text-align: left;
-	}
-
-	.table-group-divider {
-		border-top: 3px solid var(--c-text-primary);
 	}
 
 	// need to change
@@ -613,6 +593,26 @@ table {
 	td {
 		padding: 0.3rem;
 	}
+}
+
+.table-group-divider {
+	border-top: 3px solid var(--c-text-primary);
+}
+
+.w-25 {
+	width: 25% !important;
+}
+
+.align-top {
+	vertical-align: top !important;
+}
+
+.align-bottom {
+	vertical-align: bottom !important;
+}
+
+.align-middle {
+	vertical-align: middle !important;
 }
 
 .list {
