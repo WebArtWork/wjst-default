@@ -369,10 +369,7 @@ dl {
 	border-radius: 5px;
 	padding: 20px;
 
-	.border-primary th,
-	.border-primary td {
-		border: 2px solid var(--c-code-hover);
-	}
+
 
 	.table-borderless {
 		border-collapse: collapse;
@@ -504,37 +501,37 @@ table {
 
 .table {
 	&-primary {
-		background-color: var(--c-color-primary-table);
+		background-color: var(--c-primary-table);
 		color: var(--c-text-secondary);
 	}
 
 	&-secondary {
-		background-color: var(--c-color-secondary-table);
+		background-color: var(--c-secondary-table);
 		color: var(--c-text-secondary);
 	}
 
 	&-success {
-		background-color: var(--c-color-success-table);
+		background-color: var(--c-success-table);
 		color: var(--c-text-secondary);
 	}
 
 	&-danger {
-		background-color: var(--c-color-danger-table);
+		background-color: var(--c-danger-table);
 		color: var(--c-text-secondary);
 	}
 
 	&-warning {
-		background-color: var(--c-color-warning-table);
+		background-color: var(--c-warning-table);
 		color: var(--c-text-secondary);
 	}
 
 	&-info {
-		background-color: var(--c-color-info-table);
+		background-color: var(--c-info-table);
 		color: var(--c-text-secondary);
 	}
 
 	&-light {
-		background-color: var(--c-color-light-table);
+		background-color: var(--c-light-table);
 		color: var(--c-text-secondary);
 	}
 
@@ -545,10 +542,8 @@ table {
 
 	&-bordered th,
 	&-bordered td {
-		border: 1px solid var(--c-text-primary);
+		border: 1px solid var(--c-border);
 	}
-
-
 
 	&-active-light {
 		background-color: var(--c-table-striped);
@@ -581,6 +576,46 @@ table {
 	tbody tr:hover {
 		background-color: var(--c-shadow-table);
 	}
+}
+
+.border-primary th,
+.border-primary td {
+	border: 1px solid var(--c-primary-border);
+}
+
+.border-secondary th,
+.border-secondary td {
+	border: 1px solid var(--c-secondary-border);
+}
+
+.border-success th,
+.border-success td {
+	border: 1px solid var(--c-success-border);
+}
+
+.border-danger th,
+.border-danger td {
+	border: 1px solid var(--c-danger-border);
+}
+
+.border-warning th,
+.border-warning td {
+	border: 1px solid var(--c-warning-border);
+}
+
+.border-info th,
+.border-info td {
+	border: 1px solid var(--c-info-border);
+}
+
+.border-light th,
+.border-light td {
+	border: 1px solid var(--c-text-primary);
+}
+
+.border-dark th,
+.border-dark td {
+	border: 1px solid var(--c-primary);
 }
 
 .list {
