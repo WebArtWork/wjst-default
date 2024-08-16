@@ -550,8 +550,12 @@ table {
 
 
 
-	&-active {
+	&-active-light {
 		background-color: var(--c-table-striped);
+	}
+
+	&-active-dark {
+		background-color: var(--c-table-shadow);
 	}
 }
 
