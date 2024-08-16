@@ -369,25 +369,6 @@ dl {
 	border-radius: 5px;
 	padding: 20px;
 
-
-
-	.table-borderless {
-		border-collapse: collapse;
-
-		th,
-		td {
-			border: none;
-		}
-
-		thead th {
-			border-bottom: 2px solid transparent;
-		}
-
-		tbody tr {
-			border-top: 2px solid transparent;
-		}
-	}
-
 	.w-25 {
 		width: 25% !important;
 	}
@@ -616,6 +597,23 @@ table {
 .border-dark th,
 .border-dark td {
 	border: 1px solid var(--c-primary);
+}
+
+.table-borderless {
+	border-collapse: collapse;
+
+	th,
+	td {
+		border: none;
+	}
+
+	thead th {
+		border-bottom: 2px solid transparent;
+	}
+
+	tbody tr {
+		border-top: 2px solid transparent;
+	}
 }
 
 .list {
