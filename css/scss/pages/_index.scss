@@ -465,19 +465,10 @@ table {
 		border-top: 3px solid var(--c-text-primary);
 	}
 
-	&-sm {
-
-		th,
-		td {
-			padding: 0.3rem;
-		}
-	}
-
 	// need to change
 	// .mb-0 {
 	// 	margin-bottom: 0;
 	// }
-
 }
 
 .table {
@@ -613,6 +604,14 @@ table {
 
 	tbody tr {
 		border-top: 2px solid transparent;
+	}
+}
+
+.table-sm {
+
+	th,
+	td {
+		padding: 0.3rem;
 	}
 }
 
