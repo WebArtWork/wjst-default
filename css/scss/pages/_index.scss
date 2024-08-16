@@ -374,18 +374,6 @@ dl {
 		border: 2px solid var(--c-code-hover);
 	}
 
-
-
-	.table-hover {
-		tbody tr:hover {
-			background-color: var(--c-shadow-table);
-		}
-	}
-
-	.table-active {
-		background-color: var(--c-shadow-table);
-	}
-
 	.table-borderless {
 		border-collapse: collapse;
 
@@ -495,8 +483,6 @@ table {
 		text-align: left;
 	}
 
-
-
 	.table-group-divider {
 		border-top: 3px solid var(--c-text-primary);
 	}
@@ -561,14 +547,20 @@ table {
 	&-bordered td {
 		border: 1px solid var(--c-text-primary);
 	}
+
+
+
+	&-active {
+		background-color: var(--c-table-striped);
+	}
 }
 
 .striped-light tbody tr:nth-child(odd) {
-    background-color: var(--c-table-striped);
+	background-color: var(--c-table-striped);
 }
 
 .striped-dark tbody tr:nth-child(odd) {
-    background-color: var(--c-table-shadow);
+	background-color: var(--c-table-shadow);
 }
 
 .striped-columns-light tr td:nth-child(even),
@@ -579,6 +571,12 @@ table {
 .striped-columns-dark tr td:nth-child(even),
 .striped-columns-dark tr th:nth-child(even) {
 	background-color: var(--c-table-shadow);
+}
+
+.table-hover {
+	tbody tr:hover {
+		background-color: var(--c-shadow-table);
+	}
 }
 
 .list {
