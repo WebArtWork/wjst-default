@@ -368,47 +368,6 @@ dl {
 	border: 1px solid var(--c-border);
 	border-radius: 5px;
 	padding: 20px;
-
-	// need to be rewritten
-	// .table-responsive {
-	// 	overflow-x: auto;
-	// 	-webkit-overflow-scrolling: touch;
-
-	// 	&.table-responsive-sm {
-	// 		@media (max-width: 576px) {
-	// 			overflow-x: auto;
-	// 			-webkit-overflow-scrolling: touch;
-	// 		}
-	// 	}
-
-	// 	&.table-responsive-md {
-	// 		@media (max-width: 768px) {
-	// 			overflow-x: auto;
-	// 			-webkit-overflow-scrolling: touch;
-	// 		}
-	// 	}
-
-	// 	&.table-responsive-lg {
-	// 		@media (max-width: 992px) {
-	// 			overflow-x: auto;
-	// 			-webkit-overflow-scrolling: touch;
-	// 		}
-	// 	}
-
-	// 	&.table-responsive-xl {
-	// 		@media (max-width: 1200px) {
-	// 			overflow-x: auto;
-	// 			-webkit-overflow-scrolling: touch;
-	// 		}
-	// 	}
-
-	// 	&.table-responsive-xxl {
-	// 		@media (max-width: 1400px) {
-	// 			overflow-x: auto;
-	// 			-webkit-overflow-scrolling: touch;
-	// 		}
-	// 	}
-	// }
 }
 
 table {
@@ -617,6 +576,10 @@ table {
 
 .align-middle {
 	vertical-align: middle !important;
+}
+
+.table-responsive {
+	overflow-x: auto;
 }
 
 .list {
