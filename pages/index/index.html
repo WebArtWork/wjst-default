@@ -2028,7 +2028,7 @@
 			<p>Table cells of <span class="index-readme__code">&lt;thead></span> are always vertical aligned to the
 				bottom. Table cells in <span class="index-readme__code">&lt;tbody></span> inherit their alignment from
 				<span class="index-readme__code">&lt;table></span> and are aligned to the top by default. Use the <span
-					class="index-readme__code">vertical align</span>classes to re-align where needed.
+					class="index-readme__code">vertical align</span> classes to re-align where needed.
 			</p>
 			<div class="example-tables">
 				<table class="table align-middle">
@@ -2076,7 +2076,6 @@
 			<p>HTML:</p>
 			<div class="index-readme__item">
 				<ul>
-					<li>&lt;div class="table-responsive"></li>
 					<li>&lt;table class="table align-middle"></li>
 					<li>&lt;thead></li>
 					<li>&lt;tr></li>
@@ -2098,7 +2097,6 @@
 					<li>&lt;/tr></li>
 					<li>&lt;/tbody></li>
 					<li>&lt;/table></li>
-					<li>&lt;/div></li>
 				</ul>
 			</div>
 		</div>
@@ -2564,70 +2562,12 @@
 			<div class="index-readme__title">
 				<h1>Breakpoint specific</h1>
 			</div>
-			<p>Use <span class="index-readme__code">.table-responsive{-sm|-md|-lg|-xl|-xxl}</span> as needed to create
+			<p>Use <span class="index-readme__code">.hscroll{-sm|-md|-lg|-xl|-xxl}</span> as needed to create
 				responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave
 				normally and not scroll horizontally.</p>
 			<p>These tables may appear broken until their responsive styles apply at specific viewport widths.</p>
 			<div class="example-tables">
-				<div class="table-responsive">
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-								<th scope="col">Heading</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-								<td>Cell</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="example-tables">
-				<div class="table-responsive-sm">
+				<div class="hscroll">
 					<table class="table">
 						<thead>
 							<tr>
@@ -2681,7 +2621,7 @@
 				</div>
 			</div>
 			<div class="example-tables">
-				<div class="table-responsive-md">
+				<div class="hscroll-sm">
 					<table class="table">
 						<thead>
 							<tr>
@@ -2735,7 +2675,7 @@
 				</div>
 			</div>
 			<div class="example-tables">
-				<div class="table-responsive-lg">
+				<div class="hscroll-md">
 					<table class="table">
 						<thead>
 							<tr>
@@ -2789,7 +2729,7 @@
 				</div>
 			</div>
 			<div class="example-tables">
-				<div class="table-responsive-xl">
+				<div class="hscroll-lg">
 					<table class="table">
 						<thead>
 							<tr>
@@ -2843,7 +2783,61 @@
 				</div>
 			</div>
 			<div class="example-tables">
-				<div class="table-responsive-xxl">
+				<div class="hscroll-xl">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+								<th scope="col">Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+								<td>Cell</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="example-tables">
+				<div class="hscroll-xxl">
 					<table class="table">
 						<thead>
 							<tr>
@@ -2898,32 +2892,32 @@
 			</div>
 			<div class="index-readme__item">
 				<ul>
-					<li>&lt;div class="table-responsive"></li>
+					<li>&lt;div class="hscroll"></li>
 					<li>&lt;table class="table"></li>
 					<li>...</li>
 					<li>&lt;/table></li>
 					<li>&lt;/div></li><br>
-					<li>&lt;div class="table-responsive-sm"></li>
+					<li>&lt;div class="hscroll-sm"></li>
 					<li>&lt;table class="table"></li>
 					<li>...</li>
 					<li>&lt;/table></li>
 					<li>&lt;/div></li><br>
-					<li>&lt;div class="table-responsive-md"></li>
+					<li>&lt;div class="hscroll-md"></li>
 					<li>&lt;table class="table"></li>
 					<li>...</li>
 					<li>&lt;/table></li>
 					<li>&lt;/div></li><br>
-					<li>&lt;div class="table-responsive-lg"></li>
+					<li>&lt;div class="hscroll-lg"></li>
 					<li>&lt;table class="table"></li>
 					<li>...</li>
 					<li>&lt;/table></li>
 					<li>&lt;/div></li><br>
-					<li>&lt;div class="table-responsive-xl"></li>
+					<li>&lt;div class="hscroll-xl"></li>
 					<li>&lt;table class="table"></li>
 					<li>...</li>
 					<li>&lt;/table></li>
 					<li>&lt;/div></li><br>
-					<li>&lt;div class="table-responsive-xxl"></li>
+					<li>&lt;div class="hscroll-xxl"></li>
 					<li>&lt;table class="table"></li>
 					<li>...</li>
 					<li>&lt;/table></li>

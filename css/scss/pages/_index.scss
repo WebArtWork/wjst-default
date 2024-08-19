@@ -45,9 +45,9 @@ $red-darken: #581010;
 		&__item {
 			border: 1px solid var(--c-border);
 			position: relative;
-			margin: 10px 0;
+			margin: 20px 0;
 			font-size: 18px;
-			background: $dark;
+			background: var(--c-bg-item);
 			padding: 10px;
 			padding-left: 30px;
 			border-radius: 5px;
@@ -368,6 +368,7 @@ dl {
 	border: 1px solid var(--c-border);
 	border-radius: 5px;
 	padding: 20px;
+	margin-bottom: 20px;
 }
 
 table {
@@ -580,6 +581,36 @@ table {
 
 .hscroll {
 	overflow-x: auto;
+}
+
+@media (max-width: 576px) {
+	.hscroll-sm {
+		overflow-x: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.hscroll-md {
+		overflow-x: auto;
+	}
+}
+
+@media (max-width: 992px) {
+	.hscroll-lg {
+		overflow-x: auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.hscroll-xl {
+		overflow-x: auto;
+	}
+}
+
+@media (max-width: 1400px) {
+	.hscroll-xxl {
+		overflow-x: auto;
+	}
 }
 
 .list {
