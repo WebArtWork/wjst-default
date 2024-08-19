@@ -444,11 +444,6 @@ table {
 	th {
 		text-align: left;
 	}
-
-	// need to change
-	// .mb-0 {
-	// 	margin-bottom: 0;
-	// }
 }
 
 .table {
@@ -492,9 +487,18 @@ table {
 		color: var(--c-text-primary);
 	}
 
-	&-bordered th,
-	&-bordered td {
-		border: 1px solid var(--c-border);
+	&-bordered,
+	&-striped,
+	&-hover,
+	&-active-light,
+	&-active-dark {
+
+		>tbody>tr>td,
+		>tbody>tr>th,
+		>thead>tr>th,
+		>thead>tr>td {
+			border: 1px solid var(--c-border);
+		}
 	}
 
 	&-active-light {
@@ -579,11 +583,11 @@ table {
 	}
 
 	thead th {
-		border-bottom: 2px solid transparent;
+		border-bottom: 1px solid transparent;
 	}
 
 	tbody tr {
-		border-top: 2px solid transparent;
+		border-top: 1px solid transparent;
 	}
 }
 
