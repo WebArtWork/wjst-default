@@ -36,7 +36,7 @@
 		<span class="header__right">
 			<ul class="header__nav">
 				<li class="header__nav-item">
-					<a href="/documentations" class="header__nav-link">Documentations</a>
+					<a href="/" class="header__nav-link">Getting started</a>
 				</li>
 			</ul>
 
@@ -56,6 +56,9 @@
 	<main class="main-content">
 		<nav id="sidebar" class="main-content__nav">
 			<ul>
+				<li class="main-content__nav-item main-content__nav-item--mobile">
+					<a href="/" class="header__nav-link">Getting started</a>
+				</li>
 				{% for item in items %}
 				<li class="main-content__nav-item">
 					<a href="{{{item.url}}}" class="main-content__nav-link">{{{item.name}}}</a>
@@ -68,11 +71,6 @@
 					</ul>
 				</li>
 				{% endfor %}
-
-
-				<li class="main-content__nav-item main-content__nav-item--mobile">
-					<a href="/documentations" class="header__nav-link">Documentations</a>
-				</li>
 			</ul>
 		</nav>
 		<section class="main-content__section">

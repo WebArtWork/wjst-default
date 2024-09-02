@@ -9,10 +9,6 @@
 	"scss": "scss/index.scss",
 	"items": [
 		{
-			"name": "Getting started",
-			"url": "/"
-		},
-		{
 			"name": "Customize",
 			"url": "/customize",
 			"items": [
