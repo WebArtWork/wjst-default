@@ -6,5 +6,133 @@
 	"favicon": "img/favicon.ico",
 	"image": "https://webartwork.github.io/wjst-default/img/avatar.png",
 	"author": "Honchar Denys",
-	"scss": "scss/index.scss"
+	"scss": "scss/index.scss",
+	"items": [
+		{
+			"name": "Getting started",
+			"url": "/"
+		},
+		{
+			"name": "Customize",
+			"url": "/customize",
+			"items": [
+				{
+					"name": "Sass",
+					"url": "/customize#sass"
+				},
+				{
+					"name": "CSS Variables",
+					"url": "/customize#css-variables"
+				},
+				{
+					"name": "Template Variables",
+					"url": "/customize#template-variables"
+				},
+				{
+					"name": "Optimize",
+					"url": "/customize#optimize"
+				}
+			]
+		},
+		{
+			"name": "Layout",
+			"url": "/layout",
+			"items": [
+				{
+					"name": "Breakpoints",
+					"url": "/layout#breakpoints"
+				},
+				{
+					"name": "Containers",
+					"url": "/layout#containers"
+				},
+				{
+					"name": "Grid",
+					"url": "/layout#grid"
+				},
+				{
+					"name": "Columns",
+					"url": "/layout#columns"
+				}
+			]
+		},
+		{
+			"name": "Content",
+			"url": "/content",
+			"items": [
+				{
+					"name": "Typography",
+					"url": "/content#typography"
+				},
+				{
+					"name": "Images",
+					"url": "/content#images"
+				},
+				{
+					"name": "Tables",
+					"url": "/content#tables"
+				}
+			]
+		},
+		{
+			"name": "Components",
+			"url": "/components",
+			"items": [
+				{
+					"name": "Alerts",
+					"url": "/components#alerts"
+				},
+				{
+					"name": "Breadcrumb",
+					"url": "/components#breadcrumb"
+				},
+				{
+					"name": "Buttons",
+					"url": "/components#buttons"
+				},
+				{
+					"name": "Collapse",
+					"url": "/components#collapse"
+				},
+				{
+					"name": "Dropdowns",
+					"url": "/components#dropdowns"
+				},
+				{
+					"name": "Modal",
+					"url": "/components#modal"
+				},
+				{
+					"name": "Navbar",
+					"url": "/components#navbar"
+				},
+				{
+					"name": "Pagination",
+					"url": "/components#pagination"
+				},
+				{
+					"name": "Popovers",
+					"url": "/components#popovers"
+				}
+			]
+		},
+		{
+			"name": "About",
+			"url": "/about",
+			"items": [
+				{
+					"name": "Team",
+					"url": "/about#team"
+				},
+				{
+					"name": "Brand",
+					"url": "/about#brand"
+				},
+				{
+					"name": "License",
+					"url": "/about#license"
+				}
+			]
+		}
+	]
 }
