@@ -131,138 +131,152 @@
 			]
 		}
 	],
-	"founders": [
+	"teams": [
 		{
-			"href": "https://github.com/CrackerakiUA",
-			"img": "https://webart.work/api/user/image/63b9245ff9e925059d9ef676.jpg?1685462740871",
-			"name": "Denys Honchar",
-			"username": "Crackeraki"
-		}
-	],
-	"coFounders": [
-		{
-			"href": "https://github.com/Esmodeo",
-			"img": "https://avatars.githubusercontent.com/u/11319329?v=4",
-			"name": "Andrew Momot",
-			"username": "Esmodeo"
+			"name": "CEO & Founder",
+			"users": [
+				{
+					"href": "https://github.com/CrackerakiUA",
+					"img": "https://webart.work/api/user/image/63b9245ff9e925059d9ef676.jpg?1685462740871",
+					"name": "Denys Honchar",
+					"username": "Crackeraki"
+				}
+			]
 		},
 		{
-			"href": "https://github.com/Kondruk",
-			"img": "https://webart.work/api/user/image/6602d9a0eb28ecc0dbacf3ed.jpg?1711533376634",
-			"name": "Roman Kondruk",
-			"username": "Kondruk"
+			"name": "Co-founders",
+			"users": [
+				{
+					"href": "https://github.com/Esmodeo",
+					"img": "https://avatars.githubusercontent.com/u/11319329?v=4",
+					"name": "Andrew Momot",
+					"username": "Esmodeo"
+				},
+				{
+					"href": "https://github.com/Kondruk",
+					"img": "https://webart.work/api/user/image/6602d9a0eb28ecc0dbacf3ed.jpg?1711533376634",
+					"name": "Roman Kondruk",
+					"username": "Kondruk"
+				},
+				{
+					"href": "https://github.com/div632",
+					"img": "https://avatars.githubusercontent.com/u/63455695?v=4",
+					"name": "Dina Irikova",
+					"username": "div632"
+				},
+				{
+					"href": "https://github.com/hlushko-arthur",
+					"img": "https://avatars.githubusercontent.com/u/61018089?v=4",
+					"name": "Arthur Hlushko",
+					"username": "hlushko-arthur"
+				},
+				{
+					"href": "https://webart.work/m/6474b20780f5fe5cf6f21e6f",
+					"img": "https://webart.work/api/user/image/6474b20780f5fe5cf6f21e6f.jpg?1685463694255",
+					"name": "Solomia Hadzyra",
+					"username": "mia_hadzyra"
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Anastasiia Vodnieva",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Yulian Hramchuk",
+					"username": ""
+				}
+			]
 		},
 		{
-			"href": "https://github.com/div632",
-			"img": "https://avatars.githubusercontent.com/u/63455695?v=4",
-			"name": "Dina Irikova",
-			"username": "div632"
+			"name": "Active Team",
+			"users": [
+				{
+					"href": "https://github.com/Lizvinskyi0202",
+					"img": "img/photo1.jpg",
+					"name": "Andrii Lizvinskyi",
+					"username": "Lizvinskyi0202"
+				},
+				{
+					"href": "https://github.com/nikiquickie",
+					"img": "https://webart.work/api/user/image/64eee5d08eaf76400c6c3063.jpg?1693378151062",
+					"name": "Nika Rohovska",
+					"username": "nikiquickie"
+				},
+				{
+					"href": "https://github.com/volodkina01",
+					"img": "https://webart.work/api/user/image/666ae070fe74e00ea634c6f5.jpg?1718280491815",
+					"name": "Nadiia Bercha",
+					"username": "volodkina01"
+				},
+				{
+					"href": "https://github.com/denisN2102",
+					"img": "https://webart.work/api/user/image/65d748355ad774b675a148c0.jpg?1708607959929",
+					"name": "Denys Narolskyi",
+					"username": "denisN2102"
+				}
+			]
 		},
 		{
-			"href": "https://github.com/hlushko-arthur",
-			"img": "https://avatars.githubusercontent.com/u/61018089?v=4",
-			"name": "Arthur Hlushko",
-			"username": "hlushko-arthur"
-		},
-		{
-			"href": "https://webart.work/m/6474b20780f5fe5cf6f21e6f",
-			"img": "https://webart.work/api/user/image/6474b20780f5fe5cf6f21e6f.jpg?1685463694255",
-			"name": "Solomia Hadzyra",
-			"username": "mia_hadzyra"
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Anastasiia Vodnieva",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Yulian Hramchuk",
-			"username": ""
-		}
-	],
-	"team": [
-		{
-			"href": "https://github.com/Lizvinskyi0202",
-			"img": "img/photo1.jpg",
-			"name": "Andrii Lizvinskyi",
-			"username": "Lizvinskyi0202"
-		},
-		{
-			"href": "https://github.com/nikiquickie",
-			"img": "https://webart.work/api/user/image/64eee5d08eaf76400c6c3063.jpg?1693378151062",
-			"name": "Nika Rohovska",
-			"username": "nikiquickie"
-		},
-		{
-			"href": "https://github.com/volodkina01",
-			"img": "https://webart.work/api/user/image/666ae070fe74e00ea634c6f5.jpg?1718280491815",
-			"name": "Nadiia Bercha",
-			"username": "volodkina01"
-		},
-		{
-			"href": "https://github.com/denisN2102",
-			"img": "https://webart.work/api/user/image/65d748355ad774b675a148c0.jpg?1708607959929",
-			"name": "Denys Narolskyi",
-			"username": "denisN2102"
-		}
-	],
-	"inactiveCoFounders": [
-		{
-			"href": "",
-			"img": "",
-			"name": "Dmytro Maksiuta",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Valik Maystrenko",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Dmytro Lytvyniuk",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Oleksandr Fedorak",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Oganes Petikian",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Iryna Prysyazhna",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Ivan Balias",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Natalie Zarytska",
-			"username": ""
-		},
-		{
-			"href": "",
-			"img": "",
-			"name": "Nataliia Vasyliuk",
-			"username": ""
+			"name": "Inactive Co-founders",
+			"users": [
+				{
+					"href": "",
+					"img": "",
+					"name": "Dmytro Maksiuta",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Valik Maystrenko",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Dmytro Lytvyniuk",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Oleksandr Fedorak",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Oganes Petikian",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Iryna Prysyazhna",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Ivan Balias",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Natalie Zarytska",
+					"username": ""
+				},
+				{
+					"href": "",
+					"img": "",
+					"name": "Nataliia Vasyliuk",
+					"username": ""
+				}
+			]
 		}
 	]
 }

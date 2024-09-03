@@ -7,58 +7,30 @@
         <p>waw is maintained by a small group of invaluable core contributors, with the massive support and
             involvement of our community.</p>
 
-		{% if founders.length %}
-        <p>CEO & Founder</p>
+		{% for team in teams %}
+        <p>{{{team.name}}}</p>
         <div class="list">
-			{% for user in founders %}
+			{% for user in team.users %}
            	<a class="list-group" href="{{{user.href}}}">
                 <img src="{{{user.img}}}" alt="@{{{user.username}}}" width="32" height="32" loading="lazy">
                 <span>
                     <strong>{{{user.name}}}</strong> @{{{user.username}}}
                 </span>
             </a>
+
+			<!-- NEW CODE -->
+			<div>
+				<!-- line where we put list of social icons -->
+				{% for social in user.socials %}
+				<a class="list-group" href="{{{social.href}}}">
+					<img src="{{{social.img}}}" alt="@{{{social.href}}}" width="32" height="32" loading="lazy">
+				</a>
+				{% endfor %}
+			</div>
 			{% endfor %}
         </div>
-		{% endif %}
-		{% if coFounders.length %}
-        <p>Co-founders</p>
-        <div class="list">
-			{% for user in coFounders %}
-            <a class="list-group" href="{{{user.href}}}">
-                <img src="{{{user.img}}}" alt="@{{{user.username}}}" width="32" height="32" loading="lazy">
-                <span>
-                    <strong>{{{user.name}}}</strong> @{{{user.username}}}
-                </span>
-            </a>
-			{% endfor %}
-        </div>
-		{% endif %}
-		{% if team.length %}
-        <p>Active Team</p>
-        <div class="list">
-			{% for user in team %}
-            <a class="list-group" href="{{{user.href}}}">
-                <img src="{{{user.img}}}" alt="@{{{user.username}}}" width="32" height="32" loading="lazy">
-                <span>
-                    <strong>{{{user.name}}}</strong> @{{{user.username}}}
-                </span>
-            </a>
-			{% endfor %}
-        </div>
-		{% endif %}
-		{% if inactiveCoFounders.length %}
-        <p>Inactive Co-founders</p>
-        <div class="list">
-			{% for user in inactiveCoFounders %}
-            <a class="list-group" href="{{{user.href}}}">
-                <img src="{{{user.img}}}" alt="@{{{user.username}}}" width="32" height="32" loading="lazy">
-                <span>
-                    <strong>{{{user.name}}}</strong> @{{{user.username}}}
-                </span>
-            </a>
-			{% endfor %}
-        </div>
-		{% endif %}
+		{% endfor %}
+
         <p>Get involved with waw development by <span class="index-readme__code">opening an issue</span> or
             submitting a pull request.</p>
     </div>
