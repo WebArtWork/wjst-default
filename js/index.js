@@ -39,3 +39,22 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const goTopButton = document.querySelector('.goTop');
+
+    goTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    });
+});
+
+const burgerWrap = document.querySelector('.burger-wrap');
+
+const burger = document.querySelector('.burger');
+
+burgerWrap.addEventListener('click', () => {
+    burger.classList.toggle('burger--close');
+});

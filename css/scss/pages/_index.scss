@@ -49,7 +49,6 @@ $red-darken: #581010;
 			font-size: 18px;
 			background: var(--c-bg-item);
 			padding: 10px;
-			padding-left: 30px;
 			border-radius: 5px;
 		}
 
@@ -643,6 +642,7 @@ table {
 		img {
 			border-radius: 25%;
 			margin: 10px;
+			object-fit: cover;
 		}
 	}
 }

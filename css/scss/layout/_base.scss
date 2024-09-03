@@ -27,6 +27,44 @@ ul {
 	margin: 0;
 }
 
+
+.burger-wrap {
+    display: none;
+    width: 36px;
+    height: 27px;
+    position: relative;
+}
+
+.burger {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s;
+    position: absolute;
+    left: 0;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger:after {
+    bottom: 0;
+}
+
+/* burger */
+
+
 /* === PAGE LAYOUT === */
 .header {
 	display: flex;
@@ -34,7 +72,13 @@ ul {
 	padding: var(--padding);
 	// box-shadow: 0 2px 4px var(--c-shadow);
 	border-bottom: 1px solid var(--c-secondary);
-
+	position: relative;
+	@media (max-width: 768px) {
+		background: var(--c-primary);
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+	}
 	&__left,
 	&__right {
 		display: flex;
@@ -97,19 +141,27 @@ ul {
 
 .main-content {
 	display: flex;
-
+	@media (max-width: 768px) {
+		padding-top: 85px;
+	}
 	&__nav {
 		border-right: 1px solid var(--c-secondary);
 		width: 250px;
 		list-style: none;
 		padding: 0;
 		margin: 0;
-
-
+		transition: all .3s;
 		@media (max-width: 769px) {
-			display: none;
+			opacity: 0;
+			width: 0;
+			position: absolute;
 		}
-
+		&--show{
+			width: 100%;
+			opacity: 1;
+			background: #212529;
+			z-index: 99;
+		}
 		&-in {
 			border-left: 1px solid var(--c-placeholder);
 			margin-left: 20px;
@@ -183,4 +235,46 @@ ul {
 			text-decoration: underline;
 		}
 	}
+}
+
+.goTop{
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+	cursor: pointer;
+	transition: all .3s;
+	&:hover{
+		bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.burger-wrap {
+		display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 3;
+        right: 15px;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+
+    .burger--close {
+        max-width: 0;
+        overflow: hidden;
+    }
+
+    .burger--close::before {
+        transform: translateY(-1px) rotate(45deg);
+    }
+
+    .burger--close::after {
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+    .burger--close::after,
+    .burger--close::before {
+        transform-origin: 0;
+    }
 }
