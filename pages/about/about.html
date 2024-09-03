@@ -11,22 +11,27 @@
         <p>{{{team.name}}}</p>
         <div class="list">
 			{% for user in team.users %}
-           	<a class="list-group" href="{{{user.href}}}">
-                <img src="{{{user.img}}}" alt="@{{{user.username}}}" width="32" height="32" loading="lazy">
+           	<a class="list-group" {% if user.href %}href="{{{user.href}}}" target="_blank"{% endif %}>
+                <img src="{{{user.img}}}" alt="{{{user.name}}}" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>{{{user.name}}}</strong> @{{{user.username}}}
+                    <strong>{{{user.name}}}</strong>
+					{% if user.username %}
+					<span> @{{{user.username}}}</span>
+					{% endif %}
                 </span>
             </a>
 
 			<!-- NEW CODE -->
+			{% if user.socials %}
 			<div>
 				<!-- line where we put list of social icons -->
 				{% for social in user.socials %}
-				<a class="list-group" href="{{{social.href}}}">
+				<a href="{{{social.href}}}" target="_blank">
 					<img src="{{{social.img}}}" alt="@{{{social.href}}}" width="32" height="32" loading="lazy">
 				</a>
 				{% endfor %}
 			</div>
+			{% endif %}
 			{% endfor %}
         </div>
 		{% endfor %}

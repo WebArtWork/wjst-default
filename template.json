@@ -139,7 +139,29 @@
 					"href": "https://github.com/CrackerakiUA",
 					"img": "https://webart.work/api/user/image/63b9245ff9e925059d9ef676.jpg?1685462740871",
 					"name": "Denys Honchar",
-					"username": "Crackeraki"
+					"username": "Crackeraki",
+					"socials": [
+						{
+							"href": "https://github.com/CrackerakiUA",
+							"img": ""
+						},
+						{
+							"href": "https://webart.work/m/63b9245ff9e925059d9ef676",
+							"img": ""
+						},
+						{
+							"href": "https://www.linkedin.com/in/crackeraki",
+							"img": ""
+						},
+						{
+							"href": "https://www.upwork.com/freelancers/~01ea03b307667b49e1",
+							"img": ""
+						},
+						{
+							"href": "https://www.instagram.com/wawceo",
+							"img": ""
+						}
+					]
 				}
 			]
 		},
