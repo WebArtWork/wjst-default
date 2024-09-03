@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	/* Sidebar active menu, hide menu items */
 	const items = document.querySelectorAll(".main-content__nav-item");
 	for (const item of items) {
-		console.log(item);
-
+		if (item.getAttribute('item-url') === location.pathname) {
+			item.classList.add('main-content__nav-item--active');
+		}
 	}
-	// main-content__nav-item--active
 });
