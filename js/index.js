@@ -6,7 +6,7 @@ const toggleClass = (id, className) => {
 		console.error('Element with ID ' + id + ' not found.');
 	}
 }
-
+const sidebar = {};
 document.addEventListener("DOMContentLoaded", function () {
 	/* ACCARDION CODE */
 	const accordionButtons = document.querySelectorAll(".accordion-button");
@@ -36,19 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
 	for (const item of items) {
 		if (item.getAttribute('item-url') === location.pathname) {
 			item.classList.add('main-content__nav-item--active');
+			sidebar.item = item;
 		}
 	}
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const goTopButton = document.querySelector('.goTop');
+document.addEventListener('DOMContentLoaded', function () {
+	const goTopButton = document.querySelector('.goTop');
 
-    goTopButton.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' 
-        });
-    });
+	goTopButton.addEventListener('click', function () {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	});
 });
 
 const burgerWrap = document.querySelector('.burger-wrap');
@@ -56,5 +57,5 @@ const burgerWrap = document.querySelector('.burger-wrap');
 const burger = document.querySelector('.burger');
 
 burgerWrap.addEventListener('click', () => {
-    burger.classList.toggle('burger--close');
+	burger.classList.toggle('burger--close');
 });
