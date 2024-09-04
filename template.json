@@ -147,20 +147,20 @@
 							"img": "img/git.svg"
 						},
 						{
-							"href": "https://webart.work/m/63b9245ff9e925059d9ef676",
-							"img": "img/spider.svg"
-						},
-						{
 							"href": "https://www.linkedin.com/in/crackeraki",
 							"img": "img/in.svg"
+						},
+						{
+							"href": "https://www.instagram.com/wawceo",
+							"img": "img/inst.svg"
 						},
 						{
 							"href": "https://www.upwork.com/freelancers/~01ea03b307667b49e1",
 							"img": "img/up.svg"
 						},
 						{
-							"href": "https://www.instagram.com/wawceo",
-							"img": "img/inst.svg"
+							"href": "https://webart.work/m/63b9245ff9e925059d9ef676",
+							"img": "img/spider.svg"
 						}
 					]
 				}
