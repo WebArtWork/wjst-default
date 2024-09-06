@@ -68,9 +68,11 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	padding: var(--padding);
-	// box-shadow: 0 2px 4px var(--c-shadow);
+	background: var(--c-primary);
 	border-bottom: 1px solid var(--c-secondary);
-	position: relative;
+	position: fixed;
+	width: 100%;
+	z-index: 12;
 	@media (max-width: 768px) {
 		background: var(--c-primary);
 		position: fixed;
@@ -139,16 +141,24 @@ ul {
 
 .main-content {
 	display: flex;
-	@media (max-width: 768px) {
-		padding-top: 85px;
-	}
+	padding-top: 85px;
 	&__nav {
 		border-right: 1px solid var(--c-secondary);
 		width: 250px;
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		transition: all 0.3s;
+		transition: all .3s;
+		position: fixed;
+		background: var(--c-primary);
+		z-index: 9;
+		height: 100%;
+		padding: 16px;
+		&-wrap{
+			height: 100%;
+			overflow-y: scroll;
+			padding-bottom: 80px;
+		}
 		@media (max-width: 769px) {
 			opacity: 0;
 			width: 0;
@@ -160,11 +170,16 @@ ul {
 			background: #212529;
 			z-index: 99;
 			border-bottom: 1px solid #fff;
+			position: fixed;
 		}
 		&-in {
 			border-left: 1px solid var(--c-placeholder);
 			margin-left: 20px;
-
+			&-item{
+				.main-content__nav-link{
+					padding: 5px 10px;
+				}
+			}
 			&--none {
 				display: none;
 			}
@@ -197,7 +212,7 @@ ul {
 
 		&-link {
 			display: block;
-			padding: var(--padding);
+			padding-bottom: 12px;
 			text-decoration: none;
 
 			&:hover {
@@ -209,7 +224,10 @@ ul {
 
 	&__section {
 		flex: 1;
-		padding: var(--padding);
+		padding: 20px 20px 20px 270px;
+		@media (max-width: 768px) {
+			padding: 15px
+		}
 	}
 
 	&__nav-in-item {
@@ -250,6 +268,10 @@ ul {
 	z-index: 99;
 	cursor: pointer;
 	transition: all 0.3s;
+	svg{
+		width: 50px;
+		height: 50px;
+	}
 	&:hover {
 		bottom: 30px;
 	}
