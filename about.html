@@ -26,6 +26,29 @@
 </head>
 
 <body>
+	<div class="goTop">
+		<svg width="70" height="70" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g filter="url(#filter0_d_11_1802)">
+			<rect x="4" width="100" height="100" rx="13" fill="#F8EC20"/>
+			</g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M82.514 61.7718C81.9358 62.3058 81.0343 62.27 80.5003 61.6918L53.4394 32.3918C52.9054 31.8137 52.9412 30.9121 53.5194 30.3782C54.0975 29.8442 54.999 29.88 55.533 30.4582L82.594 59.7582C83.128 60.3363 83.0921 61.2379 82.514 61.7718Z" fill="black"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M55.453 30.3782C56.0311 30.9121 56.0669 31.8137 55.533 32.3918L28.472 61.6918C27.938 62.27 27.0365 62.3058 26.4583 61.7718C25.8802 61.2379 25.8444 60.3363 26.3783 59.7582L53.4393 30.4582C53.9733 29.88 54.8748 29.8442 55.453 30.3782Z" fill="black"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M76.6244 67.2763C76.1678 67.698 75.4557 67.6698 75.0339 67.2131L53.6595 44.0701C53.2377 43.6135 53.266 42.9014 53.7227 42.4796C54.1793 42.0579 54.8914 42.0861 55.3132 42.5428L76.6876 65.6858C77.1094 66.1424 77.0811 66.8545 76.6244 67.2763Z" fill="black"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M55.2499 42.4796C55.7066 42.9014 55.7349 43.6135 55.3131 44.0701L33.9387 67.2131C33.5169 67.6698 32.8048 67.698 32.3482 67.2763C31.8915 66.8545 31.8632 66.1424 32.285 65.6858L53.6594 42.5428C54.0812 42.0861 54.7933 42.0579 55.2499 42.4796Z" fill="black"/>
+			<defs>
+			<filter id="filter0_d_11_1802" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dy="4"/>
+			<feGaussianBlur stdDeviation="2"/>
+			<feComposite in2="hardAlpha" operator="out"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_1802"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_11_1802" result="shape"/>
+			</filter>
+			</defs>
+		</svg>
+	</div>
 	<header class="header">
 		<span class="header__left">
 			<a href="/" class="header__logo-link">
@@ -36,7 +59,7 @@
 		<span class="header__right">
 			<ul class="header__nav">
 				<li class="header__nav-item">
-					<a href="/documentations" class="header__nav-link">Documentations</a>
+					<a href="/" class="header__nav-link">Getting started</a>
 				</li>
 			</ul>
 
@@ -49,146 +72,151 @@
 				</li>
 			</ul>
 
-			<span class="header__nav header__nav--mobile material-icons"
-				onclick="toggleClass('sidebar', 'main-content__nav--show')">menu</span>
+			<span class="header__nav header__nav--mobile"
+				onclick="toggleClass('sidebar', 'main-content__nav--show')">
+				<div class="burger-wrap">
+                    <div class="burger"></div>
+                </div>
+			</span>
 		</span>
 	</header>
-	<main class="main-content">
-		<nav id="sidebar" class="main-content__nav">
-			<ul>
-				<li class="main-content__nav-item main-content__nav-item--mobile">
-					<a href="/documentations" class="header__nav-link">Documentations</a>
+	<div class="main-content">
+		<aside id="sidebar" class="main-content__nav">
+			<ul class="main-content__nav-wrap">
+				<li class="main-content__nav-item main-content__nav-item--mobile" item-url="/">
+					<a href="/" class="header__nav-link">Getting started</a>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Getting started</a>
-				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Customize</a>
+				
+				<li class="main-content__nav-item" item-url="/customize">
+					<a href="/customize" class="main-content__nav-link">Customize</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Sass</a>
+							<a href="/customize#sass" class="main-content__nav-link">Sass</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">CSS Variables</a>
+							<a href="/customize#css-variables" class="main-content__nav-link">CSS Variables</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Template Variables</a>
+							<a href="/customize#template-variables" class="main-content__nav-link">Template Variables</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Optimize</a>
+							<a href="/customize#optimize" class="main-content__nav-link">Optimize</a>
 						</li>
+						
 					</ul>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Layout</a>
+				
+				<li class="main-content__nav-item" item-url="/layout">
+					<a href="/layout" class="main-content__nav-link">Layout</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Breakpoints</a>
+							<a href="/layout#breakpoints" class="main-content__nav-link">Breakpoints</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Containers</a>
+							<a href="/layout#containers" class="main-content__nav-link">Containers</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Grid</a>
+							<a href="/layout#grid" class="main-content__nav-link">Grid</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Columns</a>
+							<a href="/layout#columns" class="main-content__nav-link">Columns</a>
 						</li>
+						
 					</ul>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Content</a>
+				
+				<li class="main-content__nav-item" item-url="/content">
+					<a href="/content" class="main-content__nav-link">Content</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Typography</a>
+							<a href="/content#typography" class="main-content__nav-link">Typography</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Images</a>
+							<a href="/content#images" class="main-content__nav-link">Images</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Tables</a>
+							<a href="/content#tables" class="main-content__nav-link">Tables</a>
 						</li>
+						
 					</ul>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Components</a>
+				
+				<li class="main-content__nav-item" item-url="/components">
+					<a href="/components" class="main-content__nav-link">Components</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Alerts</a>
+							<a href="/components#alerts" class="main-content__nav-link">Alerts</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Breadcrumb</a>
+							<a href="/components#breadcrumb" class="main-content__nav-link">Breadcrumb</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Buttons</a>
+							<a href="/components#buttons" class="main-content__nav-link">Buttons</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Collapse</a>
+							<a href="/components#collapse" class="main-content__nav-link">Collapse</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Dropdowns</a>
+							<a href="/components#dropdowns" class="main-content__nav-link">Dropdowns</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Modal</a>
+							<a href="/components#modal" class="main-content__nav-link">Modal</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Navbar</a>
+							<a href="/components#navbar" class="main-content__nav-link">Navbar</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Pagination</a>
+							<a href="/components#pagination" class="main-content__nav-link">Pagination</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Popovers</a>
+							<a href="/components#popovers" class="main-content__nav-link">Popovers</a>
 						</li>
-						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Progress</a>
-						</li>
-						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Spinners</a>
-						</li>
+						
 					</ul>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">About</a>
+				
+				<li class="main-content__nav-item" item-url="/about">
+					<a href="/about" class="main-content__nav-link">About</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Team</a>
+							<a href="/about#team" class="main-content__nav-link">Team</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Brand</a>
+							<a href="/about#brand" class="main-content__nav-link">Brand</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">License</a>
+							<a href="/about#license" class="main-content__nav-link">License</a>
 						</li>
+						
 					</ul>
 				</li>
-
-
-
-				<!-- should be shown on mobile and web with sub ul -->
-				<li class="main-content__nav-item main-content__nav-item--active">
-					<a href="/documentations2" class="main-content__nav-link">Should be shown highlighted</a>
-					<ul class="main-content__nav-in">
-						<li class="main-content__nav-in-item">
-							<a href="/documentations21" class="main-content__nav-link">Documentations 2 1</a>
-						</li>
-						<li class="main-content__nav-in-item">
-							<a href="/documentations22" class="main-content__nav-link">Documentations 2 2</a>
-						</li>
-					</ul>
-				</li>
-				<!-- should be shown on mobile and web without sub ul -->
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Should be shown</a>
-					<ul class="main-content__nav-in--none">
-						<li class="main-content__nav-in-item">
-							<a href="/documentations21" class="main-content__nav-link">Should not be shown</a>
-						</li>
-					</ul>
-				</li>
+				
 			</ul>
-		</nav>
-		<section class="main-content__section">
+		</aside>
+		<main class="main-content__section">
 			<div class="index-readme">
     <div id="team">
         <div class="index-readme__title">
@@ -197,84 +225,773 @@
         </div>
         <p>waw is maintained by a small group of invaluable core contributors, with the massive support and
             involvement of our community.</p>
-        <p>CEO & Founder</p>
+
+		
+        <p>CEO &amp; Founder</p>
         <div class="list">
-            <a class="list-group" href="https://github.com/CrackerakiUA">
-                <img src="https://webart.work/api/user/image/63b9245ff9e925059d9ef676.jpg?1685462740871"
-                    alt="@CrackerakiUA" width="32" height="32" loading="lazy">
+			
+           	<a class="list-group" href="https://github.com/CrackerakiUA" target="_blank">
+                <img src="https://webart.work/api/user/image/63b9245ff9e925059d9ef676.jpg?1685462740871" alt="Denys Honchar" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Denys Honchar</strong> @CrackerakiUA
+                    <strong>Denys Honchar</strong>
+					
+					<span> @Crackeraki</span>
+					
                 </span>
             </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/CrackerakiUA" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/CrackerakiUA" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.linkedin.com/in/crackeraki" target="_blank">
+					<img src="img/in.svg" alt="@https://www.linkedin.com/in/crackeraki" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.instagram.com/wawceo" target="_blank">
+					<img src="img/inst.svg" alt="@https://www.instagram.com/wawceo" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.upwork.com/freelancers/~01ea03b307667b49e1" target="_blank">
+					<img src="img/up.svg" alt="@https://www.upwork.com/freelancers/~01ea03b307667b49e1" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://webart.work/m/63b9245ff9e925059d9ef676" target="_blank">
+					<img src="img/spider.svg" alt="@https://webart.work/m/63b9245ff9e925059d9ef676" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
         </div>
+		
         <p>Co-founders</p>
         <div class="list">
-            <a class="list-group" href="https://github.com/Kondruk">
-                <img src="https://webart.work/api/user/image/6602d9a0eb28ecc0dbacf3ed.jpg?1711533376634"
-                    alt="@Kondruk" width="32" height="32" loading="lazy">
+			
+           	<a class="list-group" href="https://github.com/Esmodeo" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/11319329?v=4" alt="Andrew Momot" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Roman Kondruk</strong> @Kondruk
+                    <strong>Andrew Momot</strong>
+					
+					<span> @Esmodeo</span>
+					
                 </span>
             </a>
-            <a class="list-group" href="https://webart.work/m/6474b20780f5fe5cf6f21e6f">
-                <img src="https://webart.work/api/user/image/6474b20780f5fe5cf6f21e6f.jpg?1685463694255"
-                    alt="@mia_hadzyra" width="32" height="32" loading="lazy">
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/Esmodeo" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/Esmodeo" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://github.com/Kondruk" target="_blank">
+                <img src="https://webart.work/api/user/image/6602d9a0eb28ecc0dbacf3ed.jpg?1711533376634" alt="Roman Kondruk" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Solomia Hadzyra</strong> @mia_hadzyra
+                    <strong>Roman Kondruk</strong>
+					
+					<span> @Kondruk</span>
+					
                 </span>
             </a>
-            <a class="list-group" href="https://github.com/div632">
-                <img src="https://avatars.githubusercontent.com/u/63455695?v=4" alt="@div632" width="32" height="32"
-                    loading="lazy">
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/Kondruk" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/Kondruk" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/in.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/inst.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/up.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://webart.work/m/6602d9a0eb28ecc0dbacf3ed" target="_blank">
+					<img src="img/spider.svg" alt="@https://webart.work/m/6602d9a0eb28ecc0dbacf3ed" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://github.com/div632" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/63455695?v=4" alt="Dina Irikova" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Dina Irikova</strong> @div632
+                    <strong>Dina Irikova</strong>
+					
+					<span> @div632</span>
+					
                 </span>
             </a>
-            <a class="list-group" href="https://github.com/Esmodeo">
-                <img src="https://avatars.githubusercontent.com/u/11319329?v=4" alt="@Esmodeo" width="32"
-                    height="32" loading="lazy">
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/div632" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/div632" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/in.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/inst.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/up.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/spider.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://github.com/hlushko-arthur" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/61018089?v=4" alt="Arthur Hlushko" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Andrew Momot</strong> @Esmodeo
+                    <strong>Arthur Hlushko</strong>
+					
+					<span> @hlushko-arthur</span>
+					
                 </span>
             </a>
-            <a class="list-group" href="https://github.com/hlushko-arthur">
-                <img src="https://avatars.githubusercontent.com/u/61018089?v=4" alt="@hlushko-arthur" width="32"
-                    height="32" loading="lazy">
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/hlushko-arthur" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/hlushko-arthur" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/in.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/inst.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/up.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/spider.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://webart.work/m/6474b20780f5fe5cf6f21e6f" target="_blank">
+                <img src="https://webart.work/api/user/image/6474b20780f5fe5cf6f21e6f.jpg?1685463694255" alt="Solomia Hadzyra" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Arthur Hlushko</strong> @hlushko-arthur
+                    <strong>Solomia Hadzyra</strong>
+					
+					<span> @mia_hadzyra</span>
+					
                 </span>
             </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="..." target="_blank">
+					<img src="img/git.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/in.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/inst.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/up.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://webart.work/m/6474b20780f5fe5cf6f21e6f" target="_blank">
+					<img src="img/spider.svg" alt="@https://webart.work/m/6474b20780f5fe5cf6f21e6f" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" >
+                <img src="" alt="Anastasiia Vodnieva" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Anastasiia Vodnieva</strong>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="..." target="_blank">
+					<img src="img/git.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/in.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/inst.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/up.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/spider.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" >
+                <img src="" alt="Yulian Hramchuk" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Yulian Hramchuk</strong>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="..." target="_blank">
+					<img src="img/git.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/in.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/inst.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/up.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/spider.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
         </div>
+		
         <p>Active Team</p>
         <div class="list">
-            <a class="list-group" href="https://github.com/volodkina01">
-                <img src="https://webart.work/api/user/image/666ae070fe74e00ea634c6f5.jpg?1718280491815"
-                    alt="@volodkina01" width="32" height="32" loading="lazy">
+			
+           	<a class="list-group" href="https://github.com/Lizvinskyi0202" target="_blank">
+                <img src="img/photo1.jpg" alt="Andrii Lizvinskyi" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Nadiia Bercha</strong> @volodkina01
+                    <strong>Andrii Lizvinskyi</strong>
+					
+					<span> @Lizvinskyi0202</span>
+					
                 </span>
             </a>
-            <a class="list-group" href="https://github.com/nikiquickie">
-                <img src="https://webart.work/api/user/image/64eee5d08eaf76400c6c3063.jpg?1693378151062"
-                    alt="@nikiquickie" width="32" height="32" loading="lazy">
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/Lizvinskyi0202" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/Lizvinskyi0202" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://t.me/lukin_drg" target="_blank">
+					<img src="img/tg.svg" alt="@https://t.me/lukin_drg" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://github.com/nikiquickie" target="_blank">
+                <img src="https://webart.work/api/user/image/64eee5d08eaf76400c6c3063.jpg?1693378151062" alt="Nika Rohovska" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Nika Rohovska</strong> @nikiquickie
+                    <strong>Nika Rohovska</strong>
+					
+					<span> @nikiquickie</span>
+					
                 </span>
             </a>
-            <a class="list-group" href="https://github.com/denisN2102">
-                <img src="https://webart.work/api/user/image/65d748355ad774b675a148c0.jpg?1708607959929"
-                    alt="@denisN2102" width="32" height="32" loading="lazy">
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/nikiquickie" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/nikiquickie" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://webart.work/m/64eee5d08eaf76400c6c3063" target="_blank">
+					<img src="img/spider.svg" alt="@https://webart.work/m/64eee5d08eaf76400c6c3063" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://github.com/volodkina01" target="_blank">
+                <img src="https://webart.work/api/user/image/666ae070fe74e00ea634c6f5.jpg?1718280491815" alt="Nadiia Bercha" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Denys Narolskyi</strong> @denisN2102
+                    <strong>Nadiia Bercha</strong>
+					
+					<span> @enber</span>
+					
                 </span>
             </a>
-            <a class="list-group" href="https://github.com/Lizvinskyi0202">
-                <img src="img/photo1.jpg" alt="@Lizvinskyi0202" width="32" height="32" loading="lazy">
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/volodkina01" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/volodkina01" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.linkedin.com/in/nadiia-bercha-116b5a313/" target="_blank">
+					<img src="img/in.svg" alt="@https://www.linkedin.com/in/nadiia-bercha-116b5a313/" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.upwork.com/freelancers/~019ab4f83a017b9719" target="_blank">
+					<img src="img/up.svg" alt="@https://www.upwork.com/freelancers/~019ab4f83a017b9719" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://webart.work/m/666ae070fe74e00ea634c6f5" target="_blank">
+					<img src="img/spider.svg" alt="@https://webart.work/m/666ae070fe74e00ea634c6f5" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://github.com/denisN2102" target="_blank">
+                <img src="https://webart.work/api/user/image/65d748355ad774b675a148c0.jpg?1708607959929" alt="Denys Narolskyi" width="32" height="32" loading="lazy">
                 <span>
-                    <strong>Andrii Lizvinskyi</strong> @Lizvinskyi0202
+                    <strong>Denys Narolskyi</strong>
+					
+					<span> @denisN2102</span>
+					
                 </span>
             </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/denisN2102" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/denisN2102" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/in.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/inst.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="..." target="_blank">
+					<img src="img/up.svg" alt="@..." width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://webart.work/m/65d748355ad774b675a148c0" target="_blank">
+					<img src="img/spider.svg" alt="@https://webart.work/m/65d748355ad774b675a148c0" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://github.com/Lizvinskyi0202" target="_blank">
+                <img src="..." alt="Nadia Tverdokhlib" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Nadia Tverdokhlib</strong>
+					
+					<span> @hope.tv</span>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://www.instagram.com/h.o.p.e_tv_/" target="_blank">
+					<img src="img/inst.svg" alt="@https://www.instagram.com/h.o.p.e_tv_/" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
         </div>
+		
+        <p>Inactive Co-founders</p>
+        <div class="list">
+			
+           	<a class="list-group" href="https://github.com/dmaksiuta" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/40692184?v=4" alt="Dmytro Maksiuta" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Dmytro Maksiuta</strong>
+					
+					<span> @lord1k</span>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/dmaksiuta" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/dmaksiuta" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.instagram.com/maksiuta.di/" target="_blank">
+					<img src="img/inst.svg" alt="@https://www.instagram.com/maksiuta.di/" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.upwork.com/freelancers/~01e755530516cfd524" target="_blank">
+					<img src="img/up.svg" alt="@https://www.upwork.com/freelancers/~01e755530516cfd524" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://webart.work/m/647467580b9f4f56d78f358d" target="_blank">
+					<img src="img/spider.svg" alt="@https://webart.work/m/647467580b9f4f56d78f358d" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://t.me/dmaksiuta" target="_blank">
+					<img src="img/tg.svg" alt="@https://t.me/dmaksiuta" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" >
+                <img src="" alt="Valik Maystrenko" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Valik Maystrenko</strong>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="" target="_blank">
+					<img src="img/git.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/inst.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/up.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/spider.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/tg.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" >
+                <img src="" alt="Dmytro Lytvyniuk" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Dmytro Lytvyniuk</strong>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="" target="_blank">
+					<img src="img/git.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/inst.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/up.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/spider.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/tg.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" >
+                <img src="" alt="Oleksandr Fedorak" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Oleksandr Fedorak</strong>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="" target="_blank">
+					<img src="img/git.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/inst.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/up.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/spider.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/tg.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://www.upwork.com/freelancers/~01de3e11f13e45ce4e" target="_blank">
+                <img src="https://media.licdn.com/dms/image/v2/C4E03AQEbo_xmoqKHJA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660673439329?e=1731542400&amp;v=beta&amp;t=TrgFCQ_4dTEyibyhu4Hly5rB0nahkMEP5UeBIX1MNZU" alt="Oganes Petikian" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Oganes Petikian</strong>
+					
+					<span> @oganesman</span>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://www.linkedin.com/in/oganes-petikyan-96403a249/" target="_blank">
+					<img src="img/in.svg" alt="@https://www.linkedin.com/in/oganes-petikyan-96403a249/" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.instagram.com/ogaaness/" target="_blank">
+					<img src="img/inst.svg" alt="@https://www.instagram.com/ogaaness/" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.upwork.com/freelancers/~01de3e11f13e45ce4e" target="_blank">
+					<img src="img/up.svg" alt="@https://www.upwork.com/freelancers/~01de3e11f13e45ce4e" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" href="https://github.com/IrynaPrysyazhna" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/15999441?v=4" alt="Iryna Prysyazhna" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Iryna Prysyazhna</strong>
+					
+					<span> @IrynaPrysyazhna</span>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="https://github.com/IrynaPrysyazhna" target="_blank">
+					<img src="img/git.svg" alt="@https://github.com/IrynaPrysyazhna" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.upwork.com/freelancers/~01c8dd6365a15542d5" target="_blank">
+					<img src="img/up.svg" alt="@https://www.upwork.com/freelancers/~01c8dd6365a15542d5" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="https://www.facebook.com/profile.php?id=100011281180671" target="_blank">
+					<img src="img/fb.svg" alt="@https://www.facebook.com/profile.php?id=100011281180671" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" >
+                <img src="" alt="Ivan Balias" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Ivan Balias</strong>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="" target="_blank">
+					<img src="img/git.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/inst.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/up.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/spider.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/tg.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" >
+                <img src="" alt="Natalie Zarytska" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Natalie Zarytska</strong>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="" target="_blank">
+					<img src="img/git.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/inst.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/up.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/spider.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/tg.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+           	<a class="list-group" >
+                <img src="" alt="Nataliia Vasyliuk" width="32" height="32" loading="lazy">
+                <span>
+                    <strong>Nataliia Vasyliuk</strong>
+					
+                </span>
+            </a>
+
+			<!-- NEW CODE -->
+			
+			<div class="list-group__socials">
+				<!-- line where we put list of social icons -->
+				
+				<a href="" target="_blank">
+					<img src="img/git.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/inst.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/up.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/spider.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+				<a href="" target="_blank">
+					<img src="img/tg.svg" alt="@" width="32" height="32" loading="lazy">
+				</a>
+				
+			</div>
+			
+			
+        </div>
+		
+
         <p>Get involved with waw development by <span class="index-readme__code">opening an issue</span> or
             submitting a pull request.</p>
     </div>
@@ -367,8 +1084,9 @@
             more information.</p>
     </div>
 </div>
-		</section>
-	</main>
+
+		</main>
+	</div>
 	<footer class="footer">
 		<p class="footer__text">
 			<span class="footer__text-part">Wjst is copyright ©2024</span>

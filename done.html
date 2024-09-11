@@ -26,6 +26,29 @@
 </head>
 
 <body>
+	<div class="goTop">
+		<svg width="70" height="70" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g filter="url(#filter0_d_11_1802)">
+			<rect x="4" width="100" height="100" rx="13" fill="#F8EC20"/>
+			</g>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M82.514 61.7718C81.9358 62.3058 81.0343 62.27 80.5003 61.6918L53.4394 32.3918C52.9054 31.8137 52.9412 30.9121 53.5194 30.3782C54.0975 29.8442 54.999 29.88 55.533 30.4582L82.594 59.7582C83.128 60.3363 83.0921 61.2379 82.514 61.7718Z" fill="black"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M55.453 30.3782C56.0311 30.9121 56.0669 31.8137 55.533 32.3918L28.472 61.6918C27.938 62.27 27.0365 62.3058 26.4583 61.7718C25.8802 61.2379 25.8444 60.3363 26.3783 59.7582L53.4393 30.4582C53.9733 29.88 54.8748 29.8442 55.453 30.3782Z" fill="black"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M76.6244 67.2763C76.1678 67.698 75.4557 67.6698 75.0339 67.2131L53.6595 44.0701C53.2377 43.6135 53.266 42.9014 53.7227 42.4796C54.1793 42.0579 54.8914 42.0861 55.3132 42.5428L76.6876 65.6858C77.1094 66.1424 77.0811 66.8545 76.6244 67.2763Z" fill="black"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M55.2499 42.4796C55.7066 42.9014 55.7349 43.6135 55.3131 44.0701L33.9387 67.2131C33.5169 67.6698 32.8048 67.698 32.3482 67.2763C31.8915 66.8545 31.8632 66.1424 32.285 65.6858L53.6594 42.5428C54.0812 42.0861 54.7933 42.0579 55.2499 42.4796Z" fill="black"/>
+			<defs>
+			<filter id="filter0_d_11_1802" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dy="4"/>
+			<feGaussianBlur stdDeviation="2"/>
+			<feComposite in2="hardAlpha" operator="out"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11_1802"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_11_1802" result="shape"/>
+			</filter>
+			</defs>
+		</svg>
+	</div>
 	<header class="header">
 		<span class="header__left">
 			<a href="/" class="header__logo-link">
@@ -36,7 +59,7 @@
 		<span class="header__right">
 			<ul class="header__nav">
 				<li class="header__nav-item">
-					<a href="/documentations" class="header__nav-link">Documentations</a>
+					<a href="/" class="header__nav-link">Getting started</a>
 				</li>
 			</ul>
 
@@ -49,146 +72,151 @@
 				</li>
 			</ul>
 
-			<span class="header__nav header__nav--mobile material-icons"
-				onclick="toggleClass('sidebar', 'main-content__nav--show')">menu</span>
+			<span class="header__nav header__nav--mobile"
+				onclick="toggleClass('sidebar', 'main-content__nav--show')">
+				<div class="burger-wrap">
+                    <div class="burger"></div>
+                </div>
+			</span>
 		</span>
 	</header>
-	<main class="main-content">
-		<nav id="sidebar" class="main-content__nav">
-			<ul>
-				<li class="main-content__nav-item main-content__nav-item--mobile">
-					<a href="/documentations" class="header__nav-link">Documentations</a>
+	<div class="main-content">
+		<aside id="sidebar" class="main-content__nav">
+			<ul class="main-content__nav-wrap">
+				<li class="main-content__nav-item main-content__nav-item--mobile" item-url="/">
+					<a href="/" class="header__nav-link">Getting started</a>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Getting started</a>
-				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Customize</a>
+				
+				<li class="main-content__nav-item" item-url="/customize">
+					<a href="/customize" class="main-content__nav-link">Customize</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Sass</a>
+							<a href="/customize#sass" class="main-content__nav-link">Sass</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">CSS Variables</a>
+							<a href="/customize#css-variables" class="main-content__nav-link">CSS Variables</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Template Variables</a>
+							<a href="/customize#template-variables" class="main-content__nav-link">Template Variables</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Optimize</a>
+							<a href="/customize#optimize" class="main-content__nav-link">Optimize</a>
 						</li>
+						
 					</ul>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Layout</a>
+				
+				<li class="main-content__nav-item" item-url="/layout">
+					<a href="/layout" class="main-content__nav-link">Layout</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Breakpoints</a>
+							<a href="/layout#breakpoints" class="main-content__nav-link">Breakpoints</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Containers</a>
+							<a href="/layout#containers" class="main-content__nav-link">Containers</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Grid</a>
+							<a href="/layout#grid" class="main-content__nav-link">Grid</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Columns</a>
+							<a href="/layout#columns" class="main-content__nav-link">Columns</a>
 						</li>
+						
 					</ul>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Content</a>
+				
+				<li class="main-content__nav-item" item-url="/content">
+					<a href="/content" class="main-content__nav-link">Content</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Typography</a>
+							<a href="/content#typography" class="main-content__nav-link">Typography</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Images</a>
+							<a href="/content#images" class="main-content__nav-link">Images</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Tables</a>
+							<a href="/content#tables" class="main-content__nav-link">Tables</a>
 						</li>
+						
 					</ul>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Components</a>
+				
+				<li class="main-content__nav-item" item-url="/components">
+					<a href="/components" class="main-content__nav-link">Components</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Alerts</a>
+							<a href="/components#alerts" class="main-content__nav-link">Alerts</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Breadcrumb</a>
+							<a href="/components#breadcrumb" class="main-content__nav-link">Breadcrumb</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Buttons</a>
+							<a href="/components#buttons" class="main-content__nav-link">Buttons</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Collapse</a>
+							<a href="/components#collapse" class="main-content__nav-link">Collapse</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Dropdowns</a>
+							<a href="/components#dropdowns" class="main-content__nav-link">Dropdowns</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Modal</a>
+							<a href="/components#modal" class="main-content__nav-link">Modal</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Navbar</a>
+							<a href="/components#navbar" class="main-content__nav-link">Navbar</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Pagination</a>
+							<a href="/components#pagination" class="main-content__nav-link">Pagination</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Popovers</a>
+							<a href="/components#popovers" class="main-content__nav-link">Popovers</a>
 						</li>
-						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Progress</a>
-						</li>
-						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Spinners</a>
-						</li>
+						
 					</ul>
 				</li>
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">About</a>
+				
+				<li class="main-content__nav-item" item-url="/about">
+					<a href="/about" class="main-content__nav-link">About</a>
 					<ul class="main-content__nav-in">
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Team</a>
+							<a href="/about#team" class="main-content__nav-link">Team</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">Brand</a>
+							<a href="/about#brand" class="main-content__nav-link">Brand</a>
 						</li>
+						
 						<li class="main-content__nav-in-item">
-							<a href="/#typography" class="main-content__nav-link">License</a>
+							<a href="/about#license" class="main-content__nav-link">License</a>
 						</li>
+						
 					</ul>
 				</li>
-
-
-
-				<!-- should be shown on mobile and web with sub ul -->
-				<li class="main-content__nav-item main-content__nav-item--active">
-					<a href="/documentations2" class="main-content__nav-link">Should be shown highlighted</a>
-					<ul class="main-content__nav-in">
-						<li class="main-content__nav-in-item">
-							<a href="/documentations21" class="main-content__nav-link">Documentations 2 1</a>
-						</li>
-						<li class="main-content__nav-in-item">
-							<a href="/documentations22" class="main-content__nav-link">Documentations 2 2</a>
-						</li>
-					</ul>
-				</li>
-				<!-- should be shown on mobile and web without sub ul -->
-				<li class="main-content__nav-item">
-					<a href="/documentations2" class="main-content__nav-link">Should be shown</a>
-					<ul class="main-content__nav-in--none">
-						<li class="main-content__nav-in-item">
-							<a href="/documentations21" class="main-content__nav-link">Should not be shown</a>
-						</li>
-					</ul>
-				</li>
+				
 			</ul>
-		</nav>
-		<section class="main-content__section">
+		</aside>
+		<main class="main-content__section">
 			<div class="index">
 	<img class="index-avatar" src="img/avatar.png" alt="" />
 
@@ -3423,8 +3451,8 @@
 		</div>
 	</div>
 </div>
-		</section>
-	</main>
+		</main>
+	</div>
 	<footer class="footer">
 		<p class="footer__text">
 			<span class="footer__text-part">Wjst is copyright ©2024</span>

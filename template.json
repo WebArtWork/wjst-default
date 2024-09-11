@@ -173,43 +173,181 @@
 					"href": "https://github.com/Esmodeo",
 					"img": "https://avatars.githubusercontent.com/u/11319329?v=4",
 					"name": "Andrew Momot",
-					"username": "Esmodeo"
+					"username": "Esmodeo",
+					"socials": [
+						{
+							"href": "https://github.com/Esmodeo",
+							"img": "img/git.svg"
+						}
+					]
 				},
 				{
 					"href": "https://github.com/Kondruk",
 					"img": "https://webart.work/api/user/image/6602d9a0eb28ecc0dbacf3ed.jpg?1711533376634",
 					"name": "Roman Kondruk",
-					"username": "Kondruk"
+					"username": "Kondruk",
+					"socials": [
+						{
+							"href": "https://github.com/Kondruk",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "https://webart.work/m/6602d9a0eb28ecc0dbacf3ed",
+							"img": "img/spider.svg"
+						}
+					]
 				},
 				{
 					"href": "https://github.com/div632",
 					"img": "https://avatars.githubusercontent.com/u/63455695?v=4",
 					"name": "Dina Irikova",
-					"username": "div632"
+					"username": "div632",
+					"socials": [
+						{
+							"href": "https://github.com/div632",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/spider.svg"
+						}
+					]
 				},
 				{
 					"href": "https://github.com/hlushko-arthur",
 					"img": "https://avatars.githubusercontent.com/u/61018089?v=4",
 					"name": "Arthur Hlushko",
-					"username": "hlushko-arthur"
+					"username": "hlushko-arthur",
+					"socials": [
+						{
+							"href": "https://github.com/hlushko-arthur",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/spider.svg"
+						}
+					]
 				},
 				{
 					"href": "https://webart.work/m/6474b20780f5fe5cf6f21e6f",
 					"img": "https://webart.work/api/user/image/6474b20780f5fe5cf6f21e6f.jpg?1685463694255",
 					"name": "Solomia Hadzyra",
-					"username": "mia_hadzyra"
+					"username": "mia_hadzyra",
+					"socials": [
+						{
+							"href": "...",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "https://webart.work/m/6474b20780f5fe5cf6f21e6f",
+							"img": "img/spider.svg"
+						}
+					]
 				},
 				{
 					"href": "",
 					"img": "",
 					"name": "Anastasiia Vodnieva",
-					"username": ""
+					"username": "",
+					"socials": [
+						{
+							"href": "...",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/spider.svg"
+						}
+					]
 				},
 				{
 					"href": "",
 					"img": "",
 					"name": "Yulian Hramchuk",
-					"username": ""
+					"username": "",
+					"socials": [
+						{
+							"href": "...",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/spider.svg"
+						}
+					]
 				}
 			]
 		},
@@ -220,25 +358,97 @@
 					"href": "https://github.com/Lizvinskyi0202",
 					"img": "img/photo1.jpg",
 					"name": "Andrii Lizvinskyi",
-					"username": "Lizvinskyi0202"
+					"username": "Lizvinskyi0202",
+					"socials": [
+						{
+							"href": "https://github.com/Lizvinskyi0202",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "https://t.me/lukin_drg",
+							"img": "img/tg.svg"
+						}
+					]
 				},
 				{
 					"href": "https://github.com/nikiquickie",
 					"img": "https://webart.work/api/user/image/64eee5d08eaf76400c6c3063.jpg?1693378151062",
 					"name": "Nika Rohovska",
-					"username": "nikiquickie"
+					"username": "nikiquickie",
+					"socials": [
+						{
+							"href": "https://github.com/nikiquickie",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "https://webart.work/m/64eee5d08eaf76400c6c3063",
+							"img": "img/spider.svg"
+						}
+					]
 				},
 				{
 					"href": "https://github.com/volodkina01",
 					"img": "https://webart.work/api/user/image/666ae070fe74e00ea634c6f5.jpg?1718280491815",
 					"name": "Nadiia Bercha",
-					"username": "volodkina01"
+					"username": "enber",
+					"socials": [
+						{
+							"href": "https://github.com/volodkina01",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "https://www.linkedin.com/in/nadiia-bercha-116b5a313/",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "https://www.upwork.com/freelancers/~019ab4f83a017b9719",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "https://webart.work/m/666ae070fe74e00ea634c6f5",
+							"img": "img/spider.svg"
+						}
+					]
 				},
 				{
 					"href": "https://github.com/denisN2102",
 					"img": "https://webart.work/api/user/image/65d748355ad774b675a148c0.jpg?1708607959929",
 					"name": "Denys Narolskyi",
-					"username": "denisN2102"
+					"username": "denisN2102",
+					"socials": [
+						{
+							"href": "https://github.com/denisN2102",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "...",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "https://webart.work/m/65d748355ad774b675a148c0",
+							"img": "img/spider.svg"
+						}
+					]
+				},
+				{
+					"href": "https://github.com/Lizvinskyi0202",
+					"img": "...",
+					"name": "Nadia Tverdokhlib",
+					"username": "hope.tv",
+					"socials": [
+						{
+							"href": "https://www.instagram.com/h.o.p.e_tv_/",
+							"img": "img/inst.svg"
+						}
+					]
 				}
 			]
 		},
@@ -246,58 +456,240 @@
 			"name": "Inactive Co-founders",
 			"users": [
 				{
-					"href": "",
-					"img": "",
+					"href": "https://github.com/dmaksiuta",
+					"img": "https://avatars.githubusercontent.com/u/40692184?v=4",
 					"name": "Dmytro Maksiuta",
-					"username": ""
+					"username": "lord1k",
+					"socials": [
+						{
+							"href": "https://github.com/dmaksiuta",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "https://www.instagram.com/maksiuta.di/",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "https://www.upwork.com/freelancers/~01e755530516cfd524",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "https://webart.work/m/647467580b9f4f56d78f358d",
+							"img": "img/spider.svg"
+						},
+						{
+							"href": "https://t.me/dmaksiuta",
+							"img": "img/tg.svg"
+						}
+					]
 				},
 				{
 					"href": "",
 					"img": "",
 					"name": "Valik Maystrenko",
-					"username": ""
+					"username": "",
+					"socials": [
+						{
+							"href": "",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "",
+							"img": "img/spider.svg"
+						},
+						{
+							"href": "",
+							"img": "img/tg.svg"
+						}
+					]
 				},
 				{
 					"href": "",
 					"img": "",
 					"name": "Dmytro Lytvyniuk",
-					"username": ""
+					"username": "",
+					"socials": [
+						{
+							"href": "",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "",
+							"img": "img/spider.svg"
+						},
+						{
+							"href": "",
+							"img": "img/tg.svg"
+						}
+					]
 				},
 				{
 					"href": "",
 					"img": "",
 					"name": "Oleksandr Fedorak",
-					"username": ""
+					"username": "",
+					"socials": [
+						{
+							"href": "",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "",
+							"img": "img/spider.svg"
+						},
+						{
+							"href": "",
+							"img": "img/tg.svg"
+						}
+					]
 				},
 				{
-					"href": "",
-					"img": "",
+					"href": "https://www.upwork.com/freelancers/~01de3e11f13e45ce4e",
+					"img": "https://media.licdn.com/dms/image/v2/C4E03AQEbo_xmoqKHJA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660673439329?e=1731542400&v=beta&t=TrgFCQ_4dTEyibyhu4Hly5rB0nahkMEP5UeBIX1MNZU",
 					"name": "Oganes Petikian",
-					"username": ""
+					"username": "oganesman",
+					"socials": [
+						{
+							"href": "https://www.linkedin.com/in/oganes-petikyan-96403a249/",
+							"img": "img/in.svg"
+						},
+						{
+							"href": "https://www.instagram.com/ogaaness/",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "https://www.upwork.com/freelancers/~01de3e11f13e45ce4e",
+							"img": "img/up.svg"
+						}
+					]
 				},
 				{
-					"href": "",
-					"img": "",
+					"href": "https://github.com/IrynaPrysyazhna",
+					"img": "https://avatars.githubusercontent.com/u/15999441?v=4",
 					"name": "Iryna Prysyazhna",
-					"username": ""
+					"username": "IrynaPrysyazhna",
+					"socials": [
+						{
+							"href": "https://github.com/IrynaPrysyazhna",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "https://www.upwork.com/freelancers/~01c8dd6365a15542d5",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "https://www.facebook.com/profile.php?id=100011281180671",
+							"img": "img/fb.svg"
+						}
+					]
 				},
 				{
 					"href": "",
 					"img": "",
 					"name": "Ivan Balias",
-					"username": ""
+					"username": "",
+					"socials": [
+						{
+							"href": "",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "",
+							"img": "img/spider.svg"
+						},
+						{
+							"href": "",
+							"img": "img/tg.svg"
+						}
+					]
 				},
 				{
 					"href": "",
 					"img": "",
 					"name": "Natalie Zarytska",
-					"username": ""
+					"username": "",
+					"socials": [
+						{
+							"href": "",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "",
+							"img": "img/spider.svg"
+						},
+						{
+							"href": "",
+							"img": "img/tg.svg"
+						}
+					]
 				},
 				{
 					"href": "",
 					"img": "",
 					"name": "Nataliia Vasyliuk",
-					"username": ""
+					"username": "",
+					"socials": [
+						{
+							"href": "",
+							"img": "img/git.svg"
+						},
+						{
+							"href": "",
+							"img": "img/inst.svg"
+						},
+						{
+							"href": "",
+							"img": "img/up.svg"
+						},
+						{
+							"href": "",
+							"img": "img/spider.svg"
+						},
+						{
+							"href": "",
+							"img": "img/tg.svg"
+						}
+					]
 				}
 			]
 		}
