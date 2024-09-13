@@ -192,20 +192,20 @@
 							"img": "img/git.svg"
 						},
 						{
-							"href": "...",
+							"href": "https://www.linkedin.com/in/kondruk-roman-71bb30176/",
 							"img": "img/in.svg"
 						},
 						{
-							"href": "...",
-							"img": "img/inst.svg"
-						},
-						{
-							"href": "...",
+							"href": "https://www.upwork.com/freelancers/~01934c25cc0ecdfa94",
 							"img": "img/up.svg"
 						},
 						{
 							"href": "https://webart.work/m/6602d9a0eb28ecc0dbacf3ed",
 							"img": "img/spider.svg"
+						},
+						{
+							"href": "https://djinni.co/q/ffe54cc6ca/",
+							"img": "img/dj.svg"
 						}
 					]
 				},
@@ -218,22 +218,6 @@
 						{
 							"href": "https://github.com/div632",
 							"img": "img/git.svg"
-						},
-						{
-							"href": "...",
-							"img": "img/in.svg"
-						},
-						{
-							"href": "...",
-							"img": "img/inst.svg"
-						},
-						{
-							"href": "...",
-							"img": "img/up.svg"
-						},
-						{
-							"href": "...",
-							"img": "img/spider.svg"
 						}
 					]
 				},
@@ -294,30 +278,18 @@
 					]
 				},
 				{
-					"href": "",
-					"img": "",
+					"href": "https://github.com/NastyaVod",
+					"img": "https://avatars.githubusercontent.com/u/104510101?v=4",
 					"name": "Anastasiia Vodnieva",
-					"username": "",
+					"username": "NastyaVod",
 					"socials": [
 						{
-							"href": "...",
+							"href": "https://github.com/NastyaVod",
 							"img": "img/git.svg"
 						},
 						{
-							"href": "...",
-							"img": "img/in.svg"
-						},
-						{
-							"href": "...",
-							"img": "img/inst.svg"
-						},
-						{
-							"href": "...",
+							"href": "https://www.upwork.com/freelancers/~01c1fef1a09e234322",
 							"img": "img/up.svg"
-						},
-						{
-							"href": "...",
-							"img": "img/spider.svg"
 						}
 					]
 				},
@@ -414,33 +386,37 @@
 					"href": "https://github.com/denisN2102",
 					"img": "https://webart.work/api/user/image/65d748355ad774b675a148c0.jpg?1708607959929",
 					"name": "Denys Narolskyi",
-					"username": "denisN2102",
+					"username": "henriquevq",
 					"socials": [
 						{
 							"href": "https://github.com/denisN2102",
 							"img": "img/git.svg"
 						},
 						{
-							"href": "...",
+							"href": "https://www.linkedin.com/in/denys-narolskyi-516135232/",
 							"img": "img/in.svg"
 						},
 						{
-							"href": "...",
-							"img": "img/inst.svg"
-						},
-						{
-							"href": "...",
+							"href": "https://www.upwork.com/freelancers/~01dab23ad8635286b0?viewMode=1",
 							"img": "img/up.svg"
 						},
 						{
 							"href": "https://webart.work/m/65d748355ad774b675a148c0",
 							"img": "img/spider.svg"
+						},
+						{
+							"href": "https://djinni.co/q/27b807bccf/",
+							"img": "img/dj.svg"
+						},
+						{
+							"href": "https://t.me/henriquevq",
+							"img": "img/tg.svg"
 						}
 					]
 				},
 				{
 					"href": "https://github.com/Lizvinskyi0202",
-					"img": "...",
+					"img": "https://ca.slack-edge.com/T43NCC449-U07LMKVMX60-6b9f9312041d-512",
 					"name": "Nadia Tverdokhlib",
 					"username": "hope.tv",
 					"socials": [
@@ -484,58 +460,26 @@
 					]
 				},
 				{
-					"href": "",
-					"img": "",
+					"href": "https://github.com/blackwolf3342",
+					"img": "https://avatars.githubusercontent.com/u/17449783?v=4",
 					"name": "Valik Maystrenko",
-					"username": "",
+					"username": "Valentyn Maistrenko",
 					"socials": [
 						{
-							"href": "",
+							"href": "https://github.com/blackwolf3342",
 							"img": "img/git.svg"
 						},
 						{
-							"href": "",
-							"img": "img/inst.svg"
+							"href": "https://www.linkedin.com/in/valentin-maystrenko-full-stack-developer/",
+							"img": "img/in.svg"
 						},
 						{
-							"href": "",
+							"href": "https://www.upwork.com/freelancers/~01c1ee76a50c66071d",
 							"img": "img/up.svg"
 						},
 						{
-							"href": "",
-							"img": "img/spider.svg"
-						},
-						{
-							"href": "",
-							"img": "img/tg.svg"
-						}
-					]
-				},
-				{
-					"href": "",
-					"img": "",
-					"name": "Dmytro Lytvyniuk",
-					"username": "",
-					"socials": [
-						{
-							"href": "",
-							"img": "img/git.svg"
-						},
-						{
-							"href": "",
-							"img": "img/inst.svg"
-						},
-						{
-							"href": "",
-							"img": "img/up.svg"
-						},
-						{
-							"href": "",
-							"img": "img/spider.svg"
-						},
-						{
-							"href": "",
-							"img": "img/tg.svg"
+							"href": "https://www.facebook.com/Valik.Maystrenko/",
+							"img": "img/fb.svg"
 						}
 					]
 				},
@@ -664,30 +608,18 @@
 					]
 				},
 				{
-					"href": "",
-					"img": "",
-					"name": "Nataliia Vasyliuk",
-					"username": "",
+					"href": "https://www.upwork.com/freelancers/~01424e64846e5a6b3c?viewMode=1&mp_source=share",
+					"img": "https://www.upwork.com/profile-portraits/c1rUyoaqUjmPvCMQ0z4j3ZVdLtoi3V63hFl7_0yDwwhIdTTsXNAYJHk3x886qy3uGr",
+					"name": "Nataliia Marynina",
+					"username": "natali_marynina",
 					"socials": [
 						{
-							"href": "",
-							"img": "img/git.svg"
-						},
-						{
-							"href": "",
+							"href": "https://www.instagram.com/natali_marynina?igsh=OTlmNGtnc3VycTQy",
 							"img": "img/inst.svg"
 						},
 						{
-							"href": "",
+							"href": "https://www.upwork.com/freelancers/~01424e64846e5a6b3c?viewMode=1&mp_source=share",
 							"img": "img/up.svg"
-						},
-						{
-							"href": "",
-							"img": "img/spider.svg"
-						},
-						{
-							"href": "",
-							"img": "img/tg.svg"
 						}
 					]
 				}
