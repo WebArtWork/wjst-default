@@ -256,20 +256,8 @@
 					"username": "mia_hadzyra",
 					"socials": [
 						{
-							"href": "...",
-							"img": "img/git.svg"
-						},
-						{
-							"href": "...",
+							"href": "https://www.linkedin.com/in/mia-hadzyra-bb2362230/",
 							"img": "img/in.svg"
-						},
-						{
-							"href": "...",
-							"img": "img/inst.svg"
-						},
-						{
-							"href": "...",
-							"img": "img/up.svg"
 						},
 						{
 							"href": "https://webart.work/m/6474b20780f5fe5cf6f21e6f",
@@ -484,30 +472,18 @@
 					]
 				},
 				{
-					"href": "",
-					"img": "",
+					"href": "https://www.upwork.com/freelancers/~01849d6880bec4e843",
+					"img": "https://www.upwork.com/profile-portraits/c1jyTD1L1GoOdHqKTQx3bOq42m7TTRnKsIWxWLjNHyllBeNtl690hkPhyYdM0MBbx6",
 					"name": "Oleksandr Fedorak",
-					"username": "",
+					"username": "herzog",
 					"socials": [
 						{
-							"href": "",
-							"img": "img/git.svg"
+							"href": "https://www.linkedin.com/in/oleksandr-fedorak-4b4221257/",
+							"img": "img/in.svg"
 						},
 						{
-							"href": "",
-							"img": "img/inst.svg"
-						},
-						{
-							"href": "",
+							"href": "https://www.upwork.com/freelancers/~01849d6880bec4e843",
 							"img": "img/up.svg"
-						},
-						{
-							"href": "",
-							"img": "img/spider.svg"
-						},
-						{
-							"href": "",
-							"img": "img/tg.svg"
 						}
 					]
 				},
