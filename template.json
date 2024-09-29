@@ -80,12 +80,17 @@
 					"id": "alerts"
 				},
 				{
-					"name": "Breadcrumb",
-					"url": "/components#breadcrumb"
+					"name": "Accardion",
+					"url": "/components#accardion",
+					"id": "accardion"
 				},
 				{
 					"name": "Buttons",
 					"url": "/components#buttons"
+				},
+				{
+					"name": "Breadcrumb",
+					"url": "/components#breadcrumb"
 				},
 				{
 					"name": "Collapse",

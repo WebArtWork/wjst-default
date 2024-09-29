@@ -148,13 +148,13 @@ ul {
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		transition: all .3s;
+		transition: all 0.3s;
 		position: fixed;
 		background: var(--c-primary);
 		z-index: 9;
 		height: 100%;
 		padding: 16px;
-		&-wrap{
+		&-wrap {
 			height: 100%;
 			overflow-y: scroll;
 			padding-bottom: 80px;
@@ -175,9 +175,23 @@ ul {
 		&-in {
 			border-left: 1px solid var(--c-placeholder);
 			margin-left: 20px;
-			&-item{
-				.main-content__nav-link{
+			&-item {
+				.main-content__nav-link {
 					padding: 5px 10px;
+				}
+
+				&--active {
+					ul {
+						display: block;
+					}
+				}
+				&--active > .main-content__nav-link {
+					color: var(--c-primary-hover);
+					font-weight: 550;
+
+					// &:hover {
+					// 	font-weight: normal;
+					// }
 				}
 			}
 			&--none {
@@ -226,7 +240,7 @@ ul {
 		flex: 1;
 		padding: 20px 20px 20px 270px;
 		@media (max-width: 768px) {
-			padding: 15px
+			padding: 15px;
 		}
 	}
 
@@ -268,7 +282,7 @@ ul {
 	z-index: 99;
 	cursor: pointer;
 	transition: all 0.3s;
-	svg{
+	svg {
 		width: 50px;
 		height: 50px;
 	}
