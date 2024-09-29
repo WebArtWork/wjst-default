@@ -7,6 +7,13 @@ const toggleClass = (id, className) => {
 	}
 };
 
+const toTop = ()=>{
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+}
+
 const sidebar = {};
 document.addEventListener("DOMContentLoaded", function () {
 	/* ACCARDION CODE */
@@ -61,7 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	}
+
 	const itemBlocks = document.querySelectorAll(".item-block");
+
 	if (!itemBlocks.length) {
 		return;
 	}
@@ -89,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			);
 		}
 	};
+
 	window.onscroll = function () {
 		for (const itemBlock of itemBlocks) {
 			const startPoint = itemBlock.offsetTop - start;
@@ -103,23 +113,4 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	};
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-	const goTopButton = document.querySelector(".goTop");
-
-	goTopButton.addEventListener("click", function () {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	});
-});
-
-const burgerWrap = document.querySelector(".burger-wrap");
-
-const burger = document.querySelector(".burger");
-
-burgerWrap.addEventListener("click", () => {
-	burger.classList.toggle("burger--close");
 });
