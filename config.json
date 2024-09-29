@@ -2,5 +2,8 @@
 	"port": 8000,
 	"build": {
 		"base": "/"
+	},
+	"fetch":  {
+		"users": "https://webart.work/api/user/get"
 	}
 }
