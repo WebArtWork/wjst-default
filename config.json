@@ -1,21 +1,6 @@
 {
 	"port": 8000,
 	"build": {
-		"base": "/",
-		"page": [
-			{
-				"name": "content",
-				"folder": "users",
-				"json": "users"
-			},
-			{
-				"name": "content",
-				"url": "allusers",
-				"json": "users"
-			}
-		]
-	},
-	"fetch":  {
-		"users": "https://webart.work/api/user/get"
+		"base": "/"
 	}
 }
