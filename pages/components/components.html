@@ -488,6 +488,9 @@
 					/>
 				</svg>
 			</a>
+			<div class="burger-wrap-n">
+				<div class="burger-n"></div>
+			</div>
 			<ul class="navbar-navigation">
 				<li class="navbar-navigation__link"><a href=""> Home </a></li>
 				<li class="navbar-navigation__link">
@@ -544,6 +547,39 @@
 					dropdown.classList.toggle("open"); // Додаємо або видаляємо клас 'open'
 				});
 			});
+			document.querySelector('.burger-wrap-n').addEventListener('click', function () {
+				const menuNavigation = document.querySelector('.navbar-navigation');
+				const burger = document.querySelector('.burger-n');
+
+				menuNavigation.classList.toggle('navbar-navigation--open');
+				burger.classList.toggle('burger-n--close');
+			});
+			document.addEventListener("DOMContentLoaded", function() {
+    const navbarForm = document.querySelector('.navbar-form');
+    const navbarNavigation = document.querySelector('.navbar-navigation');
+    const navbar = document.querySelector('.navbar');
+
+    function moveNavbarForm() {
+        if (window.innerWidth <= 1024) {
+            // Переместить форму внутрь navbar-navigation, если она там не находится
+            if (navbarForm.parentElement !== navbarNavigation) {
+                navbarNavigation.appendChild(navbarForm);
+            }
+        } else {
+            // Вернуть форму обратно в navbar, если она там
+            if (navbarForm.parentElement === navbarNavigation) {
+                navbar.appendChild(navbarForm);
+            }
+        }
+    }
+
+    // Инициализация функции при загрузке страницы
+    moveNavbarForm();
+
+    // Добавить обработчик события на изменение размера окна
+    window.addEventListener('resize', moveNavbarForm);
+});
+
 		</script>
 	</div>
 </div>
