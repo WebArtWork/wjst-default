@@ -1,0 +1,41 @@
+.stats{
+    &-wrapper{
+        text-align: center;
+        background-color: #fff;
+        padding-bottom: 50px;
+    }
+    &__title{
+        font-weight: 600;
+        text-align: center;
+        color: #000000;
+        padding: 40px 0;
+        font-size: 45px;
+    }
+    &__description{
+        color: #626262;
+        padding: 0 50px 35px 50px;
+        font-size: 30px;
+    }
+    &-triggers{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 40px;
+        &__wrap{
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding: 0 10px;
+        }
+        &__title{
+            background: linear-gradient(95.96deg, #F5E920 0%, rgba(171, 163, 30, 0.94) 100.79%);
+            -webkit-background-clip: text; /* Для WebKit-браузерів */
+            -webkit-text-fill-color: transparent; /* Робить текст прозорим */
+            font-weight: 700;
+            font-size: 60px ;
+        }
+        &__description{
+            font-size: 25px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+}

@@ -96,6 +96,27 @@ button {
       color: var(--c-secondary); /* Колір тексту */
     }
   }
+  &--success{
+    background: var(--c-success);
+  }
+  &--danger{
+    background: var(--c-danger-border);
+  }
+  &--warning{
+    background: var(--c-orange);
+  }
+  &--info{
+    background: var(--c-question);
+  }
+  &--light{
+    background: var(--c-text-primary);
+  }
+  &--dark{
+    background: var(--c-primary);
+  }
+  &--link{
+    background: var(--c-code-hover);
+  }
   &:disabled {
     background-color: var(--c-placeholder);
     cursor: default;
