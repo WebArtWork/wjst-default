@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: row wrap;
   }
+
   &__wrap{
     display: flex;
     flex: 0 0 25%;
@@ -47,6 +48,22 @@
         align-items: center;
         justify-content: center;
       }
+    }
+  }
+  &-center{
+    flex: 1 0;
+    &--third{
+      .card-center__wrap {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+      }
+    }
+    &--two{
+      .card-center__wrap {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
     }
   }
   &__item{
