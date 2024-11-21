@@ -1085,6 +1085,132 @@
 		</div>
 	</div>
 </div>
+<div class="components-stats">
+	<h2>Slider</h2>
+	<div class="index-readme__item">
+		<div class="slider">
+			<div class="slider__container" id="slider">
+				<div class="slider__slide slider__slide--1">Слайд 1</div>
+				<div class="slider__slide slider__slide--2">Слайд 2</div>
+				<div class="slider__slide slider__slide--3">Слайд 3</div>
+				<div class="slider__slide slider__slide--4">Слайд 4</div>
+			</div>
+			
+			<button class="slider__button slider__button--prev" id="prev">&#10094;</button>
+			<button class="slider__button slider__button--next" id="next">&#10095;</button>
+			
+			<div class="slider__dots" id="dots-container">
+				<!-- Точки для навігації будуть додаватись динамічно -->
+			</div>
+		</div>
+	
+		<script>
+			const slider = document.getElementById('slider');
+			const slides = document.querySelectorAll('.slider__slide');
+			const prevBtn = document.getElementById('prev');
+			const nextBtn = document.getElementById('next');
+			const dotsContainer = document.getElementById('dots-container');
+	
+			let currentIndex = 0;
+	
+			// Динамічно створюємо точки
+			slides.forEach((_, index) => {
+				const dot = document.createElement('span');
+				dot.classList.add('slider__dot');
+				dot.addEventListener('click', () => goToSlide(index));
+				dotsContainer.appendChild(dot);
+			});
+	
+			// Оновлюємо активну точку
+			function updateDots() {
+				const dots = document.querySelectorAll('.slider__dot');
+				dots.forEach((dot, index) => {
+					dot.classList.remove('slider__dot--active');
+					if (index === currentIndex) {
+						dot.classList.add('slider__dot--active');
+					}
+				});
+			}
+	
+			// Переходимо до слайду
+			function goToSlide(index) {
+				if (index < 0) {
+					currentIndex = slides.length - 1;
+				} else if (index >= slides.length) {
+					currentIndex = 0;
+				} else {
+					currentIndex = index;
+				}
+	
+				slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+				updateDots();
+			}
+	
+			// Обробка кнопок "Попередній" та "Наступний"
+			prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+			nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+	
+			// Ініціалізація слайдера
+			updateDots();
+	
+	
+		</script>
+	</div>
+
+
+</div>
+<div class="components-form">
+	<h2>File</h2>
+	<div class="index-readme__item">
+		<div class="file-wrapper">
+			<div class="file__content">
+				<div class="file__icon">
+					<svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_118_317)">
+						<path d="M80.625 42.0133C77.7917 27.6383 65.1667 16.8467 50 16.8467C37.9583 16.8467 27.5 23.68 22.2917 33.68C9.75 35.0133 0 45.6383 0 58.5133C0 72.305 11.2083 83.5133 25 83.5133H79.1667C90.6667 83.5133 100 74.18 100 62.68C100 51.68 91.4583 42.7633 80.625 42.0133ZM70.8333 54.3467L50 75.18L29.1667 54.3467H41.6667V37.68H58.3333V54.3467H70.8333Z" fill="url(#paint0_linear_118_317)"/>
+						</g>
+						<defs>
+						<linearGradient id="paint0_linear_118_317" x1="1.85714" y1="50.1799" x2="101" y2="50.1799" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#F5E920"/>
+						<stop offset="1" stop-color="#ABA31E"/>
+						</linearGradient>
+						<clipPath id="clip0_118_317">
+						<rect width="100" height="100" fill="white" transform="translate(0 0.179688)"/>
+						</clipPath>
+						</defs>
+					</svg>					
+				</div>
+				<div class="file__title">
+					Drag & Drop to Upload File
+				</div>
+				<div class="file__or">
+					OR
+				</div>
+				<div class="file-upload">
+					<input type="file" id="fileInput" class="file-upload__input" />
+					<label for="fileInput" class="file-upload__button">Browse File</label>
+					<span id="fileName" class="file-upload__filename"></span>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const fileInput = document.getElementById('fileInput');
+			const fileNameSpan = document.getElementById('fileName');
+
+			// Обработчик события для отображения имени файла
+			fileInput.addEventListener('change', function() {
+				if (fileInput.files.length > 0) {
+					fileNameSpan.textContent = `Выбран файл: ${fileInput.files[0].name}`;
+				} else {
+					fileNameSpan.textContent = '';
+				}
+			});
+
+		</script>
+
+	</div>
+</div>
 <!--comitted-->
 <!--
 <div class="components-select">
