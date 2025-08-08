@@ -55,7 +55,10 @@
 			"title": "Welcome to Our Platform",
 			"description": "We help you build better websites",
 			"img": "img/spider.svg",
-			"imgs": ["img/spider.svg", "img/spider.svg"]
+			"imgs": [
+				"img/spider.svg",
+				"img/spider.svg"
+			]
 		},
 		{
 			"src": "/sections/content/intro/intro.html",
