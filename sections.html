@@ -1,0 +1,5251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<base href="/" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Honchar Denys" />
+
+		<title>Develop and Demo Sections which we can quickly use | Web Art Work</title>
+		<meta itemprop="name" content="Develop and Demo Sections which we can quickly use | Web Art Work" />
+		<meta name="twitter:title" content="Develop and Demo Sections which we can quickly use | Web Art Work" />
+		<meta property="og:title" content="Develop and Demo Sections which we can quickly use | Web Art Work" />
+
+		<meta name="description" content="This page contains all the reusable sections available in the project. Each section is a self-contained block of content (e.g., hero, features, testimonials) that can be inserted into any layout. Use them to quickly build consistent, modular pages across your website." />
+		<meta itemprop="description" content="This page contains all the reusable sections available in the project. Each section is a self-contained block of content (e.g., hero, features, testimonials) that can be inserted into any layout. Use them to quickly build consistent, modular pages across your website." />
+		<meta name="twitter:description" content="This page contains all the reusable sections available in the project. Each section is a self-contained block of content (e.g., hero, features, testimonials) that can be inserted into any layout. Use them to quickly build consistent, modular pages across your website." />
+		<meta property="og:description" content="This page contains all the reusable sections available in the project. Each section is a self-contained block of content (e.g., hero, features, testimonials) that can be inserted into any layout. Use them to quickly build consistent, modular pages across your website." />
+
+		<meta itemprop="image" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
+		<meta name="twitter:image:src" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
+		<meta property="og:image" content="https://webartwork.github.io/wjst-default/img/avatar.png" />
+
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<style>
+			:root {
+			  /* =======================
+			     📱 Breakpoints
+			     Used in media queries
+			  ======================= */
+			  --bp-lg: 0;   /* Max width for large devices (e.g. tablets) */
+			  --bp-md: 0;   /* Max width for medium devices (e.g. phones) */
+			  --bp-sm: 0;   /* Max width for small devices */
+
+			  /* =======================
+			     🔠 Typography
+			  ======================= */
+			  --fs: 16px;                      /* Base font size */
+			  --font-size: 16px;         /* Alias for base font size */
+			  --line-height: 1.5;     /* Default line height */
+			  --letter-spacing: 0.5px; /* Default letter spacing */
+			  --ff-base: &quot;Roboto&quot;, sans-serif;           /* Font for body text */
+			  --ff-title: &quot;Lato&quot;, sans-serif;         /* Font for titles/headings */
+			  --ff-second: &quot;Roboto&quot;, sans-serif;       /* Secondary font */
+
+			  /* =======================
+			     📐 Layout & Spacing
+			  ======================= */
+			  --icon-size: 16px;         /* Default icon size */
+			  --padding-scale: 1; /* Padding scale multiplier */
+			  --margin-scale: 1;   /* Margin scale multiplier */
+			  --b-radius: 4px;      /* Border radius */
+			  --transition: 0.3s ease-in-out;      /* Global transition */
+
+			  /* =======================
+			     🎨 Base Colors
+			  ======================= */
+			     --c-primary: #212529;             /* Main brand color */
+			     --c-secondary: #24373d;         /* Secondary UI color */
+			     --c-text-primary: #fff;    /* Primary text color */
+			     --c-text-secondary: #000;/* Secondary text color */
+			     --c-text-body-secondary: #6c757d;/* Body secondary text color */
+			     --c-body: #242b36;                   /* Background/body color */
+			     --c-bg-item: #1c1c1c;              /* Background of items/cards */
+			     --c-placeholder: #666666;     /* Placeholder/input hint color */
+			     --c-border: #495057;               /* Default border color */
+
+			  /* =======================
+			     🎯 States & Feedback
+			  ======================= */
+			  --c-primary-hover: #f8ec20;       /* Hover state for primary */
+			  --c-primary-cursor: #cfc720;     /* Cursor/pressed state */
+			  --c-success: #2bb729;                  /* Success state */
+			  --c-successhover: #358834;        /* Success hover */
+			  --c-error: #ff4d4d;                      /* Error color */
+			  --c-error-hover: #d73535;           /* Error hover */
+			  --c-alert: #363636;                      /* Warning/alert color */
+
+			  /* =======================
+			     🎨 Border Colors
+			  ======================= */
+			  --c-primary-border: #0028ffcc;
+			  --c-secondary-border: #a0a0a0;
+			  --c-success-border: #00ff00;
+			  --c-danger-border: #ff0000;
+			  --c-warning-border: #ffff00;
+			  --c-info-border: #00ffff;
+
+			  /* =======================
+			     🧱 Table & Shadow
+			  ======================= */
+			  --c-shadow: rgba(0, 0, 0, 0.5);             /* Generic shadow */
+			  --c-table-shadow: rgba(0, 0, 0, 0.15);  /* Shadow used in tables */
+			  --c-shadow-table: rgba(0, 0, 0, 0.2);  /* Alternate table shadow */
+			  --c-table-striped: #2c3034;/* Zebra-stripe row color */
+
+			  --c-primary-table: #cfe2ff;
+			  --c-secondary-table: #e2e3e5;
+			  --c-success-table: #d1e7dd;
+			  --c-danger-table: #f8d7da;
+			  --c-warning-table: #fff3cd;
+			  --c-info-table: #cff4fc;
+			  --c-light-table: #f8f9fa;
+
+			  /* =======================
+			     🌈 Extended Palette
+			  ======================= */
+			  --c-blue: #334d6e;
+			  --c-sky: #3498db;
+			  --c-sky-light: #58acf5;
+			  --c-grey: #bdbdbd;
+			  --c-grey-light: #f2f2f2;
+			  --c-red: #a31010;
+			  --c-red-dark: #8c1b0f;
+			  --c-green: #089227;
+			  --c-dark: #000;
+			  --c-white: #fff;
+			  --c-black: #000;
+			  --c-orange: #ffa500;
+			  --c-yellow: #e0dc10;
+			  --c-yellow-darken: #8b890d;
+			  --c-green-darken: #0a5803;
+			  --c-blue-gray: #425155;
+			  --c-blue-gray-darken: #262d2e;
+
+			  /* =======================
+			     💬 UI Utility Colors
+			  ======================= */
+			  --c-question: #4da6ff;     /* Used in Q&A blocks */
+			  --c-loading: #a0a0a0;       /* Loading spinner or loaders */
+			  --c-code-hover: #007eff;  /* Hover color in code examples */
+			}
+		</style>
+
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="goTop" onclick="toTop()">
+	<svg
+		width="70"
+		height="70"
+		viewBox="0 0 108 108"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<g filter="url(#filter0_d_11_1802)">
+			<rect x="4" width="100" height="100" rx="13" fill="#F8EC20" />
+		</g>
+		<path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M82.514 61.7718C81.9358 62.3058 81.0343 62.27 80.5003 61.6918L53.4394 32.3918C52.9054 31.8137 52.9412 30.9121 53.5194 30.3782C54.0975 29.8442 54.999 29.88 55.533 30.4582L82.594 59.7582C83.128 60.3363 83.0921 61.2379 82.514 61.7718Z"
+			fill="black"
+		/>
+		<path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M55.453 30.3782C56.0311 30.9121 56.0669 31.8137 55.533 32.3918L28.472 61.6918C27.938 62.27 27.0365 62.3058 26.4583 61.7718C25.8802 61.2379 25.8444 60.3363 26.3783 59.7582L53.4393 30.4582C53.9733 29.88 54.8748 29.8442 55.453 30.3782Z"
+			fill="black"
+		/>
+		<path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M76.6244 67.2763C76.1678 67.698 75.4557 67.6698 75.0339 67.2131L53.6595 44.0701C53.2377 43.6135 53.266 42.9014 53.7227 42.4796C54.1793 42.0579 54.8914 42.0861 55.3132 42.5428L76.6876 65.6858C77.1094 66.1424 77.0811 66.8545 76.6244 67.2763Z"
+			fill="black"
+		/>
+		<path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M55.2499 42.4796C55.7066 42.9014 55.7349 43.6135 55.3131 44.0701L33.9387 67.2131C33.5169 67.6698 32.8048 67.698 32.3482 67.2763C31.8915 66.8545 31.8632 66.1424 32.285 65.6858L53.6594 42.5428C54.0812 42.0861 54.7933 42.0579 55.2499 42.4796Z"
+			fill="black"
+		/>
+		<defs>
+			<filter
+				id="filter0_d_11_1802"
+				x="0"
+				y="0"
+				width="108"
+				height="108"
+				filterUnits="userSpaceOnUse"
+				color-interpolation-filters="sRGB"
+			>
+				<feFlood flood-opacity="0" result="BackgroundImageFix" />
+				<feColorMatrix
+					in="SourceAlpha"
+					type="matrix"
+					values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+					result="hardAlpha"
+				/>
+				<feOffset dy="4" />
+				<feGaussianBlur stdDeviation="2" />
+				<feComposite in2="hardAlpha" operator="out" />
+				<feColorMatrix
+					type="matrix"
+					values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+				/>
+				<feBlend
+					mode="normal"
+					in2="BackgroundImageFix"
+					result="effect1_dropShadow_11_1802"
+				/>
+				<feBlend
+					mode="normal"
+					in="SourceGraphic"
+					in2="effect1_dropShadow_11_1802"
+					result="shape"
+				/>
+			</filter>
+		</defs>
+	</svg>
+</div>
+<header class="header">
+	<span class="header__left">
+		<a href="/" class="header__logo-link">
+			<img class="header__logo" src="img/logo.svg" alt="WAW" width="45" />
+		</a>
+		<h1 class="header__title">Wjst</h1>
+	</span>
+	<span class="header__right">
+		<ul class="header__nav">
+			<li class="header__nav-item">
+				<a href="/" class="header__nav-link">Getting started</a>
+			</li>
+		</ul>
+
+		<ul class="header__nav">
+			<li class="header__nav-item">
+				<a
+					class="header__nav-link header__nav-link--github"
+					href="https://github.com/WebArtWork/wjst"
+					data-original-title="GitHub"
+					target="_blank"
+				>
+					<img
+						class="header__nav-icon"
+						src="img/github.svg"
+						alt="github"
+					/>
+				</a>
+			</li>
+		</ul>
+
+		<span
+			onclick="
+				toggleClass('sidebar', 'main-content__nav--show');
+				toggleClass('burger', 'burger--close')
+			"
+			class="header__nav header__nav--mobile"
+		>
+			<a
+				class="header__nav-link header__nav-link--github-mobile"
+				href="https://github.com/WebArtWork/wjst"
+				data-original-title="GitHub"
+				target="_blank"
+			>
+				<img
+					class="header__nav-icon"
+					src="img/github.svg"
+					alt="github"
+				/>
+			</a>
+			<div class="burger-wrap">
+				<div class="burger" id="burger"></div>
+			</div>
+		</span>
+	</span>
+</header>
+
+<div class="main-content">
+	<main class="main-content__section">
+		<button onclick="toggleVisibility('readme-section')">Toggle readme</button>
+<button onclick="toggleVisibility('hrs')">Toggle horizontal lines</button>
+<button onclick="toggleVisibility('controllers')">Toggle controllers</button>
+<select id="addSection"></select>
+<button onclick="addSection()">Add</button>
+
+<script>
+	const sections = JSON.parse(`[{"src":"/sections/content/accordion/accordion.html","items":[{"title":"First item","content":"<p>Item text</p>"},{"title":"Second item","content":"<p>Item text</p>","active":true}],"sections":[{"src":"/sections/content/markdown/markdown.html","content":"/sections/content/markdown/readme.MD"}]},{"src":"/sections/content/callout-box/callout-box.html","title":"Callout title","description":"Important information or message"},{"src":"/sections/content/code-block/code-block.html","title":"Console Output","code":"console.log('Hello, world!');"},{"src":"/sections/content/feature-list/feature-list.html","title":"Features","description":"What makes us great","items":[{"icon":"/img/icon.svg","title":"Fast","text":"Speedy performance with low latency"},{"icon":"/img/icon.svg","title":"Reliable","text":"Trusted by thousands"}]},{"src":"/sections/content/hero/hero.html","title":"Welcome to Our Platform","description":"We help you build better websites","img":"img/spider.svg","imgs":["img/spider.svg","img/spider.svg"]},{"src":"/sections/content/intro/intro.html","img":"img/spider.svg","title":"Get Started","description":"This is an introduction to the page"},{"src":"/sections/content/markdown/markdown.html","content":"##Getting Started\\nThis is a paragraph from markdown"},{"src":"/sections/content/media-text/media-text.html","img":"img/spider.svg","title":"Powerful Tools","text":"Integrate with your existing workflow easily."},{"src":"/sections/content/statistics/statistics.html","title":"Our Impact","description":"Metrics that matter","items":[{"value":"98%","label":"Customer Satisfaction"},{"value":"2M+","label":"Downloads"}]},{"src":"/sections/content/testimonial/testimonial.html","img":"img/spider.svg","quote":"This product changed my life!","author":"Jane Doe"},{"src":"/sections/feedback/quote/quote.html","img":"img/spider.svg","quote":"Design is thinking made visual.","author":"Saul Bass"},{"src":"/sections/content/text-block/text-block.html","title":"About Us","description":"We are committed to delivering the best digital experience."},{"src":"/sections/content/timeline/timeline.html","title":"Our Journey","description":"Milestones and growth","items":[{"time":"2021","label":"Founded","text":"Our story begins"},{"time":"2023","label":"Expansion","text":"Reached new markets"}]},{"src":"/sections/content/two-column-text/two-column-text.html","title":"Compare Plans","columns":[{"title":"Free Plan","text":"Basic features included"},{"title":"Pro Plan","text":"Advanced features for power users"}]},{"src":"/sections/horizontal-visual.html","img":"img/spider.svg","title":"Main title for gallery","imgs":["img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg"]},{"src":"/sections/vertical-visual.html","img":"img/spider.svg","title":"Title for visual block","imgs":["img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg"],"subtitle":"text for instagram link","socials":[{"img":"img/spider.svg","href":"https://www.instagram.com/potiercake/"}]},{"src":"/sections/get-in-touch.html","map":"img/spider.svg","iloc":"img/spider.svg","iphone":"img/spider.svg","title":"Get in touch block","subtitle":"We are here","socials":[{"img":"img/spider.svg","href":"https://www.instagram.com/potiercake/"}],"phone":"+380971862487","address":"Drai-Khmary St, 50, Kam'yanets'-Podil's'kyi, Khmelnytskyi Oblast, 32313"},{"src":"/sections/business/team/team.html","title":"Team","description":"Meet our amazing team","teams":[{"name":"Leadership","users":[{"img":"img/avatar.png","name":"Jane Doe","username":"jdoe","socials":[{"href":"https://github.com/jdoe","img":"img/git.svg"}]},{"img":"img/avatar.png","name":"John Smith","username":"jsmith"}]}]},{"src":"/sections/blog/meta/meta.html","date":"2024-05-01","author":"John Doe","readTime":"5 min read","categories":[{"name":"Tech","url":"/category/tech"},{"name":"AI","url":"/category/ai"}]},{"src":"/sections/blog/post-card/post-card.html","img":"/img/post.jpg","category":"Tech","title":"Blog post title","excerpt":"Optional short preview of the article content.","author":"John Doe","date":"2024-01-01"},{"src":"/sections/blog/post-grid/post-grid.html","items":[{"img":"/img/post.jpg","title":"Post title","description":"Short summary","url":"/post-url"}]},{"src":"/sections/blog/author/author.html","avatar":"/img/avatar.png","name":"Author name","bio":"Short author description or tagline"},{"src":"/sections/blog/categories/categories.html","title":"Browse by category","description":"Optional helper text","categories":[{"title":"News","url":"/blog/news","count":3},{"title":"Events","url":"/blog/events"},{"title":"Tutorials","url":"/blog/tutorials","count":12}]},{"src":"/sections/blog/comments/comments.html","title":"Comments","items":[{"avatar":"/img/avatar.png","author":"Jane Doe","date":"2024-08-30","text":"This is a comment","replies":[{"avatar":"/img/avatar2.png","author":"John Doe","date":"2024-08-31","text":"A reply"}]}]},{"src":"/sections/blog/related-posts/related-posts.html","title":"Related posts","posts":[{"href":"/blog/post-1","img":"/img/post-1.jpg","title":"First post","date":"Jan 1, 2024"},{"href":"/blog/post-2","img":"/img/post-2.jpg","title":"Second post"}]},{"src":"/sections/business/about/about.html","img":"/img/about.svg","title":"Optional section title","description":"Optional paragraph describing the business"},{"src":"/sections/business/awards/awards.html","title":"Awards","description":"Highlights of our achievements","items":[{"img":"/img/trophy.svg","title":"Best Startup","year":"2023","description":"Awarded by Example Organization"}]},{"src":"/sections/business/careers/careers.html","title":"Join our team","description":"We are hiring across multiple roles","positions":[{"title":"Frontend Developer","location":"Remote","type":"Full-Time","link":"/careers/frontend","linkLabel":"Apply now"}]},{"src":"/sections/business/contact/contact.html","title":"Get in touch","description":"We would love to hear from you.","address":"123 Main St, Anytown","phone":"+1 (555) 123-4567","email":"info@example.com"},{"src":"/sections/business/map/map.html","lat":50.4501,"lng":30.5234,"zoom":14,"apiKey":"GOOGLE_MAPS_API_KEY","title":"Our Location","description":"Find us on the map"},{"src":"/sections/business/milestones/milestones.html","title":"Company milestones","description":"Our journey so far","items":[{"year":"2019","title":"Founded","text":"Company started"},{"year":"2020","title":"First product","text":"Released v1"}]},{"src":"/sections/business/mission/mission.html","title":"Our Mission","statement":"Short mission statement here.","items":[{"icon":"/img/target.svg","title":"Value title","text":"Supporting text for this mission point"}]},{"src":"/sections/business/partners/partners.html","title":"Our Partners","items":[{"img":"/img/partner1.svg","alt":"Partner 1","url":"https://partner1.com"},{"img":"/img/partner2.svg","alt":"Partner 2"}]},{"src":"/sections/cta/banner/banner.html","title":"Ready to get started?","description":"Sign up today and enjoy all the benefits.","button":{"url":"/signup","label":"Get Started"}},{"src":"/sections/cta/button-group/button-group.html","title":"Optional heading","description":"Optional supporting text","buttons":[{"text":"Primary action","href":"#","modifier":"btn--success"},{"text":"Secondary","href":"#","modifier":"btn--second"}]},{"src":"/sections/cta/countdown/countdown.html","title":"Event starts soon","description":"Join us before time runs out!","endDate":"2024-12-31T23:59:59","buttonText":"Register now","buttonUrl":"/register"},{"src":"/sections/cta/exit-modal/exit-modal.html","title":"Wait, before you go!","description":"Sign up to stay updated","button":{"label":"Subscribe","url":"/signup"}},{"src":"/sections/cta/promo/promo.html","img":"/img/promo.png","title":"Special Offer","description":"Short promo or marketing message","button":{"text":"Get started","href":"/signup"}},{"src":"/sections/cta/sticky-footer/sticky-footer.html","text":"Promotional message","button":{"url":"/signup","label":"Sign Up"}},{"src":"/sections/docs/search-bar/search-bar.html","placeholder":"Search docs...","index":"/search-index.json"},{"src":"/sections/docs/version-switcher/version-switcher.html","label":"Version","versions":[{"label":"v1.0","url":"/docs/v1"},{"label":"v2.0","url":"/docs/v2","current":true}]},{"src":"/sections/docs/glossary/glossary.html","title":"Glossary","items":[{"term":"API","definition":"Application Programming Interface"},{"term":"CLI","definition":"Command Line Interface"}]},{"src":"/sections/docs/page-layout/page-layout.html","sidebar":"<nav>...</nav>","content":"<article>...</article>","toc":"<nav>...</nav>"},{"src":"/sections/docs/code-snippet/code-snippet.html","label":"Optional file name","code":"npm install ngx"},{"src":"/sections/docs/sidebar/sidebar.html","items":[{"name":"Guide","url":"/guide","items":[{"name":"Intro","url":"/guide#intro"}]}]},{"src":"/sections/docs/api-layout/api-layout.html","title":"API Reference","description":"Endpoints and methods","endpoints":[{"method":"GET","path":"/items","description":"List items"},{"method":"POST","path":"/items","description":"Create item"}]},{"src":"/sections/docs/edit-link/edit-link.html","href":"https://github.com/owner/repo/edit/main/docs/page.md","text":"Edit on GitHub","icon":"/img/git.svg"},{"src":"/sections/ecommerce/product-details/product-details.html","img":"/img/product.jpg","title":"Sample product title","description":"Optional detailed description of the product","price":"$99.99","rating":"⭐️⭐️⭐️⭐️☆","cta":{"text":"Add to cart","href":"#add-to-cart"}},{"src":"/sections/ecommerce/price/price.html","currency":"$","current":"19.99","original":"24.99","note":"per item"},{"src":"/sections/ecommerce/add-to-cart/add-to-cart.html","id":"sku-1","price":"$19.99","button":"Add to cart"},{"src":"/sections/ecommerce/variant-selector/variant-selector.html","title":"Choose a variant","options":[{"label":"Red","color":"#ff0000","img":"/img/red.jpg","price":"$19.99"},{"label":"Blue","color":"#0000ff","img":"/img/blue.jpg","price":"$21.99"}]},{"src":"/sections/ecommerce/stock-indicator/stock-indicator.html","quantity":42,"max":100,"low":10,"labels":{"in":"In stock","low":"Low stock","out":"Out of stock"}},{"src":"/sections/ecommerce/payment-logos/payment-logos.html","logos":[{"img":"/img/payments/visa.svg","alt":"Visa"},{"img":"/img/payments/mastercard.svg","alt":"Mastercard"}]},{"src":"/sections/ecommerce/review-section/review-section.html","title":"Customer Reviews","reviews":[{"avatar":"/img/user.jpg","name":"Jane Doe","rating":"5","comment":"Great product!"}]},{"src":"/sections/ecommerce/star-rating/star-rating.html","rating":4.5,"text":"4.5/5"},{"src":"/sections/ecommerce/product-grid/product-grid.html","items":[{"img":"/img/product.png","title":"Product name","url":"/product-url","price":"$49","rating":"★★★★☆"}]},{"src":"/sections/ecommerce/product-card/product-card.html","img":"/img/product.jpg","title":"Product name","price":"$19.99","rating":"4.5/5","btnText":"Add to cart"},{"src":"/sections/ecommerce/discount-badge/discount-badge.html","discount":20,"label":"OFF"},{"src":"/sections/media/video-embed/video-embed.html","video":"https://www.w3schools.com/html/mov_bbb.mp4","poster":"img/spider.svg","title":"Embedded Video","description":"Example of the video embed section","autoplay":false,"loop":false,"muted":false},{"src":"/sections/education/certificate/certificate.html","title":"Certificate of Completion","recipient":"Jane Doe","course":"Intro to AI","issuer":"Web Academy","date":"2024-01-01","id":"CERT-12345"},{"src":"/sections/education/comparison-table/comparison-table.html","headers":["Basic","Pro"],"rows":[{"feature":"Lessons","values":["10","20"]},{"feature":"Support","values":["Email","24/7"]}]},{"src":"/sections/education/instructor/instructor.html","img":"/img/instructor.jpg","name":"Dr. Smith","role":"Professor","bio":"Expert in web technologies.","socials":[{"href":"https://twitter.com","img":"/img/twitter.svg","name":"Twitter"}]},{"src":"/sections/education/lesson-list/lesson-list.html","title":"Course Lessons","lessons":[{"name":"Introduction","duration":"5m"},{"name":"Advanced Topics","duration":"15m","completed":true}]},{"src":"/sections/education/progress/progress.html","title":"Course Progress","description":"Track completion","items":[{"label":"Module 1","value":40},{"label":"Module 2","value":80}]},{"src":"/sections/education/quiz/quiz.html","question":"What is 2 + 2?","options":["3","4","5"],"answer":1},{"src":"/sections/education/syllabus/syllabus.html","title":"Syllabus","modules":[{"title":"Module 1","duration":"1h","description":"Overview","lessons":[{"title":"Lesson 1","duration":"10m"},{"title":"Lesson 2","duration":"20m"}]}]},{"src":"/sections/education/timeline/timeline.html","title":"Timeline","description":"Learning path","items":[{"time":"Week 1","label":"Start","text":"Basics"},{"time":"Week 2","label":"Practice","text":"Exercises"}]},{"src":"/sections/feedback/press-logos/press-logos.html","title":"As Seen In","logos":[{"img":"/img/logo1.png","alt":"Logo 1"},{"img":"/img/logo2.png","alt":"Logo 2"}]},{"src":"/sections/feedback/review-carousel/review-carousel.html","title":"Reviews","reviews":[{"text":"Great course!","author":"Alice"},{"text":"Loved it!","author":"Bob"}]},{"src":"/sections/feedback/testimonial-block/testimonial-block.html","title":"Testimonials","items":[{"img":"/img/user1.jpg","quote":"Fantastic!","author":"Carol","role":"Designer"},{"img":"/img/user2.jpg","quote":"Very useful","author":"Dave","role":"Developer"}]},{"src":"/sections/feedback/trust-badges/trust-badges.html","badges":[{"img":"/img/badge1.png","alt":"Badge 1","href":"#"},{"img":"/img/badge2.png","alt":"Badge 2"}]},{"src":"/sections/forms/application/application.html","title":"Job Application","description":"Apply for position","submit":"Send Application"},{"src":"/sections/forms/contact/contact.html","title":"Contact Us","description":"We'd love to hear from you","action":"/contact","namePlaceholder":"Your name","emailPlaceholder":"you@example.com","messagePlaceholder":"Your message","buttonText":"Send"},{"src":"/sections/forms/multistep/multistep.html"},{"src":"/sections/forms/newsletter/newsletter.html","title":"Newsletter","description":"Get updates","action":"/subscribe","placeholder":"Email address","button":"Subscribe"},{"src":"/sections/forms/rsvp/rsvp.html","title":"RSVP","description":"Let us know","action":"/rsvp","buttonText":"Submit"},{"src":"/sections/forms/survey/survey.html","title":"Survey","description":"Tell us more","questions":[{"name":"name","label":"Your Name","type":"text","placeholder":"Name"},{"name":"feedback","label":"Feedback","type":"textarea","placeholder":"Comment"},{"name":"rating","label":"Rate","type":"select","options":[{"value":"1","label":"1"},{"value":"2","label":"2"}]}],"submitText":"Send"},{"src":"/sections/forms/upload/upload.html","action":"/upload","buttonLabel":"Upload File"},{"src":"/sections/hero.html","title":"Welcome","description":"Start your journey","img":"/img/hero-main.jpg","imgs":["/img/hero-1.jpg","/img/hero-2.jpg"]},{"src":"/sections/layout/background/background.html","color":"#f0f0f0","image":"/img/bg.png","size":"cover","position":"center","content":"<p>Background content</p>"},{"src":"/sections/layout/collapse/collapse.html","title":"Details","content":"<p>Hidden text</p>","open":false},{"src":"/sections/layout/container/container.html","size":"md","content":"<p>Contained content</p>"},{"src":"/sections/layout/divider/divider.html","text":"OR"},{"src":"/sections/layout/grid/grid.html","min":"200px","items":[{"content":"<p>Item 1</p>"},{"content":"<p>Item 2</p>"}]},{"src":"/sections/layout/responsive-visibility/responsive-visibility.html"},{"src":"/sections/layout/scroll-area/scroll-area.html","height":"200px","content":"<p>Scrollable content</p>"},{"src":"/sections/layout/spacer/spacer.html","size":"60px"},{"src":"/sections/layout/sticky/sticky.html","id":"sticky-1","content":"<p>Sticky content</p>"},{"src":"/sections/layout/tabs/tabs.html","tabs":[{"label":"Tab 1","content":"<p>Content 1</p>"},{"label":"Tab 2","content":"<p>Content 2</p>"}]},{"src":"/sections/media/animated-banner/animated-banner.html","img":"/img/banner.jpg","title":"Banner Title","subtitle":"Subheading"},{"src":"/sections/media/audio-player/audio-player.html","audio":"/media/sample.mp3","title":"Sample Audio","description":"Listen to this clip","autoplay":false,"loop":false},{"src":"/sections/media/gallery/gallery.html","items":[{"img":"/img/photo1.jpg","alt":"Photo 1"},{"img":"/img/photo2.jpg","alt":"Photo 2"}],"caption":"Gallery caption"},{"src":"/sections/media/image-caption/image-caption.html","img":"/img/pic.jpg","caption":"Image caption"},{"src":"/sections/media/image/image.html","img":"/img/pic.jpg","alt":"Sample image","caption":"Caption"},{"src":"/sections/media/lightbox/lightbox.html","thumbnail":"/img/thumb.jpg","image":"/img/full.jpg","alt":"Lightbox image","caption":"Click to enlarge"},{"src":"/sections/media/slider/slider.html","slides":[{"img":"/img/slide1.jpg","alt":"Slide 1"},{"img":"/img/slide2.jpg","alt":"Slide 2"}]},{"src":"/sections/navigation/anchor-links/anchor-links.html","links":[{"href":"#section1","label":"Section 1"},{"href":"#section2","label":"Section 2"}]},{"src":"/sections/navigation/breadcrumbs/breadcrumbs.html","items":[{"url":"/","label":"Home"},{"url":"/blog","label":"Blog"},{"label":"Post"}]},{"src":"/sections/navigation/mega-menu/mega-menu.html","items":[{"url":"/products","title":"Products","columns":[{"title":"Category","links":[{"url":"/products/a","title":"Product A"},{"url":"/products/b","title":"Product B"}]}]}]},{"src":"/sections/navigation/navbar/navbar.html","logo":"/img/logo.png","logoUrl":"/","logoAlt":"Logo","items":[{"url":"/about","label":"About"},{"url":"/contact","label":"Contact"}]},{"src":"/sections/navigation/pagination/pagination.html","prev":"/page/1","next":"/page/3","pages":[{"url":"/page/1","label":"1"},{"url":"/page/2","label":"2","current":true},{"label":"3"}]},{"src":"/sections/navigation/scroll-to-top/scroll-to-top.html"},{"src":"/sections/navigation/sidebar/sidebar.html","items":[{"url":"/dashboard","name":"Dashboard","active":true},{"url":"/settings","name":"Settings","items":[{"url":"/settings/profile","name":"Profile"},{"url":"/settings/billing","name":"Billing","active":true}]}]},{"src":"/sections/navigation/table-of-contents/table-of-contents.html","title":"Contents","items":[{"id":"intro","text":"Introduction"},{"id":"usage","text":"Usage","children":[{"id":"install","text":"Install"}]}]},{"src":"/sections/seo/article-schema/article-schema.html","headline":"Sample Article","image":"/img/article.jpg","datePublished":"2024-01-01","dateModified":"2024-01-02","author":"Author Name","publisherName":"Publisher","publisherLogo":"/img/logo.png","url":"https://example.com/article"},{"src":"/sections/seo/breadcrumb-schema/breadcrumb-schema.html","items":[{"name":"Home","url":"/"},{"name":"Blog","url":"/blog"},{"name":"Post"}]},{"src":"/sections/seo/faq-schema/faq-schema.html","items":[{"question":"Q1?","answer":"A1"},{"question":"Q2?","answer":"A2"}]},{"src":"/sections/seo/meta-preview/meta-preview.html","image":"/img/meta.png","title":"Meta Title","url":"https://example.com","description":"Meta description"},{"src":"/sections/seo/og-preview/og-preview.html","image":"/img/og.png","url":"https://example.com","title":"OG Title","description":"OG description"},{"src":"/sections/seo/product-schema/product-schema.html","name":"Product","description":"Product description","image":"/img/product.png","sku":"SKU123","brand":"Brand","url":"https://example.com/product","price":"99.99","priceCurrency":"USD","availability":"InStock"},{"src":"/sections/seo/structured-data/structured-data.html","data":"{\"@context\":\"https://schema.org\",\"@type\":\"Thing\",\"name\":\"Example\"}"},{"src":"/sections/utility/alert/alert.html","type":"info","close":true,"title":"Notice","message":"This is an alert"},{"src":"/sections/utility/cookie-banner/cookie-banner.html","text":"We use cookies","link":{"url":"/privacy","label":"Learn more"},"button":"Accept"},{"src":"/sections/utility/countdown/countdown.html","title":"Countdown","description":"Event starts in","endDate":"2024-12-31T23:59:59Z"},{"src":"/sections/utility/embed/embed.html","title":"Embedded Content","embed":"<iframe src='https://example.com'></iframe>","caption":"Embedded iframe"},{"src":"/sections/utility/language-switcher/language-switcher.html","label":"Language","languages":[{"url":"/en","label":"EN","current":true},{"url":"/es","label":"ES"}]},{"src":"/sections/utility/notification/notification.html","type":"success","message":"Saved successfully"},{"src":"/sections/utility/progress-bar/progress-bar.html","value":30,"max":100,"label":"30% Complete"},{"src":"/sections/utility/social-feed/social-feed.html","items":[{"avatar":"/img/user1.jpg","name":"Alice","handle":"@alice","time":"1h","text":"Hello world"},{"avatar":"/img/user2.jpg","name":"Bob","text":"Nice post"}]},{"src":"/sections/utility/social-share/social-share.html","url":"https://example.com","networks":["facebook","linkedin","telegram"]}]`);
+
+	let structure = JSON.parse(`[{"src":"/sections/content/accordion/accordion.html","items":[{"title":"First item","content":"<p>Item text</p>"},{"title":"Second item","content":"<p>Item text</p>","active":true}],"sections":[{"src":"/sections/content/markdown/markdown.html","content":"/sections/content/markdown/readme.MD"}]},{"src":"/sections/content/callout-box/callout-box.html","title":"Callout title","description":"Important information or message"},{"src":"/sections/content/code-block/code-block.html","title":"Console Output","code":"console.log('Hello, world!');"},{"src":"/sections/content/feature-list/feature-list.html","title":"Features","description":"What makes us great","items":[{"icon":"/img/icon.svg","title":"Fast","text":"Speedy performance with low latency"},{"icon":"/img/icon.svg","title":"Reliable","text":"Trusted by thousands"}]},{"src":"/sections/content/hero/hero.html","title":"Welcome to Our Platform","description":"We help you build better websites","img":"img/spider.svg","imgs":["img/spider.svg","img/spider.svg"]},{"src":"/sections/content/intro/intro.html","img":"img/spider.svg","title":"Get Started","description":"This is an introduction to the page"},{"src":"/sections/content/markdown/markdown.html","content":"##Getting Started\\nThis is a paragraph from markdown"},{"src":"/sections/content/media-text/media-text.html","img":"img/spider.svg","title":"Powerful Tools","text":"Integrate with your existing workflow easily."},{"src":"/sections/content/statistics/statistics.html","title":"Our Impact","description":"Metrics that matter","items":[{"value":"98%","label":"Customer Satisfaction"},{"value":"2M+","label":"Downloads"}]},{"src":"/sections/content/testimonial/testimonial.html","img":"img/spider.svg","quote":"This product changed my life!","author":"Jane Doe"},{"src":"/sections/feedback/quote/quote.html","img":"img/spider.svg","quote":"Design is thinking made visual.","author":"Saul Bass"},{"src":"/sections/content/text-block/text-block.html","title":"About Us","description":"We are committed to delivering the best digital experience."},{"src":"/sections/content/timeline/timeline.html","title":"Our Journey","description":"Milestones and growth","items":[{"time":"2021","label":"Founded","text":"Our story begins"},{"time":"2023","label":"Expansion","text":"Reached new markets"}]},{"src":"/sections/content/two-column-text/two-column-text.html","title":"Compare Plans","columns":[{"title":"Free Plan","text":"Basic features included"},{"title":"Pro Plan","text":"Advanced features for power users"}]},{"src":"/sections/horizontal-visual.html","img":"img/spider.svg","title":"Main title for gallery","imgs":["img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg"]},{"src":"/sections/vertical-visual.html","img":"img/spider.svg","title":"Title for visual block","imgs":["img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg","img/spider.svg"],"subtitle":"text for instagram link","socials":[{"img":"img/spider.svg","href":"https://www.instagram.com/potiercake/"}]},{"src":"/sections/get-in-touch.html","map":"img/spider.svg","iloc":"img/spider.svg","iphone":"img/spider.svg","title":"Get in touch block","subtitle":"We are here","socials":[{"img":"img/spider.svg","href":"https://www.instagram.com/potiercake/"}],"phone":"+380971862487","address":"Drai-Khmary St, 50, Kam'yanets'-Podil's'kyi, Khmelnytskyi Oblast, 32313"},{"src":"/sections/business/team/team.html","title":"Team","description":"Meet our amazing team","teams":[{"name":"Leadership","users":[{"img":"img/avatar.png","name":"Jane Doe","username":"jdoe","socials":[{"href":"https://github.com/jdoe","img":"img/git.svg"}]},{"img":"img/avatar.png","name":"John Smith","username":"jsmith"}]}]},{"src":"/sections/blog/meta/meta.html","date":"2024-05-01","author":"John Doe","readTime":"5 min read","categories":[{"name":"Tech","url":"/category/tech"},{"name":"AI","url":"/category/ai"}]},{"src":"/sections/blog/post-card/post-card.html","img":"/img/post.jpg","category":"Tech","title":"Blog post title","excerpt":"Optional short preview of the article content.","author":"John Doe","date":"2024-01-01"},{"src":"/sections/blog/post-grid/post-grid.html","items":[{"img":"/img/post.jpg","title":"Post title","description":"Short summary","url":"/post-url"}]},{"src":"/sections/blog/author/author.html","avatar":"/img/avatar.png","name":"Author name","bio":"Short author description or tagline"},{"src":"/sections/blog/categories/categories.html","title":"Browse by category","description":"Optional helper text","categories":[{"title":"News","url":"/blog/news","count":3},{"title":"Events","url":"/blog/events"},{"title":"Tutorials","url":"/blog/tutorials","count":12}]},{"src":"/sections/blog/comments/comments.html","title":"Comments","items":[{"avatar":"/img/avatar.png","author":"Jane Doe","date":"2024-08-30","text":"This is a comment","replies":[{"avatar":"/img/avatar2.png","author":"John Doe","date":"2024-08-31","text":"A reply"}]}]},{"src":"/sections/blog/related-posts/related-posts.html","title":"Related posts","posts":[{"href":"/blog/post-1","img":"/img/post-1.jpg","title":"First post","date":"Jan 1, 2024"},{"href":"/blog/post-2","img":"/img/post-2.jpg","title":"Second post"}]},{"src":"/sections/business/about/about.html","img":"/img/about.svg","title":"Optional section title","description":"Optional paragraph describing the business"},{"src":"/sections/business/awards/awards.html","title":"Awards","description":"Highlights of our achievements","items":[{"img":"/img/trophy.svg","title":"Best Startup","year":"2023","description":"Awarded by Example Organization"}]},{"src":"/sections/business/careers/careers.html","title":"Join our team","description":"We are hiring across multiple roles","positions":[{"title":"Frontend Developer","location":"Remote","type":"Full-Time","link":"/careers/frontend","linkLabel":"Apply now"}]},{"src":"/sections/business/contact/contact.html","title":"Get in touch","description":"We would love to hear from you.","address":"123 Main St, Anytown","phone":"+1 (555) 123-4567","email":"info@example.com"},{"src":"/sections/business/map/map.html","lat":50.4501,"lng":30.5234,"zoom":14,"apiKey":"GOOGLE_MAPS_API_KEY","title":"Our Location","description":"Find us on the map"},{"src":"/sections/business/milestones/milestones.html","title":"Company milestones","description":"Our journey so far","items":[{"year":"2019","title":"Founded","text":"Company started"},{"year":"2020","title":"First product","text":"Released v1"}]},{"src":"/sections/business/mission/mission.html","title":"Our Mission","statement":"Short mission statement here.","items":[{"icon":"/img/target.svg","title":"Value title","text":"Supporting text for this mission point"}]},{"src":"/sections/business/partners/partners.html","title":"Our Partners","items":[{"img":"/img/partner1.svg","alt":"Partner 1","url":"https://partner1.com"},{"img":"/img/partner2.svg","alt":"Partner 2"}]},{"src":"/sections/cta/banner/banner.html","title":"Ready to get started?","description":"Sign up today and enjoy all the benefits.","button":{"url":"/signup","label":"Get Started"}},{"src":"/sections/cta/button-group/button-group.html","title":"Optional heading","description":"Optional supporting text","buttons":[{"text":"Primary action","href":"#","modifier":"btn--success"},{"text":"Secondary","href":"#","modifier":"btn--second"}]},{"src":"/sections/cta/countdown/countdown.html","title":"Event starts soon","description":"Join us before time runs out!","endDate":"2024-12-31T23:59:59","buttonText":"Register now","buttonUrl":"/register"},{"src":"/sections/cta/exit-modal/exit-modal.html","title":"Wait, before you go!","description":"Sign up to stay updated","button":{"label":"Subscribe","url":"/signup"}},{"src":"/sections/cta/promo/promo.html","img":"/img/promo.png","title":"Special Offer","description":"Short promo or marketing message","button":{"text":"Get started","href":"/signup"}},{"src":"/sections/cta/sticky-footer/sticky-footer.html","text":"Promotional message","button":{"url":"/signup","label":"Sign Up"}},{"src":"/sections/docs/search-bar/search-bar.html","placeholder":"Search docs...","index":"/search-index.json"},{"src":"/sections/docs/version-switcher/version-switcher.html","label":"Version","versions":[{"label":"v1.0","url":"/docs/v1"},{"label":"v2.0","url":"/docs/v2","current":true}]},{"src":"/sections/docs/glossary/glossary.html","title":"Glossary","items":[{"term":"API","definition":"Application Programming Interface"},{"term":"CLI","definition":"Command Line Interface"}]},{"src":"/sections/docs/page-layout/page-layout.html","sidebar":"<nav>...</nav>","content":"<article>...</article>","toc":"<nav>...</nav>"},{"src":"/sections/docs/code-snippet/code-snippet.html","label":"Optional file name","code":"npm install ngx"},{"src":"/sections/docs/sidebar/sidebar.html","items":[{"name":"Guide","url":"/guide","items":[{"name":"Intro","url":"/guide#intro"}]}]},{"src":"/sections/docs/api-layout/api-layout.html","title":"API Reference","description":"Endpoints and methods","endpoints":[{"method":"GET","path":"/items","description":"List items"},{"method":"POST","path":"/items","description":"Create item"}]},{"src":"/sections/docs/edit-link/edit-link.html","href":"https://github.com/owner/repo/edit/main/docs/page.md","text":"Edit on GitHub","icon":"/img/git.svg"},{"src":"/sections/ecommerce/product-details/product-details.html","img":"/img/product.jpg","title":"Sample product title","description":"Optional detailed description of the product","price":"$99.99","rating":"⭐️⭐️⭐️⭐️☆","cta":{"text":"Add to cart","href":"#add-to-cart"}},{"src":"/sections/ecommerce/price/price.html","currency":"$","current":"19.99","original":"24.99","note":"per item"},{"src":"/sections/ecommerce/add-to-cart/add-to-cart.html","id":"sku-1","price":"$19.99","button":"Add to cart"},{"src":"/sections/ecommerce/variant-selector/variant-selector.html","title":"Choose a variant","options":[{"label":"Red","color":"#ff0000","img":"/img/red.jpg","price":"$19.99"},{"label":"Blue","color":"#0000ff","img":"/img/blue.jpg","price":"$21.99"}]},{"src":"/sections/ecommerce/stock-indicator/stock-indicator.html","quantity":42,"max":100,"low":10,"labels":{"in":"In stock","low":"Low stock","out":"Out of stock"}},{"src":"/sections/ecommerce/payment-logos/payment-logos.html","logos":[{"img":"/img/payments/visa.svg","alt":"Visa"},{"img":"/img/payments/mastercard.svg","alt":"Mastercard"}]},{"src":"/sections/ecommerce/review-section/review-section.html","title":"Customer Reviews","reviews":[{"avatar":"/img/user.jpg","name":"Jane Doe","rating":"5","comment":"Great product!"}]},{"src":"/sections/ecommerce/star-rating/star-rating.html","rating":4.5,"text":"4.5/5"},{"src":"/sections/ecommerce/product-grid/product-grid.html","items":[{"img":"/img/product.png","title":"Product name","url":"/product-url","price":"$49","rating":"★★★★☆"}]},{"src":"/sections/ecommerce/product-card/product-card.html","img":"/img/product.jpg","title":"Product name","price":"$19.99","rating":"4.5/5","btnText":"Add to cart"},{"src":"/sections/ecommerce/discount-badge/discount-badge.html","discount":20,"label":"OFF"},{"src":"/sections/media/video-embed/video-embed.html","video":"https://www.w3schools.com/html/mov_bbb.mp4","poster":"img/spider.svg","title":"Embedded Video","description":"Example of the video embed section","autoplay":false,"loop":false,"muted":false},{"src":"/sections/education/certificate/certificate.html","title":"Certificate of Completion","recipient":"Jane Doe","course":"Intro to AI","issuer":"Web Academy","date":"2024-01-01","id":"CERT-12345"},{"src":"/sections/education/comparison-table/comparison-table.html","headers":["Basic","Pro"],"rows":[{"feature":"Lessons","values":["10","20"]},{"feature":"Support","values":["Email","24/7"]}]},{"src":"/sections/education/instructor/instructor.html","img":"/img/instructor.jpg","name":"Dr. Smith","role":"Professor","bio":"Expert in web technologies.","socials":[{"href":"https://twitter.com","img":"/img/twitter.svg","name":"Twitter"}]},{"src":"/sections/education/lesson-list/lesson-list.html","title":"Course Lessons","lessons":[{"name":"Introduction","duration":"5m"},{"name":"Advanced Topics","duration":"15m","completed":true}]},{"src":"/sections/education/progress/progress.html","title":"Course Progress","description":"Track completion","items":[{"label":"Module 1","value":40},{"label":"Module 2","value":80}]},{"src":"/sections/education/quiz/quiz.html","question":"What is 2 + 2?","options":["3","4","5"],"answer":1},{"src":"/sections/education/syllabus/syllabus.html","title":"Syllabus","modules":[{"title":"Module 1","duration":"1h","description":"Overview","lessons":[{"title":"Lesson 1","duration":"10m"},{"title":"Lesson 2","duration":"20m"}]}]},{"src":"/sections/education/timeline/timeline.html","title":"Timeline","description":"Learning path","items":[{"time":"Week 1","label":"Start","text":"Basics"},{"time":"Week 2","label":"Practice","text":"Exercises"}]},{"src":"/sections/feedback/press-logos/press-logos.html","title":"As Seen In","logos":[{"img":"/img/logo1.png","alt":"Logo 1"},{"img":"/img/logo2.png","alt":"Logo 2"}]},{"src":"/sections/feedback/review-carousel/review-carousel.html","title":"Reviews","reviews":[{"text":"Great course!","author":"Alice"},{"text":"Loved it!","author":"Bob"}]},{"src":"/sections/feedback/testimonial-block/testimonial-block.html","title":"Testimonials","items":[{"img":"/img/user1.jpg","quote":"Fantastic!","author":"Carol","role":"Designer"},{"img":"/img/user2.jpg","quote":"Very useful","author":"Dave","role":"Developer"}]},{"src":"/sections/feedback/trust-badges/trust-badges.html","badges":[{"img":"/img/badge1.png","alt":"Badge 1","href":"#"},{"img":"/img/badge2.png","alt":"Badge 2"}]},{"src":"/sections/forms/application/application.html","title":"Job Application","description":"Apply for position","submit":"Send Application"},{"src":"/sections/forms/contact/contact.html","title":"Contact Us","description":"We'd love to hear from you","action":"/contact","namePlaceholder":"Your name","emailPlaceholder":"you@example.com","messagePlaceholder":"Your message","buttonText":"Send"},{"src":"/sections/forms/multistep/multistep.html"},{"src":"/sections/forms/newsletter/newsletter.html","title":"Newsletter","description":"Get updates","action":"/subscribe","placeholder":"Email address","button":"Subscribe"},{"src":"/sections/forms/rsvp/rsvp.html","title":"RSVP","description":"Let us know","action":"/rsvp","buttonText":"Submit"},{"src":"/sections/forms/survey/survey.html","title":"Survey","description":"Tell us more","questions":[{"name":"name","label":"Your Name","type":"text","placeholder":"Name"},{"name":"feedback","label":"Feedback","type":"textarea","placeholder":"Comment"},{"name":"rating","label":"Rate","type":"select","options":[{"value":"1","label":"1"},{"value":"2","label":"2"}]}],"submitText":"Send"},{"src":"/sections/forms/upload/upload.html","action":"/upload","buttonLabel":"Upload File"},{"src":"/sections/hero.html","title":"Welcome","description":"Start your journey","img":"/img/hero-main.jpg","imgs":["/img/hero-1.jpg","/img/hero-2.jpg"]},{"src":"/sections/layout/background/background.html","color":"#f0f0f0","image":"/img/bg.png","size":"cover","position":"center","content":"<p>Background content</p>"},{"src":"/sections/layout/collapse/collapse.html","title":"Details","content":"<p>Hidden text</p>","open":false},{"src":"/sections/layout/container/container.html","size":"md","content":"<p>Contained content</p>"},{"src":"/sections/layout/divider/divider.html","text":"OR"},{"src":"/sections/layout/grid/grid.html","min":"200px","items":[{"content":"<p>Item 1</p>"},{"content":"<p>Item 2</p>"}]},{"src":"/sections/layout/responsive-visibility/responsive-visibility.html"},{"src":"/sections/layout/scroll-area/scroll-area.html","height":"200px","content":"<p>Scrollable content</p>"},{"src":"/sections/layout/spacer/spacer.html","size":"60px"},{"src":"/sections/layout/sticky/sticky.html","id":"sticky-1","content":"<p>Sticky content</p>"},{"src":"/sections/layout/tabs/tabs.html","tabs":[{"label":"Tab 1","content":"<p>Content 1</p>"},{"label":"Tab 2","content":"<p>Content 2</p>"}]},{"src":"/sections/media/animated-banner/animated-banner.html","img":"/img/banner.jpg","title":"Banner Title","subtitle":"Subheading"},{"src":"/sections/media/audio-player/audio-player.html","audio":"/media/sample.mp3","title":"Sample Audio","description":"Listen to this clip","autoplay":false,"loop":false},{"src":"/sections/media/gallery/gallery.html","items":[{"img":"/img/photo1.jpg","alt":"Photo 1"},{"img":"/img/photo2.jpg","alt":"Photo 2"}],"caption":"Gallery caption"},{"src":"/sections/media/image-caption/image-caption.html","img":"/img/pic.jpg","caption":"Image caption"},{"src":"/sections/media/image/image.html","img":"/img/pic.jpg","alt":"Sample image","caption":"Caption"},{"src":"/sections/media/lightbox/lightbox.html","thumbnail":"/img/thumb.jpg","image":"/img/full.jpg","alt":"Lightbox image","caption":"Click to enlarge"},{"src":"/sections/media/slider/slider.html","slides":[{"img":"/img/slide1.jpg","alt":"Slide 1"},{"img":"/img/slide2.jpg","alt":"Slide 2"}]},{"src":"/sections/navigation/anchor-links/anchor-links.html","links":[{"href":"#section1","label":"Section 1"},{"href":"#section2","label":"Section 2"}]},{"src":"/sections/navigation/breadcrumbs/breadcrumbs.html","items":[{"url":"/","label":"Home"},{"url":"/blog","label":"Blog"},{"label":"Post"}]},{"src":"/sections/navigation/mega-menu/mega-menu.html","items":[{"url":"/products","title":"Products","columns":[{"title":"Category","links":[{"url":"/products/a","title":"Product A"},{"url":"/products/b","title":"Product B"}]}]}]},{"src":"/sections/navigation/navbar/navbar.html","logo":"/img/logo.png","logoUrl":"/","logoAlt":"Logo","items":[{"url":"/about","label":"About"},{"url":"/contact","label":"Contact"}]},{"src":"/sections/navigation/pagination/pagination.html","prev":"/page/1","next":"/page/3","pages":[{"url":"/page/1","label":"1"},{"url":"/page/2","label":"2","current":true},{"label":"3"}]},{"src":"/sections/navigation/scroll-to-top/scroll-to-top.html"},{"src":"/sections/navigation/sidebar/sidebar.html","items":[{"url":"/dashboard","name":"Dashboard","active":true},{"url":"/settings","name":"Settings","items":[{"url":"/settings/profile","name":"Profile"},{"url":"/settings/billing","name":"Billing","active":true}]}]},{"src":"/sections/navigation/table-of-contents/table-of-contents.html","title":"Contents","items":[{"id":"intro","text":"Introduction"},{"id":"usage","text":"Usage","children":[{"id":"install","text":"Install"}]}]},{"src":"/sections/seo/article-schema/article-schema.html","headline":"Sample Article","image":"/img/article.jpg","datePublished":"2024-01-01","dateModified":"2024-01-02","author":"Author Name","publisherName":"Publisher","publisherLogo":"/img/logo.png","url":"https://example.com/article"},{"src":"/sections/seo/breadcrumb-schema/breadcrumb-schema.html","items":[{"name":"Home","url":"/"},{"name":"Blog","url":"/blog"},{"name":"Post"}]},{"src":"/sections/seo/faq-schema/faq-schema.html","items":[{"question":"Q1?","answer":"A1"},{"question":"Q2?","answer":"A2"}]},{"src":"/sections/seo/meta-preview/meta-preview.html","image":"/img/meta.png","title":"Meta Title","url":"https://example.com","description":"Meta description"},{"src":"/sections/seo/og-preview/og-preview.html","image":"/img/og.png","url":"https://example.com","title":"OG Title","description":"OG description"},{"src":"/sections/seo/product-schema/product-schema.html","name":"Product","description":"Product description","image":"/img/product.png","sku":"SKU123","brand":"Brand","url":"https://example.com/product","price":"99.99","priceCurrency":"USD","availability":"InStock"},{"src":"/sections/seo/structured-data/structured-data.html","data":"{\"@context\":\"https://schema.org\",\"@type\":\"Thing\",\"name\":\"Example\"}"},{"src":"/sections/utility/alert/alert.html","type":"info","close":true,"title":"Notice","message":"This is an alert"},{"src":"/sections/utility/cookie-banner/cookie-banner.html","text":"We use cookies","link":{"url":"/privacy","label":"Learn more"},"button":"Accept"},{"src":"/sections/utility/countdown/countdown.html","title":"Countdown","description":"Event starts in","endDate":"2024-12-31T23:59:59Z"},{"src":"/sections/utility/embed/embed.html","title":"Embedded Content","embed":"<iframe src='https://example.com'></iframe>","caption":"Embedded iframe"},{"src":"/sections/utility/language-switcher/language-switcher.html","label":"Language","languages":[{"url":"/en","label":"EN","current":true},{"url":"/es","label":"ES"}]},{"src":"/sections/utility/notification/notification.html","type":"success","message":"Saved successfully"},{"src":"/sections/utility/progress-bar/progress-bar.html","value":30,"max":100,"label":"30% Complete"},{"src":"/sections/utility/social-feed/social-feed.html","items":[{"avatar":"/img/user1.jpg","name":"Alice","handle":"@alice","time":"1h","text":"Hello world"},{"avatar":"/img/user2.jpg","name":"Bob","text":"Nice post"}]},{"src":"/sections/utility/social-share/social-share.html","url":"https://example.com","networks":["facebook","linkedin","telegram"]}]`);
+
+	const select = document.getElementById("addSection");
+
+	for (let i = 0; i < structure.length; i++) {
+		structure[i].__id = sections[i].__id = "sectionId" + (i + 1);
+
+		sections[i].__name = structure[i].src
+			.split("/")
+			.pop()
+			.replace(".html", "");
+
+		const option = document.createElement("option");
+		option.value = sections[i].__name;
+		option.textContent = sections[i].__name;
+		select.appendChild(option);
+	}
+
+	function addSection() {
+		const name = document.getElementById("addSection").value;
+		const section = JSON.parse(
+			JSON.stringify(sections.find((s) => s.__name === name))
+		);
+		const oldId = section.__id;
+		section.__id = "sectionId" + Date.now();
+		const target = document.getElementById("start");
+		const container = document.createElement("div");
+		container.setAttribute("id", section.__id);
+		container.setAttribute("class", section.__id);
+		container.innerHTML = section.__html.split(oldId).join(section.__id);
+
+		delete section.__html;
+		structure.unshift(section);
+		document.getElementById("structure").value = JSON.stringify(structure);
+
+		target.parentNode.insertBefore(container, target.nextSibling);
+	}
+
+	function toggleVisibility(className) {
+		const elements = document.querySelectorAll(`.${className}`);
+		elements.forEach((el) => {
+			el.style.display = el.style.display === "none" ? "" : "none";
+		});
+	}
+
+	function removeElements(id) {
+		const elements = document.querySelectorAll(`.${id}`);
+
+		elements.forEach((el) => el.remove());
+
+		structure = structure.filter((s) => s.__id !== id);
+
+		document.getElementById("structure").value = JSON.stringify(structure);
+	}
+
+	function upElement(id) {
+		const current = document.getElementById(id);
+
+		let upId = "";
+
+		for (const section of structure) {
+			if (section.__id === id) {
+				break;
+			}
+
+			upId = section.__id;
+		}
+
+		const index = structure.findIndex((item) => item.__id === id);
+
+		if (index > 0) {
+			[structure[index - 1], structure[index]] = [
+				structure[index],
+				structure[index - 1],
+			];
+		}
+
+		const target = document.getElementById(upId);
+
+		if (current && target && target.parentNode) {
+			target.parentNode.insertBefore(current, target);
+		}
+	}
+</script>
+
+<div id="start"></div>
+
+
+<div id="sectionId1" class="sectionId1">
+	<hr class="hrs" />
+	
+	<div class="readme-section" style="display: none">
+		<h2>Readme</h2>
+		 <!--<div class="markdown"><h1>📂 Markdown <code>/sections/content/markdown</code></h1>
+<p>Markdown section for rendering HTML generated from markdown input. Useful for documentation or rich text blocks where content editors supply markdown.</p>
+<h2>✅ Features</h2>
+<ul>
+<li>Styles headings, paragraphs, lists, blockquotes, links, code and tables</li>
+<li>Responsive typography using global breakpoints</li>
+<li>Colors, fonts and spacing controlled by CSS variables</li>
+<li>Supports syntax highlighting via nested <code>pre &gt; code</code></li>
+</ul>
+<hr>
+<h2>🧾 Section Data Schema</h2>
+<p>This section expects the following data structure passed via <code>section</code></p>
+<pre><code class="language-json">{
+	&quot;src&quot;: &quot;/sections/content/markdown/markdown.html&quot;,
+	&quot;content&quot;: &quot;&lt;h1&gt;Title&lt;/h1&gt;&lt;p&gt;Converted markdown HTML&lt;/p&gt;&quot;
+}
+</code></pre>
+<h2>🧱 HTML Structure</h2>
+<pre><code class="language-html">&lt;div class=&quot;markdown&quot;&gt;{{{section.content}}}&lt;/div&gt;
+</code></pre>
+<hr>
+<h2>🎨 Styling Notes</h2>
+<ul>
+<li>Headings use <code>--ff-title</code> and scale down on smaller breakpoints</li>
+<li>Base text and lists use <code>--ff-base</code>, <code>--font-size</code>, and <code>--line-height</code></li>
+<li>Links transition color with <code>--transition</code> and <code>--c-primary-hover</code></li>
+<li>Code and pre blocks use <code>--c-bg-item</code>, <code>--b-radius</code>, and <code>--ff-second</code></li>
+<li>Tables use <code>--c-border</code> and <code>--c-bg-item</code> for consistent theming</li>
+</ul>
+<hr>
+<h2>🧩 Theme Variables Used (from <code>template.json</code>)</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>--ff-base</code></td>
+<td>Base font for body text</td>
+</tr>
+<tr>
+<td><code>--ff-title</code></td>
+<td>Font for headings</td>
+</tr>
+<tr>
+<td><code>--ff-second</code></td>
+<td>Font for inline code</td>
+</tr>
+<tr>
+<td><code>--font-size</code></td>
+<td>Base font size</td>
+</tr>
+<tr>
+<td><code>--line-height</code></td>
+<td>Default line height</td>
+</tr>
+<tr>
+<td><code>--letter-spacing</code></td>
+<td>Applied to headings</td>
+</tr>
+<tr>
+<td><code>--margin-scale</code></td>
+<td>Scales vertical spacing between elements</td>
+</tr>
+<tr>
+<td><code>--padding-scale</code></td>
+<td>Controls padding for lists, code blocks and tables</td>
+</tr>
+<tr>
+<td><code>--c-text-primary</code></td>
+<td>Heading text color</td>
+</tr>
+<tr>
+<td><code>--c-text-body-secondary</code></td>
+<td>Body text color</td>
+</tr>
+<tr>
+<td><code>--c-primary</code></td>
+<td>Link color</td>
+</tr>
+<tr>
+<td><code>--c-primary-hover</code></td>
+<td>Link hover color</td>
+</tr>
+<tr>
+<td><code>--c-primary-border</code></td>
+<td>Border color for blockquotes</td>
+</tr>
+<tr>
+<td><code>--c-bg-item</code></td>
+<td>Background for code blocks and table headers</td>
+</tr>
+<tr>
+<td><code>--c-border</code></td>
+<td>Table border color</td>
+</tr>
+<tr>
+<td><code>--b-radius</code></td>
+<td>Border radius for code blocks and tables</td>
+</tr>
+<tr>
+<td><code>--transition</code></td>
+<td>Transition for link hover effects</td>
+</tr>
+<tr>
+<td><code>--bp-md</code>, <code>--bp-sm</code></td>
+<td>Breakpoints for responsive typography</td>
+</tr>
+</tbody></table>
+<hr>
+</div> -->
+ 
+		<hr />
+	</div>
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId1')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId1')">
+			Move section up
+		</button>
+	</div>
+	<div class="accordion">
+	
+	<div class="accordion-item">
+		<button class="accordion-button">
+			<div class="accordion-button__text">First item</div>
+			<div class="accordion-button__arrow">
+				<svg
+					width="36"
+					height="36"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M6 9L12 15L18 9"
+						stroke="white"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</div>
+		</button>
+		<div
+			class="accordion-content"
+			
+		>
+			&lt;p&gt;Item text&lt;/p&gt;
+		</div>
+	</div>
+	
+	<div class="accordion-item">
+		<button class="accordion-button active">
+			<div class="accordion-button__text">Second item</div>
+			<div class="accordion-button__arrow">
+				<svg
+					width="36"
+					height="36"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M6 9L12 15L18 9"
+						stroke="white"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</div>
+		</button>
+		<div
+			class="accordion-content"
+			
+			style="max-height: fit-content"
+			
+		>
+			&lt;p&gt;Item text&lt;/p&gt;
+		</div>
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId2" class="sectionId2">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId2')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId2')">
+			Move section up
+		</button>
+	</div>
+	<div class="callout-box">
+	
+	<div class="callout-box__title">Callout title</div>
+	 
+	<div class="callout-box__description">Important information or message</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId3" class="sectionId3">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId3')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId3')">
+			Move section up
+		</button>
+	</div>
+	<div class="code-block">
+	
+	<div class="code-block__title">Console Output</div>
+	 
+	<pre class="code-block__code"><code>console.log(&#39;Hello, world!&#39;);</code></pre>
+	
+</div>
+
+</div>
+
+<div id="sectionId4" class="sectionId4">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId4')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId4')">
+			Move section up
+		</button>
+	</div>
+	<div class="feature-list">
+	
+	<div class="feature-list__title">Features</div>
+	 
+	<div class="feature-list__description">What makes us great</div>
+	 
+	<ul class="feature-list__items">
+		
+		<li class="feature-list__item">
+			
+			<img src="/img/icon.svg" alt="" class="feature-list__icon" />
+			
+			<div class="feature-list__content">
+				
+				<div class="feature-list__item-title">Fast</div>
+				 
+				<div class="feature-list__item-text">Speedy performance with low latency</div>
+				
+			</div>
+		</li>
+		
+		<li class="feature-list__item">
+			
+			<img src="/img/icon.svg" alt="" class="feature-list__icon" />
+			
+			<div class="feature-list__content">
+				
+				<div class="feature-list__item-title">Reliable</div>
+				 
+				<div class="feature-list__item-text">Trusted by thousands</div>
+				
+			</div>
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId5" class="sectionId5">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId5')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId5')">
+			Move section up
+		</button>
+	</div>
+	<div class="hero">
+	<div class="hero__wrapper">
+		<div class="hero__text">
+			
+			<div class="hero__title">Welcome to Our Platform</div>
+			 
+			<div class="hero__description">We help you build better websites</div>
+			
+		</div>
+		
+		<div class="hero__imgs">
+			<img src="img/spider.svg" alt="" />
+			 
+			<div class="hero__img hero__img--first">
+				<img src="img/spider.svg" alt="" />
+			</div>
+			 
+			<div class="hero__img hero__img--second">
+				<img src="img/spider.svg" alt="" />
+			</div>
+			 
+		</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId6" class="sectionId6">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId6')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId6')">
+			Move section up
+		</button>
+	</div>
+	<div class="intro">
+	<div class="intro__img">
+		<img src="img/spider.svg" alt="" />
+	</div>
+
+	
+	<div class="intro__title">Get Started</div>
+	 
+	<div class="intro__description">This is an introduction to the page</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId7" class="sectionId7">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId7')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId7')">
+			Move section up
+		</button>
+	</div>
+	<!--<div class="markdown"><p>##Getting Started\nThis is a paragraph from markdown</p>
+</div> -->
+
+</div>
+
+<div id="sectionId8" class="sectionId8">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId8')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId8')">
+			Move section up
+		</button>
+	</div>
+	<div class="media-text">
+	<div class="media-text__media">
+		<img src="img/spider.svg" alt="" />
+	</div>
+	<div class="media-text__content">
+		
+		<div class="media-text__title">Powerful Tools</div>
+		 
+		<div class="media-text__text">Integrate with your existing workflow easily.</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId9" class="sectionId9">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId9')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId9')">
+			Move section up
+		</button>
+	</div>
+	<div class="statistics">
+	
+	<div class="statistics__title">Our Impact</div>
+	 
+	<div class="statistics__description">Metrics that matter</div>
+	 
+	<ul class="statistics__items">
+		
+		<li class="statistics__item">
+			
+			<div class="statistics__value">98%</div>
+			 
+			<div class="statistics__label">Customer Satisfaction</div>
+			
+		</li>
+		
+		<li class="statistics__item">
+			
+			<div class="statistics__value">2M+</div>
+			 
+			<div class="statistics__label">Downloads</div>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId10" class="sectionId10">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId10')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId10')">
+			Move section up
+		</button>
+	</div>
+	<div class="testimonial">
+	
+	<div class="testimonial__img">
+		<img src="img/spider.svg" alt="" />
+	</div>
+	
+	<div class="testimonial__content">
+		
+		<div class="testimonial__quote">This product changed my life!</div>
+		 
+		<div class="testimonial__author">Jane Doe</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId11" class="sectionId11">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId11')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId11')">
+			Move section up
+		</button>
+	</div>
+	<div class="quote">
+	
+	<div class="quote__img">
+		<img src="img/spider.svg" alt="" />
+	</div>
+	 
+	<div class="quote__text">Design is thinking made visual.</div>
+	 
+	<div class="quote__author">Saul Bass</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId12" class="sectionId12">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId12')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId12')">
+			Move section up
+		</button>
+	</div>
+	<div class="text-block">
+	
+	<div class="text-block__title">About Us</div>
+	 
+	<div class="text-block__description">We are committed to delivering the best digital experience.</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId13" class="sectionId13">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId13')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId13')">
+			Move section up
+		</button>
+	</div>
+	<div class="timeline">
+	
+	<div class="timeline__title">Our Journey</div>
+	 
+	<div class="timeline__description">Milestones and growth</div>
+	 
+	<ul class="timeline__items">
+		
+		<li class="timeline__item">
+			
+			<div class="timeline__time">2021</div>
+			 
+			<div class="timeline__label">Founded</div>
+			 
+			<div class="timeline__text">Our story begins</div>
+			
+		</li>
+		
+		<li class="timeline__item">
+			
+			<div class="timeline__time">2023</div>
+			 
+			<div class="timeline__label">Expansion</div>
+			 
+			<div class="timeline__text">Reached new markets</div>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId14" class="sectionId14">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId14')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId14')">
+			Move section up
+		</button>
+	</div>
+	<div class="two-column-text">
+	
+	<div class="two-column-text__title">Compare Plans</div>
+	 
+	<div class="two-column-text__columns">
+		
+		<div class="two-column-text__column">
+			
+			<div class="two-column-text__column-title">Free Plan</div>
+			 
+			<div class="two-column-text__column-text">Basic features included</div>
+			
+		</div>
+		
+		<div class="two-column-text__column">
+			
+			<div class="two-column-text__column-title">Pro Plan</div>
+			 
+			<div class="two-column-text__column-text">Advanced features for power users</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId15" class="sectionId15">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId15')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId15')">
+			Move section up
+		</button>
+	</div>
+	<div class="gallery">
+	<div class="gallery__title">Main title for gallery</div>
+	<div class="gallery-wrapper">
+		<div class="gallery__item">
+			<div class="gallery__img">
+				<img src="img/spider.svg" alt="" />
+			</div>
+		</div>
+		<div class="gallery__item">
+			<div class="gallery__img">
+				<img src="img/spider.svg" alt="" />
+			</div>
+		</div>
+		<div class="gallery__item">
+			<div class="gallery__img">
+				<img src="img/spider.svg" alt="" />
+			</div>
+		</div>
+		<div class="gallery__item">
+			<div class="gallery__img">
+				<img src="img/spider.svg" alt="" />
+			</div>
+		</div>
+		<div class="gallery__item">
+			<div class="gallery__img">
+				<img src="img/spider.svg" alt="" />
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId16" class="sectionId16">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId16')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId16')">
+			Move section up
+		</button>
+	</div>
+	<div class="vertical">
+	<div class="vertical__title">Title for visual block</div>
+	<div class="vertical-wrapper">
+		<div class="vertical__item">
+			<div class="vertical__img">
+				<img src="img/spider.svg" alt="" />
+			</div>
+		</div>
+		<div class="vertical__item">
+			<div class="vertical__img">
+				<img src="img/spider.svg" alt="" />
+			</div>
+		</div>
+		<div class="vertical__item">
+			<div class="vertical__img">
+				<img src="img/spider.svg" alt="" />
+			</div>
+		</div>
+	</div>
+	
+	<a href="https://www.instagram.com/potiercake/" class="vertical-instagram">
+		<div class="vertical-instagram__text">text for instagram link</div>
+		<div class="vertical-instagram__icon">
+			<img src="img/spider.svg" alt="" />
+		</div>
+	</a>
+	
+</div>
+
+</div>
+
+<div id="sectionId17" class="sectionId17">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId17')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId17')">
+			Move section up
+		</button>
+	</div>
+	<div class="in-touch">
+	<div class="in-touch-wrapper">
+		<div class="in-touch-text">
+			<div class="in-touch__title">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+				aliquid dolo
+			</div>
+			
+			<a href="https://www.instagram.com/potiercake/" class="in-touch-socials">
+				<div class="in-touch-socials__icon">
+					<img src="img/spider.svg" alt="" />
+				</div>
+				<div class="in-touch-socials__text">Instagram link</div>
+			</a>
+			
+			<div class="in-touch__subtitle">We are here</div>
+			<div class="in-touch-link">
+				<div class="in-touch-link__img">
+					<img src="img/spider.svg" alt="" />
+				</div>
+				<div class="in-touch-link__text">Drai-Khmary St, 50, Kam&#39;yanets&#39;-Podil&#39;s&#39;kyi, Khmelnytskyi Oblast, 32313</div>
+			</div>
+			<div class="in-touch-link">
+				<div class="in-touch-link__img">
+					<img src="img/spider.svg" alt="" />
+				</div>
+				<div class="in-touch-link__text">+380971862487</div>
+			</div>
+		</div>
+		<div class="in-touch-img">
+			<img src="img/spider.svg" alt="" />
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId18" class="sectionId18">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId18')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId18')">
+			Move section up
+		</button>
+	</div>
+	<div class="team">
+	
+	<div class="team__title">Team</div>
+	 
+	<div class="team__description">Meet our amazing team</div>
+	 
+	<div class="team__group">
+		
+		<div class="team__group-name">Leadership</div>
+		
+		<div class="team__members">
+			
+			<div class="team__member">
+				<div class="team__avatar">
+					<img src="img/avatar.png" alt="Jane Doe" />
+				</div>
+				<div class="team__name">Jane Doe</div>
+				
+				<div class="team__username">@jdoe</div>
+				 
+				<div class="team__socials">
+					
+					<a href="https://github.com/jdoe" target="_blank">
+						<img src="img/git.svg" alt="" />
+					</a>
+					
+				</div>
+				
+			</div>
+			
+			<div class="team__member">
+				<div class="team__avatar">
+					<img src="img/avatar.png" alt="John Smith" />
+				</div>
+				<div class="team__name">John Smith</div>
+				
+				<div class="team__username">@jsmith</div>
+				 
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId19" class="sectionId19">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId19')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId19')">
+			Move section up
+		</button>
+	</div>
+	<div class="blog-meta">
+	
+	<div class="blog-meta__item blog-meta__date">
+		<time datetime="2024-05-01">2024-05-01</time>
+	</div>
+	 
+	<div class="blog-meta__item blog-meta__author">John Doe</div>
+	 
+	<div class="blog-meta__item blog-meta__read-time">
+		5 min read
+	</div>
+	 
+	<div class="blog-meta__item blog-meta__categories">
+		
+		<a href="/category/tech">Tech</a>,  
+		<a href="/category/ai">AI</a> 
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId20" class="sectionId20">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId20')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId20')">
+			Move section up
+		</button>
+	</div>
+	<article class="post-card">
+	
+	<div class="post-card__img">
+		<img src="/img/post.jpg" alt="Blog post title" />
+	</div>
+	
+
+	<div class="post-card__content">
+		
+		<div class="post-card__category">Tech</div>
+		
+
+		<h2 class="post-card__title">Blog post title</h2>
+
+		
+		<p class="post-card__excerpt">Optional short preview of the article content.</p>
+		 
+		<div class="post-card__meta">
+			
+			<span class="post-card__author">John Doe</span>
+			 
+			<time class="post-card__date">2024-01-01</time>
+			
+		</div>
+		
+	</div>
+</article>
+
+</div>
+
+<div id="sectionId21" class="sectionId21">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId21')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId21')">
+			Move section up
+		</button>
+	</div>
+	<div class="post-grid">
+	
+	<article class="post-grid__item">
+		
+		<div class="post-grid__image">
+			<img src="/img/post.jpg" alt="" />
+		</div>
+		
+		<div class="post-grid__body">
+			
+			<h3 class="post-grid__title">
+				
+				<a href="/post-url">Post title</a>
+				
+			</h3>
+			 
+			<div class="post-grid__excerpt">Short summary</div>
+			
+		</div>
+	</article>
+	
+</div>
+
+</div>
+
+<div id="sectionId22" class="sectionId22">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId22')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId22')">
+			Move section up
+		</button>
+	</div>
+	<div class="author">
+	
+	<div class="author__avatar">
+		<img src="/img/avatar.png" alt="Author name" />
+	</div>
+	
+	<div class="author__info">
+		
+		<div class="author__name">Author name</div>
+		 
+		<div class="author__bio">Short author description or tagline</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId23" class="sectionId23">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId23')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId23')">
+			Move section up
+		</button>
+	</div>
+	<div class="categories">
+	
+	<div class="categories__title">Browse by category</div>
+	 
+	<div class="categories__description">Optional helper text</div>
+	 
+	<ul class="categories__list">
+		
+		<li class="categories__item">
+			
+			<a href="/blog/news" class="categories__link">
+				News 
+				<span class="categories__count">3</span>
+				
+			</a>
+			
+		</li>
+		
+		<li class="categories__item">
+			
+			<a href="/blog/events" class="categories__link">
+				Events 
+			</a>
+			
+		</li>
+		
+		<li class="categories__item">
+			
+			<a href="/blog/tutorials" class="categories__link">
+				Tutorials 
+				<span class="categories__count">12</span>
+				
+			</a>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId24" class="sectionId24">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId24')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId24')">
+			Move section up
+		</button>
+	</div>
+	<div class="comments">
+	
+	<div class="comments__title">Comments</div>
+	 
+	<ul class="comments__list">
+		
+		<li class="comments__item">
+			
+			<img src="/img/avatar.png" alt="" class="comments__avatar" />
+			
+			<div class="comments__body">
+				
+				<div class="comments__author">Jane Doe</div>
+				 
+				<div class="comments__date">2024-08-30</div>
+				 
+				<div class="comments__text">This is a comment</div>
+				 
+				<ul class="comments__replies">
+					
+					<li class="comments__item">
+						
+						<img
+							src="/img/avatar2.png"
+							alt=""
+							class="comments__avatar"
+						/>
+						
+						<div class="comments__body">
+							
+							<div class="comments__author">
+								John Doe
+							</div>
+							 
+							<div class="comments__date">2024-08-31</div>
+							 
+							<div class="comments__text">A reply</div>
+							
+						</div>
+					</li>
+					
+				</ul>
+				
+			</div>
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId25" class="sectionId25">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId25')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId25')">
+			Move section up
+		</button>
+	</div>
+	<div class="related-posts">
+	
+	<div class="related-posts__title">Related posts</div>
+	
+
+	<div class="related-posts__grid">
+		
+		<a class="related-posts__item" href="/blog/post-1">
+			<div class="related-posts__img">
+				<img src="/img/post-1.jpg" alt="" />
+			</div>
+			<div class="related-posts__content">
+				<div class="related-posts__post-title">First post</div>
+				
+				<div class="related-posts__date">Jan 1, 2024</div>
+				
+			</div>
+		</a>
+		
+		<a class="related-posts__item" href="/blog/post-2">
+			<div class="related-posts__img">
+				<img src="/img/post-2.jpg" alt="" />
+			</div>
+			<div class="related-posts__content">
+				<div class="related-posts__post-title">Second post</div>
+				
+			</div>
+		</a>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId26" class="sectionId26">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId26')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId26')">
+			Move section up
+		</button>
+	</div>
+	<div class="about">
+	<div class="about__text">
+		
+		<div class="about__title">Optional section title</div>
+		 
+		<div class="about__description">Optional paragraph describing the business</div>
+		
+	</div>
+	
+	<div class="about__img">
+		<img src="/img/about.svg" alt="" />
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId27" class="sectionId27">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId27')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId27')">
+			Move section up
+		</button>
+	</div>
+	<div class="awards">
+	
+	<div class="awards__title">Awards</div>
+	 
+	<div class="awards__description">Highlights of our achievements</div>
+	 
+	<ul class="awards__items">
+		
+		<li class="awards__item">
+			
+			<img src="/img/trophy.svg" alt="" class="awards__img" />
+			 
+			<div class="awards__item-title">Best Startup</div>
+			 
+			<div class="awards__year">2023</div>
+			 
+			<div class="awards__item-text">Awarded by Example Organization</div>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId28" class="sectionId28">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId28')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId28')">
+			Move section up
+		</button>
+	</div>
+	<div class="careers">
+	
+	<div class="careers__title">Join our team</div>
+	 
+	<div class="careers__description">We are hiring across multiple roles</div>
+	 
+	<ul class="careers__list">
+		
+		<li class="careers__item">
+			
+			<div class="careers__item-title">Frontend Developer</div>
+			 
+			<div class="careers__item-meta">
+				
+				<span class="careers__item-location">Remote</span>
+				 
+				<span class="careers__item-type">Full-Time</span>
+				
+			</div>
+			 
+			<a class="careers__item-link" href="/careers/frontend"
+				>Apply now</a
+			>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId29" class="sectionId29">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId29')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId29')">
+			Move section up
+		</button>
+	</div>
+	<div class="contact">
+	
+	<div class="contact__title">Get in touch</div>
+	 
+	<div class="contact__description">We would love to hear from you.</div>
+	
+	<div class="contact__details">
+		
+		<div class="contact__item">
+			<span class="material-icons">location_on</span>
+			<span>123 Main St, Anytown</span>
+		</div>
+		 
+		<div class="contact__item">
+			<span class="material-icons">phone</span>
+			<span>+1 (555) 123-4567</span>
+		</div>
+		 
+		<div class="contact__item">
+			<span class="material-icons">email</span>
+			<span>info@example.com</span>
+		</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId30" class="sectionId30">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId30')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId30')">
+			Move section up
+		</button>
+	</div>
+	<div class="map">
+	<div id="map" class="map__container"></div>
+
+	
+	<div class="map__title">Our Location</div>
+	 
+	<div class="map__description">Find us on the map</div>
+	
+</div>
+<script>
+	function initMap() {
+	        const position = { lat: 50.4501, lng: 30.5234 };
+	        const map = new google.maps.Map(document.getElementById('map'), {
+	                zoom: 14,
+	                center: position,
+	        });
+	        new google.maps.Marker({ position, map });
+	}
+</script>
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY&callback=initMap"
+	async
+	defer
+></script>
+
+</div>
+
+<div id="sectionId31" class="sectionId31">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId31')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId31')">
+			Move section up
+		</button>
+	</div>
+	<div class="milestones">
+	
+	<div class="milestones__title">Company milestones</div>
+	 
+	<div class="milestones__description">Our journey so far</div>
+	 
+	<ul class="milestones__items">
+		
+		<li class="milestones__item">
+			
+			<div class="milestones__year">2019</div>
+			 
+			<div class="milestones__label">Founded</div>
+			 
+			<div class="milestones__text">Company started</div>
+			
+		</li>
+		
+		<li class="milestones__item">
+			
+			<div class="milestones__year">2020</div>
+			 
+			<div class="milestones__label">First product</div>
+			 
+			<div class="milestones__text">Released v1</div>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId32" class="sectionId32">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId32')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId32')">
+			Move section up
+		</button>
+	</div>
+	<div class="mission">
+	
+	<div class="mission__title">Our Mission</div>
+	 
+	<div class="mission__statement">Short mission statement here.</div>
+	 
+	<ul class="mission__list">
+		
+		<li class="mission__item">
+			
+			<img src="/img/target.svg" alt="" class="mission__icon" />
+			
+			<div class="mission__content">
+				
+				<div class="mission__item-title">Value title</div>
+				 
+				<div class="mission__item-text">Supporting text for this mission point</div>
+				
+			</div>
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId33" class="sectionId33">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId33')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId33')">
+			Move section up
+		</button>
+	</div>
+	<div class="partners">
+	
+	<div class="partners__title">Our Partners</div>
+	 
+	<ul class="partners__items">
+		
+		<li class="partners__item">
+			
+			<a href="https://partner1.com" target="_blank" rel="noopener">
+				<img src="/img/partner1.svg" alt="Partner 1" />
+			</a>
+			
+		</li>
+		
+		<li class="partners__item">
+			
+			<img src="/img/partner2.svg" alt="Partner 2" />
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId34" class="sectionId34">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId34')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId34')">
+			Move section up
+		</button>
+	</div>
+	<div class="banner">
+	
+	<div class="banner__title">Ready to get started?</div>
+	 
+	<div class="banner__description">Sign up today and enjoy all the benefits.</div>
+	 
+	<div class="banner__action">
+		<a href="/signup" class="banner__button"
+			>Get Started</a
+		>
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId35" class="sectionId35">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId35')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId35')">
+			Move section up
+		</button>
+	</div>
+	<div class="button-group">
+	
+	<div class="button-group__title">Optional heading</div>
+	 
+	<div class="button-group__description">Optional supporting text</div>
+	 
+	<div class="button-group__wrapper">
+		 
+		<a
+			href="#"
+			class="btn btn--success"
+		>
+			Primary action
+		</a>
+		  
+		<a
+			href="#"
+			class="btn btn--second"
+		>
+			Secondary
+		</a>
+		 
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId36" class="sectionId36">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId36')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId36')">
+			Move section up
+		</button>
+	</div>
+	<div class="countdown">
+	
+	<div class="countdown__title">Event starts soon</div>
+	 
+	<div class="countdown__description">Join us before time runs out!</div>
+	
+	<div class="countdown__timer" data-countdown="2024-12-31T23:59:59">
+		<div class="countdown__unit">
+			<div class="countdown__value countdown__days">00</div>
+			<div class="countdown__label">Days</div>
+		</div>
+		<div class="countdown__unit">
+			<div class="countdown__value countdown__hours">00</div>
+			<div class="countdown__label">Hours</div>
+		</div>
+		<div class="countdown__unit">
+			<div class="countdown__value countdown__minutes">00</div>
+			<div class="countdown__label">Minutes</div>
+		</div>
+		<div class="countdown__unit">
+			<div class="countdown__value countdown__seconds">00</div>
+			<div class="countdown__label">Seconds</div>
+		</div>
+	</div>
+	
+	<a href="/register" class="countdown__button"
+		>Register now</a
+	>
+	
+</div>
+
+</div>
+
+<div id="sectionId37" class="sectionId37">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId37')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId37')">
+			Move section up
+		</button>
+	</div>
+	<div class="exit-modal" id="exitModal">
+	<div class="exit-modal__content">
+		<div class="exit-modal__close" id="exitModalClose">&times;</div>
+		
+		<div class="exit-modal__title">Wait, before you go!</div>
+		 
+		<div class="exit-modal__description">Sign up to stay updated</div>
+		 
+		<a href="/signup" class="exit-modal__button"
+			>Subscribe</a
+		>
+		
+	</div>
+</div>
+<script>
+	(function () {
+		var shown = false;
+		var modal = document.getElementById("exitModal");
+		if (!modal) return;
+		var close = document.getElementById("exitModalClose");
+		function show() {
+			if (!shown) {
+				modal.classList.add("exit-modal--visible");
+				shown = true;
+			}
+		}
+		function hide() {
+			modal.classList.remove("exit-modal--visible");
+		}
+		document.addEventListener("mouseleave", function (e) {
+			if (e.clientY <= 0) {
+				show();
+			}
+		});
+		document.addEventListener("scroll", function () {
+			if (window.scrollY > window.innerHeight) {
+				show();
+			}
+		});
+		close.addEventListener("click", hide);
+	})();
+</script>
+
+</div>
+
+<div id="sectionId38" class="sectionId38">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId38')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId38')">
+			Move section up
+		</button>
+	</div>
+	<div class="promo">
+	
+	<div class="promo__img">
+		<img src="/img/promo.png" alt="" />
+	</div>
+	 
+	<div class="promo__title">Special Offer</div>
+	 
+	<div class="promo__description">Short promo or marketing message</div>
+	 
+	<div class="promo__action">
+		<a href="/signup" class="promo__btn"
+			>Get started</a
+		>
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId39" class="sectionId39">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId39')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId39')">
+			Move section up
+		</button>
+	</div>
+	<div id="stickyFooter" class="sticky-footer">
+	<div class="sticky-footer__content">
+		<span class="sticky-footer__text">Promotional message</span>
+		
+		<a href="/signup" class="sticky-footer__button"
+			>Sign Up</a
+		>
+		
+	</div>
+	<button
+		class="sticky-footer__close"
+		onclick="toggleClass('stickyFooter','hidden')"
+	>
+		&times;
+	</button>
+</div>
+
+</div>
+
+<div id="sectionId40" class="sectionId40">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId40')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId40')">
+			Move section up
+		</button>
+	</div>
+	<div class="search-bar">
+	<input
+		type="search"
+		class="search-bar__input"
+		placeholder="Search docs..."
+	/>
+	<ul class="search-bar__results"></ul>
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const input = document.querySelector(".search-bar__input");
+		const results = document.querySelector(".search-bar__results");
+		let index = [];
+
+		fetch("/search-index.json")
+			.then((res) => res.json())
+			.then((data) => (index = data))
+			.catch((err) => console.error("Failed to load search index", err));
+
+		input.addEventListener("input", function () {
+			const query = this.value.toLowerCase();
+			results.innerHTML = "";
+			if (!query) {
+				return;
+			}
+			const matches = index
+				.filter(
+					(item) =>
+						item.title.toLowerCase().includes(query) ||
+						(item.content &&
+							item.content.toLowerCase().includes(query))
+				)
+				.slice(0, 5);
+
+			for (const match of matches) {
+				const li = document.createElement("li");
+				li.className = "search-bar__result";
+				li.innerHTML = `<a href="${match.url}">${match.title}</a>`;
+				results.appendChild(li);
+			}
+		});
+	});
+</script>
+
+</div>
+
+<div id="sectionId41" class="sectionId41">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId41')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId41')">
+			Move section up
+		</button>
+	</div>
+	<div class="version-switcher">
+	
+	<label for="version-switcher__select" class="version-switcher__label"
+		>Version</label
+	>
+	 
+	<select
+		id="version-switcher__select"
+		class="version-switcher__select"
+		onchange="if(this.value){window.location.href=this.value}"
+	>
+		
+		<option value="/docs/v1" >
+			v1.0
+		</option>
+		
+		<option value="/docs/v2" selected>
+			v2.0
+		</option>
+		
+	</select>
+	
+</div>
+
+</div>
+
+<div id="sectionId42" class="sectionId42">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId42')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId42')">
+			Move section up
+		</button>
+	</div>
+	<div class="glossary">
+        
+        <div class="glossary__title">Glossary</div>
+        
+        
+        
+        <div class="glossary__groups">
+                
+                
+                
+                
+                <div class="glossary__group">
+                        <div class="glossary__letter">A</div>
+                
+                
+                <div class="glossary__entry">
+                        <div class="glossary__term">API</div>
+                        <div class="glossary__definition">Application Programming Interface</div>
+                </div>
+                
+                
+                
+                
+                </div>
+                <div class="glossary__group">
+                        <div class="glossary__letter">C</div>
+                
+                
+                <div class="glossary__entry">
+                        <div class="glossary__term">CLI</div>
+                        <div class="glossary__definition">Command Line Interface</div>
+                </div>
+                </div>
+                
+        </div>
+        
+</div>
+
+</div>
+
+<div id="sectionId43" class="sectionId43">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId43')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId43')">
+			Move section up
+		</button>
+	</div>
+	<div class="page-layout">
+	
+	<aside class="page-layout__sidebar">&lt;nav&gt;...&lt;/nav&gt;</aside>
+	 
+	<div class="page-layout__content">&lt;article&gt;...&lt;/article&gt;</div>
+	 
+	<nav class="page-layout__toc">&lt;nav&gt;...&lt;/nav&gt;</nav>
+	
+</div>
+
+</div>
+
+<div id="sectionId44" class="sectionId44">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId44')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId44')">
+			Move section up
+		</button>
+	</div>
+	<div class="code-snippet">
+	
+	<div class="code-snippet__label">Optional file name</div>
+	 
+	<pre class="code-snippet__code"><code>npm install ngx</code></pre>
+	<button class="code-snippet__copy" data-copy="npm install ngx">
+		Copy
+	</button>
+	
+</div>
+
+</div>
+
+<div id="sectionId45" class="sectionId45">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId45')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId45')">
+			Move section up
+		</button>
+	</div>
+	<div class="docs-sidebar">
+	<aside id="sidebar" class="main-content__nav">
+		<ul class="main-content__nav-wrap">
+			<li
+				class="main-content__nav-item main-content__nav-item--mobile"
+				item-url="/"
+			>
+				<a href="/" class="header__nav-link">Getting started</a>
+			</li>
+			
+			<li class="main-content__nav-item" item-url="/guide">
+				<a href="/guide" class="main-content__nav-link"
+					>Guide</a
+				>
+				<ul class="main-content__nav-in">
+					
+					<li class="main-content__nav-in-item">
+						<a href="/guide#intro" class="main-content__nav-link"
+							>Intro</a
+						>
+					</li>
+					
+				</ul>
+			</li>
+			
+		</ul>
+	</aside>
+</div>
+
+</div>
+
+<div id="sectionId46" class="sectionId46">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId46')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId46')">
+			Move section up
+		</button>
+	</div>
+	<div class="api-layout">
+	
+	<div class="api-layout__title">API Reference</div>
+	 
+	<div class="api-layout__description">Endpoints and methods</div>
+	 
+	<div class="api-layout__endpoints">
+		
+		<div class="api-layout__endpoint">
+			<span class="api-layout__method">GET</span>
+			<span class="api-layout__path">/items</span>
+			
+			<div class="api-layout__endpoint-description">
+				List items
+			</div>
+			
+		</div>
+		
+		<div class="api-layout__endpoint">
+			<span class="api-layout__method">POST</span>
+			<span class="api-layout__path">/items</span>
+			
+			<div class="api-layout__endpoint-description">
+				Create item
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId47" class="sectionId47">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId47')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId47')">
+			Move section up
+		</button>
+	</div>
+	
+<div class="edit-link">
+	<a
+		class="edit-link__link"
+		href="https://github.com/owner/repo/edit/main/docs/page.md"
+		target="_blank"
+		rel="noopener"
+	>
+		
+		<img src="/img/git.svg" alt="" class="edit-link__icon" />
+		 
+		<span class="edit-link__text">Edit on GitHub</span>
+		
+	</a>
+</div>
+
+
+</div>
+
+<div id="sectionId48" class="sectionId48">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId48')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId48')">
+			Move section up
+		</button>
+	</div>
+	<div class="product-details">
+	<div class="product-details__image">
+		<img src="/img/product.jpg" alt="Sample product title" />
+	</div>
+	<div class="product-details__info">
+		
+		<div class="product-details__title">Sample product title</div>
+		 
+		<div class="product-details__description">
+			Optional detailed description of the product
+		</div>
+		 
+		<div class="product-details__price">$99.99</div>
+		 
+		<div class="product-details__rating">⭐️⭐️⭐️⭐️☆</div>
+		 
+		<a class="product-details__cta" href="#add-to-cart"
+			>Add to cart</a
+		>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId49" class="sectionId49">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId49')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId49')">
+			Move section up
+		</button>
+	</div>
+	<div class="price">
+	
+	<div class="price__original">
+		<span class="price__currency"
+			>$</span
+		>24.99
+	</div>
+	
+	<div class="price__current">
+		<span class="price__currency"
+			>$</span
+		>19.99
+	</div>
+	
+	<div class="price__note">per item</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId50" class="sectionId50">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId50')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId50')">
+			Move section up
+		</button>
+	</div>
+	<div class="add-to-cart" data-product-id="sku-1">
+	
+	<div class="add-to-cart__price">$19.99</div>
+	
+	<div class="add-to-cart__controls">
+		<button
+			class="add-to-cart__btn add-to-cart__btn--decrease"
+			aria-label="Decrease quantity"
+		>
+			&minus;
+		</button>
+		<input
+			class="add-to-cart__quantity"
+			type="number"
+			min="1"
+			value="1"
+		/>
+		<button
+			class="add-to-cart__btn add-to-cart__btn--increase"
+			aria-label="Increase quantity"
+		>
+			+
+		</button>
+	</div>
+	<button class="add-to-cart__submit">
+		Add to cart
+	</button>
+</div>
+
+</div>
+
+<div id="sectionId51" class="sectionId51">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId51')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId51')">
+			Move section up
+		</button>
+	</div>
+	<div class="variant-selector">
+	
+	<div class="variant-selector__title">Choose a variant</div>
+	 
+	<div class="variant-selector__options">
+		
+		<button
+			class="variant-selector__option"
+			data-img="/img/red.jpg"
+			data-price="$19.99"
+		>
+			
+			<span
+				class="variant-selector__swatch"
+				style="background-color: #ff0000"
+			></span>
+			 
+			<span class="variant-selector__label">Red</span>
+			
+		</button>
+		
+		<button
+			class="variant-selector__option"
+			data-img="/img/blue.jpg"
+			data-price="$21.99"
+		>
+			
+			<span
+				class="variant-selector__swatch"
+				style="background-color: #0000ff"
+			></span>
+			 
+			<span class="variant-selector__label">Blue</span>
+			
+		</button>
+		
+	</div>
+
+	<div class="variant-selector__display">
+		<img class="variant-selector__image" src="" alt="" />
+		<div class="variant-selector__price"></div>
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId52" class="sectionId52">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId52')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId52')">
+			Move section up
+		</button>
+	</div>
+	<div class="stock-indicator">
+	<div class="stock-indicator__bar">
+		<div
+			class="stock-indicator__progress stock-indicator__progress--in"
+			style="width: 42%"
+		></div>
+	</div>
+	
+	<div class="stock-indicator__status stock-indicator__status--in">
+		In stock
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId53" class="sectionId53">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId53')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId53')">
+			Move section up
+		</button>
+	</div>
+	<div class="payment-logos">
+	
+	<div class="payment-logos__item">
+		<img src="/img/payments/visa.svg" alt="Visa" />
+	</div>
+	
+	<div class="payment-logos__item">
+		<img src="/img/payments/mastercard.svg" alt="Mastercard" />
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId54" class="sectionId54">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId54')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId54')">
+			Move section up
+		</button>
+	</div>
+	<div class="review-section">
+	
+	<div class="review-section__title">Customer Reviews</div>
+	 
+	<ul class="review-section__list">
+		
+		<li class="review-section__item">
+			
+			<div class="review-section__avatar">
+				<img src="/img/user.jpg" alt="" />
+			</div>
+			
+			<div class="review-section__body">
+				<div class="review-section__header">
+					
+					<div class="review-section__name">Jane Doe</div>
+					 
+					<div class="review-section__rating">
+						5/5
+					</div>
+					
+				</div>
+				
+				<div class="review-section__comment">Great product!</div>
+				
+			</div>
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId55" class="sectionId55">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId55')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId55')">
+			Move section up
+		</button>
+	</div>
+	<div class="star-rating" style="--rating: 4.5;">
+	<div class="star-rating__stars">
+		<div class="star-rating__base">
+			<span class="material-icons">star</span>
+			<span class="material-icons">star</span>
+			<span class="material-icons">star</span>
+			<span class="material-icons">star</span>
+			<span class="material-icons">star</span>
+		</div>
+		<div class="star-rating__fill">
+			<span class="material-icons">star</span>
+			<span class="material-icons">star</span>
+			<span class="material-icons">star</span>
+			<span class="material-icons">star</span>
+			<span class="material-icons">star</span>
+		</div>
+	</div>
+	
+	<div class="star-rating__text">4.5/5</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId56" class="sectionId56">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId56')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId56')">
+			Move section up
+		</button>
+	</div>
+	<div class="product-grid">
+	
+	<article class="product-grid__item">
+		
+		<div class="product-grid__image">
+			<img src="/img/product.png" alt="Product name" />
+		</div>
+		
+		<div class="product-grid__body">
+			
+			<h3 class="product-grid__title">
+				
+				<a href="/product-url">Product name</a>
+				
+			</h3>
+			 
+			<div class="product-grid__price">$49</div>
+			 
+			<div class="product-grid__rating">★★★★☆</div>
+			
+		</div>
+	</article>
+	
+</div>
+
+</div>
+
+<div id="sectionId57" class="sectionId57">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId57')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId57')">
+			Move section up
+		</button>
+	</div>
+	<div class="product-card">
+	<div class="product-card__img">
+		<img src="/img/product.jpg" alt="Product name" />
+	</div>
+	
+	<div class="product-card__title">Product name</div>
+	 
+	<div class="product-card__price">$19.99</div>
+	 
+	<div class="product-card__rating">4.5/5</div>
+	 
+	<button class="product-card__btn">Add to cart</button>
+	
+</div>
+
+</div>
+
+<div id="sectionId58" class="sectionId58">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId58')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId58')">
+			Move section up
+		</button>
+	</div>
+	<div class="discount-badge">
+	
+	<span class="discount-badge__value">-20%</span>
+	 
+	<span class="discount-badge__label">OFF</span>
+	
+</div>
+
+</div>
+
+<div id="sectionId59" class="sectionId59">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId59')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId59')">
+			Move section up
+		</button>
+	</div>
+	<div class="video-embed">
+	<video
+		class="video-embed__video"
+		controls
+		
+		
+		
+		poster="img/spider.svg"
+		
+	>
+		<source src="https://www.w3schools.com/html/mov_bbb.mp4" />
+		Your browser does not support the video tag.
+	</video>
+
+	
+	<div class="video-embed__title">Embedded Video</div>
+	 
+	<div class="video-embed__description">Example of the video embed section</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId60" class="sectionId60">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId60')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId60')">
+			Move section up
+		</button>
+	</div>
+	<div class="certificate">
+	
+	<div class="certificate__title">Certificate of Completion</div>
+	 
+	<div class="certificate__recipient">Jane Doe</div>
+	 
+	<div class="certificate__course">Intro to AI</div>
+	 
+	<div class="certificate__meta">
+		<span class="certificate__issuer"
+			>Web Academy</span
+		> <span class="certificate__date"
+			>2024-01-01</span
+		>
+	</div>
+	 
+	<div class="certificate__id">CERT-12345</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId61" class="sectionId61">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId61')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId61')">
+			Move section up
+		</button>
+	</div>
+	<div class="comparison-table">
+	<table class="comparison-table__table">
+		
+		<thead>
+			<tr>
+				<th></th>
+				
+				<th>Basic</th>
+				
+				<th>Pro</th>
+				
+			</tr>
+		</thead>
+		 
+		<tbody>
+			
+			<tr>
+				<th>Lessons</th>
+				
+				<td>10</td>
+				
+				<td>20</td>
+				
+			</tr>
+			
+			<tr>
+				<th>Support</th>
+				
+				<td>Email</td>
+				
+				<td>24/7</td>
+				
+			</tr>
+			
+		</tbody>
+		
+	</table>
+</div>
+
+</div>
+
+<div id="sectionId62" class="sectionId62">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId62')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId62')">
+			Move section up
+		</button>
+	</div>
+	<div class="instructor">
+	<div class="instructor__img">
+		<img src="/img/instructor.jpg" alt="Dr. Smith" />
+	</div>
+
+	
+	<div class="instructor__name">Dr. Smith</div>
+	 
+	<div class="instructor__role">Professor</div>
+	 
+	<div class="instructor__bio">Expert in web technologies.</div>
+	 
+	<div class="instructor__socials">
+		
+		<a href="https://twitter.com">
+			<img src="/img/twitter.svg" alt="Twitter" />
+		</a>
+		
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId63" class="sectionId63">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId63')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId63')">
+			Move section up
+		</button>
+	</div>
+	<div class="lesson-list">
+	
+	<div class="lesson-list__title">Course Lessons</div>
+	 
+	<ul class="lesson-list__items">
+		
+		<li
+			class="lesson-list__item"
+		>
+			<div class="lesson-list__info">
+				<span class="lesson-list__index">{{ loop.index }}</span>
+				
+				<span class="lesson-list__name">Introduction</span>
+				
+			</div>
+			
+			<span class="lesson-list__duration">5m</span>
+			
+		</li>
+		
+		<li
+			class="lesson-list__item lesson-list__item--completed"
+		>
+			<div class="lesson-list__info">
+				<span class="lesson-list__index">{{ loop.index }}</span>
+				
+				<span class="lesson-list__name">Advanced Topics</span>
+				
+			</div>
+			
+			<span class="lesson-list__duration">15m</span>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId64" class="sectionId64">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId64')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId64')">
+			Move section up
+		</button>
+	</div>
+	<div class="progress">
+	
+	<div class="progress__title">Course Progress</div>
+	 
+	<div class="progress__description">Track completion</div>
+	 
+	<div class="progress__item">
+		
+		<div class="progress__label">Module 1</div>
+		
+		<div class="progress__track">
+			<div
+				class="progress__bar"
+				data-progress="{{ item.value | default(0) }}"
+			>
+				<span class="progress__value">0%</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="progress__item">
+		
+		<div class="progress__label">Module 2</div>
+		
+		<div class="progress__track">
+			<div
+				class="progress__bar"
+				data-progress="{{ item.value | default(0) }}"
+			>
+				<span class="progress__value">0%</span>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		document.querySelectorAll(".progress__bar").forEach((bar) => {
+			const target = parseInt(bar.dataset.progress, 10) || 0;
+			let width = 0;
+			const label = bar.querySelector(".progress__value");
+			const interval = setInterval(() => {
+				if (width >= target) {
+					clearInterval(interval);
+				} else {
+					width += 1;
+					bar.style.width = width + "%";
+					label.textContent = width + "%";
+				}
+			}, 20);
+		});
+	});
+</script>
+
+</div>
+
+<div id="sectionId65" class="sectionId65">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId65')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId65')">
+			Move section up
+		</button>
+	</div>
+	<div class="quiz" data-answer="1">
+	
+	<div class="quiz__question">What is 2 + 2?</div>
+	 
+	<div class="quiz__options">
+		
+		<label class="quiz__option">
+			<input type="radio" name="quiz-option" value="0" />
+			<span>3</span>
+		</label>
+		
+		<label class="quiz__option">
+			<input type="radio" name="quiz-option" value="1" />
+			<span>4</span>
+		</label>
+		
+		<label class="quiz__option">
+			<input type="radio" name="quiz-option" value="2" />
+			<span>5</span>
+		</label>
+		
+	</div>
+	
+	<button type="button" class="quiz__submit">Check</button>
+	<div class="quiz__result" aria-live="polite"></div>
+</div>
+<script>
+	(function () {
+		const quiz = document.currentScript.previousElementSibling;
+		if (!quiz) return;
+		const answer = quiz.dataset.answer;
+		const submit = quiz.querySelector(".quiz__submit");
+		const result = quiz.querySelector(".quiz__result");
+		submit.addEventListener("click", function () {
+			const selected = quiz.querySelector(
+				'input[name="quiz-option"]:checked'
+			);
+			if (!selected) return;
+			if (selected.value === answer) {
+				result.textContent = "Correct!";
+				result.classList.remove("quiz__result--wrong");
+				result.classList.add("quiz__result--correct");
+			} else {
+				result.textContent = "Try again";
+				result.classList.remove("quiz__result--correct");
+				result.classList.add("quiz__result--wrong");
+			}
+		});
+	})();
+</script>
+
+</div>
+
+<div id="sectionId66" class="sectionId66">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId66')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId66')">
+			Move section up
+		</button>
+	</div>
+	<div class="syllabus">
+	
+	<div class="syllabus__title">Syllabus</div>
+	 
+	<ul class="syllabus__list">
+		
+		<li class="syllabus__module">
+			<div class="syllabus__module-header">
+				
+				<div class="syllabus__module-title">Module 1</div>
+				 
+				<div class="syllabus__module-duration">
+					1h
+				</div>
+				
+			</div>
+			
+			<div class="syllabus__module-description">
+				Overview
+			</div>
+			 
+			<ul class="syllabus__lessons">
+				
+				<li class="syllabus__lesson">
+					<span class="syllabus__lesson-title"
+						>Lesson 1</span
+					>
+					
+					<span class="syllabus__lesson-duration"
+						>10m</span
+					>
+					
+				</li>
+				
+				<li class="syllabus__lesson">
+					<span class="syllabus__lesson-title"
+						>Lesson 2</span
+					>
+					
+					<span class="syllabus__lesson-duration"
+						>20m</span
+					>
+					
+				</li>
+				
+			</ul>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId67" class="sectionId67">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId67')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId67')">
+			Move section up
+		</button>
+	</div>
+	<div class="timeline">
+	
+	<div class="timeline__title">Timeline</div>
+	 
+	<div class="timeline__description">Learning path</div>
+	 
+	<ul class="timeline__items">
+		
+		<li class="timeline__item">
+			
+			<div class="timeline__time">Week 1</div>
+			 
+			<div class="timeline__label">Start</div>
+			 
+			<div class="timeline__text">Basics</div>
+			
+		</li>
+		
+		<li class="timeline__item">
+			
+			<div class="timeline__time">Week 2</div>
+			 
+			<div class="timeline__label">Practice</div>
+			 
+			<div class="timeline__text">Exercises</div>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId68" class="sectionId68">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId68')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId68')">
+			Move section up
+		</button>
+	</div>
+	<div class="press-logos">
+	
+	<div class="press-logos__title">As Seen In</div>
+	
+	<div class="press-logos__list">
+		
+		<div class="press-logos__item">
+			<img src="/img/logo1.png" alt="Logo 1" />
+		</div>
+		
+		<div class="press-logos__item">
+			<img src="/img/logo2.png" alt="Logo 2" />
+		</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId69" class="sectionId69">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId69')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId69')">
+			Move section up
+		</button>
+	</div>
+	<div class="review-carousel">
+	
+	<div class="review-carousel__title">Reviews</div>
+	 
+	<div class="review-carousel__track">
+		
+		<div class="review-carousel__item">
+			
+			<div class="review-carousel__text">Great course!</div>
+			 
+			<div class="review-carousel__author">Alice</div>
+			
+		</div>
+		
+		<div class="review-carousel__item">
+			
+			<div class="review-carousel__text">Loved it!</div>
+			 
+			<div class="review-carousel__author">Bob</div>
+			
+		</div>
+		
+	</div>
+	<div class="review-carousel__nav">
+		<button class="review-carousel__button review-carousel__button--prev">
+			<span class="material-icons">chevron_left</span>
+		</button>
+		<button class="review-carousel__button review-carousel__button--next">
+			<span class="material-icons">chevron_right</span>
+		</button>
+	</div>
+	
+</div>
+<script>
+	(function () {
+		var carousel = document.querySelector(".review-carousel");
+		if (!carousel) return;
+		var track = carousel.querySelector(".review-carousel__track");
+		var prev = carousel.querySelector(".review-carousel__button--prev");
+		var next = carousel.querySelector(".review-carousel__button--next");
+		function scroll(dir) {
+			var width = carousel.clientWidth;
+			track.scrollBy({ left: width * dir, behavior: "smooth" });
+		}
+		prev.addEventListener("click", function () {
+			scroll(-1);
+		});
+		next.addEventListener("click", function () {
+			scroll(1);
+		});
+	})();
+</script>
+
+</div>
+
+<div id="sectionId70" class="sectionId70">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId70')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId70')">
+			Move section up
+		</button>
+	</div>
+	<div class="testimonial-block">
+	
+	<div class="testimonial-block__title">Testimonials</div>
+	 
+	<div class="testimonial-block__items">
+		
+		<div class="testimonial-block__item">
+			
+			<div class="testimonial-block__img">
+				<img src="/img/user1.jpg" alt="" />
+			</div>
+			 
+			<div class="testimonial-block__quote">Fantastic!</div>
+			 
+			<div class="testimonial-block__author">Carol</div>
+			 
+			<div class="testimonial-block__role">Designer</div>
+			
+		</div>
+		
+		<div class="testimonial-block__item">
+			
+			<div class="testimonial-block__img">
+				<img src="/img/user2.jpg" alt="" />
+			</div>
+			 
+			<div class="testimonial-block__quote">Very useful</div>
+			 
+			<div class="testimonial-block__author">Dave</div>
+			 
+			<div class="testimonial-block__role">Developer</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId71" class="sectionId71">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId71')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId71')">
+			Move section up
+		</button>
+	</div>
+	<div class="trust-badges">
+	
+	<div class="trust-badges__item">
+		
+		<a href="#"
+			><img src="/img/badge1.png" alt="Badge 1"
+		/></a>
+		
+	</div>
+	
+	<div class="trust-badges__item">
+		
+		<img src="/img/badge2.png" alt="Badge 2" />
+		
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId72" class="sectionId72">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId72')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId72')">
+			Move section up
+		</button>
+	</div>
+	<div class="application">
+	
+	<div class="application__title">Job Application</div>
+	 
+	<div class="application__description">Apply for position</div>
+	
+	<form
+		class="application__form"
+		action=""
+		method="post"
+		enctype="multipart/form-data"
+	>
+		<div class="application__field">
+			<label class="application__label" for="app-name">Full Name</label>
+			<input
+				class="application__input"
+				type="text"
+				id="app-name"
+				name="name"
+				placeholder="Your name"
+			/>
+		</div>
+		<div class="application__field">
+			<label class="application__label" for="app-email">Email</label>
+			<input
+				class="application__input"
+				type="email"
+				id="app-email"
+				name="email"
+				placeholder="email@example.com"
+			/>
+		</div>
+		<div class="application__field">
+			<label class="application__label" for="app-phone">Phone</label>
+			<input
+				class="application__input"
+				type="tel"
+				id="app-phone"
+				name="phone"
+				placeholder="+1 234 567 890"
+			/>
+		</div>
+		<div class="application__field">
+			<label class="application__label" for="app-position"
+				>Position</label
+			>
+			<input
+				class="application__input"
+				type="text"
+				id="app-position"
+				name="position"
+				placeholder="Position applying for"
+			/>
+		</div>
+		<div class="application__field">
+			<label class="application__label" for="app-resume">Resume</label>
+			<input
+				class="application__input"
+				type="file"
+				id="app-resume"
+				name="resume"
+			/>
+		</div>
+		<div class="application__field">
+			<label class="application__label" for="app-message">Message</label>
+			<textarea
+				class="application__textarea"
+				id="app-message"
+				name="message"
+				rows="4"
+				placeholder="Cover letter or message"
+			></textarea>
+		</div>
+		<button class="application__submit" type="submit">
+			Send Application
+		</button>
+	</form>
+</div>
+
+</div>
+
+<div id="sectionId73" class="sectionId73">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId73')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId73')">
+			Move section up
+		</button>
+	</div>
+	<div class="contact-form">
+	
+	<div class="contact-form__title">Contact Us</div>
+	 
+	<div class="contact-form__description">We&#39;d love to hear from you</div>
+	
+	<form
+		class="w-forms"
+		method="post"
+		
+		action="/contact"
+		
+	>
+		<input
+			class="w-forms__input"
+			type="text"
+			name="name"
+			placeholder="Your name"
+		/>
+		<input
+			class="w-forms__input"
+			type="email"
+			name="email"
+			placeholder="you@example.com"
+		/>
+		<textarea
+			class="w-forms__input"
+			name="message"
+			placeholder="Your message"
+		></textarea>
+		<div class="w-forms__btn">
+			<button type="submit" class="btn btn-primary">
+				Send
+			</button>
+		</div>
+	</form>
+</div>
+
+</div>
+
+<div id="sectionId74" class="sectionId74">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId74')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId74')">
+			Move section up
+		</button>
+	</div>
+	<form class="multistep" id="multistep-form">
+	<div class="multistep__progress">
+		<div
+			class="multistep__progress-dot multistep__progress-dot--active"
+		></div>
+		<div class="multistep__progress-dot"></div>
+		<div class="multistep__progress-dot"></div>
+	</div>
+
+	<div class="multistep__step multistep__step--active">
+		<label class="multistep__label">
+			<span>First name</span>
+			<input type="text" name="first" class="multistep__input" />
+		</label>
+	</div>
+
+	<div class="multistep__step">
+		<label class="multistep__label">
+			<span>Email</span>
+			<input type="email" name="email" class="multistep__input" />
+		</label>
+	</div>
+
+	<div class="multistep__step">
+		<p>Thanks for providing the details.</p>
+	</div>
+
+	<div class="multistep__buttons">
+		<button type="button" class="multistep__btn multistep__btn--prev">
+			Prev
+		</button>
+		<button type="button" class="multistep__btn multistep__btn--next">
+			Next
+		</button>
+	</div>
+</form>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const form = document.getElementById("multistep-form");
+		const steps = form.querySelectorAll(".multistep__step");
+		const nextBtn = form.querySelector(".multistep__btn--next");
+		const prevBtn = form.querySelector(".multistep__btn--prev");
+		const dots = form.querySelectorAll(".multistep__progress-dot");
+		let current = 0;
+
+		function updateSteps() {
+			steps.forEach((step, index) => {
+				step.classList.toggle(
+					"multistep__step--active",
+					index === current
+				);
+				dots[index]?.classList.toggle(
+					"multistep__progress-dot--active",
+					index <= current
+				);
+			});
+			prevBtn.style.display = current === 0 ? "none" : "inline-block";
+			nextBtn.textContent =
+				current === steps.length - 1 ? "Submit" : "Next";
+		}
+
+		nextBtn.addEventListener("click", () => {
+			if (current < steps.length - 1) {
+				current++;
+				updateSteps();
+			} else {
+				form.submit();
+			}
+		});
+
+		prevBtn.addEventListener("click", () => {
+			if (current > 0) {
+				current--;
+				updateSteps();
+			}
+		});
+
+		updateSteps();
+	});
+</script>
+
+</div>
+
+<div id="sectionId75" class="sectionId75">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId75')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId75')">
+			Move section up
+		</button>
+	</div>
+	<div class="newsletter">
+	
+	<div class="newsletter__title">Newsletter</div>
+	 
+	<div class="newsletter__description">Get updates</div>
+	
+	<form class="newsletter__form" action="/subscribe" method="post">
+		<input
+			class="newsletter__input"
+			type="email"
+			name="email"
+			placeholder="Email address"
+			required
+		/>
+		<button class="newsletter__button" type="submit">
+			Subscribe
+		</button>
+	</form>
+</div>
+
+</div>
+
+<div id="sectionId76" class="sectionId76">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId76')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId76')">
+			Move section up
+		</button>
+	</div>
+	<div class="rsvp">
+	
+	<div class="rsvp__title">RSVP</div>
+	 
+	<div class="rsvp__description">Let us know</div>
+	
+	<form class="rsvp__form" action="/rsvp" method="post">
+		<div class="rsvp__field">
+			<label class="rsvp__label" for="rsvp-name">Name</label>
+			<input
+				class="rsvp__input"
+				type="text"
+				id="rsvp-name"
+				name="name"
+				required
+			/>
+		</div>
+		<div class="rsvp__field">
+			<label class="rsvp__label" for="rsvp-email">Email</label>
+			<input
+				class="rsvp__input"
+				type="email"
+				id="rsvp-email"
+				name="email"
+				required
+			/>
+		</div>
+		<div class="rsvp__field">
+			<label class="rsvp__label" for="rsvp-attending">Attending</label>
+			<select class="rsvp__select" id="rsvp-attending" name="attending">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</select>
+		</div>
+		<button class="rsvp__button" type="submit">
+			Submit
+		</button>
+	</form>
+</div>
+
+</div>
+
+<div id="sectionId77" class="sectionId77">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId77')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId77')">
+			Move section up
+		</button>
+	</div>
+	<form class="survey">
+	
+	<div class="survey__title">Survey</div>
+	 
+	<div class="survey__description">Tell us more</div>
+	 
+	<div class="survey__questions">
+		
+		<div class="survey__question">
+			
+			<label class="survey__label" for="{{question.name}}"
+				>Your Name</label
+			>
+			 
+			<input
+				class="survey__input"
+				type="text"
+				id="{{question.name}}"
+				name="{{question.name}}"
+				placeholder="{{question.placeholder}}"
+			/>
+			    
+		</div>
+		
+		<div class="survey__question">
+			
+			<label class="survey__label" for="{{question.name}}"
+				>Feedback</label
+			>
+			  
+			<textarea
+				class="survey__textarea"
+				id="{{question.name}}"
+				name="{{question.name}}"
+				placeholder="{{question.placeholder}}"
+			></textarea>
+			   
+		</div>
+		
+		<div class="survey__question">
+			
+			<label class="survey__label" for="{{question.name}}"
+				>Rate</label
+			>
+			   
+			<select
+				class="survey__select"
+				id="{{question.name}}"
+				name="{{question.name}}"
+			>
+				
+				<option value="{{option.value}}">1</option>
+				
+				<option value="{{option.value}}">2</option>
+				
+			</select>
+			  
+		</div>
+		
+	</div>
+	
+
+	<button class="survey__submit" type="submit">
+		Send
+	</button>
+</form>
+
+</div>
+
+<div id="sectionId78" class="sectionId78">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId78')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId78')">
+			Move section up
+		</button>
+	</div>
+	<div class="upload">
+	<input class="upload__input" type="file" id="uploadInput" />
+	<button class="upload__button" id="uploadButton">
+		Upload File
+	</button>
+	<div class="upload__progress" id="uploadProgress"></div>
+	<div class="upload__status" id="uploadStatus"></div>
+</div>
+<script>
+	(function () {
+		var input = document.getElementById("uploadInput");
+		var button = document.getElementById("uploadButton");
+		var progress = document.getElementById("uploadProgress");
+		var status = document.getElementById("uploadStatus");
+		if (!input || !button) return;
+		var url = '/upload';
+		button.addEventListener("click", function () {
+			var file = input.files[0];
+			if (!file) {
+				status.textContent = "Please select a file.";
+				status.className = "upload__status upload__status--error";
+				return;
+			}
+			var data = new FormData();
+			data.append("file", file);
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", url, true);
+			xhr.upload.addEventListener("progress", function (e) {
+				if (e.lengthComputable) {
+					var percent = Math.round((e.loaded / e.total) * 100);
+					progress.style.width = percent + "%";
+				}
+			});
+			xhr.onload = function () {
+				if (xhr.status >= 200 && xhr.status < 300) {
+					status.textContent = "Upload complete";
+					status.className = "upload__status upload__status--success";
+				} else {
+					status.textContent = "Upload failed";
+					status.className = "upload__status upload__status--error";
+				}
+			};
+			xhr.onerror = function () {
+				status.textContent = "Upload error";
+				status.className = "upload__status upload__status--error";
+			};
+			xhr.send(data);
+			progress.style.width = "0";
+			status.textContent = "";
+		});
+	})();
+</script>
+
+</div>
+
+<div id="sectionId79" class="sectionId79">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId79')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId79')">
+			Move section up
+		</button>
+	</div>
+	<div class="hero-section">
+	<div class="hero-section-wrapper">
+		<div class="hero-section-text">
+			<div class="hero-section-text__title">Welcome</div>
+			<div class="hero-section-text__description">
+				Start your journey
+			</div>
+		</div>
+		<div class="hero-section-imgs">
+			<img src="/img/hero-main.jpg" alt="" />
+			<div class="hero-section-imgs__img hero-section-imgs__img--first">
+				<img src="/img/hero-2.jpg" alt="" />
+			</div>
+			<div class="hero-section-imgs__img hero-section-imgs__img--second">
+				<img src="/img/hero-1.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId80" class="sectionId80">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId80')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId80')">
+			Move section up
+		</button>
+	</div>
+	<div
+	class="background"
+	
+	style="background-color: #f0f0f0; background-image: url('/img/bg.png'); background-size: cover; background-position: center;"
+	
+>
+	 &lt;p&gt;Background content&lt;/p&gt; 
+</div>
+
+</div>
+
+<div id="sectionId81" class="sectionId81">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId81')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId81')">
+			Move section up
+		</button>
+	</div>
+	<div class="collapse">
+	<button
+		class="collapse__header"
+	>
+		<div class="collapse__title">Details</div>
+		<div class="collapse__arrow">
+			<svg
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M6 9L12 15L18 9"
+					stroke="var(--c-primary-hover)"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</svg>
+		</div>
+	</button>
+	<div
+		class="collapse__body"
+		
+	>
+		&lt;p&gt;Hidden text&lt;/p&gt;
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId82" class="sectionId82">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId82')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId82')">
+			Move section up
+		</button>
+	</div>
+	
+<div class="container container--md">
+	 &lt;p&gt;Contained content&lt;/p&gt; 
+</div>
+
+</div>
+
+<div id="sectionId83" class="sectionId83">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId83')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId83')">
+			Move section up
+		</button>
+	</div>
+	<div class="divider">
+	
+	<span class="divider__text">OR</span>
+	
+</div>
+
+</div>
+
+<div id="sectionId84" class="sectionId84">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId84')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId84')">
+			Move section up
+		</button>
+	</div>
+	<div
+	class="grid"
+	
+	style="--grid-min: 200px;"
+	
+>
+	 
+	<div class="grid__item">&lt;p&gt;Item 1&lt;/p&gt;</div>
+	
+	<div class="grid__item">&lt;p&gt;Item 2&lt;/p&gt;</div>
+	 
+</div>
+
+</div>
+
+<div id="sectionId85" class="sectionId85">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId85')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId85')">
+			Move section up
+		</button>
+	</div>
+	<div class="responsive-visibility">
+	<div class="responsive-visibility__lg">Visible on large screens</div>
+	<div class="responsive-visibility__md">Visible on medium screens</div>
+	<div class="responsive-visibility__sm">Visible on small screens</div>
+	<div class="responsive-visibility__xs">Visible on extra small screens</div>
+</div>
+
+</div>
+
+<div id="sectionId86" class="sectionId86">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId86')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId86')">
+			Move section up
+		</button>
+	</div>
+	<div class="scroll-area">
+	<div
+		class="scroll-area__viewport"
+		
+		style="--scroll-area-height: 200px"
+		
+	>
+		&lt;p&gt;Scrollable content&lt;/p&gt;
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId87" class="sectionId87">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId87')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId87')">
+			Move section up
+		</button>
+	</div>
+	<div class="spacer" style="--spacer-size: {{section.size || '40px'}};"></div>
+
+</div>
+
+<div id="sectionId88" class="sectionId88">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId88')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId88')">
+			Move section up
+		</button>
+	</div>
+	<div id="sticky-1" class="sticky" data-sticky>
+	
+	<div class="sticky__content">&lt;p&gt;Sticky content&lt;/p&gt;</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId89" class="sectionId89">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId89')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId89')">
+			Move section up
+		</button>
+	</div>
+	<div class="tabs">
+	<div class="tabs__nav">
+		
+		<button
+			class="tabs__nav-button active"
+			data-tab="{{ loop.index0 }}"
+		>
+			Tab 1
+		</button>
+		
+		<button
+			class="tabs__nav-button"
+			data-tab="{{ loop.index0 }}"
+		>
+			Tab 2
+		</button>
+		
+	</div>
+	<div class="tabs__content">
+		
+		<div
+			class="tabs__pane active"
+			data-pane="{{ loop.index0 }}"
+		>
+			&lt;p&gt;Content 1&lt;/p&gt;
+		</div>
+		
+		<div
+			class="tabs__pane"
+			data-pane="{{ loop.index0 }}"
+		>
+			&lt;p&gt;Content 2&lt;/p&gt;
+		</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId90" class="sectionId90">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId90')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId90')">
+			Move section up
+		</button>
+	</div>
+	<div class="animated-banner">
+	<div class="animated-banner__media">
+		<img src="/img/banner.jpg" alt="" />
+	</div>
+	<div class="animated-banner__content">
+		
+		<div class="animated-banner__title">Banner Title</div>
+		 
+		<div class="animated-banner__subtitle">Subheading</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId91" class="sectionId91">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId91')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId91')">
+			Move section up
+		</button>
+	</div>
+	<div class="audio-player">
+	<audio
+		class="audio-player__audio"
+		controls
+		
+		
+	>
+		<source src="/media/sample.mp3" />
+		Your browser does not support the audio element.
+	</audio>
+
+	
+	<div class="audio-player__title">Sample Audio</div>
+	 
+	<div class="audio-player__description">Listen to this clip</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId92" class="sectionId92">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId92')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId92')">
+			Move section up
+		</button>
+	</div>
+	<div class="gallery">
+	
+	<div class="gallery__item">
+		<img src="/img/photo1.jpg" alt="Photo 1" />
+	</div>
+	
+	<div class="gallery__item">
+		<img src="/img/photo2.jpg" alt="Photo 2" />
+	</div>
+	 
+	<div class="gallery__caption">Gallery caption</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId93" class="sectionId93">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId93')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId93')">
+			Move section up
+		</button>
+	</div>
+	<figure class="image-caption">
+	<img class="image-caption__img" src="/img/pic.jpg" alt="" />
+	
+	<figcaption class="image-caption__caption">
+		Image caption
+	</figcaption>
+	
+</figure>
+
+</div>
+
+<div id="sectionId94" class="sectionId94">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId94')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId94')">
+			Move section up
+		</button>
+	</div>
+	<div class="image">
+	<div class="image__img">
+		<img src="/img/pic.jpg" alt="Sample image" />
+	</div>
+	
+	<div class="image__caption">Caption</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId95" class="sectionId95">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId95')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId95')">
+			Move section up
+		</button>
+	</div>
+	<div class="lightbox">
+	<div class="lightbox__thumb">
+		<img src="/img/thumb.jpg" alt="Lightbox image" />
+	</div>
+	<div class="lightbox__overlay">
+		<div class="lightbox__dialog">
+			<img
+				class="lightbox__image"
+				src="/img/full.jpg"
+				alt="Lightbox image"
+			/>
+			
+			<div class="lightbox__caption">Click to enlarge</div>
+			
+			<button class="lightbox__close" aria-label="Close">&times;</button>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId96" class="sectionId96">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId96')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId96')">
+			Move section up
+		</button>
+	</div>
+	<div class="slider">
+	
+	<div class="slider__container">
+		
+		<div class="slider__slide">
+			<img src="/img/slide1.jpg" alt="Slide 1" />
+		</div>
+		
+		<div class="slider__slide">
+			<img src="/img/slide2.jpg" alt="Slide 2" />
+		</div>
+		
+	</div>
+	
+	<button class="slider__button slider__button--prev">&#10094;</button>
+	<button class="slider__button slider__button--next">&#10095;</button>
+	<div class="slider__dots"></div>
+</div>
+<script>
+	(function () {
+		var root = document.currentScript.previousElementSibling;
+		if (!root) return;
+		var container = root.querySelector(".slider__container");
+		var slides = root.querySelectorAll(".slider__slide");
+		var prevBtn = root.querySelector(".slider__button--prev");
+		var nextBtn = root.querySelector(".slider__button--next");
+		var dotsContainer = root.querySelector(".slider__dots");
+		var currentIndex = 0;
+		slides.forEach(function (_, index) {
+			var dot = document.createElement("span");
+			dot.className = "slider__dot";
+			dot.addEventListener("click", function () {
+				goToSlide(index);
+			});
+			dotsContainer.appendChild(dot);
+		});
+		function updateDots() {
+			var dots = root.querySelectorAll(".slider__dot");
+			dots.forEach(function (dot, index) {
+				if (index === currentIndex) {
+					dot.classList.add("slider__dot--active");
+				} else {
+					dot.classList.remove("slider__dot--active");
+				}
+			});
+		}
+		function goToSlide(index) {
+			if (index < 0) {
+				currentIndex = slides.length - 1;
+			} else if (index >= slides.length) {
+				currentIndex = 0;
+			} else {
+				currentIndex = index;
+			}
+			container.style.transform =
+				"translateX(-" + currentIndex * 100 + "%)";
+			updateDots();
+		}
+		prevBtn.addEventListener("click", function () {
+			goToSlide(currentIndex - 1);
+		});
+		nextBtn.addEventListener("click", function () {
+			goToSlide(currentIndex + 1);
+		});
+		updateDots();
+	})();
+</script>
+
+</div>
+
+<div id="sectionId97" class="sectionId97">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId97')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId97')">
+			Move section up
+		</button>
+	</div>
+	<nav class="anchor-links">
+	 
+	<a class="anchor-links__link" href="#section1">Section 1</a>
+	
+	<a class="anchor-links__link" href="#section2">Section 2</a>
+	 
+</nav>
+
+</div>
+
+<div id="sectionId98" class="sectionId98">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId98')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId98')">
+			Move section up
+		</button>
+	</div>
+	<nav class="breadcrumbs" aria-label="Breadcrumb">
+	
+	<ol class="breadcrumbs__list">
+		
+		<li class="breadcrumbs__item">
+			
+			<a href="/" class="breadcrumbs__link"
+				>Home</a
+			>
+			
+		</li>
+		
+		<li class="breadcrumbs__item">
+			
+			<a href="/blog" class="breadcrumbs__link"
+				>Blog</a
+			>
+			
+		</li>
+		
+		<li class="breadcrumbs__item">
+			
+			<span class="breadcrumbs__current">Post</span>
+			
+		</li>
+		
+	</ol>
+	
+</nav>
+
+</div>
+
+<div id="sectionId99" class="sectionId99">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId99')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId99')">
+			Move section up
+		</button>
+	</div>
+	<nav class="mega-menu">
+	<ul class="mega-menu__list">
+		
+		<li class="mega-menu__item">
+			<a href="/products" class="mega-menu__toggle"
+				>Products</a
+			>
+			
+			<div class="mega-menu__content">
+				
+				<div class="mega-menu__column">
+					
+					<div class="mega-menu__column-title">Category</div>
+					
+					<ul class="mega-menu__links">
+						
+						<li>
+							<a href="/products/a" class="mega-menu__link"
+								>Product A</a
+							>
+						</li>
+						
+						<li>
+							<a href="/products/b" class="mega-menu__link"
+								>Product B</a
+							>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+			
+		</li>
+		
+	</ul>
+</nav>
+
+</div>
+
+<div id="sectionId100" class="sectionId100">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId100')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId100')">
+			Move section up
+		</button>
+	</div>
+	<nav class="navbar">
+	
+	<div class="navbar__logo">
+		<a href="/">
+			<img src="/img/logo.png" alt="Logo" />
+		</a>
+	</div>
+	
+	<button class="navbar__toggle" aria-label="Toggle navigation">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+	<ul class="navbar__menu">
+		
+		<li class="navbar__item">
+			<a href="/about" class="navbar__link">About</a>
+		</li>
+		
+		<li class="navbar__item">
+			<a href="/contact" class="navbar__link">Contact</a>
+		</li>
+		
+	</ul>
+</nav>
+
+</div>
+
+<div id="sectionId101" class="sectionId101">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId101')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId101')">
+			Move section up
+		</button>
+	</div>
+	<nav class="pagination">
+	
+	<a class="pagination__prev" href="/page/1"
+		>Prev</a
+	>
+	 
+	<ul class="pagination__list">
+		
+		<li class="pagination__item">
+			
+			<a
+				href="/page/1"
+				class="pagination__link"
+				>1</a
+			>
+			
+		</li>
+		
+		<li class="pagination__item">
+			
+			<a
+				href="/page/2"
+				class="pagination__link is-current"
+				>2</a
+			>
+			
+		</li>
+		
+		<li class="pagination__item">
+			
+			<span
+				class="pagination__link"
+				>3</span
+			>
+			
+		</li>
+		
+	</ul>
+	 
+	<a class="pagination__next" href="/page/3"
+		>Next</a
+	>
+	
+</nav>
+
+</div>
+
+<div id="sectionId102" class="sectionId102">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId102')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId102')">
+			Move section up
+		</button>
+	</div>
+	<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+	<span class="material-icons">expand_less</span>
+</button>
+<script>
+	(function () {
+		var btn = document.getElementById("scrollToTop");
+		if (!btn) return;
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > window.innerHeight) {
+				btn.classList.add("scroll-to-top--visible");
+			} else {
+				btn.classList.remove("scroll-to-top--visible");
+			}
+		});
+		btn.addEventListener("click", function () {
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		});
+	})();
+</script>
+
+</div>
+
+<div id="sectionId103" class="sectionId103">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId103')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId103')">
+			Move section up
+		</button>
+	</div>
+	<nav class="sidebar">
+	<ul class="sidebar__list">
+		
+		<li
+			class="sidebar__item sidebar__item--active"
+		>
+			<a href="/dashboard" class="sidebar__link">Dashboard</a>
+			
+		</li>
+		
+		<li
+			class="sidebar__item"
+		>
+			<a href="/settings" class="sidebar__link">Settings</a>
+			
+			<ul class="sidebar__sublist">
+				
+				<li
+					class="sidebar__subitem"
+				>
+					<a href="/settings/profile" class="sidebar__sublink"
+						>Profile</a
+					>
+				</li>
+				
+				<li
+					class="sidebar__subitem sidebar__subitem--active"
+				>
+					<a href="/settings/billing" class="sidebar__sublink"
+						>Billing</a
+					>
+				</li>
+				
+			</ul>
+			
+		</li>
+		
+	</ul>
+</nav>
+
+</div>
+
+<div id="sectionId104" class="sectionId104">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId104')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId104')">
+			Move section up
+		</button>
+	</div>
+	<div class="table-of-contents">
+	
+	<div class="table-of-contents__title">Contents</div>
+	 
+	<ul class="table-of-contents__list">
+		
+		<li class="table-of-contents__item">
+			<a href="#intro" class="table-of-contents__link"
+				>Introduction</a
+			>
+			
+		</li>
+		
+		<li class="table-of-contents__item">
+			<a href="#usage" class="table-of-contents__link"
+				>Usage</a
+			>
+			
+			<ul class="table-of-contents__sublist">
+				
+				<li class="table-of-contents__subitem">
+					<a href="#install" class="table-of-contents__link"
+						>Install</a
+					>
+				</li>
+				
+			</ul>
+			
+		</li>
+		
+	</ul>
+	
+</div>
+
+</div>
+
+<div id="sectionId105" class="sectionId105">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId105')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId105')">
+			Move section up
+		</button>
+	</div>
+	<div class="article-schema">
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": "Sample Article",
+			"image": "/img/article.jpg",
+			"datePublished": "2024-01-01",
+			"dateModified": "2024-01-02",
+			"author": {
+				"@type": "Person",
+				"name": "Author Name"
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "Publisher",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "/img/logo.png"
+				}
+			},
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "https://example.com/article"
+			}
+		}
+	</script>
+</div>
+
+</div>
+
+<div id="sectionId106" class="sectionId106">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId106')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId106')">
+			Move section up
+		</button>
+	</div>
+	
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "BreadcrumbList",
+	  "itemListElement": [
+	    
+	    {
+	      "@type": "ListItem",
+	      "position": {{ loop.index }},
+	      "name": "Home",
+	      "item": "/"
+	    },
+	    
+	    {
+	      "@type": "ListItem",
+	      "position": {{ loop.index }},
+	      "name": "Blog",
+	      "item": "/blog"
+	    },
+	    
+	    {
+	      "@type": "ListItem",
+	      "position": {{ loop.index }},
+	      "name": "Post",
+	    }
+	    
+	  ]
+	}
+</script>
+
+
+</div>
+
+<div id="sectionId107" class="sectionId107">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId107')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId107')">
+			Move section up
+		</button>
+	</div>
+	
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "FAQPage",
+	  "mainEntity": [
+	    
+	    {
+	      "@type": "Question",
+	      "name": "Q1?",
+	      "acceptedAnswer": {
+	        "@type": "Answer",
+	        "text": "A1"
+	      }
+	    },
+	    
+	    {
+	      "@type": "Question",
+	      "name": "Q2?",
+	      "acceptedAnswer": {
+	        "@type": "Answer",
+	        "text": "A2"
+	      }
+	    }
+	    
+	  ]
+	}
+</script>
+
+
+</div>
+
+<div id="sectionId108" class="sectionId108">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId108')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId108')">
+			Move section up
+		</button>
+	</div>
+	<div class="meta-preview">
+	
+	<div class="meta-preview__image">
+		<img src="/img/meta.png" alt="" />
+	</div>
+	
+	<div class="meta-preview__body">
+		
+		<div class="meta-preview__title">Meta Title</div>
+		 
+		<div class="meta-preview__url">https://example.com</div>
+		 
+		<div class="meta-preview__description">Meta description</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId109" class="sectionId109">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId109')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId109')">
+			Move section up
+		</button>
+	</div>
+	<div class="og-preview">
+	
+	<div class="og-preview__image">
+		<img src="/img/og.png" alt="" />
+	</div>
+	
+	<div class="og-preview__content">
+		
+		<div class="og-preview__url">https://example.com</div>
+		 
+		<div class="og-preview__title">OG Title</div>
+		 
+		<div class="og-preview__description">OG description</div>
+		
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId110" class="sectionId110">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId110')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId110')">
+			Move section up
+		</button>
+	</div>
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Product",
+	  "name": "Product",
+	  "description": "Product description",
+	  "image": "/img/product.png",
+	  "sku": "SKU123",
+	  "brand": { "@type": "Brand", "name": "Brand" },
+	  "offers": {
+	    "@type": "Offer",
+	    "url": "https://example.com/product",
+	    "price": "99.99",
+	    "priceCurrency": "USD",
+	    "availability": "InStock"
+	  }
+	}
+</script>
+
+</div>
+
+<div id="sectionId111" class="sectionId111">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId111')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId111')">
+			Move section up
+		</button>
+	</div>
+	
+<script type="application/ld+json">
+	{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;Thing&quot;,&quot;name&quot;:&quot;Example&quot;}
+</script>
+
+
+</div>
+
+<div id="sectionId112" class="sectionId112">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId112')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId112')">
+			Move section up
+		</button>
+	</div>
+	<div class="alert alert--{{section.type}}">
+	
+	<button class="alert__close" type="button">&times;</button>
+	 
+	<div class="alert__title">Notice</div>
+	 
+	<div class="alert__message">This is an alert</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId113" class="sectionId113">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId113')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId113')">
+			Move section up
+		</button>
+	</div>
+	<div id="cookieBanner" class="cookie-banner">
+	<div class="cookie-banner__content">
+		<span class="cookie-banner__text">We use cookies</span>
+		
+		<a href="/privacy" class="cookie-banner__link"
+			>Learn more</a
+		>
+		
+	</div>
+	<button class="cookie-banner__button" onclick="acceptCookies()">
+		Accept
+	</button>
+</div>
+
+</div>
+
+<div id="sectionId114" class="sectionId114">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId114')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId114')">
+			Move section up
+		</button>
+	</div>
+	<div class="countdown">
+	
+	<div class="countdown__title">Countdown</div>
+	 
+	<div class="countdown__description">Event starts in</div>
+	
+	<div class="countdown__timer" data-countdown="2024-12-31T23:59:59Z">
+		<div class="countdown__unit">
+			<div class="countdown__value countdown__days">00</div>
+			<div class="countdown__label">Days</div>
+		</div>
+		<div class="countdown__unit">
+			<div class="countdown__value countdown__hours">00</div>
+			<div class="countdown__label">Hours</div>
+		</div>
+		<div class="countdown__unit">
+			<div class="countdown__value countdown__minutes">00</div>
+			<div class="countdown__label">Minutes</div>
+		</div>
+		<div class="countdown__unit">
+			<div class="countdown__value countdown__seconds">00</div>
+			<div class="countdown__label">Seconds</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div id="sectionId115" class="sectionId115">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId115')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId115')">
+			Move section up
+		</button>
+	</div>
+	<div class="embed">
+	
+	<div class="embed__title">Embedded Content</div>
+	 
+	<div class="embed__wrapper">&lt;iframe src=&#39;https://example.com&#39;&gt;&lt;/iframe&gt;</div>
+	 
+	<div class="embed__caption">Embedded iframe</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId116" class="sectionId116">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId116')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId116')">
+			Move section up
+		</button>
+	</div>
+	<div class="language-switcher">
+	
+	<label for="language-switcher__select" class="language-switcher__label">
+		Language
+	</label>
+	 
+	<select
+		id="language-switcher__select"
+		class="language-switcher__select"
+		onchange="if(this.value){window.location.href=this.value}"
+	>
+		
+		<option value="/en" selected>
+			EN
+		</option>
+		
+		<option value="/es" >
+			ES
+		</option>
+		
+	</select>
+	
+</div>
+
+</div>
+
+<div id="sectionId117" class="sectionId117">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId117')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId117')">
+			Move section up
+		</button>
+	</div>
+	<div
+	class="notification notification--success"
+	data-notification
+>
+	<div class="notification__message">Saved successfully</div>
+	<button class="notification__close" aria-label="Close notification">
+		&times;
+	</button>
+</div>
+<script>
+	(function () {
+		document.querySelectorAll("[data-notification]").forEach(function (el) {
+			var close = el.querySelector(".notification__close");
+			if (!close) return;
+			close.addEventListener("click", function () {
+				el.classList.add("notification--hidden");
+			});
+		});
+	})();
+</script>
+
+</div>
+
+<div id="sectionId118" class="sectionId118">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId118')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId118')">
+			Move section up
+		</button>
+	</div>
+	<div class="progress-bar">
+	<div class="progress-bar__bar">
+		<div
+			class="progress-bar__progress"
+			style="width: 30%"
+		></div>
+	</div>
+
+	
+	<div class="progress-bar__label">30% Complete</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId119" class="sectionId119">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId119')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId119')">
+			Move section up
+		</button>
+	</div>
+	<div class="social-feed">
+	
+	<div class="social-feed__item">
+		<div class="social-feed__avatar">
+			<img src="/img/user1.jpg" alt="Alice" />
+		</div>
+		<div class="social-feed__content">
+			<div class="social-feed__header">
+				<span class="social-feed__name">Alice</span>
+				
+				<span class="social-feed__handle">@alice</span>
+				 
+				<span class="social-feed__time">1h</span>
+				
+			</div>
+			<div class="social-feed__text">Hello world</div>
+		</div>
+	</div>
+	
+	<div class="social-feed__item">
+		<div class="social-feed__avatar">
+			<img src="/img/user2.jpg" alt="Bob" />
+		</div>
+		<div class="social-feed__content">
+			<div class="social-feed__header">
+				<span class="social-feed__name">Bob</span>
+				 
+			</div>
+			<div class="social-feed__text">Nice post</div>
+		</div>
+	</div>
+	
+</div>
+
+</div>
+
+<div id="sectionId120" class="sectionId120">
+	<hr class="hrs" />
+	
+	<div class="controllers" style="display: none">
+		<button onclick="removeElements('sectionId120')">
+			Remove section
+		</button>
+		<button onclick="upElement('sectionId120')">
+			Move section up
+		</button>
+	</div>
+	<div class="social-share">
+	 
+	<a
+		href="https://www.facebook.com/sharer/sharer.php?u=https://example.com"
+		class="social-share__link social-share__facebook"
+		target="_blank"
+		rel="noopener"
+		aria-label="Share on Facebook"
+	>
+		<img src="/img/fb.svg" alt="facebook" />
+	</a>
+	  
+	<a
+		href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.com"
+		class="social-share__link social-share__linkedin"
+		target="_blank"
+		rel="noopener"
+		aria-label="Share on LinkedIn"
+	>
+		<img src="/img/in.svg" alt="linkedin" />
+	</a>
+	  
+	<a
+		href="https://t.me/share/url?url=https://example.com"
+		class="social-share__link social-share__telegram"
+		target="_blank"
+		rel="noopener"
+		aria-label="Share on Telegram"
+	>
+		<img src="/img/tg.svg" alt="telegram" />
+	</a>
+	 
+</div>
+
+</div>
+
+
+<textarea id="structure"></textarea>
+<script>
+	document.getElementById("structure").value = JSON.stringify(structure);
+
+	for (const section of sections) {
+		if (document.getElementById(section.__id)) {
+			section.__html = document.getElementById(section.__id).innerHTML;
+		}
+	}
+</script>
+ <footer class="footer">
+	<p class="footer__text">
+		<span class="footer__text-part"
+			>Wjst is copyright ©2024 Web Art Work</span
+		>
+		<span class="footer__text-part">
+			Licensed for use under the permissive MIT Open Source License.</span
+		>
+		<span class="footer__text-part"> Architected by Honchar Denys</span>
+	</p>
+	<div class="footer-wrap">
+		<div class="footer__item-link">
+			<div class="footer__link-title">Title for links</div>
+			<a href="" class="footer__link"> - Link here </a>
+			<a href="" class="footer__link"> - Link here </a>
+			<a href="" class="footer__link"> - Link here </a>
+		</div>
+		<div class="footer__item-link footer__item-link--center">
+			<div class="footer__link-title">Title for links</div>
+			<a href="" class="footer__link"> - Link here </a>
+			<a href="" class="footer__link"> - Link here </a>
+			<a href="" class="footer__link"> - Link here </a>
+		</div>
+		<div class="footer__item-link footer__item-link--end">
+			<div class="footer__link-title">Title for links</div>
+			<a href="" class="footer__link"> - Link here </a>
+			<a href="" class="footer__link"> - Link here </a>
+			<a href="" class="footer__link"> - Link here </a>
+		</div>
+	</div>
+</footer>
+
+	</main>
+</div>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
