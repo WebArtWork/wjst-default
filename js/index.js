@@ -23,6 +23,18 @@ const acceptCookies = () => {
 };
 
 const sidebar = {};
+
+document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".navbar").forEach((nav) => {
+                const toggle = nav.querySelector(".navbar__toggle");
+                if (toggle) {
+                        toggle.addEventListener("click", () => {
+                                nav.classList.toggle("navbar--open");
+                        });
+                }
+        });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
 	/* ACCARDION CODE */
 	const accordionButtons = document.querySelectorAll(".accordion-button");
@@ -245,4 +257,69 @@ document.addEventListener("DOMContentLoaded", () => {
                         banner.classList.add("hidden");
                 }
         }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+        const sticks = document.querySelectorAll("[data-sticky]");
+        sticks.forEach((el) => {
+                const start = el.offsetTop;
+                window.addEventListener("scroll", () => {
+                        if (window.scrollY > start) {
+                                el.classList.add("sticky--stuck");
+                        } else {
+                                el.classList.remove("sticky--stuck");
+                        }
+                });
+        });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".tabs").forEach((tabs) => {
+                const buttons = tabs.querySelectorAll(".tabs__nav-button");
+                const panes = tabs.querySelectorAll(".tabs__pane");
+
+                buttons.forEach((button, index) => {
+                        button.addEventListener("click", () => {
+                                buttons.forEach((b) => b.classList.remove("active"));
+                                panes.forEach((p) => p.classList.remove("active"));
+                                button.classList.add("active");
+                                const pane = panes[index];
+                                if (pane) {
+                                        pane.classList.add("active");
+                                }
+                        });
+                });
+        });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".lightbox").forEach((box) => {
+                const thumb = box.querySelector(".lightbox__thumb");
+                const overlay = box.querySelector(".lightbox__overlay");
+                const closeBtn = box.querySelector(".lightbox__close");
+                if (!thumb || !overlay || !closeBtn) {
+                        return;
+                }
+                const open = () => overlay.classList.add("lightbox__overlay--active");
+                const close = () => overlay.classList.remove("lightbox__overlay--active");
+                thumb.addEventListener("click", open);
+                closeBtn.addEventListener("click", close);
+                overlay.addEventListener("click", (e) => {
+                        if (e.target === overlay) {
+                                close();
+                        }
+                });
+        });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".mega-menu__toggle").forEach((toggle) => {
+                toggle.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        const item = toggle.closest(".mega-menu__item");
+                        if (item) {
+                                item.classList.toggle("mega-menu__item--open");
+                        }
+                });
+        });
 });
